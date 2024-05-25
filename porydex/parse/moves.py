@@ -1,16 +1,9 @@
 import pathlib
-import re
 
-from pycparser import parse_file
 from pycparser.c_ast import NamedInitializer
 
-from porydex.common import PREPROCESS_LIBC, COMMON_CPP_ARGS
-from porydex.cpp_args import MOVES_CPP_ARGS
-from porydex.parse import extract_compound_str, extract_id, extract_int, extract_prefixed
-
-TYPE = re.compile(r'TYPE_(.*)')
-DAMAGE_CATEGORY = re.compile(r'DAMAGE_CATEGORY_(.*)')
-CONTEST_CATEGORY = re.compile(r'CONTEST_CATEGORY_(.*)')
+from porydex.model import DAMAGE_TYPE, DAMAGE_CATEGORY, CONTEST_CATEGORY
+from porydex.parse import load_data, extract_int, extract_u8_str
 
 FLAGS_EXPANSION_TO_SHOWDOWN = {
     'bitingMove': 'bite',
@@ -34,6 +27,7 @@ FLAGS_EXPANSION_TO_SHOWDOWN = {
 def parse_move(struct_init: NamedInitializer) -> dict:
     init_list = struct_init.expr.exprs
     move = {}
+    move['num'] = extract_int(struct_init.name[0])
     move['flags'] = {
         # showdown dex interprets these as "this move is affected by or can
         # be invoked by these effects"
@@ -47,16 +41,12 @@ def parse_move(struct_init: NamedInitializer) -> dict:
         field_expr = field_init.expr
 
         match field_name:
-            # TODO: number from moves.h constants?
             case 'name':
-                move['name'] = extract_compound_str(field_expr.args)
-            case 'effect':
-                move['effect'] = extract_id(field_expr)
+                move['name'] = extract_u8_str(field_expr.expr)
             case 'power':
                 move['power'] = extract_int(field_expr)
             case 'type':
-                # IDs are prefixed with 'TYPE_'
-                move['type'] = extract_prefixed(TYPE, extract_id(field_expr), str.capitalize)
+                move['type'] = DAMAGE_TYPE[extract_int(field_expr)]
             case 'accuracy':
                 # expansion stores infinite accuracy as 0 accuracy
                 # showdown dex represents infinite accuracy as boolean True
@@ -67,16 +57,14 @@ def parse_move(struct_init: NamedInitializer) -> dict:
             case 'priority':
                 move['priority'] = extract_int(field_expr)
             case 'category':
-                # IDs are prefixed with 'DAMAGE_CATEGORY_'
-                move['category'] = extract_prefixed(DAMAGE_CATEGORY, extract_id(field_expr), str.capitalize)
+                move['category'] = DAMAGE_CATEGORY[extract_int(field_expr)]
             case 'criticalHitStage':
                 # expansion stores this as an "additional" critical hit stage
                 # showdown dex instead says all moves have an implicit critical hit
                 # stage of 1
                 move['critRatio'] = extract_int(field_expr) + 1
             case 'contestCategory':
-                # IDs are prefixed with 'CONTEST_CATEGORY_'
-                move['contestType'] = extract_prefixed(CONTEST_CATEGORY, extract_id(field_expr), str.capitalize)
+                move['contestType'] = CONTEST_CATEGORY[extract_int(field_expr)]
             case 'bitingMove' \
                 | 'ballisticMove' \
                 | 'ignoresSubstitute' \
@@ -107,12 +95,11 @@ def parse_move(struct_init: NamedInitializer) -> dict:
 
     return move
 
-def parse_moves(fname: pathlib.Path) -> dict:
-    moves_ast = parse_file(fname,
-                        use_cpp=True,
-                        cpp_path='cpp',
-                        cpp_args=[*PREPROCESS_LIBC, *MOVES_CPP_ARGS, *COMMON_CPP_ARGS])
-    moves_data = moves_ast.ext[-1].init.exprs
+def parse_moves(fname: pathlib.Path, expansion: pathlib.Path) -> dict:
+    moves_data = load_data(fname, expansion, extra_includes=[
+        r'-include', r'constants/battle.h',
+        r'-include', r'constants/moves.h',
+    ])
 
     all_moves = {}
     for move_init in moves_data:

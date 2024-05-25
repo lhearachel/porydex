@@ -1,6 +1,8 @@
+import pathlib
 import re
 import typing
 
+from pycparser import parse_file
 from pycparser.c_ast import (
     BinaryOp,
     ExprList,
@@ -10,11 +12,44 @@ from pycparser.c_ast import (
     UnaryOp,
 )
 
-from porydex.common import BINARY_BOOL_OPS
+from porydex.common import (
+    BINARY_BOOL_OPS,
+    CONFIG_INCLUDES,
+    EXPANSION_INCLUDES,
+    GLOBAL_PREPROC,
+    PREPROCESS_LIBC,
+)
+
+def load_data(fname: pathlib.Path,
+              expansion: pathlib.Path,
+              extra_includes: typing.List[str]=[]) -> ExprList:
+    include_dirs = [f'-I{expansion / dir}' for dir in EXPANSION_INCLUDES]
+    return parse_file(
+        fname,
+        use_cpp=True,
+        cpp_path='gcc', # TODO: support clang?
+        cpp_args=[
+            *PREPROCESS_LIBC,
+            *include_dirs,
+            *GLOBAL_PREPROC,
+            *CONFIG_INCLUDES,
+            *extra_includes
+        ]
+    ).ext[-1].init.exprs
 
 def process_binary(expr: BinaryOp) -> bool:
+    if isinstance(expr.left, BinaryOp):
+        left = int(process_binary(expr.left))
+    else:
+        left = int(expr.left.value)
+
+    if isinstance(expr.right, BinaryOp):
+        right = int(process_binary(expr.right))
+    else:
+        right = int(expr.right.value)
+
     op = BINARY_BOOL_OPS[expr.op]
-    return op(expr.left.value, expr.right.value)
+    return op(left, right)
 
 def process_ternary(expr: TernaryOp) -> typing.Any:
     if isinstance(expr.cond.left, ID):
@@ -32,6 +67,9 @@ def extract_compound_str(args: ExprList) -> str:
     if isinstance(args.exprs[0], FuncCall):
         return extract_compound_str(args.exprs[0].args)
     return args.exprs[-1].value.replace('\\n', ' ')[1:-1]
+
+def extract_u8_str(expr) -> str:
+    return expr.args.exprs[-1].value.replace('\\n', ' ')[1:-1]
 
 def extract_int(expr) -> int:
     if isinstance(expr, TernaryOp):
