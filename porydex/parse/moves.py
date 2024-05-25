@@ -4,7 +4,7 @@ import re
 from pycparser import parse_file
 from pycparser.c_ast import NamedInitializer
 
-from porydex.common import COMMON_CPP_ARGS
+from porydex.common import PREPROCESS_LIBC, COMMON_CPP_ARGS
 from porydex.cpp_args import MOVES_CPP_ARGS
 from porydex.parse import extract_compound_str, extract_id, extract_int, extract_prefixed
 
@@ -111,7 +111,7 @@ def parse_moves(fname: pathlib.Path) -> dict:
     moves_ast = parse_file(fname,
                         use_cpp=True,
                         cpp_path='cpp',
-                        cpp_args=[*MOVES_CPP_ARGS, *COMMON_CPP_ARGS])
+                        cpp_args=[*PREPROCESS_LIBC, *MOVES_CPP_ARGS, *COMMON_CPP_ARGS])
     moves_data = moves_ast.ext[-1].init.exprs
 
     all_moves = {}

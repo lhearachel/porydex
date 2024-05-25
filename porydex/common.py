@@ -1,5 +1,10 @@
 import operator
 
+PREPROCESS_LIBC = [
+    '-E',
+    '-Ifake_libc_include',
+]
+
 COMMON_CPP_ARGS = [
     r'-DTRUE=1',
     r'-DFALSE=0',
