@@ -1,4 +1,5 @@
 import pathlib
+import pickle
 import re
 import typing
 
@@ -7,12 +8,14 @@ from pycparser.c_ast import (
     BinaryOp,
     ExprList,
     FuncCall,
+    Decl,
     ID,
     TernaryOp,
     UnaryOp,
 )
 
 from porydex.common import (
+    PICKLE_PATH,
     BINARY_BOOL_OPS,
     CONFIG_INCLUDES,
     EXPANSION_INCLUDES,
@@ -20,34 +23,97 @@ from porydex.common import (
     PREPROCESS_LIBC,
 )
 
+def _pickle_target(fname: pathlib.Path) -> pathlib.Path:
+    return PICKLE_PATH / fname.stem
+
+def _load_pickled(fname: pathlib.Path) -> typing.Optional[ExprList]:
+    target = _pickle_target(fname)
+    exts = None
+    if target.exists():
+        with open(target, 'rb') as f:
+            exts = pickle.load(f)
+    return exts
+
+def _dump_pickled(fname: pathlib.Path, exts: list):
+    PICKLE_PATH.mkdir(parents=True, exist_ok=True)
+    target = _pickle_target(fname)
+    with open(target, 'wb') as f:
+        pickle.dump(exts, f, protocol=pickle.HIGHEST_PROTOCOL)
+
 def load_data(fname: pathlib.Path,
               expansion: pathlib.Path,
               extra_includes: typing.List[str]=[]) -> ExprList:
+    exts = _load_pickled(fname)
+    if not exts:
+        include_dirs = [f'-I{expansion / dir}' for dir in EXPANSION_INCLUDES]
+        exts = parse_file(
+            fname,
+            use_cpp=True,
+            cpp_path='gcc', # TODO: support clang?
+            cpp_args=[
+                *PREPROCESS_LIBC,
+                *include_dirs,
+                *GLOBAL_PREPROC,
+                *CONFIG_INCLUDES,
+                *extra_includes
+            ]
+        ).ext
+        _dump_pickled(fname, exts)
+
+    return exts[-1].init.exprs
+
+def load_table_set(fname: pathlib.Path,
+                   expansion: pathlib.Path,
+                   extra_includes: typing.List[str]=[],
+                   minimal_preprocess: bool=False) -> typing.List[Decl]:
     include_dirs = [f'-I{expansion / dir}' for dir in EXPANSION_INCLUDES]
-    return parse_file(
-        fname,
-        use_cpp=True,
-        cpp_path='gcc', # TODO: support clang?
-        cpp_args=[
-            *PREPROCESS_LIBC,
-            *include_dirs,
-            *GLOBAL_PREPROC,
-            *CONFIG_INCLUDES,
-            *extra_includes
-        ]
-    ).ext[-1].init.exprs
 
-def process_binary(expr: BinaryOp) -> bool:
-    if isinstance(expr.left, BinaryOp):
-        left = int(process_binary(expr.left))
+    if minimal_preprocess:
+        # do NOT dump this version
+        exts = parse_file(
+            fname,
+            use_cpp=True,
+            cpp_path='gcc', # TODO: support clang?
+            cpp_args=[
+                *PREPROCESS_LIBC,
+                *include_dirs,
+                r'-DTRUE=1',
+                r'-DFALSE=0',
+                r'-Du16=short',
+                r'-include', r'config/species_enabled.h',
+                *extra_includes
+            ]
+        ).ext
     else:
-        left = int(expr.left.value)
+        exts = _load_pickled(fname)
 
-    if isinstance(expr.right, BinaryOp):
-        right = int(process_binary(expr.right))
-    else:
-        right = int(expr.right.value)
+    if not exts:
+        exts = parse_file(
+            fname,
+            use_cpp=True,
+            cpp_path='gcc', # TODO: support clang?
+            cpp_args=[
+                *PREPROCESS_LIBC,
+                *include_dirs,
+                *GLOBAL_PREPROC,
+                *CONFIG_INCLUDES,
+                *extra_includes
+            ]
+        ).ext
+        _dump_pickled(fname, exts)
 
+    return exts
+
+def eval_binary_operand(expr) -> int:
+    if isinstance(expr, BinaryOp):
+        return int(process_binary(expr))
+    elif isinstance(expr, TernaryOp):
+        return int(process_ternary(expr).value)
+    return int(expr.value)
+
+def process_binary(expr: BinaryOp) -> int | bool:
+    left = eval_binary_operand(expr.left)
+    right = eval_binary_operand(expr.right)
     op = BINARY_BOOL_OPS[expr.op]
     return op(left, right)
 
@@ -84,7 +150,11 @@ def extract_int(expr) -> int:
     if isinstance(expr, BinaryOp):
         return int(process_binary(expr))
 
-    return int(expr.value)
+    try:
+        return int(expr.value)
+    except ValueError:
+        # try hexadecimal; if that doesn't work, just fail
+        return int(expr.value, 16)
 
 def extract_id(expr) -> str:
     if isinstance(expr, TernaryOp):

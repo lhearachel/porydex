@@ -37,3 +37,35 @@ CONTEST_CATEGORY: typing.List[str] = [
     'Tough',
 ]
 
+EGG_GROUP: typing.List[str] = [
+    'None',
+    'Monster',
+    'Water 1',
+    'Bug',
+    'Flying',
+    'Field',
+    'Fairy',
+    'Grass',
+    'Human-Like',
+    'Water 3',
+    'Mineral',
+    'Amorphous',
+    'Water 2',
+    'Ditto',
+    'Dragon',
+    'Undiscovered',
+]
+
+BODY_COLOR: typing.List[str] = [
+    'Red',
+    'Blue',
+    'Yellow',
+    'Green',
+    'Black',
+    'Brown',
+    'Purple',
+    'Gray',
+    'White',
+    'Pink',
+]
+

@@ -36,7 +36,7 @@ def parse_move(struct_init: NamedInitializer) -> dict:
         'protect': 1,
         'mirror': 1,
     }
-    for field_init in init_list: 
+    for field_init in init_list:
         field_name = field_init.name[0].name
         field_expr = field_init.expr
 

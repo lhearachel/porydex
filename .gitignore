@@ -3,3 +3,4 @@ tst/
 __pycache__/
 pycparser/
 fake_libc_include/
+.pickled/

@@ -1,4 +1,7 @@
 import operator
+import pathlib
+
+PICKLE_PATH = pathlib.Path('./.pickled')
 
 PREPROCESS_LIBC = [
     r'-E',
