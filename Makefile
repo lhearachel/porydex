@@ -1,3 +1,12 @@
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	REALPATH := grealpath
+else
+	REALPATH := realpath
+endif
+
+BUILD := build
+DIST := dist
 FAKE_LIBC := fake_libc_include
 GIT := git
 MAKE := make
@@ -7,6 +16,7 @@ PYCPARSER := pycparser
 PYCPARSER_GIT := git@github.com:eliben/$(PYCPARSER).git
 PYCPARSER_UTILS := $(PYCPARSER)/utils
 PYCPARSER_FAKE_LIBC := $(PYCPARSER_UTILS)/$(FAKE_LIBC)
+PYINSTALLER := pyinstaller
 REQUIREMENTS := requirements.txt
 VENV := .venv
 VENV_PIP := $(VENV)/bin/pip
@@ -15,6 +25,7 @@ setup:
 	$(PYTHON) -m venv "$(VENV)"
 	@$(VENV_PIP) install -r $(REQUIREMENTS)
 	@$(MAKE) fake_libc
+	@$(MAKE) install
 
 fake_libc:
 	@echo "fetch $(PYCPARSER) repository"
@@ -23,8 +34,15 @@ fake_libc:
 	cd $(PYCPARSER) ; $(GIT) checkout
 	cp -r "$(PYCPARSER_FAKE_LIBC)" "$(FAKE_LIBC)"
 	rm -rf "$(PYCPARSER)"
+
+install:
+	$(PYINSTALLER) porydex.py
+	ln -s $(shell $(REALPATH) dist/porydex/porydex) "$(VENV)/bin/porydex"
 	
 clean:
 	rm -rf "$(VENV)"
 	rm -rf "$(PYCPARSER)"
+	rm -rf "$(FAKE_LIBC)"
+	rm -rf "$(BUILD)"
+	rm -rf "$(DIST)"
 

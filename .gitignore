@@ -14,5 +14,10 @@ tst/
 out/
 data/
 
+# pyinstaller
+build/
+dist/
+*.spec
+
 # Mac OSX garbage
 .DS_Store
