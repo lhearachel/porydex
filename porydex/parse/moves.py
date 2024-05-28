@@ -3,7 +3,7 @@ import pathlib
 from pycparser.c_ast import NamedInitializer
 
 from porydex.model import DAMAGE_TYPE, DAMAGE_CATEGORY, CONTEST_CATEGORY
-from porydex.parse import load_data, extract_int, extract_u8_str
+from porydex.parse import extract_compound_str, load_data, extract_int, extract_u8_str
 
 FLAGS_EXPANSION_TO_SHOWDOWN = {
     'bitingMove': 'bite',
@@ -42,7 +42,7 @@ def parse_move(struct_init: NamedInitializer) -> dict:
 
         match field_name:
             case 'name':
-                move['name'] = extract_u8_str(field_expr.expr)
+                move['name'] = extract_compound_str(field_expr)
             case 'power':
                 move['power'] = extract_int(field_expr)
             case 'type':

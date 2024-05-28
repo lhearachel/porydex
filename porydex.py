@@ -16,23 +16,29 @@ def main():
     argp.add_argument('-e', '--expansion', action='store',
                       help='path to the root of your pokeemerald-expansion repository',
                       type=pathlib.Path,
-                      required=True)
+                      required=False)
     argp.add_argument('-o', '--out-dir', action='store',
                       help='path to directory where output files will be dumped',
                       type=pathlib.Path,
-                      default=pathlib.Path('tst'))
+                      default=pathlib.Path('out'))
     argp.add_argument('--reload', action='store_true',
                       help='if specified, flush the cache of parsed data and reload from expansion')
 
     args = argp.parse_args()
     if args.reload:
+        if not args.expansion:
+            argp.error('--reload requires --expansion')
+
         for f in PICKLE_PATH.glob('*'):
             os.remove(f)
 
+    if not PICKLE_PATH.exists():
+        if not args.expansion:
+            argp.error('no cached data; --expansion is required on first run!')
+        PICKLE_PATH.mkdir(parents=True, exist_ok=True)
+
     if not args.out_dir.exists():
         args.out_dir.mkdir(parents=True, exist_ok=True)
-    if not PICKLE_PATH.exists():
-        PICKLE_PATH.mkdir(parents=True, exist_ok=True)
 
     expansion = args.expansion
     expansion_data = expansion / 'src' / 'data'

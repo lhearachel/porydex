@@ -6,10 +6,13 @@ import typing
 from pycparser import parse_file
 from pycparser.c_ast import (
     BinaryOp,
+    Cast,
+    CompoundLiteral,
+    Decl,
     ExprList,
     FuncCall,
-    Decl,
     ID,
+    InitList,
     TernaryOp,
     UnaryOp,
 )
@@ -49,7 +52,7 @@ def load_data(fname: pathlib.Path,
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='gcc', # TODO: support clang?
+            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,
@@ -73,7 +76,7 @@ def load_table_set(fname: pathlib.Path,
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='gcc', # TODO: support clang?
+            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,
@@ -91,7 +94,7 @@ def load_table_set(fname: pathlib.Path,
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='gcc', # TODO: support clang?
+            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,
@@ -129,13 +132,32 @@ def process_ternary(expr: TernaryOp) -> typing.Any:
     else:
         return expr.iffalse
 
-def extract_compound_str(args: ExprList) -> str:
-    if isinstance(args.exprs[0], FuncCall):
-        return extract_compound_str(args.exprs[0].args)
-    return args.exprs[-1].value.replace('\\n', ' ')[1:-1]
+def extract_compound_str(expr) -> str:
+    # Depending on the compiler used for preprocessing, this could be expanded
+    # to a number of types.
+
+    # arm-none-eabi-gcc expands the macro to Cast(FuncCall(ExprList([Constant])))
+    if isinstance(expr, Cast):
+        return expr.expr.args.exprs[0].value.replace('\\n', ' ')[1:-1]
+
+    # clang expands the macro to CompoundLiteral(InitList([Constant]))
+    if isinstance(expr, CompoundLiteral):
+        return expr.init.exprs[0].value.replace('\\n', ' ')[1:-1]
+
+    if isinstance(expr.exprs[0], FuncCall):
+        return extract_compound_str(expr.exprs[0].args)
+    return expr.exprs[-1].value.replace('\\n', ' ')[1:-1]
 
 def extract_u8_str(expr) -> str:
-    return expr.args.exprs[-1].value.replace('\\n', ' ')[1:-1]
+    # Depending on the compiler used for preprocessing, this could be expanded
+    # to a number of types.
+
+    # arm-none-eabi-gcc and gcc expand the macro to FuncCall(ExprList([Constant]))
+    if isinstance(expr, FuncCall):
+        return expr.args.exprs[-1].value.replace('\\n', ' ')[1:-1]
+
+    # clang expands the macro to InitList([Constant])
+    return expr.exprs[0].value.replace('\\n', ' ')[1:-1]
 
 def extract_int(expr) -> int:
     if isinstance(expr, TernaryOp):

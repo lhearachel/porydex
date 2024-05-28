@@ -43,7 +43,7 @@ def load_items() -> ExprList:
         r'-include', r'constants/items.h',
     ])
 
-def load_all_species_data() -> (ExprList, typing.List[str], typing.List[str], typing.Dict[str, typing.List[int]]):
+def load_all_species_data() -> typing.Tuple[ExprList, typing.List[str], typing.List[str], typing.Dict[str, typing.Dict[int, str]]]:
     return (
         load_species(),
         all_ability_names(load_abilities()),

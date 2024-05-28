@@ -1,6 +1,18 @@
+# Python virtual environment and cache
 .venv/
-tst/
 __pycache__/
+
+# libc overrides for the preprocessor
 pycparser/
 fake_libc_include/
+
+# Cache output
 .pickled/
+
+# Output / testing directories
+tst/
+out/
+data/
+
+# Mac OSX garbage
+.DS_Store
