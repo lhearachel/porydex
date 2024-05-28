@@ -151,11 +151,10 @@ def parse_mon(struct_init: NamedInitializer,
     return mon
 
 def parse_species(fname: pathlib.Path,
-                  expansion: pathlib.Path,
                   abilities: typing.List[str],
                   items: typing.List[str],
                   forms: typing.Dict[str, typing.Dict[int, str]]) -> dict:
-    species_data = load_data(fname, expansion)
+    species_data = load_data(fname)
 
     # first pass: raw AST parse, build evolutions table
     all_species = {}

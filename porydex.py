@@ -3,6 +3,8 @@ import json
 import pathlib
 import os
 
+import porydex.config
+
 from porydex.common import PICKLE_PATH
 from porydex.parse.abilities import parse_abilities
 from porydex.parse.form_tables import parse_form_tables
@@ -10,55 +12,66 @@ from porydex.parse.items import parse_items
 from porydex.parse.moves import parse_moves
 from porydex.parse.species import parse_species
 
-def main():
-    argp = argparse.ArgumentParser(prog='porydex',
-                                description='generate data exports from pokeemerald-expansion for showdown dex')
-    argp.add_argument('-e', '--expansion', action='store',
-                      help='path to the root of your pokeemerald-expansion repository',
-                      type=pathlib.Path,
-                      required=False)
-    argp.add_argument('-o', '--out-dir', action='store',
-                      help='path to directory where output files will be dumped',
-                      type=pathlib.Path,
-                      default=pathlib.Path('out'))
-    argp.add_argument('--reload', action='store_true',
-                      help='if specified, flush the cache of parsed data and reload from expansion')
+def config(args):
+    if args.expansion:
+        assert args.expansion.resolve().exists(), f'specified expansion directory {args.expansion} does not exist'
+        porydex.config.expansion = args.expansion.resolve()
 
-    args = argp.parse_args()
+    if args.compiler:
+        porydex.config.compiler = args.compiler
+
+    if args.output:
+        porydex.config.output = args.output.resolve()
+
+def extract(args):
     if args.reload:
-        if not args.expansion:
-            argp.error('--reload requires --expansion')
-
         for f in PICKLE_PATH.glob('*'):
             os.remove(f)
 
-    if not PICKLE_PATH.exists():
-        if not args.expansion:
-            argp.error('no cached data; --expansion is required on first run!')
-        PICKLE_PATH.mkdir(parents=True, exist_ok=True)
+    [path.mkdir(parents=True) if not path.exists() else () for path in (PICKLE_PATH, args.out_dir)]
 
-    if not args.out_dir.exists():
-        args.out_dir.mkdir(parents=True, exist_ok=True)
-
-    expansion = args.expansion
-    expansion_data = expansion / 'src' / 'data'
-    moves = parse_moves(expansion_data / 'moves_info.h', expansion)
-    abilities = parse_abilities(expansion_data / 'abilities.h', expansion)
-    items = parse_items(expansion_data / 'items.h', expansion)
-    forms = parse_form_tables(expansion_data / 'pokemon' / 'form_species_tables.h', expansion)
+    expansion_data = porydex.config.expansion / 'src' / 'data'
+    moves = parse_moves(expansion_data / 'moves_info.h')
+    abilities = parse_abilities(expansion_data / 'abilities.h')
+    items = parse_items(expansion_data / 'items.h')
+    forms = parse_form_tables(expansion_data / 'pokemon' / 'form_species_tables.h')
     species = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
-        expansion,
         abilities,
         items,
         forms
     )
 
-    with open(args.out_dir / 'moves.json', 'w', encoding='utf-8') as outf:
+    with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
         json.dump(moves, outf, indent=4)
 
-    with open(args.out_dir / 'species.json', 'w', encoding='utf-8') as outf:
+    with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
         json.dump(species, outf, indent=4)
+
+def main():
+    argp = argparse.ArgumentParser(prog='porydex',
+                                   description='generate data exports from pokeemerald-expansion for showdown dex')
+    subp = argp.add_subparsers(required=True)
+
+    config_p = subp.add_parser('config', help='setup configuration options for porydex')
+    config_p.add_argument('-e', '--expansion', action='store',
+                          help='path to the root of your pokeemerald-expansion repository; default: ../pokeemerald-expansion',
+                          type=pathlib.Path)
+    config_p.add_argument('-c', '--compiler', action='store',
+                          help='command for or path to the compiler to be used for pre-processing; default: gcc',
+                          type=pathlib.Path)
+    config_p.add_argument('-o', '--output', action='store',
+                          help='path to output directory for extracted data files; default: ./out',
+                          type=pathlib.Path)
+    config_p.set_defaults(func=config)
+
+    extract_p = subp.add_parser('extract', help='run data extraction')
+    extract_p.add_argument('--reload', action='store_true',
+                           help='if specified, flush the cache of parsed data and reload from expansion')
+    extract_p.set_defaults(func=extract)
+
+    args = argp.parse_args()
+    args.func(args)
 
 if __name__ == '__main__':
     main()

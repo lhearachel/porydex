@@ -26,8 +26,8 @@ def all_ability_names(abilities_data) -> typing.List[str]:
 
     return l_abilities
 
-def parse_abilities(fname: pathlib.Path, expansion: pathlib.Path) -> typing.List[str]:
-    abilities_data = load_data(fname, expansion, extra_includes=[
+def parse_abilities(fname: pathlib.Path) -> typing.List[str]:
+    abilities_data = load_data(fname, extra_includes=[
         r'-include', r'constants/abilities.h',
     ])
 

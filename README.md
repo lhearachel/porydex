@@ -23,32 +23,57 @@ source .venv/bin/activate
 ## Usage
 
 ```txt
-usage: porydex [-h] [-e EXPANSION] [-o OUT_DIR] [--reload]
+usage: porydex [-h] {config,extract} ...
 
 generate data exports from pokeemerald-expansion for showdown dex
+
+positional arguments:
+  {config,extract}
+    config          setup configuration options for porydex
+    extract         run data extraction
+
+options:
+  -h, --help        show this help message and exit
+```
+
+### `config`
+
+`porydex` is configurable according to your system. By default, it assumes the
+following options:
+
+* Your expansion repository is located at `../pokeemerald-expansion`
+* Your compiler is invoked by the command `gcc`
+* Your desired directory for output files is `./out`
+
+If either of these are not true, use the `config` command to update them to
+the proper values:
+
+```text
+usage: porydex config [-h] [-e EXPANSION] [-c COMPILER]
 
 options:
   -h, --help            show this help message and exit
   -e EXPANSION, --expansion EXPANSION
-                        path to the root of your pokeemerald-expansion repository
-  -o OUT_DIR, --out-dir OUT_DIR
-                        path to directory where output files will be dumped
-  --reload              if specified, flush the cache of parsed data and reload from expansion
+                        path to the root of your pokeemerald-expansion
+                        repository; default: ../pokeemerald-expansion
+  -c COMPILER, --compiler COMPILER
+                        command for or path to the compiler to be used for
+                        pre-processing; default: gcc
+  -o OUTPUT, --output OUTPUT
+                        path to output directory for extracted data files;
+                        default: ./out
 ```
 
-On first run, `porydex` requires the `--expansion` option, which points to your
-fork of `pokeemerald-expansion` on your local file system:
+### `extract`
+
+Extraction with `porydex` is easy; just run:
 
 ```bash
-python porydex.py --expansion <path/to/expansion/directory>
+porydex extract
 ```
 
-By default, output files are stored in the directory `out`; this can be changed
-as a program option:
-
-```bash
-python porydex.py --expansion <path/to/expansion/directory> --out-dir <path/to/output/directory>
-```
+And that's it! Your output data files will be located in the configured output
+directory.
 
 `porydex` maintains a cache of pre-processed files that it parses from your
 repository. If you need to reload this cache -- e.g., if you make a change to
@@ -56,7 +81,7 @@ any of the files that it reads -- then you will need to force it to reload the
 cache:
 
 ```bash
-python porydex.py --expansion <path/to/expansion/directory> --reload
+porydex extract --reload
 ```
 
 ## Current Features and Backlog
@@ -65,6 +90,7 @@ python porydex.py --expansion <path/to/expansion/directory> --reload
 
 * Move data
 * Species data (including forms, excluding evolutions)
+* Configurable expansion target and compiler support
 
 **In Progress:**
 

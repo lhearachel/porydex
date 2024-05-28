@@ -27,8 +27,8 @@ def all_item_names(items_data) -> typing.List[str]:
 
     return l_items
 
-def parse_items(fname: pathlib.Path, expansion: pathlib.Path) -> typing.List[str]:
-    items_data = load_data(fname, expansion, extra_includes=[
+def parse_items(fname: pathlib.Path) -> typing.List[str]:
+    items_data = load_data(fname, extra_includes=[
         r'-include', r'constants/items.h',
     ])
 

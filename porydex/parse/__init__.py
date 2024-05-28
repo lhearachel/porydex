@@ -3,6 +3,8 @@ import pickle
 import re
 import typing
 
+import porydex.config
+
 from pycparser import parse_file
 from pycparser.c_ast import (
     BinaryOp,
@@ -12,7 +14,6 @@ from pycparser.c_ast import (
     ExprList,
     FuncCall,
     ID,
-    InitList,
     TernaryOp,
     UnaryOp,
 )
@@ -44,15 +45,14 @@ def _dump_pickled(fname: pathlib.Path, exts: list):
         pickle.dump(exts, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 def load_data(fname: pathlib.Path,
-              expansion: pathlib.Path,
               extra_includes: typing.List[str]=[]) -> ExprList:
     exts = _load_pickled(fname)
     if not exts:
-        include_dirs = [f'-I{expansion / dir}' for dir in EXPANSION_INCLUDES]
+        include_dirs = [f'-I{porydex.config.expansion / dir}' for dir in EXPANSION_INCLUDES]
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
+            cpp_path=porydex.config.compiler,
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,
@@ -66,17 +66,16 @@ def load_data(fname: pathlib.Path,
     return exts[-1].init.exprs
 
 def load_table_set(fname: pathlib.Path,
-                   expansion: pathlib.Path,
                    extra_includes: typing.List[str]=[],
                    minimal_preprocess: bool=False) -> typing.List[Decl]:
-    include_dirs = [f'-I{expansion / dir}' for dir in EXPANSION_INCLUDES]
+    include_dirs = [f'-I{porydex.config.expansion / dir}' for dir in EXPANSION_INCLUDES]
 
     if minimal_preprocess:
         # do NOT dump this version
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
+            cpp_path=porydex.config.compiler,
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,
@@ -94,7 +93,7 @@ def load_table_set(fname: pathlib.Path,
         exts = parse_file(
             fname,
             use_cpp=True,
-            cpp_path='arm-none-eabi-gcc', # TODO: support clang?
+            cpp_path=porydex.config.compiler,
             cpp_args=[
                 *PREPROCESS_LIBC,
                 *include_dirs,

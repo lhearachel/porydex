@@ -63,9 +63,9 @@ def all_table_decls(minimal: typing.List[Decl], full: typing.List[Decl]) -> typi
         {}
     )
 
-def parse_form_tables(fname: pathlib.Path, expansion: pathlib.Path):
+def parse_form_tables(fname: pathlib.Path):
     return all_table_decls(
-        load_table_set(fname, expansion, minimal_preprocess=True),
-        load_table_set(fname, expansion, minimal_preprocess=False),
+        load_table_set(fname, minimal_preprocess=True),
+        load_table_set(fname, minimal_preprocess=False),
     )
 

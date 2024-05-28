@@ -95,8 +95,8 @@ def parse_move(struct_init: NamedInitializer) -> dict:
 
     return move
 
-def parse_moves(fname: pathlib.Path, expansion: pathlib.Path) -> dict:
-    moves_data = load_data(fname, expansion, extra_includes=[
+def parse_moves(fname: pathlib.Path) -> dict:
+    moves_data = load_data(fname, extra_includes=[
         r'-include', r'constants/battle.h',
         r'-include', r'constants/moves.h',
     ])
