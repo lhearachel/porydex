@@ -1,9 +1,9 @@
 import pathlib
 
-from pycparser.c_ast import NamedInitializer
+from pycparser.c_ast import ExprList, NamedInitializer
 
 from porydex.model import DAMAGE_TYPE, DAMAGE_CATEGORY, CONTEST_CATEGORY
-from porydex.parse import extract_compound_str, load_data, extract_int, extract_u8_str
+from porydex.parse import extract_compound_str, load_truncated, extract_int
 
 FLAGS_EXPANSION_TO_SHOWDOWN = {
     'bitingMove': 'bite',
@@ -95,12 +95,7 @@ def parse_move(struct_init: NamedInitializer) -> dict:
 
     return move
 
-def parse_moves(fname: pathlib.Path) -> dict:
-    moves_data = load_data(fname, extra_includes=[
-        r'-include', r'constants/battle.h',
-        r'-include', r'constants/moves.h',
-    ])
-
+def parse_moves_data(moves_data: ExprList) -> dict:
     all_moves = {}
     for move_init in moves_data:
         try:
@@ -113,4 +108,12 @@ def parse_moves(fname: pathlib.Path) -> dict:
             raise err
 
     return all_moves
+
+def parse_moves(fname: pathlib.Path) -> dict:
+    moves_data = load_truncated(fname, extra_includes=[
+        r'-include', r'constants/battle.h',
+        r'-include', r'constants/moves.h',
+    ])
+
+    return parse_moves_data(moves_data)
 

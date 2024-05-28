@@ -63,7 +63,11 @@ def load_data(fname: pathlib.Path,
         ).ext
         _dump_pickled(fname, exts)
 
-    return exts[-1].init.exprs
+    return exts
+
+def load_truncated(fname: pathlib.Path,
+                   extra_includes: typing.List[str]=[]) -> ExprList:
+    return load_data(fname, extra_includes)[-1].init.exprs
 
 def load_table_set(fname: pathlib.Path,
                    extra_includes: typing.List[str]=[],

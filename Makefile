@@ -22,10 +22,21 @@ VENV := .venv
 VENV_PIP := $(VENV)/bin/pip
 
 setup:
-	$(PYTHON) -m venv "$(VENV)"
-	@$(VENV_PIP) install -r $(REQUIREMENTS)
+	@$(MAKE) venv
+	@$(MAKE) dependencies
 	@$(MAKE) fake_libc
 	@$(MAKE) install
+	@$(MAKE) link
+
+venv:
+	$(PYTHON) -m venv "$(VENV)"
+
+dependencies:
+	@$(MAKE) pip_requirements
+	@$(MAKE) fake_libc
+
+pip_requirements:
+	@$(VENV_PIP) install -r $(REQUIREMENTS)
 
 fake_libc:
 	@echo "fetch $(PYCPARSER) repository"
@@ -37,6 +48,8 @@ fake_libc:
 
 install:
 	$(PYINSTALLER) porydex.py
+
+link:
 	ln -s $(shell $(REALPATH) dist/porydex/porydex) "$(VENV)/bin/porydex"
 	
 clean:

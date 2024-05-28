@@ -9,6 +9,7 @@ from porydex.common import PICKLE_PATH
 from porydex.parse.abilities import parse_abilities
 from porydex.parse.form_tables import parse_form_tables
 from porydex.parse.items import parse_items
+from porydex.parse.maps import parse_maps
 from porydex.parse.moves import parse_moves
 from porydex.parse.species import parse_species
 
@@ -28,18 +29,23 @@ def extract(args):
         for f in PICKLE_PATH.glob('*'):
             os.remove(f)
 
-    [path.mkdir(parents=True) if not path.exists() else () for path in (PICKLE_PATH, args.out_dir)]
+    [path.mkdir(parents=True) if not path.exists() else () for path in (PICKLE_PATH, porydex.config.output)]
 
     expansion_data = porydex.config.expansion / 'src' / 'data'
     moves = parse_moves(expansion_data / 'moves_info.h')
+
+    move_names = [move['name'] for move in sorted(moves.values(), key=lambda m: m['num'])]
     abilities = parse_abilities(expansion_data / 'abilities.h')
     items = parse_items(expansion_data / 'items.h')
     forms = parse_form_tables(expansion_data / 'pokemon' / 'form_species_tables.h')
+    map_sections = parse_maps(expansion_data / 'region_map' / 'region_map_entries.h')
     species = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
         abilities,
         items,
-        forms
+        move_names,
+        forms,
+        map_sections,
     )
 
     with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:

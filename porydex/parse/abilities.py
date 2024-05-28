@@ -3,7 +3,7 @@ import typing
 
 from pycparser.c_ast import NamedInitializer
 
-from porydex.parse import load_data, extract_int, extract_u8_str
+from porydex.parse import load_truncated, extract_int, extract_u8_str
 
 def get_ability_name(struct_init: NamedInitializer) -> str:
     for field_init in struct_init.expr.exprs:
@@ -27,7 +27,7 @@ def all_ability_names(abilities_data) -> typing.List[str]:
     return l_abilities
 
 def parse_abilities(fname: pathlib.Path) -> typing.List[str]:
-    abilities_data = load_data(fname, extra_includes=[
+    abilities_data = load_truncated(fname, extra_includes=[
         r'-include', r'constants/abilities.h',
     ])
 

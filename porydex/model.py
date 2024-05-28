@@ -1,4 +1,5 @@
 import dataclasses
+import enum
 import typing
 
 DAMAGE_TYPE: typing.List[str] = [
@@ -70,6 +71,58 @@ BODY_COLOR: typing.List[str] = [
     'Pink',
 ]
 
+class ExpansionEvoMethod(enum.Enum):
+    FRIENDSHIP = 1
+    FRIENDSHIP_DAY = enum.auto()
+    FRIENDSHIP_NIGHT = enum.auto()
+    LEVEL = enum.auto()
+    TRADE = enum.auto()
+    TRADE_ITEM = enum.auto()
+    ITEM = enum.auto()
+    LEVEL_ATK_GT_DEF = enum.auto()
+    LEVEL_ATK_EQ_DEF = enum.auto()
+    LEVEL_ATK_LT_DEF = enum.auto()
+    LEVEL_SILCOON = enum.auto()
+    LEVEL_CASCOON = enum.auto()
+    LEVEL_NINJASK = enum.auto()
+    LEVEL_SHEDINJA = enum.auto()
+    BEAUTY = enum.auto()
+    LEVEL_FEMALE = enum.auto()
+    LEVEL_MALE = enum.auto()
+    LEVEL_NIGHT = enum.auto()
+    LEVEL_DAY = enum.auto()
+    LEVEL_DUSK = enum.auto()
+    ITEM_HOLD_DAY = enum.auto()
+    ITEM_HOLD_NIGHT = enum.auto()
+    MOVE = enum.auto()
+    FRIENDSHIP_MOVE_TYPE = enum.auto()
+    MAPSEC = enum.auto()
+    ITEM_MALE = enum.auto()
+    ITEM_FEMALE = enum.auto()
+    LEVEL_RAIN = enum.auto()
+    SPECIFIC_MON_IN_PARTY = enum.auto()
+    LEVEL_DARK_TYPE_MON_IN_PARTY = enum.auto()
+    TRADE_SPECIFIC_MON = enum.auto()
+    SPECIFIC_MAP = enum.auto()
+    LEVEL_NATURE_AMPED = enum.auto()
+    LEVEL_NATURE_LOW_KEY = enum.auto()
+    CRITICAL_HITS = enum.auto()
+    SCRIPT_TRIGGER_DMG = enum.auto()
+    DARK_SCROLL = enum.auto()
+    WATER_SCROLL = enum.auto()
+    ITEM_NIGHT = enum.auto()
+    ITEM_DAY = enum.auto()
+    ITEM_HOLD = enum.auto()
+    LEVEL_FOG = enum.auto()
+    MOVE_TWO_SEGMENT = enum.auto()
+    MOVE_THREE_SEGMENT = enum.auto()
+    LEVEL_FAMILY_OF_THREE = enum.auto()
+    LEVEL_FAMILY_OF_FOUR = enum.auto()
+    USE_MOVE_TWENTY_TIMES = enum.auto()
+    RECOIL_DAMAGE_MALE = enum.auto()
+    RECOIL_DAMAGE_FEMALE = enum.auto()
+    ITEM_COUNT_999 = enum.auto()
+
 @dataclasses.dataclass
 class EvoMethod():
     type: str
@@ -102,13 +155,13 @@ EVO_METHOD: typing.List[EvoMethod] = [
     EvoMethod('levelHold', 'at night'),
     EvoMethod('levelMove', ''),
     EvoMethod('levelMove', 'and two levels of Affection'), # Sylveon (param is "a Fairy-type move")
-    EvoMethod('level', 'in'), # Magnezone, etc. (param is the name of the zone)
+    EvoMethod('levelMap', 'in'), # Magnezone, etc. (param is the name of the zone)
     EvoMethod('useItem', 'if Male gender'),
     EvoMethod('useItem', 'if Female gender'),
     EvoMethod('level', 'in rainy weather'),
     EvoMethod('levelMove', 'in the party'), # Mantine (param is Remoraid)
     EvoMethod('levelMove', 'in the party'), # Pangoro (param is "a Dark-type mon")
-    EvoMethod('tradeSpecies', 'for'), # Accelgor, Escavalier (param is Karrablast, Shelmet, respectively)
+    EvoMethod('tradeSpecies', 'with a'), # Accelgor, Escavalier (param is Karrablast, Shelmet, respectively)
     EvoMethod('level', 'in'), # special one used for Leafeon and Glaceon, for some reason
     EvoMethod('level', 'if Amped Nature'),
     EvoMethod('level', 'if Low-Key Nature'),
@@ -127,5 +180,6 @@ EVO_METHOD: typing.List[EvoMethod] = [
     EvoMethod('useMove', '20 times'), # Wyrdeer, Annihilape
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-M
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-F
+    EvoMethod('level', 'with 999 coins in the bag'), # Gholdengo
 ]
 
