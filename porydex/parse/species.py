@@ -299,7 +299,7 @@ def parse_species_data(species_data: ExprList,
                        forms: typing.Dict[str, typing.Dict[int, str]],
                        map_sections: typing.List[str],
                        level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
-                       teachable_learnsets: typing.Dict[str, typing.List[str]]) -> dict:
+                       teachable_learnsets: typing.Dict[str, typing.Dict[str, typing.List[str]]]) -> dict:
     # first pass: raw AST parse, build evolutions table
     all_species_data = {}
     for species_init in species_data:
@@ -333,7 +333,7 @@ def parse_species(fname: pathlib.Path,
                   forms: typing.Dict[str, typing.Dict[int, str]],
                   map_sections: typing.List[str],
                   level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
-                  teachable_learnsets: typing.Dict[str, typing.List[str]]) -> dict:
+                  teachable_learnsets: typing.Dict[str, typing.Dict[str, typing.List[str]]]) -> dict:
     return parse_species_data(
         load_truncated(fname),
         abilities,

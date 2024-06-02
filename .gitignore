@@ -1,3 +1,6 @@
+# Config file
+porydex.ini
+
 # Python virtual environment and cache
 .venv/
 __pycache__/

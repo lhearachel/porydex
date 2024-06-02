@@ -45,11 +45,11 @@ following options:
 * Your compiler is invoked by the command `gcc`
 * Your desired directory for output files is `./out`
 
-If either of these are not true, use the `config` command to update them to
+If any of these are not true, use the `config set` command to update them to
 the proper values:
 
 ```text
-usage: porydex config [-h] [-e EXPANSION] [-c COMPILER]
+usage: porydex config set [-h] [-e EXPANSION] [-c COMPILER]
 
 options:
   -h, --help            show this help message and exit
@@ -63,6 +63,10 @@ options:
                         path to output directory for extracted data files;
                         default: ./out
 ```
+
+Configuration is persisted in `porydex.ini`; to view configured options, either
+view `porydex.ini` via your favorite text editor, or use the `config show`
+command.
 
 ### `extract`
 
@@ -89,7 +93,7 @@ porydex extract --reload
 **Supported:**
 
 * Move data
-* Species data (including forms, evolutions, and learnable moves)
+* Species data (including forms, evolutions, and learnable movessets)
 * Configurable expansion target and compiler support
 
 **In Progress:**

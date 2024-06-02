@@ -14,7 +14,13 @@ from porydex.parse.maps import parse_maps
 from porydex.parse.moves import parse_moves
 from porydex.parse.species import parse_species
 
-def config(args):
+def config_show(_):
+    porydex.config.load()
+    print(f'compiler command:  {str(porydex.config.compiler)}')
+    print(f'path to expansion: {str(porydex.config.expansion)}')
+    print(f'output directory:  {str(porydex.config.output)}')
+
+def config_set(args):
     if args.expansion:
         assert args.expansion.resolve().exists(), f'specified expansion directory {args.expansion} does not exist'
         porydex.config.expansion = args.expansion.resolve()
@@ -25,10 +31,14 @@ def config(args):
     if args.output:
         porydex.config.output = args.output.resolve()
 
+    porydex.config.save()
+
 def extract(args):
     if args.reload:
         for f in PICKLE_PATH.glob('*'):
             os.remove(f)
+
+    porydex.config.load()
 
     [path.mkdir(parents=True) if not path.exists() else () for path in (PICKLE_PATH, porydex.config.output)]
 
@@ -66,17 +76,23 @@ def main():
                                    description='generate data exports from pokeemerald-expansion for showdown dex')
     subp = argp.add_subparsers(required=True)
 
-    config_p = subp.add_parser('config', help='setup configuration options for porydex')
-    config_p.add_argument('-e', '--expansion', action='store',
-                          help='path to the root of your pokeemerald-expansion repository; default: ../pokeemerald-expansion',
-                          type=pathlib.Path)
-    config_p.add_argument('-c', '--compiler', action='store',
-                          help='command for or path to the compiler to be used for pre-processing; default: gcc',
-                          type=pathlib.Path)
-    config_p.add_argument('-o', '--output', action='store',
-                          help='path to output directory for extracted data files; default: ./out',
-                          type=pathlib.Path)
-    config_p.set_defaults(func=config)
+    config_p = subp.add_parser('config', help='configuration options for porydex')
+    config_subp = config_p.add_subparsers(required=True)
+
+    config_show_p = config_subp.add_parser('show', help='show configured options for porydex')
+    config_show_p.set_defaults(func=config_show)
+
+    config_set_p = config_subp.add_parser('set', help='set configurable options for porydex')
+    config_set_p.add_argument('-e', '--expansion', action='store',
+                              help='path to the root of your pokeemerald-expansion repository; default: ../pokeemerald-expansion',
+                              type=pathlib.Path)
+    config_set_p.add_argument('-c', '--compiler', action='store',
+                              help='command for or path to the compiler to be used for pre-processing; default: gcc',
+                              type=pathlib.Path)
+    config_set_p.add_argument('-o', '--output', action='store',
+                              help='path to output directory for extracted data files; default: ./out',
+                              type=pathlib.Path)
+    config_set_p.set_defaults(func=config_set)
 
     extract_p = subp.add_parser('extract', help='run data extraction')
     extract_p.add_argument('--reload', action='store_true',
