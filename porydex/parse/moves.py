@@ -2,7 +2,7 @@ import pathlib
 
 from pycparser.c_ast import ExprList, NamedInitializer
 
-from porydex.common import move_name_key
+from porydex.common import name_key
 from porydex.model import DAMAGE_TYPE, DAMAGE_CATEGORY, CONTEST_CATEGORY
 from porydex.parse import extract_compound_str, load_truncated, extract_int
 
@@ -101,7 +101,7 @@ def parse_moves_data(moves_data: ExprList) -> dict:
     for move_init in moves_data:
         try:
             move = parse_move(move_init)
-            key = move_name_key(move['name'])
+            key = name_key(move['name'])
             all_moves[key] = move
         except Exception as err:
             print('error parsing move')

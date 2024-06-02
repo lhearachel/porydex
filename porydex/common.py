@@ -1,5 +1,6 @@
 import operator
 import pathlib
+import re
 
 PICKLE_PATH = pathlib.Path('./.pickled')
 
@@ -60,6 +61,8 @@ BINARY_BOOL_OPS = {
     '/': operator.itruediv,
 }
 
-def move_name_key(name: str) -> str:
-    return ''.join(name.split()).lower()
+SPLIT_CHARS = re.compile(r"\W+")
+
+def name_key(name: str) -> str:
+    return ''.join(SPLIT_CHARS.split(name)).lower()
 

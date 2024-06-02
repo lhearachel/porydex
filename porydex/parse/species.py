@@ -1,9 +1,9 @@
 from collections import defaultdict
 import pathlib
-import re
 
 from pycparser.c_ast import Constant, ExprList, NamedInitializer
 
+from porydex.common import name_key
 from porydex.model import ExpansionEvoMethod, DAMAGE_TYPE, EGG_GROUP, BODY_COLOR, EVO_METHOD
 from porydex.parse import load_truncated, extract_id, extract_int, extract_u8_str
 
@@ -286,11 +286,6 @@ def zip_learnsets(lvlup_learnset: dict[str, list[int]],
 
     return full_learnset
 
-SPLIT_CHARS = re.compile(r"\W+")
-
-def species_name_key(name: str) -> str:
-    return ''.join(SPLIT_CHARS.split(name)).lower()
-
 def parse_species_data(species_data: ExprList,
                        abilities: list[str],
                        items: list[str],
@@ -321,7 +316,7 @@ def parse_species_data(species_data: ExprList,
     for mon, _ in all_species_data.values():
         if 'name' not in mon or not mon['name']: # egg has no name; don't try
             continue
-        final_species[species_name_key(mon['name'])] = mon
+        final_species[name_key(mon['name'])] = mon
 
     return final_species
 

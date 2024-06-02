@@ -6,7 +6,7 @@ import porydex.config
 
 from pycparser.c_ast import Decl
 
-from porydex.common import move_name_key
+from porydex.common import name_key
 from porydex.parse import extract_int, load_data_and_start
 
 def parse_level_up_learnset(decl: Decl,
@@ -19,7 +19,7 @@ def parse_level_up_learnset(decl: Decl,
             break
 
         level = extract_int(entry.exprs[1].expr)
-        learnset[move_name_key(move_names[move])].append(level)
+        learnset[name_key(move_names[move])].append(level)
 
     return learnset
 
@@ -32,7 +32,7 @@ def parse_teachable_learnset(decl: Decl,
         if move == 0xFFFF:
             break
 
-        learnset.append(move_name_key(move_names[move]))
+        learnset.append(name_key(move_names[move]))
 
     return learnset
 
