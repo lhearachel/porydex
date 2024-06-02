@@ -1,5 +1,6 @@
 import configparser
 import pathlib
+import os
 
 compiler: pathlib.Path = pathlib.Path('gcc')
 expansion: pathlib.Path = pathlib.Path('../pokeemerald-expansion').resolve()
@@ -22,12 +23,18 @@ def load():
     global expansion
     global output
 
-    _CONFIG_FILE.touch(exist_ok=True)
+    # if no config exists, ensure it exists with defaults for the next load
+    if not _CONFIG_FILE.exists():
+        _CONFIG_FILE.touch(exist_ok=True)
+        save()
+    else:
+        config = configparser.ConfigParser()
+        config.read(_CONFIG_FILE)
 
-    config = configparser.ConfigParser()
-    config.read(_CONFIG_FILE)
+        compiler = pathlib.Path(config['default']['compiler'])
+        expansion = pathlib.Path(config['default']['expansion'])
+        output = pathlib.Path(config['default']['output'])
 
-    compiler = pathlib.Path(config['default']['compiler'])
-    expansion = pathlib.Path(config['default']['expansion'])
-    output = pathlib.Path(config['default']['output'])
+def clear():
+    os.remove(_CONFIG_FILE)
 

@@ -33,6 +33,9 @@ def config_set(args):
 
     porydex.config.save()
 
+def config_clear(_):
+    porydex.config.clear()
+
 def extract(args):
     if args.reload:
         for f in PICKLE_PATH.glob('*'):
@@ -93,6 +96,9 @@ def main():
                               help='path to output directory for extracted data files; default: ./out',
                               type=pathlib.Path)
     config_set_p.set_defaults(func=config_set)
+
+    config_clear_p = config_subp.add_parser('clear', help='clear configured options')
+    config_clear_p.set_defaults(func=config_clear)
 
     extract_p = subp.add_parser('extract', help='run data extraction')
     extract_p.add_argument('--reload', action='store_true',
