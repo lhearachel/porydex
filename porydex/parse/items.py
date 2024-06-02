@@ -1,5 +1,4 @@
 import pathlib
-import typing
 
 from pycparser.c_ast import ID, NamedInitializer
 
@@ -13,7 +12,7 @@ def get_item_name(struct_init: NamedInitializer) -> str:
     print(struct_init.show())
     raise ValueError('no name for item structure')
 
-def all_item_names(items_data) -> typing.List[str]:
+def all_item_names(items_data) -> list[str]:
     d_items = {}
     for item in items_data:
         if isinstance(item.name[0], ID):
@@ -27,7 +26,7 @@ def all_item_names(items_data) -> typing.List[str]:
 
     return l_items
 
-def parse_items(fname: pathlib.Path) -> typing.List[str]:
+def parse_items(fname: pathlib.Path) -> list[str]:
     items_data = load_truncated(fname, extra_includes=[
         r'-include', r'constants/items.h',
     ])

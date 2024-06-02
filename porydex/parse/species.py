@@ -1,7 +1,6 @@
 from collections import defaultdict
 import pathlib
 import re
-import typing
 
 from pycparser.c_ast import Constant, ExprList, NamedInitializer
 
@@ -9,11 +8,11 @@ from porydex.model import ExpansionEvoMethod, DAMAGE_TYPE, EGG_GROUP, BODY_COLOR
 from porydex.parse import load_truncated, extract_id, extract_int, extract_u8_str
 
 def parse_mon(struct_init: NamedInitializer,
-              ability_names: typing.List[str],
-              item_names: typing.List[str],
-              form_tables: typing.Dict[str, typing.Dict[int, str]],
-              level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
-              teachable_learnsets: typing.Dict[str, typing.List[str]]) -> typing.Tuple[dict, list, dict, list]:
+              ability_names: list[str],
+              item_names: list[str],
+              form_tables: dict[str, dict[int, str]],
+              level_up_learnsets: dict[str, dict[str, list[int]]],
+              teachable_learnsets: dict[str, list[str]]) -> tuple[dict, list, dict, list]:
     init_list = struct_init.expr.exprs
     mon = {}
     mon['num'] = extract_int(struct_init.name[0])
@@ -176,9 +175,9 @@ def parse_mon(struct_init: NamedInitializer,
     return mon, evos, lvlup_learnset, teach_learnset
 
 def zip_evos(all_data: dict,
-             items: typing.List[str],
-             moves: typing.List[str],
-             map_sections: typing.List[str]):
+             items: list[str],
+             moves: list[str],
+             map_sections: list[str]):
     for _, (mon, evos) in all_data.items():
         if not evos:
             continue
@@ -277,8 +276,8 @@ def zip_evos(all_data: dict,
                 parent_mon['evoType'] = descriptor.type
                 parent_mon['evoCondition'] = descriptor.condition
 
-def zip_learnsets(lvlup_learnset: typing.Dict[str, typing.List[int]],
-                  teach_learnset: typing.List[str]) -> dict:
+def zip_learnsets(lvlup_learnset: dict[str, list[int]],
+                  teach_learnset: list[str]) -> dict:
     full_learnset = defaultdict(list)
     for move, levels in lvlup_learnset.items():
         full_learnset[move] = [f'L{level}' for level in levels]
@@ -293,13 +292,13 @@ def species_name_key(name: str) -> str:
     return ''.join(SPLIT_CHARS.split(name)).lower()
 
 def parse_species_data(species_data: ExprList,
-                       abilities: typing.List[str],
-                       items: typing.List[str],
-                       moves: typing.List[str],
-                       forms: typing.Dict[str, typing.Dict[int, str]],
-                       map_sections: typing.List[str],
-                       level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
-                       teachable_learnsets: typing.Dict[str, typing.Dict[str, typing.List[str]]]) -> dict:
+                       abilities: list[str],
+                       items: list[str],
+                       moves: list[str],
+                       forms: dict[str, dict[int, str]],
+                       map_sections: list[str],
+                       level_up_learnsets: dict[str, dict[str, list[int]]],
+                       teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
     # first pass: raw AST parse, build evolutions table
     all_species_data = {}
     for species_init in species_data:
@@ -327,13 +326,13 @@ def parse_species_data(species_data: ExprList,
     return final_species
 
 def parse_species(fname: pathlib.Path,
-                  abilities: typing.List[str],
-                  items: typing.List[str],
-                  moves: typing.List[str],
-                  forms: typing.Dict[str, typing.Dict[int, str]],
-                  map_sections: typing.List[str],
-                  level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
-                  teachable_learnsets: typing.Dict[str, typing.Dict[str, typing.List[str]]]) -> dict:
+                  abilities: list[str],
+                  items: list[str],
+                  moves: list[str],
+                  forms: dict[str, dict[int, str]],
+                  map_sections: list[str],
+                  level_up_learnsets: dict[str, dict[str, list[int]]],
+                  teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
     return parse_species_data(
         load_truncated(fname),
         abilities,

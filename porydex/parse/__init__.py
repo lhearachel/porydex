@@ -30,7 +30,7 @@ from porydex.common import (
 def _pickle_target(fname: pathlib.Path) -> pathlib.Path:
     return PICKLE_PATH / fname.stem
 
-def _load_pickled(fname: pathlib.Path) -> typing.Optional[ExprList]:
+def _load_pickled(fname: pathlib.Path) -> ExprList | None:
     target = _pickle_target(fname)
     exts = None
     if target.exists():
@@ -45,7 +45,7 @@ def _dump_pickled(fname: pathlib.Path, exts: list):
         pickle.dump(exts, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 def load_data(fname: pathlib.Path,
-              extra_includes: typing.List[str]=[]) -> ExprList:
+              extra_includes: list[str]=[]) -> ExprList:
     exts = _load_pickled(fname)
     if not exts:
         include_dirs = [f'-I{porydex.config.expansion / dir}' for dir in EXPANSION_INCLUDES]
@@ -66,12 +66,12 @@ def load_data(fname: pathlib.Path,
     return exts
 
 def load_truncated(fname: pathlib.Path,
-                   extra_includes: typing.List[str]=[]) -> ExprList:
+                   extra_includes: list[str]=[]) -> ExprList:
     return load_data(fname, extra_includes)[-1].init.exprs
 
 def load_table_set(fname: pathlib.Path,
-                   extra_includes: typing.List[str]=[],
-                   minimal_preprocess: bool=False) -> typing.List[Decl]:
+                   extra_includes: list[str]=[],
+                   minimal_preprocess: bool=False) -> list[Decl]:
     include_dirs = [f'-I{porydex.config.expansion / dir}' for dir in EXPANSION_INCLUDES]
 
     if minimal_preprocess:
@@ -111,8 +111,8 @@ def load_table_set(fname: pathlib.Path,
     return exts
 
 def load_data_and_start(fname: pathlib.Path,
-                        pattern: typing.Pattern[str],
-                        extra_includes: typing.List[str]=[]) -> typing.Tuple[ExprList, int]:
+                        pattern: re.Pattern,
+                        extra_includes: list[str]=[]) -> tuple[ExprList, int]:
     all_data = load_data(fname, extra_includes)
 
     start = 0
@@ -205,7 +205,7 @@ def extract_id(expr) -> str:
 
     return expr.name
 
-def extract_prefixed(prefix: str | typing.Pattern[str], val: str, mod_if_match: typing.Callable[[str], str]=lambda x: x) -> str:
+def extract_prefixed(prefix: str | re.Pattern, val: str, mod_if_match: typing.Callable[[str], str]=lambda x: x) -> str:
     match = re.match(prefix, val)
     if match:
         return mod_if_match(match.group(1))

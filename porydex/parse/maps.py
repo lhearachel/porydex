@@ -1,11 +1,10 @@
 import pathlib
-import typing
 
 from pycparser.c_ast import Decl, ExprList
 
 from porydex.parse import load_data, extract_id, extract_int, extract_u8_str
 
-def all_maps(existing: ExprList) -> typing.List[str]:
+def all_maps(existing: ExprList) -> list[str]:
     # Start by walking backward from -2 until we run out of map name symbols,
     # adding them to a tracking dictionary as we go
     map_name_defs = {}
@@ -28,7 +27,7 @@ def all_maps(existing: ExprList) -> typing.List[str]:
     # Zip the map down to a list
     return [ map_name for _, map_name in sorted(map_names.items(), key=lambda e: e[0]) ]
 
-def parse_maps(fname: pathlib.Path) -> typing.List[str]:
+def parse_maps(fname: pathlib.Path) -> list[str]:
     maps_data = load_data(fname, extra_includes=[
         r'-include', r'constants/abilities.h',
     ])

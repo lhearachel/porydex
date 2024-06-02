@@ -1,7 +1,6 @@
 import dataclasses
 import pathlib
 import re
-import typing
 
 from pycparser.c_ast import Decl, ExprList
 
@@ -17,12 +16,12 @@ from porydex.parse.maps import all_maps
 class AllData:
     species: ExprList
     moves: ExprList
-    abilities: typing.List[str]
-    items: typing.List[str]
-    forms: typing.Dict[str, typing.Dict[int, str]]
-    maps: typing.List[str]
-    lvlup_learnsets: typing.Tuple[ExprList, int]
-    teach_learnsets: typing.Tuple[ExprList, int]
+    abilities: list[str]
+    items: list[str]
+    forms: dict[str, dict[int, str]]
+    maps: list[str]
+    lvlup_learnsets: tuple[ExprList, int]
+    teach_learnsets: tuple[ExprList, int]
 
 def load_moves() -> ExprList:
     moves_info = porydex.config.expansion / 'src' / 'data' / 'moves_info.h'
@@ -37,7 +36,7 @@ def load_species() -> ExprList:
         r'-include', r'constants/moves.h',
     ])
 
-def load_form_tables() -> typing.Tuple[typing.List[Decl], typing.List[Decl]]:
+def load_form_tables() -> tuple[list[Decl], list[Decl]]:
     form_species_tables = porydex.config.expansion / 'src' / 'data' / 'pokemon' / 'form_species_tables.h'
     return (
         load_table_set(form_species_tables, minimal_preprocess=True),
@@ -60,7 +59,7 @@ def load_maps() -> ExprList:
     map_entries = porydex.config.expansion / 'src' / 'data' / 'region_map' / 'region_map_entries.h'
     return load_data(map_entries) # we want the names here too
 
-def load_level_up_learnsets() -> typing.Tuple[ExprList, int]:
+def load_level_up_learnsets() -> tuple[ExprList, int]:
     # in order to properly determine what learnset to use, we have to utilize this custom header file
     # to correcty assess the P_LVL_UP_LEARNSETS define
     level_up_learnsets = pathlib.Path('custom_headers') / 'level_up_learnsets.h'
@@ -74,7 +73,7 @@ def load_level_up_learnsets() -> typing.Tuple[ExprList, int]:
         ]
     )
 
-def load_teachable_learnsets() -> typing.Tuple[ExprList, int]:
+def load_teachable_learnsets() -> tuple[ExprList, int]:
     teachable_learnsets = porydex.config.expansion / 'src' / 'data' / 'pokemon' / 'teachable_learnsets.h'
     pattern = re.compile(r's(\w+)TeachableLearnset')
     return load_data_and_start(

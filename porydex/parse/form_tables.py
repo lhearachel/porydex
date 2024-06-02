@@ -1,7 +1,6 @@
 import functools
 import pathlib
 import re
-import typing
 
 from pycparser.c_ast import ArrayDecl, Decl
 
@@ -21,7 +20,7 @@ def upper_snake(s: str) -> str:
 def snake_to_kebab(s: str) -> str:
     return '-'.join(map(str.capitalize, s.split('_')))
 
-def parse_table_decl(minimal: Decl, full: Decl) -> typing.Tuple[str, typing.Dict[int, str]]:
+def parse_table_decl(minimal: Decl, full: Decl) -> tuple[str, dict[int, str]]:
     name = full.name
     true_name = re.match(_SYMBOL_NAME_PATTERN, name)
     if not true_name:
@@ -48,7 +47,7 @@ def parse_table_decl(minimal: Decl, full: Decl) -> typing.Tuple[str, typing.Dict
 
     return name, result
 
-def all_table_decls(minimal: typing.List[Decl], full: typing.List[Decl]) -> typing.Dict[str, typing.Dict[int, str]]:
+def all_table_decls(minimal: list[Decl], full: list[Decl]) -> dict[str, dict[int, str]]:
     # find the starting index in the full list
     start = 0
     end = -1 * len(full)

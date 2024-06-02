@@ -1,8 +1,7 @@
 import dataclasses
 import enum
-import typing
 
-DAMAGE_TYPE: typing.List[str] = [
+DAMAGE_TYPE: list[str] = [
     'Normal',
     'Fighting',
     'Flying',
@@ -25,13 +24,13 @@ DAMAGE_TYPE: typing.List[str] = [
     'Stellar',
 ]
 
-DAMAGE_CATEGORY: typing.List[str] = [
+DAMAGE_CATEGORY: list[str] = [
     'Physical',
     'Special',
     'Status',
 ]
 
-CONTEST_CATEGORY: typing.List[str] = [
+CONTEST_CATEGORY: list[str] = [
     'Cool',
     'Beauty',
     'Cute',
@@ -39,7 +38,7 @@ CONTEST_CATEGORY: typing.List[str] = [
     'Tough',
 ]
 
-EGG_GROUP: typing.List[str] = [
+EGG_GROUP: list[str] = [
     'None',
     'Monster',
     'Water 1',
@@ -58,7 +57,7 @@ EGG_GROUP: typing.List[str] = [
     'Undiscovered',
 ]
 
-BODY_COLOR: typing.List[str] = [
+BODY_COLOR: list[str] = [
     'Red',
     'Blue',
     'Yellow',
@@ -128,7 +127,7 @@ class EvoMethod():
     type: str
     condition: str
 
-EVO_METHOD: typing.List[EvoMethod] = [
+EVO_METHOD: list[EvoMethod] = [
     EvoMethod('', ''),
 
     EvoMethod('levelFriendship', ''),

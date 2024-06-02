@@ -1,5 +1,4 @@
 import pathlib
-import typing
 
 from pycparser.c_ast import NamedInitializer
 
@@ -13,7 +12,7 @@ def get_ability_name(struct_init: NamedInitializer) -> str:
     print(struct_init.show())
     raise ValueError('no name for ability structure')
 
-def all_ability_names(abilities_data) -> typing.List[str]:
+def all_ability_names(abilities_data) -> list[str]:
     d_abilities = {
         extract_int(init.name[0]): get_ability_name(init)
         for init in abilities_data
@@ -26,7 +25,7 @@ def all_ability_names(abilities_data) -> typing.List[str]:
 
     return l_abilities
 
-def parse_abilities(fname: pathlib.Path) -> typing.List[str]:
+def parse_abilities(fname: pathlib.Path) -> list[str]:
     abilities_data = load_truncated(fname, extra_includes=[
         r'-include', r'constants/abilities.h',
     ])
