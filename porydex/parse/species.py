@@ -1,3 +1,4 @@
+from collections import defaultdict
 import pathlib
 import re
 import typing
@@ -10,7 +11,9 @@ from porydex.parse import load_truncated, extract_id, extract_int, extract_u8_st
 def parse_mon(struct_init: NamedInitializer,
               ability_names: typing.List[str],
               item_names: typing.List[str],
-              form_tables: typing.Dict[str, typing.Dict[int, str]]) -> typing.Tuple[dict, list]:
+              form_tables: typing.Dict[str, typing.Dict[int, str]],
+              level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
+              teachable_learnsets: typing.Dict[str, typing.List[str]]) -> typing.Tuple[dict, list, dict, list]:
     init_list = struct_init.expr.exprs
     mon = {}
     mon['num'] = extract_int(struct_init.name[0])
@@ -21,6 +24,8 @@ def parse_mon(struct_init: NamedInitializer,
     mon['eggGroups'] = []
 
     evos = []
+    lvlup_learnset = {}
+    teach_learnset = []
 
     for field_init in init_list:
         field_name = field_init.name[0].name
@@ -163,8 +168,12 @@ def parse_mon(struct_init: NamedInitializer,
 
                     evos.append([ExpansionEvoMethod(method_id), extract_int(evo_method.exprs[1]), extract_int(evo_method.exprs[2])])
                 evos.sort(key=lambda evo: evo[2])
+            case 'levelUpLearnset':
+                lvlup_learnset = level_up_learnsets.get(extract_id(field_expr), {})
+            case 'teachableLearnset':
+                teach_learnset = teachable_learnsets.get(extract_id(field_expr), [])
 
-    return mon, evos
+    return mon, evos, lvlup_learnset, teach_learnset
 
 def zip_evos(all_data: dict,
              items: typing.List[str],
@@ -268,6 +277,16 @@ def zip_evos(all_data: dict,
                 parent_mon['evoType'] = descriptor.type
                 parent_mon['evoCondition'] = descriptor.condition
 
+def zip_learnsets(lvlup_learnset: typing.Dict[str, typing.List[int]],
+                  teach_learnset: typing.List[str]) -> dict:
+    full_learnset = defaultdict(list)
+    for move, levels in lvlup_learnset.items():
+        full_learnset[move] = [f'L{level}' for level in levels]
+    for move in teach_learnset:
+        full_learnset[move].append('M')
+
+    return full_learnset
+
 SPLIT_CHARS = re.compile(r"\W+")
 
 def species_name_key(name: str) -> str:
@@ -278,42 +297,51 @@ def parse_species_data(species_data: ExprList,
                        items: typing.List[str],
                        moves: typing.List[str],
                        forms: typing.Dict[str, typing.Dict[int, str]],
-                       map_sections: typing.List[str]) -> dict:
+                       map_sections: typing.List[str],
+                       level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
+                       teachable_learnsets: typing.Dict[str, typing.List[str]]) -> dict:
     # first pass: raw AST parse, build evolutions table
-    all_data = {}
+    all_species_data = {}
     for species_init in species_data:
         try:
-            mon, evos = parse_mon(species_init, abilities, items, forms)
-            all_data[mon['num']] = (mon, evos)
+            mon, evos, lvlup_learnset, teach_learnset = parse_mon(species_init, abilities, items, forms, level_up_learnsets, teachable_learnsets)
+            all_species_data[mon['num']] = (mon, evos)
+
+            if lvlup_learnset or teach_learnset:
+                mon['learnset'] = zip_learnsets(lvlup_learnset, teach_learnset)
         except Exception as err:
             print('error parsing species info')
             print(species_init.show())
             raise err
 
     # second pass: re-target evos from source mon to target mon
-    zip_evos(all_data, items, moves, map_sections)
+    zip_evos(all_species_data, items, moves, map_sections)
 
     # re-zip the whole dictionary keyed according to showdown's key format
-    final = {}
-    for mon, _ in all_data.values():
+    final_species = {}
+    for mon, _ in all_species_data.values():
         if 'name' not in mon or not mon['name']: # egg has no name; don't try
             continue
-        final[species_name_key(mon['name'])] = mon
+        final_species[species_name_key(mon['name'])] = mon
 
-    return final
+    return final_species
 
 def parse_species(fname: pathlib.Path,
                   abilities: typing.List[str],
                   items: typing.List[str],
                   moves: typing.List[str],
                   forms: typing.Dict[str, typing.Dict[int, str]],
-                  map_sections: typing.List[str]) -> dict:
+                  map_sections: typing.List[str],
+                  level_up_learnsets: typing.Dict[str, typing.Dict[str, typing.List[int]]],
+                  teachable_learnsets: typing.Dict[str, typing.List[str]]) -> dict:
     return parse_species_data(
         load_truncated(fname),
         abilities,
         items,
         moves,
         forms,
-        map_sections
+        map_sections,
+        level_up_learnsets,
+        teachable_learnsets
     )
 

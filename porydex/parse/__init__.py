@@ -110,6 +110,21 @@ def load_table_set(fname: pathlib.Path,
 
     return exts
 
+def load_data_and_start(fname: pathlib.Path,
+                        pattern: typing.Pattern[str],
+                        extra_includes: typing.List[str]=[]) -> typing.Tuple[ExprList, int]:
+    all_data = load_data(fname, extra_includes)
+
+    start = 0
+    if pattern:
+        end = len(all_data)
+        for i in range(-1, -end, -1):
+            if not all_data[i].name or not pattern.match(all_data[i].name):
+                start = i + 1
+                break
+
+    return (all_data, start)
+
 def eval_binary_operand(expr) -> int:
     if isinstance(expr, BinaryOp):
         return int(process_binary(expr))

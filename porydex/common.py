@@ -60,3 +60,6 @@ BINARY_BOOL_OPS = {
     '/': operator.itruediv,
 }
 
+def move_name_key(name: str) -> str:
+    return ''.join(name.split()).lower()
+
