@@ -111,7 +111,8 @@ def parse_mon(struct_init: NamedInitializer,
             case 'bodyColor':
                 mon['color'] = BODY_COLOR[extract_int(field_expr)]
             case 'speciesName':
-                mon['name'] = extract_u8_str(field_expr)
+                name = extract_u8_str(field_expr).replace('♂', '-M').replace('♀', '-F')
+                mon['name'] = name
             case 'height':
                 # Stored in expansion as M * 10
                 mon['height'] = extract_int(field_expr) / 10
@@ -329,7 +330,9 @@ def parse_species(fname: pathlib.Path,
                   level_up_learnsets: dict[str, dict[str, list[int]]],
                   teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
     return parse_species_data(
-        load_truncated(fname),
+        load_truncated(fname, extra_includes=[
+            r'-include', r'constants/moves.h',
+        ]),
         abilities,
         items,
         moves,

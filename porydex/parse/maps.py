@@ -12,9 +12,8 @@ def all_maps(existing: ExprList) -> list[str]:
         if not isinstance(entry, Decl): # assume we are done
             break
 
-        # TODO: Properly capitalize these strings
         if entry.name and isinstance(entry.name, str) and entry.name.startswith('sMapName_'):
-            map_name_defs[entry.name] = extract_u8_str(entry.init)
+            map_name_defs[entry.name] = extract_u8_str(entry.init).title()
         else:
             break
 
