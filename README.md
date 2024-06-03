@@ -94,12 +94,12 @@ porydex extract --reload
 
 * Move data
 * Species data (including forms, evolutions, and learnable movessets)
+* Encounter data
 * Configurable expansion target and compiler support
 
 **In Progress:**
 
 * Custom Pokédex web-app (based on Showdown fork)
-* Encounter data exports (in a custom format)
 
 **Backlog:**
 

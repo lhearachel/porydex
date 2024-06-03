@@ -7,6 +7,7 @@ import porydex.config
 
 from porydex.common import PICKLE_PATH
 from porydex.parse.abilities import parse_abilities
+from porydex.parse.encounters import parse_encounters
 from porydex.parse.form_tables import parse_form_tables
 from porydex.parse.items import parse_items
 from porydex.parse.learnsets import parse_level_up_learnsets, parse_teachable_learnsets
@@ -67,12 +68,17 @@ def extract(args):
         lvlup_learnsets,
         teach_learnsets,
     )
+    species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
+    encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
 
     with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
         json.dump(moves, outf, indent=4)
 
     with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
         json.dump(species, outf, indent=4)
+
+    with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
+        json.dump(encounters, outf, indent=4)
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',

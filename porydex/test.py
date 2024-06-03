@@ -85,6 +85,10 @@ def load_teachable_learnsets() -> tuple[ExprList, int]:
         ]
     )
 
+def load_encounters():
+    wild_encounters = porydex.config.expansion / 'src' / 'data' / 'wild_encounters.h'
+    return load_data(wild_encounters)
+
 def load_all() -> AllData:
     return AllData(
         load_species(),
