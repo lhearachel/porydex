@@ -1,6 +1,7 @@
 import pathlib
 
 from pycparser.c_ast import Decl, ExprList
+from yaspin import yaspin
 
 from porydex.parse import load_data, extract_id, extract_int, extract_u8_str
 
@@ -27,8 +28,11 @@ def all_maps(existing: ExprList) -> list[str]:
     return [ map_name for _, map_name in sorted(map_names.items(), key=lambda e: e[0]) ]
 
 def parse_maps(fname: pathlib.Path) -> list[str]:
-    maps_data = load_data(fname, extra_includes=[
-        r'-include', r'constants/abilities.h',
-    ])
+    maps_data: ExprList
+    with yaspin(text=f'Loading map data: {fname}', color='cyan') as spinner:
+        maps_data = load_data(fname, extra_includes=[
+            r'-include', r'constants/abilities.h',
+        ])
+        spinner.ok("✅")
 
     return all_maps(maps_data)

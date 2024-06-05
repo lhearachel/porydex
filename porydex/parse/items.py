@@ -1,6 +1,7 @@
 import pathlib
 
-from pycparser.c_ast import ID, NamedInitializer
+from pycparser.c_ast import ID, ExprList, NamedInitializer
+from yaspin import yaspin
 
 from porydex.parse import load_truncated, extract_int, extract_u8_str
 
@@ -27,9 +28,12 @@ def all_item_names(items_data) -> list[str]:
     return l_items
 
 def parse_items(fname: pathlib.Path) -> list[str]:
-    items_data = load_truncated(fname, extra_includes=[
-        r'-include', r'constants/items.h',
-    ])
+    items_data: ExprList
+    with yaspin(text=f'Loading items data: {fname}', color='cyan') as spinner:
+        items_data = load_truncated(fname, extra_includes=[
+            r'-include', r'constants/items.h',
+        ])
+        spinner.ok("✅")
 
     return all_item_names(items_data)
 

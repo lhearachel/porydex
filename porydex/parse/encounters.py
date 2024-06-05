@@ -3,7 +3,8 @@ import json
 import pathlib
 import re
 
-from pycparser.c_ast import ArrayDecl, Constant, Decl, InitList, NamedInitializer, Struct, TypeDecl
+from pycparser.c_ast import ArrayDecl, Constant, Decl, ExprList, InitList, NamedInitializer, Struct, TypeDecl
+from yaspin import yaspin
 
 from porydex.common import name_key
 from porydex.parse import extract_id, extract_int, load_data
@@ -197,5 +198,10 @@ def load_json(fname: pathlib.Path) -> dict:
 
 def parse_encounters(fname: pathlib.Path,
                      species_names: list[str]) -> dict[str, dict[str, EncounterRate] | dict[str, dict]]:
-    return parse_encounters_data(load_data(fname), load_json(fname.with_suffix('.json')), species_names)
+    encounters: ExprList
+    with yaspin(text=f'Loading encouner tables: {fname}', color='cyan') as spinner:
+        encounters = load_data(fname)
+        spinner.ok("✅")
+
+    return parse_encounters_data(encounters, load_json(fname.with_suffix('.json')), species_names)
 

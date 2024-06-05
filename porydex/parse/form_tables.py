@@ -3,6 +3,7 @@ import pathlib
 import re
 
 from pycparser.c_ast import ArrayDecl, Decl
+from yaspin import yaspin
 
 from porydex.parse import load_table_set, extract_id, extract_int
 
@@ -30,7 +31,7 @@ def parse_table_decl(minimal: Decl, full: Decl) -> tuple[str, dict[int, str]]:
     form_name_pattern = re.compile(r'SPECIES_{}(_(.+))'.format(upper_snake(true_name)))
 
     result = {}
-    for i, (minimal_expr, full_expr) in enumerate(zip(minimal.init.exprs, full.init.exprs)):
+    for minimal_expr, full_expr in zip(minimal.init.exprs, full.init.exprs):
         id = extract_id(minimal_expr)
         val = extract_int(full_expr)
 
@@ -58,13 +59,20 @@ def all_table_decls(minimal: list[Decl], full: list[Decl]) -> dict[str, dict[int
 
     return functools.reduce(
         lambda d, t: d.update({ t[0]: t[1] }) or d,
-        [parse_table_decl(min_entry, full_entry) for min_entry, full_entry in zip(minimal, full[start:])],
+        [
+            parse_table_decl(min_entry, full_entry)
+            for min_entry, full_entry in zip(minimal, full[start:])
+        ],
         {}
     )
 
 def parse_form_tables(fname: pathlib.Path):
-    return all_table_decls(
-        load_table_set(fname, minimal_preprocess=True),
-        load_table_set(fname, minimal_preprocess=False),
-    )
+    minimal: list[Decl]
+    full: list[Decl]
+    with yaspin(text=f'Loading form tables: {fname}', color='cyan') as spinner:
+        minimal = load_table_set(fname, minimal_preprocess=True)
+        full = load_table_set(fname, minimal_preprocess=False)
+        spinner.ok("✅")
+
+    return all_table_decls(minimal, full)
 

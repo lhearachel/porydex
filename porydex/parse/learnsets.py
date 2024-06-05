@@ -4,7 +4,8 @@ import re
 
 import porydex.config
 
-from pycparser.c_ast import Decl
+from pycparser.c_ast import Decl, ExprList
+from yaspin import yaspin
 
 from porydex.common import name_key
 from porydex.parse import extract_int, load_data_and_start
@@ -53,28 +54,38 @@ def parse_teachable_learnsets_data(decls: list[Decl],
 def parse_level_up_learnsets(fname: pathlib.Path,
                              move_names: list[str]) -> dict[str, dict[str, list[int]]]:
     pattern = re.compile(r's(\w+)LevelUpLearnset')
-    data, start = load_data_and_start(
-        fname,
-        pattern,
-        extra_includes=[
-            rf'-I{porydex.config.expansion}/src',
-            r'-include', r'constants/moves.h',
-        ]
-    )
+    data: ExprList
+    start: int
+
+    with yaspin(text=f'Loading level-up learnsets: {fname}', color='cyan') as spinner:
+        data, start = load_data_and_start(
+            fname,
+            pattern,
+            extra_includes=[
+                rf'-I{porydex.config.expansion}/src',
+                r'-include', r'constants/moves.h',
+            ]
+        )
+        spinner.ok("✅")
 
     return parse_level_up_learnsets_data(data[start:], move_names)
 
 def parse_teachable_learnsets(fname: pathlib.Path,
                               move_names: list[str]) -> dict[str, dict[str, list[str]]]:
     pattern = re.compile(r's(\w+)TeachableLearnset')
-    data, start = load_data_and_start(
-        fname,
-        pattern,
-        extra_includes=[
-            rf'-I{porydex.config.expansion}/src',
-            r'-include', r'constants/moves.h',
-        ]
-    )
+    data: ExprList
+    start: int
+
+    with yaspin(text=f'Loading teachable learnsets: {fname}', color='cyan') as spinner:
+        data, start = load_data_and_start(
+            fname,
+            pattern,
+            extra_includes=[
+                rf'-I{porydex.config.expansion}/src',
+                r'-include', r'constants/moves.h',
+            ]
+        )
+        spinner.ok("✅")
 
     return parse_teachable_learnsets_data(data[start:], move_names)
 

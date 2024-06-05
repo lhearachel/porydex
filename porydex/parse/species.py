@@ -2,6 +2,7 @@ from collections import defaultdict
 import pathlib
 
 from pycparser.c_ast import Constant, ExprList, NamedInitializer
+from yaspin import yaspin
 
 from porydex.common import name_key
 from porydex.model import ExpansionEvoMethod, DAMAGE_TYPE, EGG_GROUP, BODY_COLOR, EVO_METHOD
@@ -329,10 +330,15 @@ def parse_species(fname: pathlib.Path,
                   map_sections: list[str],
                   level_up_learnsets: dict[str, dict[str, list[int]]],
                   teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
-    return parse_species_data(
-        load_truncated(fname, extra_includes=[
+    species_data: ExprList
+    with yaspin(text=f'Loading species data: {fname}', color='cyan') as spinner:
+        species_data = load_truncated(fname, extra_includes=[
             r'-include', r'constants/moves.h',
-        ]),
+        ])
+        spinner.ok("✅")
+
+    return parse_species_data(
+        species_data,
         abilities,
         items,
         moves,

@@ -1,6 +1,7 @@
 import pathlib
 
 from pycparser.c_ast import ExprList, NamedInitializer
+from yaspin import yaspin
 
 from porydex.common import name_key
 from porydex.model import DAMAGE_TYPE, DAMAGE_CATEGORY, CONTEST_CATEGORY
@@ -111,10 +112,13 @@ def parse_moves_data(moves_data: ExprList) -> dict:
     return all_moves
 
 def parse_moves(fname: pathlib.Path) -> dict:
-    moves_data = load_truncated(fname, extra_includes=[
-        r'-include', r'constants/battle.h',
-        r'-include', r'constants/moves.h',
-    ])
+    moves_data: ExprList
+    with yaspin(text=f'Loading moves data: {fname}', color='cyan') as spinner:
+        moves_data = load_truncated(fname, extra_includes=[
+            r'-include', r'constants/battle.h',
+            r'-include', r'constants/moves.h',
+        ])
+        spinner.ok("✅")
 
     return parse_moves_data(moves_data)
 

@@ -1,6 +1,7 @@
 import pathlib
 
-from pycparser.c_ast import NamedInitializer
+from pycparser.c_ast import ExprList, NamedInitializer
+from yaspin import yaspin
 
 from porydex.parse import load_truncated, extract_int, extract_u8_str
 
@@ -26,9 +27,12 @@ def all_ability_names(abilities_data) -> list[str]:
     return l_abilities
 
 def parse_abilities(fname: pathlib.Path) -> list[str]:
-    abilities_data = load_truncated(fname, extra_includes=[
-        r'-include', r'constants/abilities.h',
-    ])
+    abilities_data: ExprList
+    with yaspin(text=f'Loading abilities data: {fname}', color='cyan') as spinner:
+        abilities_data = load_truncated(fname, extra_includes=[
+            r'-include', r'constants/abilities.h',
+        ])
+        spinner.ok("✅")
 
     return all_ability_names(abilities_data)
 
