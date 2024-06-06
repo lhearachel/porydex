@@ -8,12 +8,17 @@ from porydex.common import name_key
 from porydex.model import ExpansionEvoMethod, DAMAGE_TYPE, EGG_GROUP, BODY_COLOR, EVO_METHOD
 from porydex.parse import load_truncated, extract_id, extract_int, extract_u8_str
 
+EXPANSION_GEN9_START = 1289
+VANILLA_GEN9_START = 906
+EXPANSION_GEN9_OFFSET = EXPANSION_GEN9_START - VANILLA_GEN9_START
+
 def parse_mon(struct_init: NamedInitializer,
               ability_names: list[str],
               item_names: list[str],
               form_tables: dict[str, dict[int, str]],
               level_up_learnsets: dict[str, dict[str, list[int]]],
-              teachable_learnsets: dict[str, list[str]]) -> tuple[dict, list, dict, list]:
+              teachable_learnsets: dict[str, dict[str, list[str]]],
+              national_dex: dict[str, int]) -> tuple[dict, list, dict, list]:
     init_list = struct_init.expr.exprs
     mon = {}
     mon['num'] = extract_int(struct_init.name[0])
@@ -87,7 +92,7 @@ def parse_mon(struct_init: NamedInitializer,
                     male = 1 - female
                     mon['genderRatio'] = { 'M': male, 'F': female }
                 else:
-                    mon['genderRatio'] = 'N'
+                    mon['gender'] = 'N'
             case 'eggGroups':
                 group_1 = extract_int(field_expr.exprs[0])
                 group_2 = extract_int(field_expr.exprs[1])
@@ -116,6 +121,8 @@ def parse_mon(struct_init: NamedInitializer,
                 if name == '??????????':
                     name = 'MissingNo.'
                 mon['name'] = name
+            case 'natDexNum':
+                mon['nationalDex'] = national_dex[extract_id(field_expr)]
             case 'height':
                 # Stored in expansion as M * 10
                 mon['heightm'] = extract_int(field_expr) / 10
@@ -138,7 +145,14 @@ def parse_mon(struct_init: NamedInitializer,
                     if table_vals[0] != 'Base':
                         mon['baseForme'] = table_vals[0]
 
-                    mon['formeOrder'] = [mon['name'] + (f'-{table_vals[i]}' if i > 0 else '') for i in range(len(table.keys()))]
+                    # Ugly Urshifu hack
+                    if mon['name'] == 'Urshifu':
+                        mon['formeOrder'] = [mon['name'] + (f'-{table_vals[i].replace("-Style", "")}' if i > 0 else '') for i in range(len(table.keys()))]
+                    else:
+                        mon['formeOrder'] = [
+                            mon['name'] + (f'-{table_vals[i]}' if i > 0 else '')
+                            for i in range(len(table.keys()))
+                        ]
 
                     # ugly ogerpon tera forms hack
                     if mon['name'] == 'Ogerpon':
@@ -151,6 +165,9 @@ def parse_mon(struct_init: NamedInitializer,
                     # ugly ogerpon tera forms hack
                     if mon['name'] == 'Ogerpon' and mon['num'] not in table:
                         form_name = f'{table[mon["num"] - 4]}-Tera'
+                    # ugly urshifu forms hack
+                    elif mon['name'] == 'Urshifu':
+                        form_name = table[mon['num']].replace('-Style', '')
                     else:
                         form_name = table[mon['num']]
                     mon['baseSpecies'] = mon['name']
@@ -297,14 +314,15 @@ def parse_species_data(species_data: ExprList,
                        forms: dict[str, dict[int, str]],
                        map_sections: list[str],
                        level_up_learnsets: dict[str, dict[str, list[int]]],
-                       teachable_learnsets: dict[str, dict[str, list[str]]]) -> tuple[dict, dict]:
+                       teachable_learnsets: dict[str, dict[str, list[str]]],
+                       national_dex: dict[str, int]) -> tuple[dict, dict]:
     # first pass: raw AST parse, build evolutions table
     all_species_data = {}
     all_learnsets = {}
     key: str
     for species_init in species_data:
         try:
-            mon, evos, lvlup_learnset, teach_learnset = parse_mon(species_init, abilities, items, forms, level_up_learnsets, teachable_learnsets)
+            mon, evos, lvlup_learnset, teach_learnset = parse_mon(species_init, abilities, items, forms, level_up_learnsets, teachable_learnsets, national_dex)
             all_species_data[mon['num']] = (mon, evos)
 
             if 'name' not in mon or not mon['name']: # egg has no name nor learnset; don't try
@@ -328,6 +346,8 @@ def parse_species_data(species_data: ExprList,
     for mon, _ in all_species_data.values():
         if 'name' not in mon or not mon['name']: # egg has no name; don't try
             continue
+        mon['num'] = mon['nationalDex']
+        del mon['nationalDex']
         final_species[name_key(mon['name'])] = mon
 
     return final_species, all_learnsets
@@ -339,7 +359,8 @@ def parse_species(fname: pathlib.Path,
                   forms: dict[str, dict[int, str]],
                   map_sections: list[str],
                   level_up_learnsets: dict[str, dict[str, list[int]]],
-                  teachable_learnsets: dict[str, dict[str, list[str]]]) -> tuple[dict, dict]:
+                  teachable_learnsets: dict[str, dict[str, list[str]]],
+                  national_dex: dict[str, int]) -> tuple[dict, dict]:
     species_data: ExprList
     with yaspin(text=f'Loading species data: {fname}', color='cyan') as spinner:
         species_data = load_truncated(fname, extra_includes=[
@@ -355,6 +376,7 @@ def parse_species(fname: pathlib.Path,
         forms,
         map_sections,
         level_up_learnsets,
-        teachable_learnsets
+        teachable_learnsets,
+        national_dex,
     )
 

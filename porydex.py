@@ -13,6 +13,7 @@ from porydex.parse.items import parse_items
 from porydex.parse.learnsets import parse_level_up_learnsets, parse_teachable_learnsets
 from porydex.parse.maps import parse_maps
 from porydex.parse.moves import parse_moves
+from porydex.parse.national_dex import parse_national_dex_enum
 from porydex.parse.species import parse_species
 
 def prepend_file(f, s: str):
@@ -65,6 +66,7 @@ def extract(args):
     map_sections = parse_maps(expansion_data / 'region_map' / 'region_map_entries.h')
     lvlup_learnsets = parse_level_up_learnsets(custom_headers / 'level_up_learnsets.h', move_names)
     teach_learnsets = parse_teachable_learnsets(expansion_data / 'pokemon' / 'teachable_learnsets.h', move_names)
+    national_dex = parse_national_dex_enum(porydex.config.expansion / 'include' / 'constants' / 'pokedex.h')
 
     species, learnsets = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
@@ -75,6 +77,7 @@ def extract(args):
         map_sections,
         lvlup_learnsets,
         teach_learnsets,
+        national_dex,
     )
     species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)

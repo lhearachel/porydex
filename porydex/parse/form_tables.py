@@ -44,7 +44,12 @@ def parse_table_decl(minimal: Decl, full: Decl) -> tuple[str, dict[int, str]]:
         if not form_name_match:
             result[val] = 'Base'
         else:
-            result[val] = snake_to_kebab(form_name_match.group(2))
+            result[val] = snake_to_kebab(form_name_match.group(2)) \
+                .replace('Alolan', 'Alola') \
+                .replace('Galarian', 'Galar') \
+                .replace('Hisuian', 'Hisui') \
+                .replace('Paldean', 'Paldea') \
+                .replace('Gigantamax', 'Gmax')
 
     return name, result
 
