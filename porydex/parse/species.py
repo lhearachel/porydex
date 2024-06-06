@@ -42,7 +42,7 @@ def parse_mon(struct_init: NamedInitializer,
                 mon['baseStats']['spe'] = extract_int(field_expr)
             case 'baseSpAttack':
                 mon['baseStats']['spa'] = extract_int(field_expr)
-            case 'baseDefense':
+            case 'baseSpDefense':
                 mon['baseStats']['spd'] = extract_int(field_expr)
             case 'types':
                 types = [DAMAGE_TYPE[extract_int(t)] for t in field_expr.exprs]
@@ -113,13 +113,15 @@ def parse_mon(struct_init: NamedInitializer,
                 mon['color'] = BODY_COLOR[extract_int(field_expr)]
             case 'speciesName':
                 name = extract_u8_str(field_expr).replace('♂', '-M').replace('♀', '-F')
+                if name == '??????????':
+                    name = 'MissingNo.'
                 mon['name'] = name
             case 'height':
                 # Stored in expansion as M * 10
-                mon['height'] = extract_int(field_expr) / 10
+                mon['heightm'] = extract_int(field_expr) / 10
             case 'weight':
                 # Stored in expansion as KG * 10
-                mon['weight'] = extract_int(field_expr) / 10
+                mon['weightkg'] = extract_int(field_expr) / 10
             case 'itemRare':
                 mon['items']['R'] = item_names[extract_int(field_expr)]
             case 'itemUncommon':
@@ -295,16 +297,24 @@ def parse_species_data(species_data: ExprList,
                        forms: dict[str, dict[int, str]],
                        map_sections: list[str],
                        level_up_learnsets: dict[str, dict[str, list[int]]],
-                       teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
+                       teachable_learnsets: dict[str, dict[str, list[str]]]) -> tuple[dict, dict]:
     # first pass: raw AST parse, build evolutions table
     all_species_data = {}
+    all_learnsets = {}
+    key: str
     for species_init in species_data:
         try:
             mon, evos, lvlup_learnset, teach_learnset = parse_mon(species_init, abilities, items, forms, level_up_learnsets, teachable_learnsets)
             all_species_data[mon['num']] = (mon, evos)
 
+            if 'name' not in mon or not mon['name']: # egg has no name nor learnset; don't try
+                continue
+            key = name_key(mon['name'])
+            all_learnsets[key] = {}
+            all_learnsets[key]['learnset'] = {}
+
             if lvlup_learnset or teach_learnset:
-                mon['learnset'] = zip_learnsets(lvlup_learnset, teach_learnset)
+                all_learnsets[key]['learnset'] = zip_learnsets(lvlup_learnset, teach_learnset)
         except Exception as err:
             print('error parsing species info')
             print(species_init.show())
@@ -320,7 +330,7 @@ def parse_species_data(species_data: ExprList,
             continue
         final_species[name_key(mon['name'])] = mon
 
-    return final_species
+    return final_species, all_learnsets
 
 def parse_species(fname: pathlib.Path,
                   abilities: list[str],
@@ -329,7 +339,7 @@ def parse_species(fname: pathlib.Path,
                   forms: dict[str, dict[int, str]],
                   map_sections: list[str],
                   level_up_learnsets: dict[str, dict[str, list[int]]],
-                  teachable_learnsets: dict[str, dict[str, list[str]]]) -> dict:
+                  teachable_learnsets: dict[str, dict[str, list[str]]]) -> tuple[dict, dict]:
     species_data: ExprList
     with yaspin(text=f'Loading species data: {fname}', color='cyan') as spinner:
         species_data = load_truncated(fname, extra_includes=[

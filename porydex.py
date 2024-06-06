@@ -15,6 +15,11 @@ from porydex.parse.maps import parse_maps
 from porydex.parse.moves import parse_moves
 from porydex.parse.species import parse_species
 
+def prepend_file(f, s: str):
+    f_data = f.read()
+    f.seek(0, 0)
+    f.write(s + f_data)
+
 def config_show(_):
     porydex.config.load()
     print(f'compiler command:  {str(porydex.config.compiler)}')
@@ -31,6 +36,9 @@ def config_set(args):
 
     if args.output:
         porydex.config.output = args.output.resolve()
+
+    if args.format:
+        porydex.config.format = args.format
 
     porydex.config.save()
 
@@ -58,7 +66,7 @@ def extract(args):
     lvlup_learnsets = parse_level_up_learnsets(custom_headers / 'level_up_learnsets.h', move_names)
     teach_learnsets = parse_teachable_learnsets(expansion_data / 'pokemon' / 'teachable_learnsets.h', move_names)
 
-    species = parse_species(
+    species, learnsets = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
         abilities,
         items,
@@ -71,14 +79,34 @@ def extract(args):
     species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
 
-    with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
-        json.dump(moves, outf, indent=4)
+    if porydex.config.format == porydex.config.OutputFormat.json:
+        with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
+            json.dump(moves, outf, indent=4)
 
-    with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
-        json.dump(species, outf, indent=4)
+        with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
+            json.dump(species, outf, indent=4)
 
-    with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
-        json.dump(encounters, outf, indent=4)
+        with open(porydex.config.output / 'learnsets.json', 'w', encoding='utf-8') as outf:
+            json.dump(learnsets, outf, indent=4)
+
+        with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
+            json.dump(encounters, outf, indent=4)
+    else: # jsobj
+        with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
+            outf.write('BattleMovedex = ')
+            json.dump(moves, outf, indent=4)
+
+        with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
+            outf.write('BattlePokedex = ')
+            json.dump(species, outf, indent=4)
+
+        with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
+            outf.write('BattleLearnsets = ')
+            json.dump(learnsets, outf, indent=4)
+
+        with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
+            outf.write('Encounters = ')
+            json.dump(encounters, outf, indent=4)
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',
@@ -101,6 +129,10 @@ def main():
     config_set_p.add_argument('-o', '--output', action='store',
                               help='path to output directory for extracted data files; default: ./out',
                               type=pathlib.Path)
+    config_set_p.add_argument('-f', '--format',
+                              help='format for output files',
+                              type=porydex.config.OutputFormat.argparse,
+                              choices=list(porydex.config.OutputFormat))
     config_set_p.set_defaults(func=config_set)
 
     config_clear_p = config_subp.add_parser('clear', help='clear configured options')

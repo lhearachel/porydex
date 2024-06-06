@@ -199,7 +199,7 @@ def load_json(fname: pathlib.Path) -> dict:
 def parse_encounters(fname: pathlib.Path,
                      species_names: list[str]) -> dict[str, dict[str, EncounterRate] | dict[str, dict]]:
     encounters: ExprList
-    with yaspin(text=f'Loading encouner tables: {fname}', color='cyan') as spinner:
+    with yaspin(text=f'Loading encounter tables: {fname}', color='cyan') as spinner:
         encounters = load_data(fname)
         spinner.ok("✅")
 
