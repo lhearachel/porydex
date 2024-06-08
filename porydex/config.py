@@ -5,7 +5,7 @@ import os
 
 class OutputFormat(enum.Enum):
     json = enum.auto()
-    jsobj = enum.auto()
+    showdown = enum.auto()
 
     def __str__(self) -> str:
         return self.name.lower()

@@ -26,6 +26,7 @@ def config_show(_):
     print(f'compiler command:  {str(porydex.config.compiler)}')
     print(f'path to expansion: {str(porydex.config.expansion)}')
     print(f'output directory:  {str(porydex.config.output)}')
+    print(f'output format:     {str(porydex.config.format)}')
 
 def config_set(args):
     if args.expansion:
@@ -94,21 +95,21 @@ def extract(args):
 
         with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
             json.dump(encounters, outf, indent=4)
-    else: # jsobj
+    else: # showdown
         with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattleMovedex = ')
+            outf.write('exports.BattleMovedex = ')
             json.dump(moves, outf, indent=4)
 
         with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattlePokedex = ')
+            outf.write('exports.BattlePokedex = ')
             json.dump(species, outf, indent=4)
 
         with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattleLearnsets = ')
+            outf.write('exports.BattleLearnsets = ')
             json.dump(learnsets, outf, indent=4)
 
         with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
-            outf.write('Encounters = ')
+            outf.write('exports.BattleLocationdex = ')
             json.dump(encounters, outf, indent=4)
 
 def main():
