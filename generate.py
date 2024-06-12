@@ -184,6 +184,11 @@ def alias(id: str, name: str, T: str) -> list[str]:
 [index.extend(alias(id, item['name'], 'item')) for id, item in items.items()]
 [index.extend(alias(id, ability['name'], 'ability')) for id, ability in abilities.items()]
 
+for id, location in encounters.items():
+    if id == 'rates':
+        continue
+    index.extend(alias(id, location['name'], 'location'))
+
 index.sort()
 
 # manually rearrange some entries
@@ -214,23 +219,25 @@ def offset_map(entry: list):
     name = ''
     match entry[1]:
         case 'pokemon':
-            name = pokedex[id]['name']
+            name = pokedex.get(id, {}).get('name', ' ')
         case 'move':
-            name = moves[id]['name']
+            name = moves.get(id, {}).get('name', ' ')
         case 'item':
-            name = items[id]['name']
+            name = items.get(id, {}).get('name', ' ')
         case 'ability':
-            name = abilities[id]['name']
+            name = abilities.get(id, {}).get('name', ' ')
         case 'location':
-            name = encounters[id]['name']
+            name = encounters.get(id, {}).get('name', ' ')
 
     result = ''
-    i, j, non_alnum = 0, 0, 0
-    while i < len(id):
-        while not name[j].isalnum():
+    j, non_alnum = 0, 0
+    for _ in range(len(id)):
+        while j < len(name) and not name[j].isalnum():
             j = j + 1
             non_alnum = non_alnum + 1
+
         result = result + str(non_alnum)
+        j = j + 1
 
     if non_alnum:
         return result
@@ -245,7 +252,8 @@ for T in typechart.keys():
 
 with open('site/data/search-index.js', 'w', encoding='utf-8') as outf:
     print('// DO NOT EDIT - automatically built by porydex', file=outf, end='\n\n')
-    print(f'exports.BattleSearchIndex = {json.dumps(battle_search_index)}', file=outf, end='\n\n')
-    print(f'exports.BattleSearchIndexOffset = {json.dumps(battle_offset_index)}', file=outf, end='\n\n')
-    print(f'exports.BattleSearchCountIndex = {json.dumps(battle_count_index)}', file=outf, end='\n\n')
+    print(f'exports.BattleSearchIndex = {json.dumps(battle_search_index)};', file=outf, end='\n\n')
+    print(f'exports.BattleSearchIndexOffset = {json.dumps(battle_offset_index)};', file=outf, end='\n\n')
+    print(f'exports.BattleSearchCountIndex = {json.dumps(battle_count_index)};', file=outf, end='\n\n')
+    print( 'exports.BattleArticleTitles = {};', file=outf, end='\n\n')
 

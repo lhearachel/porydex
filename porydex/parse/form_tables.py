@@ -49,7 +49,9 @@ def parse_table_decl(minimal: Decl, full: Decl) -> tuple[str, dict[int, str]]:
                 .replace('Galarian', 'Galar') \
                 .replace('Hisuian', 'Hisui') \
                 .replace('Paldean', 'Paldea') \
-                .replace('Gigantamax', 'Gmax')
+                .replace('Gigantamax', 'Gmax') \
+                .replace('-Cloak', '') \
+                .replace('-Family-Of', '')
 
     return name, result
 

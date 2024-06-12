@@ -47,6 +47,23 @@ def config_set(args):
 def config_clear(_):
     porydex.config.clear()
 
+def generate_showdown_files(moves: dict, species: dict, learnsets: dict, encounters: dict):
+    with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
+        outf.write('exports.BattleMovedex = ')
+        json.dump(moves, outf, indent=4)
+
+    with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
+        outf.write('exports.BattlePokedex = ')
+        json.dump(species, outf, indent=4)
+
+    with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
+        outf.write('exports.BattleLearnsets = ')
+        json.dump(learnsets, outf, indent=4)
+
+    with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
+        outf.write('exports.BattleLocationdex = ')
+        json.dump(encounters, outf, indent=4)
+
 def extract(args):
     if args.reload:
         for f in PICKLE_PATH.glob('*'):
@@ -83,6 +100,11 @@ def extract(args):
     species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
 
+    # Re-index num to nationalDex on the species before finishing up
+    for _, mon in species.items():
+        mon['num'] = mon['nationalDex']
+        del mon['nationalDex']
+
     if porydex.config.format == porydex.config.OutputFormat.json:
         with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
             json.dump(moves, outf, indent=4)
@@ -96,21 +118,7 @@ def extract(args):
         with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
             json.dump(encounters, outf, indent=4)
     else: # showdown
-        with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
-            outf.write('exports.BattleMovedex = ')
-            json.dump(moves, outf, indent=4)
-
-        with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
-            outf.write('exports.BattlePokedex = ')
-            json.dump(species, outf, indent=4)
-
-        with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
-            outf.write('exports.BattleLearnsets = ')
-            json.dump(learnsets, outf, indent=4)
-
-        with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
-            outf.write('exports.BattleLocationdex = ')
-            json.dump(encounters, outf, indent=4)
+        generate_showdown_files(moves, species, learnsets, encounters)
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',

@@ -18,7 +18,7 @@ def parse_mon(struct_init: NamedInitializer,
               form_tables: dict[str, dict[int, str]],
               level_up_learnsets: dict[str, dict[str, list[int]]],
               teachable_learnsets: dict[str, dict[str, list[str]]],
-              national_dex: dict[str, int]) -> tuple[dict, list, dict, list]:
+              national_dex: dict[str, int]) -> tuple[dict, list, dict, dict]:
     init_list = struct_init.expr.exprs
     mon = {}
     mon['num'] = extract_int(struct_init.name[0])
@@ -30,7 +30,7 @@ def parse_mon(struct_init: NamedInitializer,
 
     evos = []
     lvlup_learnset = {}
-    teach_learnset = []
+    teach_learnset = {}
 
     for field_init in init_list:
         field_name = field_init.name[0].name
@@ -191,7 +191,7 @@ def parse_mon(struct_init: NamedInitializer,
             case 'levelUpLearnset':
                 lvlup_learnset = level_up_learnsets.get(extract_id(field_expr), {})
             case 'teachableLearnset':
-                teach_learnset = teachable_learnsets.get(extract_id(field_expr), [])
+                teach_learnset = teachable_learnsets.get(extract_id(field_expr), {})
 
     return mon, evos, lvlup_learnset, teach_learnset
 
@@ -271,14 +271,14 @@ def zip_evos(all_data: dict,
                 # These evo methods interpret the parameter as a specific move
                 case ExpansionEvoMethod.MOVE \
                     | ExpansionEvoMethod.MOVE_TWO_SEGMENT \
-                    | ExpansionEvoMethod.MOVE_THREE_SEGMENT:
+                    | ExpansionEvoMethod.MOVE_THREE_SEGMENT \
+                    | ExpansionEvoMethod.USE_MOVE_TWENTY_TIMES:
                     parent_mon['evoMove'] = moves[param]
                     pass
 
                 # These evo methods interpret the parameter as another species
                 case ExpansionEvoMethod.SPECIFIC_MON_IN_PARTY \
-                    | ExpansionEvoMethod.TRADE_SPECIFIC_MON \
-                    | ExpansionEvoMethod.USE_MOVE_TWENTY_TIMES:
+                    | ExpansionEvoMethod.TRADE_SPECIFIC_MON:
                     parent_mon['evoSpecies'] = all_data[param][0]['name']
 
                 # This evo method interprets the parameter as a damage type
@@ -293,9 +293,8 @@ def zip_evos(all_data: dict,
                     raise ValueError('Unimplemented evo method: ', evo[0])
 
             descriptor = EVO_METHOD[method.value]
-            if descriptor.condition:
-                parent_mon['evoType'] = descriptor.type
-                parent_mon['evoCondition'] = descriptor.condition
+            parent_mon['evoType'] = descriptor.type
+            parent_mon['evoCondition'] = descriptor.condition
 
 def zip_learnsets(lvlup_learnset: dict[str, list[int]],
                   teach_learnset: list[str]) -> dict:
@@ -346,8 +345,6 @@ def parse_species_data(species_data: ExprList,
     for mon, _ in all_species_data.values():
         if 'name' not in mon or not mon['name']: # egg has no name; don't try
             continue
-        mon['num'] = mon['nationalDex']
-        del mon['nationalDex']
         final_species[name_key(mon['name'])] = mon
 
     return final_species, all_learnsets

@@ -1,4 +1,4 @@
-exports.BattlePokedex = {
+{
     "missingno": {
         "num": 0,
         "baseStats": {},
@@ -89,8 +89,6 @@ exports.BattlePokedex = {
         "weightkg": 13.0,
         "prevo": "Bulbasaur",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Venusaur"
         ]
@@ -142,9 +140,7 @@ exports.BattlePokedex = {
             "Venusaur-Gmax"
         ],
         "prevo": "Ivysaur",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "venusaurmega": {
         "num": 3,
@@ -302,8 +298,6 @@ exports.BattlePokedex = {
         "weightkg": 19.0,
         "prevo": "Charmander",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Charizard"
         ]
@@ -356,9 +350,7 @@ exports.BattlePokedex = {
             "Charizard-Gmax"
         ],
         "prevo": "Charmeleon",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "charizardmegax": {
         "num": 6,
@@ -552,8 +544,6 @@ exports.BattlePokedex = {
         "weightkg": 22.5,
         "prevo": "Squirtle",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Blastoise"
         ]
@@ -603,9 +593,7 @@ exports.BattlePokedex = {
             "Blastoise-Gmax"
         ],
         "prevo": "Wartortle",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "blastoisemega": {
         "num": 9,
@@ -755,8 +743,6 @@ exports.BattlePokedex = {
         "weightkg": 9.9,
         "prevo": "Caterpie",
         "evoLevel": 7,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Butterfree"
         ]
@@ -807,9 +793,7 @@ exports.BattlePokedex = {
             "Butterfree-Gmax"
         ],
         "prevo": "Metapod",
-        "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 10
     },
     "butterfreegmax": {
         "num": 12,
@@ -927,8 +911,6 @@ exports.BattlePokedex = {
         "weightkg": 10.0,
         "prevo": "Weedle",
         "evoLevel": 7,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Beedrill"
         ]
@@ -979,9 +961,7 @@ exports.BattlePokedex = {
             "Beedrill-Mega"
         ],
         "prevo": "Kakuna",
-        "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 10
     },
     "beedrillmega": {
         "num": 15,
@@ -1101,8 +1081,6 @@ exports.BattlePokedex = {
         "weightkg": 30.0,
         "prevo": "Pidgey",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Pidgeot"
         ]
@@ -1151,9 +1129,7 @@ exports.BattlePokedex = {
             "Pidgeot-Mega"
         ],
         "prevo": "Pidgeotto",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "pidgeotmega": {
         "num": 18,
@@ -1283,9 +1259,7 @@ exports.BattlePokedex = {
             "Raticate-Alola-Totem"
         ],
         "prevo": "Rattata",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "rattataalola": {
         "num": 19,
@@ -1494,9 +1468,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 38.0,
         "prevo": "Spearow",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "ekans": {
         "num": 23,
@@ -1575,9 +1547,7 @@ exports.BattlePokedex = {
         "heightm": 3.5,
         "weightkg": 65.0,
         "prevo": "Ekans",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "pichu": {
         "num": 172,
@@ -1736,8 +1706,6 @@ exports.BattlePokedex = {
             "Pikachu-Partner"
         ],
         "prevo": "Pichu",
-        "evoType": "levelFriendship",
-        "evoCondition": "",
         "evos": [
             "Raichu"
         ]
@@ -2410,9 +2378,7 @@ exports.BattlePokedex = {
             "Raichu-Alola"
         ],
         "prevo": "Pikachu",
-        "evoItem": "Thunder Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Thunder Stone"
     },
     "raichualola": {
         "num": 26,
@@ -2543,9 +2509,7 @@ exports.BattlePokedex = {
             "Sandslash-Alola"
         ],
         "prevo": "Sandshrew",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "sandshrewalola": {
         "num": 27,
@@ -2630,9 +2594,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Sandslash",
         "forme": "Alola",
         "prevo": "Sandshrew-Alola",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "nidoranf": {
         "num": 29,
@@ -2711,8 +2673,6 @@ exports.BattlePokedex = {
         "weightkg": 20.0,
         "prevo": "Nidoran-F",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Nidoqueen"
         ]
@@ -2754,9 +2714,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 60.0,
         "prevo": "Nidorina",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "nidoranm": {
         "num": 32,
@@ -2836,8 +2794,6 @@ exports.BattlePokedex = {
         "weightkg": 19.5,
         "prevo": "Nidoran-M",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Nidoking"
         ]
@@ -2880,9 +2836,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 62.0,
         "prevo": "Nidorino",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "cleffa": {
         "num": 173,
@@ -2963,8 +2917,6 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 7.5,
         "prevo": "Cleffa",
-        "evoType": "levelFriendship",
-        "evoCondition": "",
         "evos": [
             "Clefable"
         ]
@@ -3007,9 +2959,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 40.0,
         "prevo": "Clefairy",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "vulpix": {
         "num": 37,
@@ -3103,9 +3053,7 @@ exports.BattlePokedex = {
             "Ninetales-Alola"
         ],
         "prevo": "Vulpix",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "vulpixalola": {
         "num": 37,
@@ -3190,9 +3138,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Ninetales",
         "forme": "Alola",
         "prevo": "Vulpix-Alola",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "igglybuff": {
         "num": 174,
@@ -3273,8 +3219,6 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 5.5,
         "prevo": "Igglybuff",
-        "evoType": "levelFriendship",
-        "evoCondition": "",
         "evos": [
             "Wigglytuff"
         ]
@@ -3318,9 +3262,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 12.0,
         "prevo": "Jigglypuff",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "zubat": {
         "num": 41,
@@ -3398,8 +3340,6 @@ exports.BattlePokedex = {
         "weightkg": 55.0,
         "prevo": "Zubat",
         "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Crobat"
         ]
@@ -3439,9 +3379,7 @@ exports.BattlePokedex = {
         "name": "Crobat",
         "heightm": 1.8,
         "weightkg": 75.0,
-        "prevo": "Golbat",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Golbat"
     },
     "oddish": {
         "num": 43,
@@ -3523,8 +3461,6 @@ exports.BattlePokedex = {
         "weightkg": 8.6,
         "prevo": "Oddish",
         "evoLevel": 21,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vileplume",
             "Bellossom"
@@ -3568,9 +3504,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 18.6,
         "prevo": "Gloom",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "bellossom": {
         "num": 182,
@@ -3609,9 +3543,7 @@ exports.BattlePokedex = {
         "heightm": 0.4,
         "weightkg": 5.8,
         "prevo": "Gloom",
-        "evoItem": "Sun Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sun Stone"
     },
     "paras": {
         "num": 46,
@@ -3697,9 +3629,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 29.5,
         "prevo": "Paras",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "venonat": {
         "num": 48,
@@ -3781,9 +3711,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 12.5,
         "prevo": "Venonat",
-        "evoLevel": 31,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 31
     },
     "diglett": {
         "num": 50,
@@ -3878,9 +3806,7 @@ exports.BattlePokedex = {
             "Dugtrio-Alola"
         ],
         "prevo": "Diglett",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "diglettalola": {
         "num": 50,
@@ -3967,9 +3893,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Dugtrio",
         "forme": "Alola",
         "prevo": "Diglett-Alola",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "meowth": {
         "num": 52,
@@ -4068,9 +3992,7 @@ exports.BattlePokedex = {
             "Persian-Alola"
         ],
         "prevo": "Meowth",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "meowthalola": {
         "num": 52,
@@ -4154,9 +4076,7 @@ exports.BattlePokedex = {
         "weightkg": 33.0,
         "baseSpecies": "Persian",
         "forme": "Alola",
-        "prevo": "Meowth-Alola",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Meowth-Alola"
     },
     "meowthgalar": {
         "num": 52,
@@ -4235,9 +4155,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 28.0,
         "prevo": "Meowth-Galar",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "meowthgmax": {
         "num": 52,
@@ -4356,9 +4274,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 76.6,
         "prevo": "Psyduck",
-        "evoLevel": 33,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 33
     },
     "mankey": {
         "num": 56,
@@ -4436,8 +4352,6 @@ exports.BattlePokedex = {
         "weightkg": 32.0,
         "prevo": "Mankey",
         "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Annihilape"
         ]
@@ -4479,7 +4393,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 56.0,
         "prevo": "Primeape",
-        "evoMove": "Rage Fist",
+        "evoSpecies": "Cinderace",
         "evoType": "useMove",
         "evoCondition": "20 times"
     },
@@ -4572,9 +4486,7 @@ exports.BattlePokedex = {
             "Arcanine-Hisui"
         ],
         "prevo": "Growlithe",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "growlithehisui": {
         "num": 58,
@@ -4657,9 +4569,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Arcanine",
         "forme": "Hisui",
         "prevo": "Growlithe-Hisui",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "poliwag": {
         "num": 60,
@@ -4739,8 +4649,6 @@ exports.BattlePokedex = {
         "weightkg": 20.0,
         "prevo": "Poliwag",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Poliwrath",
             "Politoed"
@@ -4785,9 +4693,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 54.0,
         "prevo": "Poliwhirl",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "politoed": {
         "num": 186,
@@ -4911,8 +4817,6 @@ exports.BattlePokedex = {
         "weightkg": 56.5,
         "prevo": "Abra",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Alakazam"
         ]
@@ -4961,9 +4865,7 @@ exports.BattlePokedex = {
         "otherFormes": [
             "Alakazam-Mega"
         ],
-        "prevo": "Kadabra",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Kadabra"
     },
     "alakazammega": {
         "num": 65,
@@ -5083,8 +4985,6 @@ exports.BattlePokedex = {
         "weightkg": 70.5,
         "prevo": "Machop",
         "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Machamp"
         ]
@@ -5133,9 +5033,7 @@ exports.BattlePokedex = {
         "otherFormes": [
             "Machamp-Gmax"
         ],
-        "prevo": "Machoke",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Machoke"
     },
     "machampgmax": {
         "num": 68,
@@ -5253,8 +5151,6 @@ exports.BattlePokedex = {
         "weightkg": 6.4,
         "prevo": "Bellsprout",
         "evoLevel": 21,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Victreebel"
         ]
@@ -5295,9 +5191,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 15.5,
         "prevo": "Weepinbell",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "tentacool": {
         "num": 72,
@@ -5380,9 +5274,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 55.0,
         "prevo": "Tentacool",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "geodude": {
         "num": 74,
@@ -5480,8 +5372,6 @@ exports.BattlePokedex = {
         ],
         "prevo": "Geodude",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Golem"
         ]
@@ -5531,9 +5421,7 @@ exports.BattlePokedex = {
         "otherFormes": [
             "Golem-Alola"
         ],
-        "prevo": "Graveler",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Graveler"
     },
     "geodudealola": {
         "num": 74,
@@ -5621,8 +5509,6 @@ exports.BattlePokedex = {
         "forme": "Alola",
         "prevo": "Geodude-Alola",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Golem-Alola"
         ]
@@ -5665,9 +5551,7 @@ exports.BattlePokedex = {
         "weightkg": 316.0,
         "baseSpecies": "Golem",
         "forme": "Alola",
-        "prevo": "Graveler-Alola",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Graveler-Alola"
     },
     "ponyta": {
         "num": 77,
@@ -5758,9 +5642,7 @@ exports.BattlePokedex = {
             "Rapidash-Galar"
         ],
         "prevo": "Ponyta",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "ponytagalar": {
         "num": 77,
@@ -5842,9 +5724,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Rapidash",
         "forme": "Galar",
         "prevo": "Ponyta-Galar",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "slowpoke": {
         "num": 79,
@@ -5946,9 +5826,7 @@ exports.BattlePokedex = {
             "Slowbro-Galar"
         ],
         "prevo": "Slowpoke",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "slowking": {
         "num": 199,
@@ -6126,9 +6004,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Slowbro",
         "forme": "Galar",
         "prevo": "Slowpoke-Galar",
-        "evoItem": "Galarica Cuff",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "GalaricaCuff"
     },
     "slowkinggalar": {
         "num": 199,
@@ -6170,9 +6046,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Slowking",
         "forme": "Galar",
         "prevo": "Slowpoke-Galar",
-        "evoItem": "Galarica Wreath",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "GalrcaWreath"
     },
     "magnemite": {
         "num": 81,
@@ -6250,8 +6124,6 @@ exports.BattlePokedex = {
         "weightkg": 60.0,
         "prevo": "Magnemite",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Magnezone"
         ]
@@ -6294,7 +6166,7 @@ exports.BattlePokedex = {
         "prevo": "Magneton",
         "evoMap": "New Mauville",
         "evoType": "levelMap",
-        "evoCondition": ""
+        "evoCondition": "in"
     },
     "farfetchd": {
         "num": 83,
@@ -6506,9 +6378,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 85.2,
         "prevo": "Doduo",
-        "evoLevel": 31,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 31
     },
     "seel": {
         "num": 86,
@@ -6588,9 +6458,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 120.0,
         "prevo": "Seel",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "grimer": {
         "num": 88,
@@ -6686,9 +6554,7 @@ exports.BattlePokedex = {
             "Muk-Alola"
         ],
         "prevo": "Grimer",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "grimeralola": {
         "num": 88,
@@ -6776,9 +6642,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Muk",
         "forme": "Alola",
         "prevo": "Grimer-Alola",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "shellder": {
         "num": 90,
@@ -6860,9 +6724,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 132.5,
         "prevo": "Shellder",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "gastly": {
         "num": 92,
@@ -6938,8 +6800,6 @@ exports.BattlePokedex = {
         "weightkg": 0.1,
         "prevo": "Gastly",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Gengar"
         ]
@@ -6987,9 +6847,7 @@ exports.BattlePokedex = {
             "Gengar-Mega",
             "Gengar-Gmax"
         ],
-        "prevo": "Haunter",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Haunter"
     },
     "gengarmega": {
         "num": 94,
@@ -7269,9 +7127,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 75.6,
         "prevo": "Drowzee",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "krabby": {
         "num": 98,
@@ -7355,9 +7211,7 @@ exports.BattlePokedex = {
             "Kingler-Gmax"
         ],
         "prevo": "Krabby",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "kinglergmax": {
         "num": 99,
@@ -7480,9 +7334,7 @@ exports.BattlePokedex = {
             "Electrode-Hisui"
         ],
         "prevo": "Voltorb",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "voltorbhisui": {
         "num": 100,
@@ -7559,9 +7411,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Electrode",
         "forme": "Hisui",
         "prevo": "Voltorb-Hisui",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "exeggcute": {
         "num": 102,
@@ -7647,9 +7497,7 @@ exports.BattlePokedex = {
             "Exeggutor-Alola"
         ],
         "prevo": "Exeggcute",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "exeggutoralola": {
         "num": 103,
@@ -7777,9 +7625,7 @@ exports.BattlePokedex = {
             "Marowak-Alola-Totem"
         ],
         "prevo": "Cubone",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "marowakalola": {
         "num": 105,
@@ -7940,7 +7786,7 @@ exports.BattlePokedex = {
         "prevo": "Tyrogue",
         "evoLevel": 20,
         "evoType": "level",
-        "evoCondition": "with more Attack than Defense"
+        "evoCondition": "with attack > defense"
     },
     "hitmonchan": {
         "num": 107,
@@ -7980,7 +7826,7 @@ exports.BattlePokedex = {
         "prevo": "Tyrogue",
         "evoLevel": 20,
         "evoType": "level",
-        "evoCondition": "with more Defense than Attack"
+        "evoCondition": "with attack < defense"
     },
     "hitmontop": {
         "num": 237,
@@ -8020,7 +7866,7 @@ exports.BattlePokedex = {
         "prevo": "Tyrogue",
         "evoLevel": 20,
         "evoType": "level",
-        "evoCondition": "with equal Attack and Defense"
+        "evoCondition": "with attack = defense"
     },
     "lickitung": {
         "num": 108,
@@ -8101,9 +7947,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 140.0,
         "prevo": "Lickitung",
-        "evoMove": "Rollout",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Rollout"
     },
     "koffing": {
         "num": 109,
@@ -8191,9 +8035,7 @@ exports.BattlePokedex = {
             "Weezing-Galar"
         ],
         "prevo": "Koffing",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "weezinggalar": {
         "num": 110,
@@ -8316,8 +8158,6 @@ exports.BattlePokedex = {
         "weightkg": 120.0,
         "prevo": "Rhyhorn",
         "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Rhyperior"
         ]
@@ -8483,9 +8323,7 @@ exports.BattlePokedex = {
         "name": "Blissey",
         "heightm": 1.5,
         "weightkg": 46.8,
-        "prevo": "Chansey",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Chansey"
     },
     "tangela": {
         "num": 114,
@@ -8562,9 +8400,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 128.6,
         "prevo": "Tangela",
-        "evoMove": "Ancient Power",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "AncientPower"
     },
     "kangaskhan": {
         "num": 115,
@@ -8728,8 +8564,6 @@ exports.BattlePokedex = {
         "weightkg": 25.0,
         "prevo": "Horsea",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Kingdra"
         ]
@@ -8859,9 +8693,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 39.0,
         "prevo": "Goldeen",
-        "evoLevel": 33,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 33
     },
     "staryu": {
         "num": 120,
@@ -8937,9 +8769,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 80.0,
         "prevo": "Staryu",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "mimejr": {
         "num": 439,
@@ -9025,9 +8855,7 @@ exports.BattlePokedex = {
             "Mr. Mime-Galar"
         ],
         "prevo": "Mime Jr.",
-        "evoMove": "Mimic",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Mimic"
     },
     "mrmimegalar": {
         "num": 122,
@@ -9108,9 +8936,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 58.2,
         "prevo": "Mr. Mime-Galar",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "scyther": {
         "num": 123,
@@ -9275,9 +9101,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 89.0,
         "prevo": "Scyther",
-        "evoItem": "Black Augurite",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "BlackAugurite"
     },
     "smoochum": {
         "num": 238,
@@ -9356,9 +9180,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 40.6,
         "prevo": "Smoochum",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "elekid": {
         "num": 239,
@@ -9438,8 +9260,6 @@ exports.BattlePokedex = {
         "weightkg": 30.0,
         "prevo": "Elekid",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Electivire"
         ]
@@ -9563,8 +9383,6 @@ exports.BattlePokedex = {
         "weightkg": 44.5,
         "prevo": "Magby",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Magmortar"
         ]
@@ -9937,9 +9755,7 @@ exports.BattlePokedex = {
             "Gyarados-Mega"
         ],
         "prevo": "Magikarp",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "gyaradosmega": {
         "num": 130,
@@ -10268,9 +10084,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 29.0,
         "prevo": "Eevee",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "jolteon": {
         "num": 135,
@@ -10307,9 +10121,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 24.5,
         "prevo": "Eevee",
-        "evoItem": "Thunder Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Thunder Stone"
     },
     "flareon": {
         "num": 136,
@@ -10346,9 +10158,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 25.0,
         "prevo": "Eevee",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "espeon": {
         "num": 196,
@@ -10461,9 +10271,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 25.5,
         "prevo": "Eevee",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "glaceon": {
         "num": 471,
@@ -10500,9 +10308,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 25.9,
         "prevo": "Eevee",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "sylveon": {
         "num": 700,
@@ -10541,7 +10347,7 @@ exports.BattlePokedex = {
         "prevo": "Eevee",
         "evoMove": "a Fairy-type move",
         "evoType": "levelMove",
-        "evoCondition": "and with high Friendship"
+        "evoCondition": "and two levels of Affection"
     },
     "porygon": {
         "num": 137,
@@ -10735,9 +10541,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 35.0,
         "prevo": "Omanyte",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "kabuto": {
         "num": 140,
@@ -10818,9 +10622,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 40.5,
         "prevo": "Kabuto",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "aerodactyl": {
         "num": 142,
@@ -10988,9 +10790,7 @@ exports.BattlePokedex = {
         "otherFormes": [
             "Snorlax-Gmax"
         ],
-        "prevo": "Munchlax",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Munchlax"
     },
     "snorlaxgmax": {
         "num": 143,
@@ -11334,8 +11134,6 @@ exports.BattlePokedex = {
         "weightkg": 16.5,
         "prevo": "Dratini",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Dragonite"
         ]
@@ -11379,9 +11177,7 @@ exports.BattlePokedex = {
         "heightm": 2.2,
         "weightkg": 210.0,
         "prevo": "Dragonair",
-        "evoLevel": 55,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 55
     },
     "mewtwo": {
         "num": 150,
@@ -11601,8 +11397,6 @@ exports.BattlePokedex = {
         "weightkg": 15.8,
         "prevo": "Chikorita",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Meganium"
         ]
@@ -11644,9 +11438,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 100.5,
         "prevo": "Bayleef",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "cyndaquil": {
         "num": 155,
@@ -11723,8 +11515,6 @@ exports.BattlePokedex = {
         "weightkg": 19.0,
         "prevo": "Cyndaquil",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Typhlosion"
         ]
@@ -11771,9 +11561,7 @@ exports.BattlePokedex = {
             "Typhlosion-Hisui"
         ],
         "prevo": "Quilava",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "typhlosionhisui": {
         "num": 157,
@@ -11890,8 +11678,6 @@ exports.BattlePokedex = {
         "weightkg": 25.0,
         "prevo": "Totodile",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Feraligatr"
         ]
@@ -11933,9 +11719,7 @@ exports.BattlePokedex = {
         "heightm": 2.3,
         "weightkg": 88.8,
         "prevo": "Croconaw",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "sentret": {
         "num": 161,
@@ -12012,9 +11796,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 32.5,
         "prevo": "Sentret",
-        "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 15
     },
     "hoothoot": {
         "num": 163,
@@ -12093,9 +11875,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 40.8,
         "prevo": "Hoothoot",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "ledyba": {
         "num": 165,
@@ -12174,9 +11954,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 35.6,
         "prevo": "Ledyba",
-        "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 18
     },
     "spinarak": {
         "num": 167,
@@ -12255,9 +12033,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 33.5,
         "prevo": "Spinarak",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "chinchou": {
         "num": 170,
@@ -12277,7 +12053,7 @@ exports.BattlePokedex = {
             "hp": 1
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 2"
@@ -12319,7 +12095,7 @@ exports.BattlePokedex = {
             "hp": 2
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 2"
@@ -12340,9 +12116,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 22.5,
         "prevo": "Chinchou",
-        "evoLevel": 27,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 27
     },
     "togepi": {
         "num": 175,
@@ -12421,8 +12195,6 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 3.2,
         "prevo": "Togepi",
-        "evoType": "levelFriendship",
-        "evoCondition": "",
         "evos": [
             "Togekiss"
         ]
@@ -12466,9 +12238,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 38.0,
         "prevo": "Togetic",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "natu": {
         "num": 177,
@@ -12548,9 +12318,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 15.0,
         "prevo": "Natu",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "mareep": {
         "num": 179,
@@ -12628,8 +12396,6 @@ exports.BattlePokedex = {
         "weightkg": 13.3,
         "prevo": "Mareep",
         "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Ampharos"
         ]
@@ -12677,9 +12443,7 @@ exports.BattlePokedex = {
             "Ampharos-Mega"
         ],
         "prevo": "Flaaffy",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "ampharosmega": {
         "num": 181,
@@ -12797,8 +12561,6 @@ exports.BattlePokedex = {
         "heightm": 0.4,
         "weightkg": 8.5,
         "prevo": "Azurill",
-        "evoType": "levelFriendship",
-        "evoCondition": "",
         "evos": [
             "Azumarill"
         ]
@@ -12841,9 +12603,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 28.5,
         "prevo": "Marill",
-        "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 18
     },
     "bonsly": {
         "num": 438,
@@ -12920,9 +12680,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 38.0,
         "prevo": "Bonsly",
-        "evoMove": "Mimic",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Mimic"
     },
     "hoppip": {
         "num": 187,
@@ -13004,8 +12762,6 @@ exports.BattlePokedex = {
         "weightkg": 1.0,
         "prevo": "Hoppip",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Jumpluff"
         ]
@@ -13048,9 +12804,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 3.0,
         "prevo": "Skiploom",
-        "evoLevel": 27,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 27
     },
     "aipom": {
         "num": 190,
@@ -13127,9 +12881,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 20.3,
         "prevo": "Aipom",
-        "evoMove": "Double Hit",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Double Hit"
     },
     "sunkern": {
         "num": 191,
@@ -13206,9 +12958,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 8.5,
         "prevo": "Sunkern",
-        "evoItem": "Sun Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sun Stone"
     },
     "yanma": {
         "num": 193,
@@ -13291,9 +13041,7 @@ exports.BattlePokedex = {
         "heightm": 1.9,
         "weightkg": 51.5,
         "prevo": "Yanma",
-        "evoMove": "Ancient Power",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "AncientPower"
     },
     "wooper": {
         "num": 194,
@@ -13381,9 +13129,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 75.0,
         "prevo": "Wooper",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "wooperpaldea": {
         "num": 194,
@@ -13466,9 +13212,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 223.0,
         "prevo": "Wooper-Paldea",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "murkrow": {
         "num": 198,
@@ -13547,9 +13291,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 27.3,
         "prevo": "Murkrow",
-        "evoItem": "Dusk Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Dusk Stone"
     },
     "misdreavus": {
         "num": 200,
@@ -13624,9 +13366,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 4.4,
         "prevo": "Misdreavus",
-        "evoItem": "Dusk Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Dusk Stone"
     },
     "unown": {
         "num": 201,
@@ -14710,9 +14450,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 28.5,
         "prevo": "Wynaut",
-        "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 15
     },
     "girafarig": {
         "num": 203,
@@ -14791,9 +14529,7 @@ exports.BattlePokedex = {
         "heightm": 3.2,
         "weightkg": 160.0,
         "prevo": "Girafarig",
-        "evoMove": "Twin Beam",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Twin Beam"
     },
     "pineco": {
         "num": 204,
@@ -14869,9 +14605,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 125.8,
         "prevo": "Pineco",
-        "evoLevel": 31,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 31
     },
     "dunsparce": {
         "num": 206,
@@ -14909,11 +14643,11 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 14.0,
         "evos": [
-            "Dudunsparce",
-            "Dudunsparce-Three-Segment"
+            "Dudunsprce",
+            "Dudunsprce-Three-Segment"
         ]
     },
-    "dudunsparce": {
+    "dudunsprce": {
         "num": 982,
         "baseStats": {
             "hp": 125,
@@ -14945,23 +14679,23 @@ exports.BattlePokedex = {
             "H": "Rattled"
         },
         "color": "Yellow",
-        "name": "Dudunsparce",
+        "name": "Dudunsprce",
         "heightm": 3.6,
         "weightkg": 39.2,
         "baseForme": "Two-Segment",
         "formeOrder": [
-            "Dudunsparce",
-            "Dudunsparce-Three-Segment"
+            "Dudunsprce",
+            "Dudunsprce-Three-Segment"
         ],
         "otherFormes": [
-            "Dudunsparce-Three-Segment"
+            "Dudunsprce-Three-Segment"
         ],
         "prevo": "Dunsparce",
         "evoMove": "Hyper Drill",
         "evoType": "levelMove",
         "evoCondition": "and two segments"
     },
-    "dudunsparcethreesegment": {
+    "dudunsprcethreesegment": {
         "num": 982,
         "baseStats": {
             "hp": 125,
@@ -14993,10 +14727,10 @@ exports.BattlePokedex = {
             "H": "Rattled"
         },
         "color": "Yellow",
-        "name": "Dudunsparce-Three-Segment",
+        "name": "Dudunsprce-Three-Segment",
         "heightm": 4.5,
         "weightkg": 47.4,
-        "baseSpecies": "Dudunsparce",
+        "baseSpecies": "Dudunsprce",
         "forme": "Three-Segment",
         "prevo": "Dunsparce",
         "evoMove": "Hyper Drill",
@@ -15161,9 +14895,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 48.7,
         "prevo": "Snubbull",
-        "evoLevel": 23,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 23
     },
     "qwilfish": {
         "num": 211,
@@ -15292,9 +15024,7 @@ exports.BattlePokedex = {
         "heightm": 2.5,
         "weightkg": 60.5,
         "prevo": "Qwilfish-Hisui",
-        "evoMove": "Barb Barrage",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Barb Barrage"
     },
     "shuckle": {
         "num": 213,
@@ -15670,8 +15400,6 @@ exports.BattlePokedex = {
         "weightkg": 125.8,
         "prevo": "Teddiursa",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Ursaluna"
         ]
@@ -15837,9 +15565,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 55.0,
         "prevo": "Slugma",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "swinub": {
         "num": 220,
@@ -15920,8 +15646,6 @@ exports.BattlePokedex = {
         "weightkg": 55.8,
         "prevo": "Swinub",
         "evoLevel": 33,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Mamoswine"
         ]
@@ -15963,9 +15687,7 @@ exports.BattlePokedex = {
         "heightm": 2.5,
         "weightkg": 291.0,
         "prevo": "Piloswine",
-        "evoMove": "Ancient Power",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "AncientPower"
     },
     "corsola": {
         "num": 222,
@@ -16092,9 +15814,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 0.4,
         "prevo": "Corsola-Galar",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "remoraid": {
         "num": 223,
@@ -16174,9 +15894,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 28.5,
         "prevo": "Remoraid",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "delibird": {
         "num": 225,
@@ -16294,8 +16012,8 @@ exports.BattlePokedex = {
         "weightkg": 220.0,
         "prevo": "Mantyke",
         "evoSpecies": "Remoraid",
-        "evoType": "levelParty",
-        "evoCondition": ""
+        "evoType": "levelMove",
+        "evoCondition": "in the party"
     },
     "skarmory": {
         "num": 227,
@@ -16420,9 +16138,7 @@ exports.BattlePokedex = {
             "Houndoom-Mega"
         ],
         "prevo": "Houndour",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "houndoommega": {
         "num": 229,
@@ -16535,9 +16251,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 120.0,
         "prevo": "Phanpy",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "stantler": {
         "num": 234,
@@ -16616,7 +16330,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 95.1,
         "prevo": "Stantler",
-        "evoMove": "Psyshield Bash",
+        "evoSpecies": "Shiinotic",
         "evoType": "useMove",
         "evoCondition": "20 times"
     },
@@ -16868,8 +16582,6 @@ exports.BattlePokedex = {
         "weightkg": 152.0,
         "prevo": "Larvitar",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Tyranitar"
         ]
@@ -16917,9 +16629,7 @@ exports.BattlePokedex = {
             "Tyranitar-Mega"
         ],
         "prevo": "Pupitar",
-        "evoLevel": 55,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 55
     },
     "tyranitarmega": {
         "num": 248,
@@ -17136,8 +16846,6 @@ exports.BattlePokedex = {
         "weightkg": 21.6,
         "prevo": "Treecko",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Sceptile"
         ]
@@ -17185,9 +16893,7 @@ exports.BattlePokedex = {
             "Sceptile-Mega"
         ],
         "prevo": "Grovyle",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "sceptilemega": {
         "num": 254,
@@ -17303,8 +17009,6 @@ exports.BattlePokedex = {
         "weightkg": 19.5,
         "prevo": "Torchic",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Blaziken"
         ]
@@ -17352,9 +17056,7 @@ exports.BattlePokedex = {
             "Blaziken-Mega"
         ],
         "prevo": "Combusken",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "blazikenmega": {
         "num": 257,
@@ -17470,8 +17172,6 @@ exports.BattlePokedex = {
         "weightkg": 28.0,
         "prevo": "Mudkip",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Swampert"
         ]
@@ -17520,9 +17220,7 @@ exports.BattlePokedex = {
             "Swampert-Mega"
         ],
         "prevo": "Marshtomp",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "swampertmega": {
         "num": 260,
@@ -17637,9 +17335,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 37.0,
         "prevo": "Poochyena",
-        "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 18
     },
     "zigzagoon": {
         "num": 263,
@@ -17734,9 +17430,7 @@ exports.BattlePokedex = {
             "Linoone-Galar"
         ],
         "prevo": "Zigzagoon",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "zigzagoongalar": {
         "num": 263,
@@ -17820,8 +17514,6 @@ exports.BattlePokedex = {
         "forme": "Galar",
         "prevo": "Zigzagoon-Galar",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Obstagoon"
         ]
@@ -17987,9 +17679,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 28.4,
         "prevo": "Silcoon",
-        "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 10
     },
     "cascoon": {
         "num": 268,
@@ -18070,9 +17760,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 31.6,
         "prevo": "Cascoon",
-        "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 10
     },
     "lotad": {
         "num": 270,
@@ -18158,8 +17846,6 @@ exports.BattlePokedex = {
         "weightkg": 32.5,
         "prevo": "Lotad",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Ludicolo"
         ]
@@ -18204,9 +17890,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 55.0,
         "prevo": "Lombre",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "seedot": {
         "num": 273,
@@ -18291,8 +17975,6 @@ exports.BattlePokedex = {
         "weightkg": 28.0,
         "prevo": "Seedot",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Shiftry"
         ]
@@ -18337,9 +18019,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 59.6,
         "prevo": "Nuzleaf",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "taillow": {
         "num": 276,
@@ -18416,9 +18096,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 19.8,
         "prevo": "Taillow",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "wingull": {
         "num": 278,
@@ -18499,9 +18177,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 28.0,
         "prevo": "Wingull",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "ralts": {
         "num": 280,
@@ -18583,8 +18259,6 @@ exports.BattlePokedex = {
         "weightkg": 20.2,
         "prevo": "Ralts",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Gardevoir",
             "Gallade"
@@ -18635,9 +18309,7 @@ exports.BattlePokedex = {
             "Gardevoir-Mega"
         ],
         "prevo": "Kirlia",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "gardevoirmega": {
         "num": 282,
@@ -18844,9 +18516,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 3.6,
         "prevo": "Surskit",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "shroomish": {
         "num": 285,
@@ -18930,9 +18600,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 39.2,
         "prevo": "Shroomish",
-        "evoLevel": 23,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 23
     },
     "slakoth": {
         "num": 287,
@@ -19006,8 +18674,6 @@ exports.BattlePokedex = {
         "weightkg": 46.5,
         "prevo": "Slakoth",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Slaking"
         ]
@@ -19046,9 +18712,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 130.5,
         "prevo": "Vigoroth",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "nincada": {
         "num": 290,
@@ -19128,9 +18792,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 12.0,
         "prevo": "Nincada",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "shedinja": {
         "num": 292,
@@ -19166,7 +18828,7 @@ exports.BattlePokedex = {
         "prevo": "Nincada",
         "evoLevel": 20,
         "evoType": "level",
-        "evoCondition": "with empty party slot and an extra Pok\u00e9 Ball"
+        "evoCondition": "with empty party slot + extra Poke Ball"
     },
     "whismur": {
         "num": 293,
@@ -19244,8 +18906,6 @@ exports.BattlePokedex = {
         "weightkg": 40.5,
         "prevo": "Whismur",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Exploud"
         ]
@@ -19286,9 +18946,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 84.0,
         "prevo": "Loudred",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "makuhita": {
         "num": 296,
@@ -19369,9 +19027,7 @@ exports.BattlePokedex = {
         "heightm": 2.3,
         "weightkg": 253.8,
         "prevo": "Makuhita",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "nosepass": {
         "num": 299,
@@ -19456,7 +19112,7 @@ exports.BattlePokedex = {
         "prevo": "Nosepass",
         "evoMap": "New Mauville",
         "evoType": "levelMap",
-        "evoCondition": ""
+        "evoCondition": "in"
     },
     "skitty": {
         "num": 300,
@@ -19536,9 +19192,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 32.6,
         "prevo": "Skitty",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "sableye": {
         "num": 302,
@@ -19794,8 +19448,6 @@ exports.BattlePokedex = {
         "weightkg": 120.0,
         "prevo": "Aron",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Aggron"
         ]
@@ -19846,9 +19498,7 @@ exports.BattlePokedex = {
             "Aggron-Mega"
         ],
         "prevo": "Lairon",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "aggronmega": {
         "num": 306,
@@ -19970,9 +19620,7 @@ exports.BattlePokedex = {
             "Medicham-Mega"
         ],
         "prevo": "Meditite",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "medichammega": {
         "num": 308,
@@ -20093,9 +19741,7 @@ exports.BattlePokedex = {
             "Manectric-Mega"
         ],
         "prevo": "Electrike",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "manectricmega": {
         "num": 310,
@@ -20413,9 +20059,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 14.5,
         "prevo": "Roselia",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "gulpin": {
         "num": 316,
@@ -20496,9 +20140,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 80.0,
         "prevo": "Gulpin",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "carvanha": {
         "num": 318,
@@ -20518,7 +20160,7 @@ exports.BattlePokedex = {
             "atk": 1
         },
         "items": {
-            "R": "Deep Sea Tooth"
+            "R": "DeepSeaTooth"
         },
         "eggGroups": [
             "Water 2"
@@ -20559,7 +20201,7 @@ exports.BattlePokedex = {
             "atk": 2
         },
         "items": {
-            "R": "Deep Sea Tooth"
+            "R": "DeepSeaTooth"
         },
         "eggGroups": [
             "Water 2"
@@ -20586,9 +20228,7 @@ exports.BattlePokedex = {
             "Sharpedo-Mega"
         ],
         "prevo": "Carvanha",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "sharpedomega": {
         "num": 319,
@@ -20608,7 +20248,7 @@ exports.BattlePokedex = {
             "atk": 2
         },
         "items": {
-            "R": "Deep Sea Tooth"
+            "R": "DeepSeaTooth"
         },
         "eggGroups": [
             "Water 2"
@@ -20706,9 +20346,7 @@ exports.BattlePokedex = {
         "heightm": 14.5,
         "weightkg": 398.0,
         "prevo": "Wailmer",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "numel": {
         "num": 322,
@@ -20795,9 +20433,7 @@ exports.BattlePokedex = {
             "Camerupt-Mega"
         ],
         "prevo": "Numel",
-        "evoLevel": 33,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 33
     },
     "cameruptmega": {
         "num": 323,
@@ -20950,9 +20586,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 71.5,
         "prevo": "Spoink",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "spinda": {
         "num": 327,
@@ -21071,8 +20705,6 @@ exports.BattlePokedex = {
         "weightkg": 15.3,
         "prevo": "Trapinch",
         "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Flygon"
         ]
@@ -21114,9 +20746,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 82.0,
         "prevo": "Vibrava",
-        "evoLevel": 45,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 45
     },
     "cacnea": {
         "num": 331,
@@ -21199,9 +20829,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 77.4,
         "prevo": "Cacnea",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "swablu": {
         "num": 333,
@@ -21287,9 +20915,7 @@ exports.BattlePokedex = {
             "Altaria-Mega"
         ],
         "prevo": "Swablu",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "altariamega": {
         "num": 334,
@@ -21550,9 +21176,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 23.6,
         "prevo": "Barboach",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "corphish": {
         "num": 341,
@@ -21632,9 +21256,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 32.8,
         "prevo": "Corphish",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "baltoy": {
         "num": 343,
@@ -21707,9 +21329,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 108.0,
         "prevo": "Baltoy",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "lileep": {
         "num": 345,
@@ -21790,9 +21410,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 60.4,
         "prevo": "Lileep",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "anorith": {
         "num": 347,
@@ -21869,9 +21487,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 68.2,
         "prevo": "Anorith",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "feebas": {
         "num": 349,
@@ -21950,7 +21566,7 @@ exports.BattlePokedex = {
         "heightm": 6.2,
         "weightkg": 162.0,
         "prevo": "Feebas",
-        "evoType": "levelExtra",
+        "evoType": "level",
         "evoCondition": "with maximum Beauty"
     },
     "castform": {
@@ -22240,9 +21856,7 @@ exports.BattlePokedex = {
             "Banette-Mega"
         ],
         "prevo": "Shuppet",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "banettemega": {
         "num": 354,
@@ -22362,8 +21976,6 @@ exports.BattlePokedex = {
         "weightkg": 30.6,
         "prevo": "Duskull",
         "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Dusknoir"
         ]
@@ -22693,9 +22305,7 @@ exports.BattlePokedex = {
             "Glalie-Mega"
         ],
         "prevo": "Snorunt",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "glaliemega": {
         "num": 362,
@@ -22855,8 +22465,6 @@ exports.BattlePokedex = {
         "weightkg": 87.6,
         "prevo": "Spheal",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Walrein"
         ]
@@ -22899,9 +22507,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 150.6,
         "prevo": "Sealeo",
-        "evoLevel": 44,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 44
     },
     "clamperl": {
         "num": 366,
@@ -22962,7 +22568,7 @@ exports.BattlePokedex = {
             "def": 1
         },
         "items": {
-            "R": "Deep Sea Tooth"
+            "R": "DeepSeaTooth"
         },
         "eggGroups": [
             "Water 1"
@@ -22982,7 +22588,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 27.0,
         "prevo": "Clamperl",
-        "evoItem": "Deep Sea Tooth",
+        "evoItem": "DeepSeaTooth",
         "evoType": "tradeItem",
         "evoCondition": "while holding"
     },
@@ -23003,7 +22609,7 @@ exports.BattlePokedex = {
             "spa": 2
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 1"
@@ -23023,7 +22629,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 22.6,
         "prevo": "Clamperl",
-        "evoItem": "Deep Sea Scale",
+        "evoItem": "DeepSeaScale",
         "evoType": "tradeItem",
         "evoCondition": "while holding"
     },
@@ -23046,7 +22652,7 @@ exports.BattlePokedex = {
             "def": 1
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 1",
@@ -23181,8 +22787,6 @@ exports.BattlePokedex = {
         "weightkg": 110.5,
         "prevo": "Bagon",
         "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Salamence"
         ]
@@ -23232,9 +22836,7 @@ exports.BattlePokedex = {
             "Salamence-Mega"
         ],
         "prevo": "Shelgon",
-        "evoLevel": 50,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 50
     },
     "salamencemega": {
         "num": 373,
@@ -23349,8 +22951,6 @@ exports.BattlePokedex = {
         "weightkg": 202.5,
         "prevo": "Beldum",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Metagross"
         ]
@@ -23397,9 +22997,7 @@ exports.BattlePokedex = {
             "Metagross-Mega"
         ],
         "prevo": "Metang",
-        "evoLevel": 45,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 45
     },
     "metagrossmega": {
         "num": 376,
@@ -24167,8 +23765,6 @@ exports.BattlePokedex = {
         "weightkg": 97.0,
         "prevo": "Turtwig",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Torterra"
         ]
@@ -24211,9 +23807,7 @@ exports.BattlePokedex = {
         "heightm": 2.2,
         "weightkg": 310.0,
         "prevo": "Grotle",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "chimchar": {
         "num": 390,
@@ -24293,8 +23887,6 @@ exports.BattlePokedex = {
         "weightkg": 22.0,
         "prevo": "Chimchar",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Infernape"
         ]
@@ -24338,9 +23930,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 55.0,
         "prevo": "Monferno",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "piplup": {
         "num": 393,
@@ -24418,8 +24008,6 @@ exports.BattlePokedex = {
         "weightkg": 23.0,
         "prevo": "Piplup",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Empoleon"
         ]
@@ -24461,9 +24049,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 84.5,
         "prevo": "Prinplup",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "starly": {
         "num": 396,
@@ -24541,8 +24127,6 @@ exports.BattlePokedex = {
         "weightkg": 15.5,
         "prevo": "Starly",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Staraptor"
         ]
@@ -24583,9 +24167,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 24.9,
         "prevo": "Staravia",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "bidoof": {
         "num": 399,
@@ -24665,9 +24247,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 31.5,
         "prevo": "Bidoof",
-        "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 15
     },
     "kricketot": {
         "num": 401,
@@ -24746,9 +24326,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 25.5,
         "prevo": "Kricketot",
-        "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 10
     },
     "shinx": {
         "num": 403,
@@ -24826,8 +24404,6 @@ exports.BattlePokedex = {
         "weightkg": 30.5,
         "prevo": "Shinx",
         "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Luxray"
         ]
@@ -24868,9 +24444,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 42.0,
         "prevo": "Luxio",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "cranidos": {
         "num": 408,
@@ -24945,9 +24519,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 102.5,
         "prevo": "Cranidos",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "shieldon": {
         "num": 410,
@@ -25024,9 +24596,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 149.5,
         "prevo": "Shieldon",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "burmy": {
         "num": 412,
@@ -25062,22 +24632,22 @@ exports.BattlePokedex = {
         "name": "Burmy",
         "heightm": 0.2,
         "weightkg": 3.4,
-        "baseForme": "Plant",
+        "baseForme": "Plant-Cloak",
         "formeOrder": [
             "Burmy",
-            "Burmy-Sandy",
-            "Burmy-Trash"
+            "Burmy-Sandy-Cloak",
+            "Burmy-Trash-Cloak"
         ],
         "otherFormes": [
-            "Burmy-Sandy",
-            "Burmy-Trash"
+            "Burmy-Sandy-Cloak",
+            "Burmy-Trash-Cloak"
         ],
         "evos": [
             "Wormadam",
             "Mothim"
         ]
     },
-    "burmysandy": {
+    "burmysandycloak": {
         "num": 412,
         "baseStats": {
             "hp": 40,
@@ -25108,17 +24678,17 @@ exports.BattlePokedex = {
             "H": "Overcoat"
         },
         "color": "Brown",
-        "name": "Burmy-Sandy",
+        "name": "Burmy-Sandy-Cloak",
         "heightm": 0.2,
         "weightkg": 3.4,
         "baseSpecies": "Burmy",
-        "forme": "Sandy",
+        "forme": "Sandy-Cloak",
         "evos": [
-            "Wormadam-Sandy",
-            "Mothim-Sandy"
+            "Wormadam-Sandy-Cloak",
+            "Mothim-Sandy-Cloak"
         ]
     },
-    "burmytrash": {
+    "burmytrashcloak": {
         "num": 412,
         "baseStats": {
             "hp": 40,
@@ -25149,14 +24719,14 @@ exports.BattlePokedex = {
             "H": "Overcoat"
         },
         "color": "Red",
-        "name": "Burmy-Trash",
+        "name": "Burmy-Trash-Cloak",
         "heightm": 0.2,
         "weightkg": 3.4,
         "baseSpecies": "Burmy",
-        "forme": "Trash",
+        "forme": "Trash-Cloak",
         "evos": [
-            "Wormadam-Trash",
-            "Mothim-Trash"
+            "Wormadam-Trash-Cloak",
+            "Mothim-Trash-Cloak"
         ]
     },
     "wormadam": {
@@ -25196,22 +24766,22 @@ exports.BattlePokedex = {
         "name": "Wormadam",
         "heightm": 0.5,
         "weightkg": 6.5,
-        "baseForme": "Plant",
+        "baseForme": "Plant-Cloak",
         "formeOrder": [
             "Wormadam",
-            "Wormadam-Sandy",
-            "Wormadam-Trash"
+            "Wormadam-Sandy-Cloak",
+            "Wormadam-Trash-Cloak"
         ],
         "otherFormes": [
-            "Wormadam-Sandy",
-            "Wormadam-Trash"
+            "Wormadam-Sandy-Cloak",
+            "Wormadam-Trash-Cloak"
         ],
         "prevo": "Burmy",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Female gender"
     },
-    "wormadamsandy": {
+    "wormadamsandycloak": {
         "num": 413,
         "baseStats": {
             "hp": 60,
@@ -25245,17 +24815,17 @@ exports.BattlePokedex = {
             "H": "Overcoat"
         },
         "color": "Brown",
-        "name": "Wormadam-Sandy",
+        "name": "Wormadam-Sandy-Cloak",
         "heightm": 0.5,
         "weightkg": 6.5,
         "baseSpecies": "Wormadam",
-        "forme": "Sandy",
-        "prevo": "Burmy-Sandy",
+        "forme": "Sandy-Cloak",
+        "prevo": "Burmy-Sandy-Cloak",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Female gender"
     },
-    "wormadamtrash": {
+    "wormadamtrashcloak": {
         "num": 413,
         "baseStats": {
             "hp": 60,
@@ -25290,12 +24860,12 @@ exports.BattlePokedex = {
             "H": "Overcoat"
         },
         "color": "Red",
-        "name": "Wormadam-Trash",
+        "name": "Wormadam-Trash-Cloak",
         "heightm": 0.5,
         "weightkg": 6.5,
         "baseSpecies": "Wormadam",
-        "forme": "Trash",
-        "prevo": "Burmy-Trash",
+        "forme": "Trash-Cloak",
+        "prevo": "Burmy-Trash-Cloak",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Female gender"
@@ -25338,22 +24908,22 @@ exports.BattlePokedex = {
         "name": "Mothim",
         "heightm": 0.9,
         "weightkg": 23.3,
-        "baseForme": "Plant",
+        "baseForme": "Plant-Cloak",
         "formeOrder": [
             "Mothim",
-            "Mothim-Sandy",
-            "Mothim-Trash"
+            "Mothim-Sandy-Cloak",
+            "Mothim-Trash-Cloak"
         ],
         "otherFormes": [
-            "Mothim-Sandy",
-            "Mothim-Trash"
+            "Mothim-Sandy-Cloak",
+            "Mothim-Trash-Cloak"
         ],
         "prevo": "Burmy",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Male gender"
     },
-    "mothimsandy": {
+    "mothimsandycloak": {
         "num": 414,
         "baseStats": {
             "hp": 70,
@@ -25388,17 +24958,17 @@ exports.BattlePokedex = {
             "H": "Tinted Lens"
         },
         "color": "Yellow",
-        "name": "Mothim-Sandy",
+        "name": "Mothim-Sandy-Cloak",
         "heightm": 0.9,
         "weightkg": 23.3,
         "baseSpecies": "Mothim",
-        "forme": "Sandy",
-        "prevo": "Burmy-Sandy",
+        "forme": "Sandy-Cloak",
+        "prevo": "Burmy-Sandy-Cloak",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Male gender"
     },
-    "mothimtrash": {
+    "mothimtrashcloak": {
         "num": 414,
         "baseStats": {
             "hp": 70,
@@ -25433,12 +25003,12 @@ exports.BattlePokedex = {
             "H": "Tinted Lens"
         },
         "color": "Yellow",
-        "name": "Mothim-Trash",
+        "name": "Mothim-Trash-Cloak",
         "heightm": 0.9,
         "weightkg": 23.3,
         "baseSpecies": "Mothim",
-        "forme": "Trash",
-        "prevo": "Burmy-Trash",
+        "forme": "Trash-Cloak",
+        "prevo": "Burmy-Trash-Cloak",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Male gender"
@@ -25639,9 +25209,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 33.5,
         "prevo": "Buizel",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "cherubi": {
         "num": 420,
@@ -25728,9 +25296,7 @@ exports.BattlePokedex = {
             "Cherrim-Sunshine"
         ],
         "prevo": "Cherubi",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "cherrimsunshine": {
         "num": 421,
@@ -25907,9 +25473,7 @@ exports.BattlePokedex = {
             "Gastrodon-East-Sea"
         ],
         "prevo": "Shellos",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "gastrodoneastsea": {
         "num": 423,
@@ -25951,9 +25515,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Gastrodon",
         "forme": "East-Sea",
         "prevo": "Shellos-East-Sea",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "drifloon": {
         "num": 425,
@@ -26032,9 +25594,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 15.0,
         "prevo": "Drifloon",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "buneary": {
         "num": 427,
@@ -26119,9 +25679,7 @@ exports.BattlePokedex = {
         "otherFormes": [
             "Lopunny-Mega"
         ],
-        "prevo": "Buneary",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Buneary"
     },
     "lopunnymega": {
         "num": 428,
@@ -26236,9 +25794,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 43.8,
         "prevo": "Glameow",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "stunky": {
         "num": 434,
@@ -26317,9 +25873,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 38.0,
         "prevo": "Stunky",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "bronzor": {
         "num": 436,
@@ -26397,9 +25951,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 187.0,
         "prevo": "Bronzor",
-        "evoLevel": 33,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 33
     },
     "chatot": {
         "num": 441,
@@ -26555,8 +26107,6 @@ exports.BattlePokedex = {
         "weightkg": 56.0,
         "prevo": "Gible",
         "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Garchomp"
         ]
@@ -26605,9 +26155,7 @@ exports.BattlePokedex = {
             "Garchomp-Mega"
         ],
         "prevo": "Gabite",
-        "evoLevel": 48,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 48
     },
     "garchompmega": {
         "num": 445,
@@ -26847,9 +26395,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 300.0,
         "prevo": "Hippopotas",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "skorupi": {
         "num": 451,
@@ -26934,9 +26480,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 61.5,
         "prevo": "Skorupi",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "croagunk": {
         "num": 453,
@@ -27019,9 +26563,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 44.4,
         "prevo": "Croagunk",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "carnivine": {
         "num": 455,
@@ -27132,9 +26674,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 24.0,
         "prevo": "Finneon",
-        "evoLevel": 31,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 31
     },
     "snover": {
         "num": 459,
@@ -27154,7 +26694,7 @@ exports.BattlePokedex = {
             "atk": 1
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Monster",
@@ -27197,7 +26737,7 @@ exports.BattlePokedex = {
             "spa": 1
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Monster",
@@ -27225,9 +26765,7 @@ exports.BattlePokedex = {
             "Abomasnow-Mega"
         ],
         "prevo": "Snover",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "abomasnowmega": {
         "num": 460,
@@ -27248,7 +26786,7 @@ exports.BattlePokedex = {
             "spa": 1
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Monster",
@@ -28829,8 +28367,6 @@ exports.BattlePokedex = {
         "weightkg": 16.0,
         "prevo": "Snivy",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Serperior"
         ]
@@ -28871,9 +28407,7 @@ exports.BattlePokedex = {
         "heightm": 3.3,
         "weightkg": 63.0,
         "prevo": "Servine",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "tepig": {
         "num": 498,
@@ -28950,8 +28484,6 @@ exports.BattlePokedex = {
         "weightkg": 55.5,
         "prevo": "Tepig",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Emboar"
         ]
@@ -28992,9 +28524,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 150.0,
         "prevo": "Pignite",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "oshawott": {
         "num": 501,
@@ -29070,8 +28600,6 @@ exports.BattlePokedex = {
         "weightkg": 24.5,
         "prevo": "Oshawott",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Samurott"
         ]
@@ -29118,9 +28646,7 @@ exports.BattlePokedex = {
             "Samurott-Hisui"
         ],
         "prevo": "Dewott",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "samurotthisui": {
         "num": 503,
@@ -29235,9 +28761,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 27.0,
         "prevo": "Patrat",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "lillipup": {
         "num": 506,
@@ -29315,8 +28839,6 @@ exports.BattlePokedex = {
         "weightkg": 14.7,
         "prevo": "Lillipup",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Stoutland"
         ]
@@ -29357,9 +28879,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 61.0,
         "prevo": "Herdier",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "purrloin": {
         "num": 509,
@@ -29436,9 +28956,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 37.5,
         "prevo": "Purrloin",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "pansage": {
         "num": 511,
@@ -29513,9 +29031,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 30.5,
         "prevo": "Pansage",
-        "evoItem": "Leaf Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Leaf Stone"
     },
     "pansear": {
         "num": 513,
@@ -29590,9 +29106,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 28.0,
         "prevo": "Pansear",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "panpour": {
         "num": 515,
@@ -29667,9 +29181,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 29.0,
         "prevo": "Panpour",
-        "evoItem": "Water Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Water Stone"
     },
     "munna": {
         "num": 517,
@@ -29746,9 +29258,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 60.5,
         "prevo": "Munna",
-        "evoItem": "Moon Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Moon Stone"
     },
     "pidove": {
         "num": 519,
@@ -29828,8 +29338,6 @@ exports.BattlePokedex = {
         "weightkg": 15.0,
         "prevo": "Pidove",
         "evoLevel": 21,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Unfezant"
         ]
@@ -29871,9 +29379,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 29.0,
         "prevo": "Tranquill",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "blitzle": {
         "num": 522,
@@ -29950,9 +29456,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 79.5,
         "prevo": "Blitzle",
-        "evoLevel": 27,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 27
     },
     "roggenrola": {
         "num": 524,
@@ -30035,8 +29539,6 @@ exports.BattlePokedex = {
         "weightkg": 102.0,
         "prevo": "Roggenrola",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Gigalith"
         ]
@@ -30078,9 +29580,7 @@ exports.BattlePokedex = {
         "name": "Gigalith",
         "heightm": 1.7,
         "weightkg": 260.0,
-        "prevo": "Boldore",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Boldore"
     },
     "woobat": {
         "num": 527,
@@ -30160,9 +29660,7 @@ exports.BattlePokedex = {
         "name": "Swoobat",
         "heightm": 0.9,
         "weightkg": 10.5,
-        "prevo": "Woobat",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Woobat"
     },
     "drilbur": {
         "num": 529,
@@ -30240,9 +29738,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 40.4,
         "prevo": "Drilbur",
-        "evoLevel": 31,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 31
     },
     "audino": {
         "num": 531,
@@ -30404,8 +29900,6 @@ exports.BattlePokedex = {
         "weightkg": 40.0,
         "prevo": "Timburr",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Conkeldurr"
         ]
@@ -30445,9 +29939,7 @@ exports.BattlePokedex = {
         "name": "Conkeldurr",
         "heightm": 1.4,
         "weightkg": 87.0,
-        "prevo": "Gurdurr",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Gurdurr"
     },
     "tympole": {
         "num": 535,
@@ -30526,8 +30018,6 @@ exports.BattlePokedex = {
         "weightkg": 17.0,
         "prevo": "Tympole",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Seismitoad"
         ]
@@ -30569,9 +30059,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 62.0,
         "prevo": "Palpitoad",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "throh": {
         "num": 538,
@@ -30731,8 +30219,6 @@ exports.BattlePokedex = {
         "weightkg": 7.3,
         "prevo": "Sewaddle",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Leavanny"
         ]
@@ -30775,9 +30261,7 @@ exports.BattlePokedex = {
         "name": "Leavanny",
         "heightm": 1.2,
         "weightkg": 20.5,
-        "prevo": "Swadloon",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Swadloon"
     },
     "venipede": {
         "num": 543,
@@ -30861,8 +30345,6 @@ exports.BattlePokedex = {
         "weightkg": 58.5,
         "prevo": "Venipede",
         "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Scolipede"
         ]
@@ -30906,9 +30388,7 @@ exports.BattlePokedex = {
         "heightm": 2.5,
         "weightkg": 200.5,
         "prevo": "Whirlipede",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "cottonee": {
         "num": 546,
@@ -30993,9 +30473,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 6.6,
         "prevo": "Cottonee",
-        "evoItem": "Sun Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sun Stone"
     },
     "petilil": {
         "num": 548,
@@ -31083,9 +30561,7 @@ exports.BattlePokedex = {
             "Lilligant-Hisui"
         ],
         "prevo": "Petilil",
-        "evoItem": "Sun Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sun Stone"
     },
     "lilliganthisui": {
         "num": 549,
@@ -31146,7 +30622,7 @@ exports.BattlePokedex = {
             "spe": 2
         },
         "items": {
-            "R": "Deep Sea Tooth"
+            "R": "DeepSeaTooth"
         },
         "eggGroups": [
             "Water 2"
@@ -31194,7 +30670,7 @@ exports.BattlePokedex = {
             "spe": 2
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 2"
@@ -31234,7 +30710,7 @@ exports.BattlePokedex = {
             "spe": 2
         },
         "items": {
-            "R": "Deep Sea Scale"
+            "R": "DeepSeaScale"
         },
         "eggGroups": [
             "Water 2"
@@ -31257,11 +30733,11 @@ exports.BattlePokedex = {
         "baseSpecies": "Basculin",
         "forme": "White-Striped",
         "evos": [
-            "Basculegion",
-            "Basculegion-Female"
+            "Bsculegion",
+            "Bsculegion-Female"
         ]
     },
-    "basculegion": {
+    "bsculegion": {
         "num": 902,
         "baseStats": {
             "hp": 120,
@@ -31294,22 +30770,22 @@ exports.BattlePokedex = {
             "H": "Mold Breaker"
         },
         "color": "Green",
-        "name": "Basculegion",
+        "name": "Bsculegion",
         "heightm": 3.0,
         "weightkg": 110.0,
         "baseForme": "Male",
         "formeOrder": [
-            "Basculegion",
-            "Basculegion-Female"
+            "Bsculegion",
+            "Bsculegion-Female"
         ],
         "otherFormes": [
-            "Basculegion-Female"
+            "Bsculegion-Female"
         ],
         "prevo": "Basculin-White-Striped",
         "evoType": "other",
         "evoCondition": "receive 294+ recoil damage without fainting"
     },
-    "basculegionfemale": {
+    "bsculegionfemale": {
         "num": 902,
         "baseStats": {
             "hp": 120,
@@ -31342,10 +30818,10 @@ exports.BattlePokedex = {
             "H": "Mold Breaker"
         },
         "color": "Green",
-        "name": "Basculegion-Female",
+        "name": "Bsculegion-Female",
         "heightm": 3.0,
         "weightkg": 110.0,
-        "baseSpecies": "Basculegion",
+        "baseSpecies": "Bsculegion",
         "forme": "Female",
         "prevo": "Basculin-White-Striped",
         "evoType": "other",
@@ -31433,8 +30909,6 @@ exports.BattlePokedex = {
         "weightkg": 33.4,
         "prevo": "Sandile",
         "evoLevel": 29,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Krookodile"
         ]
@@ -31476,9 +30950,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 96.3,
         "prevo": "Krokorok",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "darumaka": {
         "num": 554,
@@ -31572,9 +31044,7 @@ exports.BattlePokedex = {
             "Darmanitan-Galar-Zen-Mode"
         ],
         "prevo": "Darumaka",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "darmanitanzenmode": {
         "num": 555,
@@ -31691,9 +31161,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Darmanitan",
         "forme": "Galar-Standard-Mode",
         "prevo": "Darumaka-Galar",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "darmanitangalarzenmode": {
         "num": 555,
@@ -31854,9 +31322,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 200.0,
         "prevo": "Dwebble",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "scraggy": {
         "num": 559,
@@ -31942,9 +31408,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 30.0,
         "prevo": "Scraggy",
-        "evoLevel": 39,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 39
     },
     "sigilyph": {
         "num": 561,
@@ -32067,9 +31531,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 76.5,
         "prevo": "Yamask",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "yamaskgalar": {
         "num": 562,
@@ -32149,7 +31611,7 @@ exports.BattlePokedex = {
         "weightkg": 66.6,
         "prevo": "Yamask-Galar",
         "evoType": "other",
-        "evoCondition": "take 49 or more damage and walk under stone sculpture in Dusty Bowl"
+        "evoCondition": "have 49+ HP lost and walk under stone sculpture in Dusty Bowl"
     },
     "tirtouga": {
         "num": 564,
@@ -32230,9 +31692,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 81.0,
         "prevo": "Tirtouga",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "archen": {
         "num": 566,
@@ -32309,9 +31769,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 32.0,
         "prevo": "Archen",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "trubbish": {
         "num": 568,
@@ -32399,9 +31857,7 @@ exports.BattlePokedex = {
             "Garbodor-Gmax"
         ],
         "prevo": "Trubbish",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "garbodorgmax": {
         "num": 569,
@@ -32528,9 +31984,7 @@ exports.BattlePokedex = {
             "Zoroark-Hisui"
         ],
         "prevo": "Zorua",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "zoruahisui": {
         "num": 570,
@@ -32609,9 +32063,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Zoroark",
         "forme": "Hisui",
         "prevo": "Zorua-Hisui",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "minccino": {
         "num": 572,
@@ -32688,9 +32140,7 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 7.5,
         "prevo": "Minccino",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "gothita": {
         "num": 574,
@@ -32768,8 +32218,6 @@ exports.BattlePokedex = {
         "weightkg": 18.0,
         "prevo": "Gothita",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Gothitelle"
         ]
@@ -32810,9 +32258,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 44.0,
         "prevo": "Gothorita",
-        "evoLevel": 41,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 41
     },
     "solosis": {
         "num": 577,
@@ -32890,8 +32336,6 @@ exports.BattlePokedex = {
         "weightkg": 8.0,
         "prevo": "Solosis",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Reuniclus"
         ]
@@ -32932,9 +32376,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 20.1,
         "prevo": "Duosion",
-        "evoLevel": 41,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 41
     },
     "ducklett": {
         "num": 580,
@@ -33015,9 +32457,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 24.2,
         "prevo": "Ducklett",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "vanillite": {
         "num": 582,
@@ -33036,7 +32476,7 @@ exports.BattlePokedex = {
             "spa": 1
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Mineral"
@@ -33077,7 +32517,7 @@ exports.BattlePokedex = {
             "spa": 2
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Mineral"
@@ -33099,8 +32539,6 @@ exports.BattlePokedex = {
         "weightkg": 41.0,
         "prevo": "Vanillite",
         "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vanilluxe"
         ]
@@ -33141,9 +32579,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 57.5,
         "prevo": "Vanillish",
-        "evoLevel": 47,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 47
     },
     "deerling": {
         "num": 585,
@@ -33372,9 +32808,7 @@ exports.BattlePokedex = {
             "Sawsbuck-Winter"
         ],
         "prevo": "Deerling",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "sawsbucksummer": {
         "num": 586,
@@ -33415,9 +32849,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Sawsbuck",
         "forme": "Summer",
         "prevo": "Deerling-Summer",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "sawsbuckautumn": {
         "num": 586,
@@ -33458,9 +32890,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Sawsbuck",
         "forme": "Autumn",
         "prevo": "Deerling-Autumn",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "sawsbuckwinter": {
         "num": 586,
@@ -33501,9 +32931,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Sawsbuck",
         "forme": "Winter",
         "prevo": "Deerling-Winter",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "emolga": {
         "num": 587,
@@ -33700,9 +33128,7 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 10.5,
         "prevo": "Foongus",
-        "evoLevel": 39,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 39
     },
     "frillish": {
         "num": 592,
@@ -33781,9 +33207,7 @@ exports.BattlePokedex = {
         "heightm": 2.2,
         "weightkg": 135.0,
         "prevo": "Frillish",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "alomomola": {
         "num": 594,
@@ -33899,9 +33323,7 @@ exports.BattlePokedex = {
         "heightm": 0.8,
         "weightkg": 14.3,
         "prevo": "Joltik",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "ferroseed": {
         "num": 597,
@@ -33983,9 +33405,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 110.0,
         "prevo": "Ferroseed",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "klink": {
         "num": 599,
@@ -34057,8 +33477,6 @@ exports.BattlePokedex = {
         "weightkg": 51.0,
         "prevo": "Klink",
         "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Klinklang"
         ]
@@ -34096,9 +33514,7 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 81.0,
         "prevo": "Klang",
-        "evoLevel": 49,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 49
     },
     "tynamo": {
         "num": 602,
@@ -34172,8 +33588,6 @@ exports.BattlePokedex = {
         "weightkg": 22.0,
         "prevo": "Tynamo",
         "evoLevel": 39,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Eelektross"
         ]
@@ -34212,9 +33626,7 @@ exports.BattlePokedex = {
         "heightm": 2.1,
         "weightkg": 80.5,
         "prevo": "Eelektrik",
-        "evoItem": "Thunder Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Thunder Stone"
     },
     "elgyem": {
         "num": 605,
@@ -34291,9 +33703,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 34.5,
         "prevo": "Elgyem",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "litwick": {
         "num": 607,
@@ -34373,8 +33783,6 @@ exports.BattlePokedex = {
         "weightkg": 13.0,
         "prevo": "Litwick",
         "evoLevel": 41,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Chandelure"
         ]
@@ -34416,9 +33824,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 34.3,
         "prevo": "Lampent",
-        "evoItem": "Dusk Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Dusk Stone"
     },
     "axew": {
         "num": 610,
@@ -34498,8 +33904,6 @@ exports.BattlePokedex = {
         "weightkg": 36.0,
         "prevo": "Axew",
         "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Haxorus"
         ]
@@ -34541,9 +33945,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 105.5,
         "prevo": "Fraxure",
-        "evoLevel": 48,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 48
     },
     "cubchoo": {
         "num": 613,
@@ -34620,9 +34022,7 @@ exports.BattlePokedex = {
         "heightm": 2.6,
         "weightkg": 260.0,
         "prevo": "Cubchoo",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "cryogonal": {
         "num": 615,
@@ -34641,7 +34041,7 @@ exports.BattlePokedex = {
             "spd": 2
         },
         "items": {
-            "R": "Never-Melt Ice"
+            "R": "Never-MeltIce"
         },
         "eggGroups": [
             "Mineral"
@@ -34898,9 +34298,7 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 35.5,
         "prevo": "Mienfoo",
-        "evoLevel": 50,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 50
     },
     "druddigon": {
         "num": 621,
@@ -35016,9 +34414,7 @@ exports.BattlePokedex = {
         "heightm": 2.8,
         "weightkg": 330.0,
         "prevo": "Golett",
-        "evoLevel": 43,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 43
     },
     "pawniard": {
         "num": 624,
@@ -35097,9 +34493,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 70.0,
         "prevo": "Pawniard",
-        "evoLevel": 52,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 52
     },
     "kingambit": {
         "num": 983,
@@ -35258,9 +34652,7 @@ exports.BattlePokedex = {
             "Braviary-Hisui"
         ],
         "prevo": "Rufflet",
-        "evoLevel": 54,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 54
     },
     "braviaryhisui": {
         "num": 628,
@@ -35378,9 +34770,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 39.5,
         "prevo": "Vullaby",
-        "evoLevel": 54,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 54
     },
     "heatmor": {
         "num": 631,
@@ -35529,8 +34919,6 @@ exports.BattlePokedex = {
         "weightkg": 50.0,
         "prevo": "Deino",
         "evoLevel": 50,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Hydreigon"
         ]
@@ -35570,9 +34958,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 160.0,
         "prevo": "Zweilous",
-        "evoLevel": 64,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 64
     },
     "larvesta": {
         "num": 636,
@@ -35651,9 +35037,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 46.0,
         "prevo": "Larvesta",
-        "evoLevel": 59,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 59
     },
     "cobalion": {
         "num": 638,
@@ -36588,8 +35972,6 @@ exports.BattlePokedex = {
         "weightkg": 29.0,
         "prevo": "Chespin",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Chesnaught"
         ]
@@ -36630,9 +36012,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 90.0,
         "prevo": "Quilladin",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "fennekin": {
         "num": 653,
@@ -36708,8 +36088,6 @@ exports.BattlePokedex = {
         "weightkg": 14.5,
         "prevo": "Fennekin",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Delphox"
         ]
@@ -36750,9 +36128,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 39.0,
         "prevo": "Braixen",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "froakie": {
         "num": 656,
@@ -36828,8 +36204,6 @@ exports.BattlePokedex = {
         "weightkg": 10.9,
         "prevo": "Froakie",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Greninja"
         ]
@@ -36879,9 +36253,7 @@ exports.BattlePokedex = {
             "Greninja-Ash"
         ],
         "prevo": "Frogadier",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "greninjabattlebond": {
         "num": 658,
@@ -37033,9 +36405,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 42.4,
         "prevo": "Bunnelby",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "fletchling": {
         "num": 661,
@@ -37073,10 +36443,10 @@ exports.BattlePokedex = {
         "heightm": 0.3,
         "weightkg": 1.7,
         "evos": [
-            "Fletchinder"
+            "Flechinder"
         ]
     },
-    "fletchinder": {
+    "flechinder": {
         "num": 662,
         "baseStats": {
             "hp": 62,
@@ -37108,13 +36478,11 @@ exports.BattlePokedex = {
             "H": "Gale Wings"
         },
         "color": "Red",
-        "name": "Fletchinder",
+        "name": "Flechinder",
         "heightm": 0.7,
         "weightkg": 16.0,
         "prevo": "Fletchling",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Talonflame"
         ]
@@ -37154,10 +36522,8 @@ exports.BattlePokedex = {
         "name": "Talonflame",
         "heightm": 1.2,
         "weightkg": 24.5,
-        "prevo": "Fletchinder",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "prevo": "Flechinder",
+        "evoLevel": 35
     },
     "scatterbug": {
         "num": 664,
@@ -38101,8 +37467,6 @@ exports.BattlePokedex = {
         ],
         "prevo": "Scatterbug",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon"
         ]
@@ -38145,8 +37509,6 @@ exports.BattlePokedex = {
         "forme": "Polar",
         "prevo": "Scatterbug-Polar",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Polar"
         ]
@@ -38189,8 +37551,6 @@ exports.BattlePokedex = {
         "forme": "Tundra",
         "prevo": "Scatterbug-Tundra",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Tundra"
         ]
@@ -38233,8 +37593,6 @@ exports.BattlePokedex = {
         "forme": "Continental",
         "prevo": "Scatterbug-Continental",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Continental"
         ]
@@ -38277,8 +37635,6 @@ exports.BattlePokedex = {
         "forme": "Garden",
         "prevo": "Scatterbug-Garden",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Garden"
         ]
@@ -38321,8 +37677,6 @@ exports.BattlePokedex = {
         "forme": "Elegant",
         "prevo": "Scatterbug-Elegant",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Elegant"
         ]
@@ -38365,8 +37719,6 @@ exports.BattlePokedex = {
         "forme": "Meadow",
         "prevo": "Scatterbug-Meadow",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Meadow"
         ]
@@ -38409,8 +37761,6 @@ exports.BattlePokedex = {
         "forme": "Modern",
         "prevo": "Scatterbug-Modern",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Modern"
         ]
@@ -38453,8 +37803,6 @@ exports.BattlePokedex = {
         "forme": "Marine",
         "prevo": "Scatterbug-Marine",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Marine"
         ]
@@ -38497,8 +37845,6 @@ exports.BattlePokedex = {
         "forme": "Archipelago",
         "prevo": "Scatterbug-Archipelago",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Archipelago"
         ]
@@ -38541,8 +37887,6 @@ exports.BattlePokedex = {
         "forme": "High-Plains",
         "prevo": "Scatterbug-High-Plains",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-High-Plains"
         ]
@@ -38585,8 +37929,6 @@ exports.BattlePokedex = {
         "forme": "Sandstorm",
         "prevo": "Scatterbug-Sandstorm",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Sandstorm"
         ]
@@ -38629,8 +37971,6 @@ exports.BattlePokedex = {
         "forme": "River",
         "prevo": "Scatterbug-River",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-River"
         ]
@@ -38673,8 +38013,6 @@ exports.BattlePokedex = {
         "forme": "Monsoon",
         "prevo": "Scatterbug-Monsoon",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Monsoon"
         ]
@@ -38717,8 +38055,6 @@ exports.BattlePokedex = {
         "forme": "Savanna",
         "prevo": "Scatterbug-Savanna",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Savanna"
         ]
@@ -38761,8 +38097,6 @@ exports.BattlePokedex = {
         "forme": "Sun",
         "prevo": "Scatterbug-Sun",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Sun"
         ]
@@ -38805,8 +38139,6 @@ exports.BattlePokedex = {
         "forme": "Ocean",
         "prevo": "Scatterbug-Ocean",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Ocean"
         ]
@@ -38849,8 +38181,6 @@ exports.BattlePokedex = {
         "forme": "Jungle",
         "prevo": "Scatterbug-Jungle",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Jungle"
         ]
@@ -38893,8 +38223,6 @@ exports.BattlePokedex = {
         "forme": "Fancy",
         "prevo": "Scatterbug-Fancy",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Fancy"
         ]
@@ -38937,8 +38265,6 @@ exports.BattlePokedex = {
         "forme": "Poke-Ball",
         "prevo": "Scatterbug-Poke-Ball",
         "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vivillon-Poke-Ball"
         ]
@@ -39026,9 +38352,7 @@ exports.BattlePokedex = {
             "Vivillon-Poke-Ball"
         ],
         "prevo": "Spewpa",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonpolar": {
         "num": 666,
@@ -39071,9 +38395,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Polar",
         "prevo": "Spewpa-Polar",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillontundra": {
         "num": 666,
@@ -39116,9 +38438,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Tundra",
         "prevo": "Spewpa-Tundra",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivilloncontinental": {
         "num": 666,
@@ -39161,9 +38481,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Continental",
         "prevo": "Spewpa-Continental",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillongarden": {
         "num": 666,
@@ -39206,9 +38524,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Garden",
         "prevo": "Spewpa-Garden",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonelegant": {
         "num": 666,
@@ -39251,9 +38567,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Elegant",
         "prevo": "Spewpa-Elegant",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonmeadow": {
         "num": 666,
@@ -39296,9 +38610,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Meadow",
         "prevo": "Spewpa-Meadow",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonmodern": {
         "num": 666,
@@ -39341,9 +38653,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Modern",
         "prevo": "Spewpa-Modern",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonmarine": {
         "num": 666,
@@ -39386,9 +38696,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Marine",
         "prevo": "Spewpa-Marine",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonarchipelago": {
         "num": 666,
@@ -39431,9 +38739,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Archipelago",
         "prevo": "Spewpa-Archipelago",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonhighplains": {
         "num": 666,
@@ -39476,9 +38782,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "High-Plains",
         "prevo": "Spewpa-High-Plains",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonsandstorm": {
         "num": 666,
@@ -39521,9 +38825,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Sandstorm",
         "prevo": "Spewpa-Sandstorm",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonriver": {
         "num": 666,
@@ -39566,9 +38868,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "River",
         "prevo": "Spewpa-River",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonmonsoon": {
         "num": 666,
@@ -39611,9 +38911,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Monsoon",
         "prevo": "Spewpa-Monsoon",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonsavanna": {
         "num": 666,
@@ -39656,9 +38954,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Savanna",
         "prevo": "Spewpa-Savanna",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonsun": {
         "num": 666,
@@ -39701,9 +38997,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Sun",
         "prevo": "Spewpa-Sun",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonocean": {
         "num": 666,
@@ -39746,9 +39040,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Ocean",
         "prevo": "Spewpa-Ocean",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonjungle": {
         "num": 666,
@@ -39791,9 +39083,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Jungle",
         "prevo": "Spewpa-Jungle",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonfancy": {
         "num": 666,
@@ -39836,9 +39126,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Fancy",
         "prevo": "Spewpa-Fancy",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "vivillonpokeball": {
         "num": 666,
@@ -39881,9 +39169,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Vivillon",
         "forme": "Poke-Ball",
         "prevo": "Spewpa-Poke-Ball",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 12
     },
     "litleo": {
         "num": 667,
@@ -39962,9 +39248,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 81.5,
         "prevo": "Litleo",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "flab\u00e9b\u00e9": {
         "num": 669,
@@ -40230,8 +39514,6 @@ exports.BattlePokedex = {
         ],
         "prevo": "Flab\u00e9b\u00e9",
         "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Florges"
         ]
@@ -40274,8 +39556,6 @@ exports.BattlePokedex = {
         "forme": "Yellow-Flower",
         "prevo": "Flab\u00e9b\u00e9-Yellow-Flower",
         "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Florges-Yellow-Flower"
         ]
@@ -40318,8 +39598,6 @@ exports.BattlePokedex = {
         "forme": "Orange-Flower",
         "prevo": "Flab\u00e9b\u00e9-Orange-Flower",
         "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Florges-Orange-Flower"
         ]
@@ -40362,8 +39640,6 @@ exports.BattlePokedex = {
         "forme": "Blue-Flower",
         "prevo": "Flab\u00e9b\u00e9-Blue-Flower",
         "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Florges-Blue-Flower"
         ]
@@ -40406,8 +39682,6 @@ exports.BattlePokedex = {
         "forme": "White-Flower",
         "prevo": "Flab\u00e9b\u00e9-White-Flower",
         "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Florges-White-Flower"
         ]
@@ -40498,9 +39772,7 @@ exports.BattlePokedex = {
             "Florges-White-Flower"
         ],
         "prevo": "Floette",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "florgesyellowflower": {
         "num": 671,
@@ -40539,9 +39811,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Florges",
         "forme": "Yellow-Flower",
         "prevo": "Floette-Yellow-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "florgesorangeflower": {
         "num": 671,
@@ -40580,9 +39850,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Florges",
         "forme": "Orange-Flower",
         "prevo": "Floette-Orange-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "florgesblueflower": {
         "num": 671,
@@ -40621,9 +39889,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Florges",
         "forme": "Blue-Flower",
         "prevo": "Floette-Blue-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "florgeswhiteflower": {
         "num": 671,
@@ -40662,9 +39928,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Florges",
         "forme": "White-Flower",
         "prevo": "Floette-White-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Shiny Stone"
     },
     "skiddo": {
         "num": 672,
@@ -40739,9 +40003,7 @@ exports.BattlePokedex = {
         "heightm": 1.7,
         "weightkg": 91.0,
         "prevo": "Skiddo",
-        "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 32
     },
     "pancham": {
         "num": 674,
@@ -40826,8 +40088,8 @@ exports.BattlePokedex = {
         "weightkg": 136.0,
         "prevo": "Pancham",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "while a Dark-type Pok\u00e9mon is in the party"
+        "evoType": "levelMove",
+        "evoCondition": "in the party"
     },
     "furfrou": {
         "num": 676,
@@ -41415,8 +40677,6 @@ exports.BattlePokedex = {
         "weightkg": 4.5,
         "prevo": "Honedge",
         "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Aegislash"
         ]
@@ -41465,9 +40725,7 @@ exports.BattlePokedex = {
             "Aegislash-Blade"
         ],
         "prevo": "Doublade",
-        "evoItem": "Dusk Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Dusk Stone"
     },
     "aegislashblade": {
         "num": 681,
@@ -41740,9 +40998,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 47.0,
         "prevo": "Inkay",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "binacle": {
         "num": 688,
@@ -41821,9 +41077,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 96.0,
         "prevo": "Binacle",
-        "evoLevel": 39,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 39
     },
     "skrelp": {
         "num": 690,
@@ -41904,9 +41158,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 81.5,
         "prevo": "Skrelp",
-        "evoLevel": 48,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 48
     },
     "clauncher": {
         "num": 692,
@@ -41981,9 +41233,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 35.3,
         "prevo": "Clauncher",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "helioptile": {
         "num": 694,
@@ -42065,9 +41315,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 21.0,
         "prevo": "Helioptile",
-        "evoItem": "Sun Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sun Stone"
     },
     "tyrunt": {
         "num": 696,
@@ -42429,8 +41677,6 @@ exports.BattlePokedex = {
         ],
         "prevo": "Goomy",
         "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Goodra"
         ]
@@ -42683,9 +41929,7 @@ exports.BattlePokedex = {
         "name": "Trevenant",
         "heightm": 1.5,
         "weightkg": 71.0,
-        "prevo": "Phantump",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Phantump"
     },
     "pumpkaboo": {
         "num": 710,
@@ -42915,9 +42159,7 @@ exports.BattlePokedex = {
             "Gourgeist-Large",
             "Gourgeist-Super"
         ],
-        "prevo": "Pumpkaboo",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Pumpkaboo"
     },
     "gourgeistsmall": {
         "num": 711,
@@ -42957,9 +42199,7 @@ exports.BattlePokedex = {
         "weightkg": 9.5,
         "baseSpecies": "Gourgeist",
         "forme": "Small",
-        "prevo": "Pumpkaboo-Small",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Pumpkaboo-Small"
     },
     "gourgeistlarge": {
         "num": 711,
@@ -42999,9 +42239,7 @@ exports.BattlePokedex = {
         "weightkg": 14.0,
         "baseSpecies": "Gourgeist",
         "forme": "Large",
-        "prevo": "Pumpkaboo-Large",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Pumpkaboo-Large"
     },
     "gourgeistsuper": {
         "num": 711,
@@ -43043,9 +42281,7 @@ exports.BattlePokedex = {
         "weightkg": 39.0,
         "baseSpecies": "Gourgeist",
         "forme": "Super",
-        "prevo": "Pumpkaboo-Super",
-        "evoType": "trade",
-        "evoCondition": ""
+        "prevo": "Pumpkaboo-Super"
     },
     "bergmite": {
         "num": 712,
@@ -43131,9 +42367,7 @@ exports.BattlePokedex = {
             "Avalugg-Hisui"
         ],
         "prevo": "Bergmite",
-        "evoLevel": 37,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 37
     },
     "avalugghisui": {
         "num": 713,
@@ -43254,9 +42488,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 85.0,
         "prevo": "Noibat",
-        "evoLevel": 48,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 48
     },
     "xerneas": {
         "num": 716,
@@ -43801,8 +43033,6 @@ exports.BattlePokedex = {
         "weightkg": 16.0,
         "prevo": "Rowlet",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Decidueye"
         ]
@@ -43850,9 +43080,7 @@ exports.BattlePokedex = {
             "Decidueye-Hisui"
         ],
         "prevo": "Dartrix",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "decidueyehisui": {
         "num": 724,
@@ -43966,8 +43194,6 @@ exports.BattlePokedex = {
         "weightkg": 25.0,
         "prevo": "Litten",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Incineroar"
         ]
@@ -44008,9 +43234,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 83.0,
         "prevo": "Torracat",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "popplio": {
         "num": 728,
@@ -44088,8 +43312,6 @@ exports.BattlePokedex = {
         "weightkg": 17.5,
         "prevo": "Popplio",
         "evoLevel": 17,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Primarina"
         ]
@@ -44131,9 +43353,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 44.0,
         "prevo": "Brionne",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "pikipek": {
         "num": 731,
@@ -44217,8 +43437,6 @@ exports.BattlePokedex = {
         "weightkg": 14.8,
         "prevo": "Pikipek",
         "evoLevel": 14,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Toucannon"
         ]
@@ -44262,9 +43480,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 26.0,
         "prevo": "Trumbeak",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "yungoos": {
         "num": 734,
@@ -44469,8 +43685,6 @@ exports.BattlePokedex = {
         "weightkg": 10.5,
         "prevo": "Grubbin",
         "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Vikavolt"
         ]
@@ -44519,7 +43733,7 @@ exports.BattlePokedex = {
         "prevo": "Charjabug",
         "evoMap": "New Mauville",
         "evoType": "levelMap",
-        "evoCondition": ""
+        "evoCondition": "in"
     },
     "vikavolttotem": {
         "num": 738,
@@ -44596,10 +43810,10 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 7.0,
         "evos": [
-            "Crabominable"
+            "Crabminabl"
         ]
     },
-    "crabominable": {
+    "crabminabl": {
         "num": 740,
         "baseStats": {
             "hp": 97,
@@ -44634,13 +43848,11 @@ exports.BattlePokedex = {
             "H": "Anger Point"
         },
         "color": "White",
-        "name": "Crabominable",
+        "name": "Crabminabl",
         "heightm": 1.7,
         "weightkg": 180.0,
         "prevo": "Crabrawler",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "oricorio": {
         "num": 741,
@@ -44898,9 +44110,7 @@ exports.BattlePokedex = {
             "Ribombee-Totem"
         ],
         "prevo": "Cutiefly",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "ribombeetotem": {
         "num": 743,
@@ -45319,9 +44529,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 14.5,
         "prevo": "Mareanie",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "mudbray": {
         "num": 749,
@@ -45402,9 +44610,7 @@ exports.BattlePokedex = {
         "heightm": 2.5,
         "weightkg": 920.0,
         "prevo": "Mudbray",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "dewpider": {
         "num": 751,
@@ -45494,9 +44700,7 @@ exports.BattlePokedex = {
             "Araquanid-Totem"
         ],
         "prevo": "Dewpider",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "araquanidtotem": {
         "num": 752,
@@ -45745,9 +44949,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 11.5,
         "prevo": "Morelull",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "salandit": {
         "num": 757,
@@ -45958,9 +45160,7 @@ exports.BattlePokedex = {
         "heightm": 2.1,
         "weightkg": 135.0,
         "prevo": "Stufful",
-        "evoLevel": 27,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 27
     },
     "bounsweet": {
         "num": 761,
@@ -46042,8 +45242,6 @@ exports.BattlePokedex = {
         "weightkg": 8.2,
         "prevo": "Bounsweet",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Tsareena"
         ]
@@ -46084,9 +45282,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 21.4,
         "prevo": "Steenee",
-        "evoMove": "Stomp",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Stomp"
     },
     "comfey": {
         "num": 764,
@@ -46273,9 +45469,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 108.0,
         "prevo": "Wimpod",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "sandygast": {
         "num": 769,
@@ -46356,9 +45550,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 250.0,
         "prevo": "Sandygast",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "pyukumuku": {
         "num": 771,
@@ -46499,9 +45691,7 @@ exports.BattlePokedex = {
             "Silvally-Dark",
             "Silvally-Fairy"
         ],
-        "prevo": "Type: Null",
-        "evoType": "levelFriendship",
-        "evoCondition": ""
+        "prevo": "Type: Null"
     },
     "silvallyfighting": {
         "num": 773,
@@ -48129,8 +47319,6 @@ exports.BattlePokedex = {
         "weightkg": 47.0,
         "prevo": "Jangmo-o",
         "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Kommo-o"
         ]
@@ -48179,9 +47367,7 @@ exports.BattlePokedex = {
             "Kommo-o-Totem"
         ],
         "prevo": "Hakamo-o",
-        "evoLevel": 45,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 45
     },
     "kommoototem": {
         "num": 784,
@@ -48419,8 +47605,6 @@ exports.BattlePokedex = {
         "weightkg": 999.9,
         "prevo": "Cosmog",
         "evoLevel": 43,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Solgaleo",
             "Lunala"
@@ -49043,9 +48227,7 @@ exports.BattlePokedex = {
         "heightm": 3.6,
         "weightkg": 150.0,
         "prevo": "Poipole",
-        "evoMove": "Dragon Pulse",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Dragon Pulse"
     },
     "stakataka": {
         "num": 805,
@@ -49079,7 +48261,7 @@ exports.BattlePokedex = {
         "heightm": 5.5,
         "weightkg": 820.0
     },
-    "blacephalon": {
+    "blacephaln": {
         "num": 806,
         "baseStats": {
             "hp": 53,
@@ -49107,7 +48289,7 @@ exports.BattlePokedex = {
             "0": "Beast Boost"
         },
         "color": "White",
-        "name": "Blacephalon",
+        "name": "Blacephaln",
         "heightm": 1.8,
         "weightkg": 13.0
     },
@@ -49320,8 +48502,6 @@ exports.BattlePokedex = {
         "weightkg": 14.0,
         "prevo": "Grookey",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Rillaboom"
         ]
@@ -49369,9 +48549,7 @@ exports.BattlePokedex = {
             "Rillaboom-Gmax"
         ],
         "prevo": "Thwackey",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "rillaboomgmax": {
         "num": 812,
@@ -49487,8 +48665,6 @@ exports.BattlePokedex = {
         "weightkg": 9.0,
         "prevo": "Scorbunny",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Cinderace"
         ]
@@ -49536,9 +48712,7 @@ exports.BattlePokedex = {
             "Cinderace-Gmax"
         ],
         "prevo": "Raboot",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "cinderacegmax": {
         "num": 815,
@@ -49655,8 +48829,6 @@ exports.BattlePokedex = {
         "weightkg": 11.5,
         "prevo": "Sobble",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Inteleon"
         ]
@@ -49704,9 +48876,7 @@ exports.BattlePokedex = {
             "Inteleon-Gmax"
         ],
         "prevo": "Drizzile",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "inteleongmax": {
         "num": 818,
@@ -49823,9 +48993,7 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 6.0,
         "prevo": "Skwovet",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "rookidee": {
         "num": 821,
@@ -49863,10 +49031,10 @@ exports.BattlePokedex = {
         "heightm": 0.2,
         "weightkg": 1.8,
         "evos": [
-            "Corvisquire"
+            "Corvisquir"
         ]
     },
-    "corvisquire": {
+    "corvisquir": {
         "num": 822,
         "baseStats": {
             "hp": 68,
@@ -49898,18 +49066,16 @@ exports.BattlePokedex = {
             "H": "Big Pecks"
         },
         "color": "Blue",
-        "name": "Corvisquire",
+        "name": "Corvisquir",
         "heightm": 0.8,
         "weightkg": 16.0,
         "prevo": "Rookidee",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
-            "Corviknight"
+            "Corviknigh"
         ]
     },
-    "corviknight": {
+    "corviknigh": {
         "num": 823,
         "baseStats": {
             "hp": 98,
@@ -49942,20 +49108,18 @@ exports.BattlePokedex = {
             "H": "Mirror Armor"
         },
         "color": "Purple",
-        "name": "Corviknight",
+        "name": "Corviknigh",
         "heightm": 2.2,
         "weightkg": 75.0,
         "formeOrder": [
-            "Corviknight",
-            "Corviknight-Gmax"
+            "Corviknigh",
+            "Corviknigh-Gmax"
         ],
         "otherFormes": [
-            "Corviknight-Gmax"
+            "Corviknigh-Gmax"
         ],
-        "prevo": "Corvisquire",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "prevo": "Corvisquir",
+        "evoLevel": 38
     },
     "corviknighgmax": {
         "num": 823,
@@ -50075,8 +49239,6 @@ exports.BattlePokedex = {
         "weightkg": 19.5,
         "prevo": "Blipbug",
         "evoLevel": 10,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Orbeetle"
         ]
@@ -50127,9 +49289,7 @@ exports.BattlePokedex = {
             "Orbeetle-Gmax"
         ],
         "prevo": "Dottler",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "orbeetlegmax": {
         "num": 826,
@@ -50247,9 +49407,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 19.9,
         "prevo": "Nickit",
-        "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 18
     },
     "gossifleur": {
         "num": 829,
@@ -50326,9 +49484,7 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 2.5,
         "prevo": "Gossifleur",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 20
     },
     "wooloo": {
         "num": 831,
@@ -50405,9 +49561,7 @@ exports.BattlePokedex = {
         "heightm": 1.3,
         "weightkg": 43.0,
         "prevo": "Wooloo",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "chewtle": {
         "num": 833,
@@ -50494,9 +49648,7 @@ exports.BattlePokedex = {
             "Drednaw-Gmax"
         ],
         "prevo": "Chewtle",
-        "evoLevel": 22,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 22
     },
     "drednawgmax": {
         "num": 834,
@@ -50611,9 +49763,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 34.0,
         "prevo": "Yamper",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "rolycoly": {
         "num": 837,
@@ -50692,8 +49842,6 @@ exports.BattlePokedex = {
         "weightkg": 78.0,
         "prevo": "Rolycoly",
         "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Coalossal"
         ]
@@ -50742,9 +49890,7 @@ exports.BattlePokedex = {
             "Coalossal-Gmax"
         ],
         "prevo": "Carkol",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "coalossalgmax": {
         "num": 839,
@@ -50873,9 +50019,7 @@ exports.BattlePokedex = {
             "Flapple-Gmax"
         ],
         "prevo": "Applin",
-        "evoItem": "Tart Apple",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Tart Apple"
     },
     "flapplegmax": {
         "num": 841,
@@ -50962,9 +50106,7 @@ exports.BattlePokedex = {
             "Appletun-Gmax"
         ],
         "prevo": "Applin",
-        "evoItem": "Sweet Apple",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Sweet Apple"
     },
     "appletungmax": {
         "num": 842,
@@ -51045,8 +50187,6 @@ exports.BattlePokedex = {
         "weightkg": 4.4,
         "prevo": "Applin",
         "evoItem": "Syrupy Apple",
-        "evoType": "useItem",
-        "evoCondition": "",
         "evos": [
             "Hydrapple"
         ]
@@ -51089,9 +50229,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 93.0,
         "prevo": "Dipplin",
-        "evoMove": "Dragon Cheer",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Dragon Cheer"
     },
     "silicobra": {
         "num": 843,
@@ -51177,9 +50315,7 @@ exports.BattlePokedex = {
             "Sandaconda-Gmax"
         ],
         "prevo": "Silicobra",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "sandacondagmax": {
         "num": 844,
@@ -51376,10 +50512,10 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 1.0,
         "evos": [
-            "Barraskewda"
+            "Barraskewd"
         ]
     },
-    "barraskewda": {
+    "barraskewd": {
         "num": 847,
         "baseStats": {
             "hp": 61,
@@ -51410,13 +50546,11 @@ exports.BattlePokedex = {
             "H": "Propeller Tail"
         },
         "color": "Brown",
-        "name": "Barraskewda",
+        "name": "Barraskewd",
         "heightm": 1.3,
         "weightkg": 30.0,
         "prevo": "Arrokuda",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "toxel": {
         "num": 848,
@@ -51670,10 +50804,10 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 1.0,
         "evos": [
-            "Centiskorch"
+            "Centiskorc"
         ]
     },
-    "centiskorch": {
+    "centiskorc": {
         "num": 851,
         "baseStats": {
             "hp": 100,
@@ -51706,20 +50840,18 @@ exports.BattlePokedex = {
             "H": "Flame Body"
         },
         "color": "Red",
-        "name": "Centiskorch",
+        "name": "Centiskorc",
         "heightm": 3.0,
         "weightkg": 120.0,
         "formeOrder": [
-            "Centiskorch",
-            "Centiskorch-Gmax"
+            "Centiskorc",
+            "Centiskorc-Gmax"
         ],
         "otherFormes": [
-            "Centiskorch-Gmax"
+            "Centiskorc-Gmax"
         ],
         "prevo": "Sizzlipede",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "centiskorcgmax": {
         "num": 851,
@@ -51835,9 +50967,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 39.0,
         "prevo": "Clobbopus",
-        "evoMove": "Taunt",
-        "evoType": "levelMove",
-        "evoCondition": ""
+        "evoMove": "Taunt"
     },
     "sinistea": {
         "num": 854,
@@ -51880,7 +51010,7 @@ exports.BattlePokedex = {
             "Sinistea-Antique"
         ],
         "evos": [
-            "Polteageist"
+            "Polteageis"
         ]
     },
     "sinisteaantique": {
@@ -51918,10 +51048,10 @@ exports.BattlePokedex = {
         "baseSpecies": "Sinistea",
         "forme": "Antique",
         "evos": [
-            "Polteageist-Antique"
+            "Polteageis-Antique"
         ]
     },
-    "polteageist": {
+    "polteageis": {
         "num": 855,
         "baseStats": {
             "hp": 60,
@@ -51950,23 +51080,21 @@ exports.BattlePokedex = {
             "H": "Cursed Body"
         },
         "color": "Purple",
-        "name": "Polteageist",
+        "name": "Polteageis",
         "heightm": 0.2,
         "weightkg": 0.4,
         "baseForme": "Phony",
         "formeOrder": [
-            "Polteageist",
-            "Polteageist-Antique"
+            "Polteageis",
+            "Polteageis-Antique"
         ],
         "otherFormes": [
-            "Polteageist-Antique"
+            "Polteageis-Antique"
         ],
         "prevo": "Sinistea",
-        "evoItem": "Cracked Pot",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Cracked Pot"
     },
-    "polteageistantique": {
+    "polteageisantique": {
         "num": 855,
         "baseStats": {
             "hp": 60,
@@ -51995,15 +51123,13 @@ exports.BattlePokedex = {
             "H": "Cursed Body"
         },
         "color": "Purple",
-        "name": "Polteageist-Antique",
+        "name": "Polteageis-Antique",
         "heightm": 0.2,
         "weightkg": 0.4,
-        "baseSpecies": "Polteageist",
+        "baseSpecies": "Polteageis",
         "forme": "Antique",
         "prevo": "Sinistea-Antique",
-        "evoItem": "Chipped Pot",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Chipped Pot"
     },
     "hatenna": {
         "num": 856,
@@ -52081,8 +51207,6 @@ exports.BattlePokedex = {
         "weightkg": 4.8,
         "prevo": "Hatenna",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Hatterene"
         ]
@@ -52131,9 +51255,7 @@ exports.BattlePokedex = {
             "Hatterene-Gmax"
         ],
         "prevo": "Hattrem",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "hatterenegmax": {
         "num": 858,
@@ -52254,8 +51376,6 @@ exports.BattlePokedex = {
         "weightkg": 12.5,
         "prevo": "Impidimp",
         "evoLevel": 32,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Grimmsnarl"
         ]
@@ -52305,9 +51425,7 @@ exports.BattlePokedex = {
             "Grimmsnarl-Gmax"
         ],
         "prevo": "Morgrem",
-        "evoLevel": 42,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 42
     },
     "grimmsnarlgmax": {
         "num": 861,
@@ -52564,9 +51682,7 @@ exports.BattlePokedex = {
             "Alcremie-Gmax"
         ],
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberryrubycream": {
         "num": 869,
@@ -52606,9 +51722,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Ruby-Cream",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberrymatchacream": {
         "num": 869,
@@ -52648,9 +51762,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Matcha-Cream",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberrymintcream": {
         "num": 869,
@@ -52690,9 +51802,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Mint-Cream",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberrylemoncream": {
         "num": 869,
@@ -52732,9 +51842,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Lemon-Cream",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberrysaltedcream": {
         "num": 869,
@@ -52774,9 +51882,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Salted-Cream",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberryrubyswirl": {
         "num": 869,
@@ -52816,9 +51922,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Ruby-Swirl",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberrycaramelswirl": {
         "num": 869,
@@ -52858,9 +51962,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Caramel-Swirl",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremiestrawberryrainbowswirl": {
         "num": 869,
@@ -52900,9 +52002,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Alcremie",
         "forme": "Strawberry-Rainbow-Swirl",
         "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 0
     },
     "alcremieberryvanillacream": {
         "num": 869,
@@ -55144,7 +54244,7 @@ exports.BattlePokedex = {
         "evoType": "levelFriendship",
         "evoCondition": "at night"
     },
-    "stonjourner": {
+    "stonjourne": {
         "num": 874,
         "baseStats": {
             "hp": 100,
@@ -55174,7 +54274,7 @@ exports.BattlePokedex = {
             "0": "Power Spot"
         },
         "color": "Gray",
-        "name": "Stonjourner",
+        "name": "Stonjourne",
         "heightm": 2.5,
         "weightkg": 520.0
     },
@@ -55510,9 +54610,7 @@ exports.BattlePokedex = {
             "Copperajah-Gmax"
         ],
         "prevo": "Cufant",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 34
     },
     "copperajahgmax": {
         "num": 879,
@@ -55816,9 +54914,7 @@ exports.BattlePokedex = {
         "heightm": 2.0,
         "weightkg": 60.0,
         "prevo": "Duraludon",
-        "evoItem": "Metal Alloy",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Metal Alloy"
     },
     "dreepy": {
         "num": 885,
@@ -55900,8 +54996,6 @@ exports.BattlePokedex = {
         "weightkg": 11.0,
         "prevo": "Dreepy",
         "evoLevel": 50,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Dragapult"
         ]
@@ -55944,9 +55038,7 @@ exports.BattlePokedex = {
         "heightm": 3.0,
         "weightkg": 50.0,
         "prevo": "Drakloak",
-        "evoLevel": 60,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 60
     },
     "zacian": {
         "num": 888,
@@ -56832,13 +55924,11 @@ exports.BattlePokedex = {
         "weightkg": 12.2,
         "prevo": "Sprigatito",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
-            "Meowscarada"
+            "Meowscarad"
         ]
     },
-    "meowscarada": {
+    "meowscarad": {
         "num": 908,
         "baseStats": {
             "hp": 76,
@@ -56871,13 +55961,11 @@ exports.BattlePokedex = {
             "H": "Protean"
         },
         "color": "Green",
-        "name": "Meowscarada",
+        "name": "Meowscarad",
         "heightm": 1.5,
         "weightkg": 31.2,
         "prevo": "Floragato",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "fuecoco": {
         "num": 909,
@@ -56953,8 +56041,6 @@ exports.BattlePokedex = {
         "weightkg": 30.7,
         "prevo": "Fuecoco",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Skeledirge"
         ]
@@ -56995,9 +56081,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 326.5,
         "prevo": "Crocalor",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "quaxly": {
         "num": 912,
@@ -57075,8 +56159,6 @@ exports.BattlePokedex = {
         "weightkg": 21.5,
         "prevo": "Quaxly",
         "evoLevel": 16,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Quaquaval"
         ]
@@ -57118,9 +56200,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 61.9,
         "prevo": "Quaxwell",
-        "evoLevel": 36,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 36
     },
     "lechonk": {
         "num": 915,
@@ -57325,9 +56405,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 16.5,
         "prevo": "Tarountula",
-        "evoLevel": 15,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 15
     },
     "nymble": {
         "num": 919,
@@ -57403,9 +56481,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 17.5,
         "prevo": "Nymble",
-        "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 24
     },
     "pawmi": {
         "num": 921,
@@ -57483,9 +56559,7 @@ exports.BattlePokedex = {
         "heightm": 0.4,
         "weightkg": 6.5,
         "prevo": "Pawmi",
-        "evoLevel": 18,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 18
     },
     "pawmot": {
         "num": 923,
@@ -57723,9 +56797,7 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 14.9,
         "prevo": "Fidough",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "smoliv": {
         "num": 928,
@@ -57803,8 +56875,6 @@ exports.BattlePokedex = {
         "weightkg": 11.9,
         "prevo": "Smoliv",
         "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Arboliva"
         ]
@@ -57845,11 +56915,9 @@ exports.BattlePokedex = {
         "heightm": 1.4,
         "weightkg": 48.2,
         "prevo": "Dolliv",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
-    "squawkabilly": {
+    "sqawkabily": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -57882,23 +56950,23 @@ exports.BattlePokedex = {
             "H": "Guts"
         },
         "color": "Green",
-        "name": "Squawkabilly",
+        "name": "Sqawkabily",
         "heightm": 0.6,
         "weightkg": 2.4,
         "baseForme": "Green-Plumage",
         "formeOrder": [
-            "Squawkabilly",
-            "Squawkabilly-Blue-Plumage",
-            "Squawkabilly-Yellow-Plumage",
-            "Squawkabilly-White-Plumage"
+            "Sqawkabily",
+            "Sqawkabily-Blue-Plumage",
+            "Sqawkabily-Yellow-Plumage",
+            "Sqawkabily-White-Plumage"
         ],
         "otherFormes": [
-            "Squawkabilly-Blue-Plumage",
-            "Squawkabilly-Yellow-Plumage",
-            "Squawkabilly-White-Plumage"
+            "Sqawkabily-Blue-Plumage",
+            "Sqawkabily-Yellow-Plumage",
+            "Sqawkabily-White-Plumage"
         ]
     },
-    "squawkabillyblueplumage": {
+    "sqawkabilyblueplumage": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -57931,13 +56999,13 @@ exports.BattlePokedex = {
             "H": "Guts"
         },
         "color": "Blue",
-        "name": "Squawkabilly-Blue-Plumage",
+        "name": "Sqawkabily-Blue-Plumage",
         "heightm": 0.6,
         "weightkg": 2.4,
-        "baseSpecies": "Squawkabilly",
+        "baseSpecies": "Sqawkabily",
         "forme": "Blue-Plumage"
     },
-    "squawkabillyyellowplumage": {
+    "sqawkabilyyellowplumage": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -57970,13 +57038,13 @@ exports.BattlePokedex = {
             "H": "Sheer Force"
         },
         "color": "Yellow",
-        "name": "Squawkabilly-Yellow-Plumage",
+        "name": "Sqawkabily-Yellow-Plumage",
         "heightm": 0.6,
         "weightkg": 2.4,
-        "baseSpecies": "Squawkabilly",
+        "baseSpecies": "Sqawkabily",
         "forme": "Yellow-Plumage"
     },
-    "squawkabillywhiteplumage": {
+    "sqawkabilywhiteplumage": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -58009,10 +57077,10 @@ exports.BattlePokedex = {
             "H": "Sheer Force"
         },
         "color": "White",
-        "name": "Squawkabilly-White-Plumage",
+        "name": "Sqawkabily-White-Plumage",
         "heightm": 0.6,
         "weightkg": 2.4,
-        "baseSpecies": "Squawkabilly",
+        "baseSpecies": "Sqawkabily",
         "forme": "White-Plumage"
     },
     "nacli": {
@@ -58091,8 +57159,6 @@ exports.BattlePokedex = {
         "weightkg": 105.0,
         "prevo": "Nacli",
         "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Garganacl"
         ]
@@ -58133,9 +57199,7 @@ exports.BattlePokedex = {
         "heightm": 2.3,
         "weightkg": 240.0,
         "prevo": "Naclstack",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "charcadet": {
         "num": 935,
@@ -58212,9 +57276,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 85.0,
         "prevo": "Charcadet",
-        "evoItem": "Auspicious Armor",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "AuspciousArmr"
     },
     "ceruledge": {
         "num": 937,
@@ -58252,9 +57314,7 @@ exports.BattlePokedex = {
         "heightm": 1.6,
         "weightkg": 62.0,
         "prevo": "Charcadet",
-        "evoItem": "Malicious Armor",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "MaliciousArmr"
     },
     "tadbulb": {
         "num": 938,
@@ -58331,9 +57391,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 113.0,
         "prevo": "Tadbulb",
-        "evoItem": "Thunder Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Thunder Stone"
     },
     "wattrel": {
         "num": 940,
@@ -58373,10 +57431,10 @@ exports.BattlePokedex = {
         "heightm": 0.4,
         "weightkg": 3.6,
         "evos": [
-            "Kilowattrel"
+            "Kilowatrel"
         ]
     },
-    "kilowattrel": {
+    "kilowatrel": {
         "num": 941,
         "baseStats": {
             "hp": 70,
@@ -58410,13 +57468,11 @@ exports.BattlePokedex = {
             "H": "Competitive"
         },
         "color": "Yellow",
-        "name": "Kilowattrel",
+        "name": "Kilowatrel",
         "heightm": 1.4,
         "weightkg": 38.6,
         "prevo": "Wattrel",
-        "evoLevel": 25,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 25
     },
     "maschiff": {
         "num": 942,
@@ -58493,9 +57549,7 @@ exports.BattlePokedex = {
         "heightm": 1.1,
         "weightkg": 61.0,
         "prevo": "Maschiff",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "shroodle": {
         "num": 944,
@@ -58574,9 +57628,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 27.2,
         "prevo": "Shroodle",
-        "evoLevel": 28,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 28
     },
     "bramblin": {
         "num": 946,
@@ -58614,7 +57666,7 @@ exports.BattlePokedex = {
         "heightm": 0.6,
         "weightkg": 0.6
     },
-    "brambleghast": {
+    "brmblghast": {
         "num": 947,
         "baseStats": {
             "hp": 55,
@@ -58646,7 +57698,7 @@ exports.BattlePokedex = {
             "H": "Infiltrator"
         },
         "color": "Brown",
-        "name": "Brambleghast",
+        "name": "Brmblghast",
         "heightm": 1.2,
         "weightkg": 6.0
     },
@@ -58723,9 +57775,7 @@ exports.BattlePokedex = {
         "heightm": 1.9,
         "weightkg": 58.0,
         "prevo": "Toedscool",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 30
     },
     "klawf": {
         "num": 950,
@@ -58839,9 +57889,7 @@ exports.BattlePokedex = {
         "heightm": 0.9,
         "weightkg": 15.0,
         "prevo": "Capsakid",
-        "evoItem": "Fire Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Fire Stone"
     },
     "rellor": {
         "num": 953,
@@ -58989,9 +58037,7 @@ exports.BattlePokedex = {
         "heightm": 1.9,
         "weightkg": 90.0,
         "prevo": "Flittle",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "tinkatink": {
         "num": 957,
@@ -59071,8 +58117,6 @@ exports.BattlePokedex = {
         "weightkg": 59.1,
         "prevo": "Tinkatink",
         "evoLevel": 24,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Tinkaton"
         ]
@@ -59114,9 +58158,7 @@ exports.BattlePokedex = {
         "heightm": 0.7,
         "weightkg": 112.8,
         "prevo": "Tinkatuff",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "wiglett": {
         "num": 960,
@@ -59193,9 +58235,7 @@ exports.BattlePokedex = {
         "heightm": 1.2,
         "weightkg": 5.4,
         "prevo": "Wiglett",
-        "evoLevel": 26,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 26
     },
     "bombirdier": {
         "num": 962,
@@ -59315,9 +58355,7 @@ exports.BattlePokedex = {
             "Palafin-Hero"
         ],
         "prevo": "Finizen",
-        "evoLevel": 38,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 38
     },
     "palafinhero": {
         "num": 964,
@@ -59431,9 +58469,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 120.0,
         "prevo": "Varoom",
-        "evoLevel": 40,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 40
     },
     "cyclizar": {
         "num": 967,
@@ -59581,9 +58617,7 @@ exports.BattlePokedex = {
         "heightm": 1.5,
         "weightkg": 45.0,
         "prevo": "Glimmet",
-        "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 35
     },
     "greavard": {
         "num": 971,
@@ -59774,9 +58808,7 @@ exports.BattlePokedex = {
         "heightm": 4.5,
         "weightkg": 700.0,
         "prevo": "Cetoddle",
-        "evoItem": "Ice Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "evoItem": "Ice Stone"
     },
     "veluza": {
         "num": 976,
@@ -60032,11 +59064,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Pink",
-        "name": "Scream Tail",
+        "name": "ScreamTail",
         "heightm": 1.2,
         "weightkg": 8.0
     },
-    "brutebonnet": {
+    "brutebonet": {
         "num": 986,
         "baseStats": {
             "hp": 111,
@@ -60064,11 +59096,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "White",
-        "name": "Brute Bonnet",
+        "name": "BruteBonet",
         "heightm": 1.2,
         "weightkg": 21.0
     },
-    "fluttermane": {
+    "fluttrmane": {
         "num": 987,
         "baseStats": {
             "hp": 55,
@@ -60098,11 +59130,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Gray",
-        "name": "Flutter Mane",
+        "name": "FluttrMane",
         "heightm": 1.4,
         "weightkg": 4.0
     },
-    "slitherwing": {
+    "slithrwing": {
         "num": 988,
         "baseStats": {
             "hp": 85,
@@ -60130,11 +59162,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "White",
-        "name": "Slither Wing",
+        "name": "SlithrWing",
         "heightm": 3.2,
         "weightkg": 92.0
     },
-    "sandyshocks": {
+    "sndyshocks": {
         "num": 989,
         "baseStats": {
             "hp": 85,
@@ -60162,7 +59194,7 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Gray",
-        "name": "Sandy Shocks",
+        "name": "SndyShocks",
         "heightm": 2.3,
         "weightkg": 60.0
     },
@@ -60194,7 +59226,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Gray",
-        "name": "Iron Treads",
+        "name": "IronTreads",
         "heightm": 0.9,
         "weightkg": 240.0
     },
@@ -60226,7 +59258,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Red",
-        "name": "Iron Bundle",
+        "name": "IronBundle",
         "heightm": 0.6,
         "weightkg": 11.0
     },
@@ -60262,7 +59294,7 @@ exports.BattlePokedex = {
         "heightm": 1.8,
         "weightkg": 380.7
     },
-    "ironjugulis": {
+    "ironjuguls": {
         "num": 993,
         "baseStats": {
             "hp": 94,
@@ -60290,7 +59322,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Blue",
-        "name": "Iron Jugulis",
+        "name": "IronJuguls",
         "heightm": 1.3,
         "weightkg": 111.0
     },
@@ -60354,7 +59386,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Green",
-        "name": "Iron Thorns",
+        "name": "IronThorns",
         "heightm": 1.6,
         "weightkg": 303.0
     },
@@ -60436,8 +59468,6 @@ exports.BattlePokedex = {
         "weightkg": 30.0,
         "prevo": "Frigibax",
         "evoLevel": 35,
-        "evoType": "level",
-        "evoCondition": "",
         "evos": [
             "Baxcalibur"
         ]
@@ -60479,9 +59509,7 @@ exports.BattlePokedex = {
         "heightm": 2.1,
         "weightkg": 210.0,
         "prevo": "Arctibax",
-        "evoLevel": 54,
-        "evoType": "level",
-        "evoCondition": ""
+        "evoLevel": 54
     },
     "gimmighoul": {
         "num": 999,
@@ -60520,9 +59548,6 @@ exports.BattlePokedex = {
         ],
         "otherFormes": [
             "Gimmighoul-Roaming"
-        ],
-        "evos": [
-            "Gholdengo"
         ]
     },
     "gimmighoulroaming": {
@@ -60556,10 +59581,7 @@ exports.BattlePokedex = {
         "heightm": 0.1,
         "weightkg": 0.1,
         "baseSpecies": "Gimmighoul",
-        "forme": "Roaming",
-        "evos": [
-            "Gholdengo"
-        ]
+        "forme": "Roaming"
     },
     "gholdengo": {
         "num": 1000,
@@ -60591,11 +59613,7 @@ exports.BattlePokedex = {
         "color": "Yellow",
         "name": "Gholdengo",
         "heightm": 1.2,
-        "weightkg": 30.0,
-        "prevo": "Gimmighoul-Roaming",
-        "evoItem": "Gimmighoul Coin",
-        "evoType": "levelExtra",
-        "evoCondition": "with 999 coins in the bag"
+        "weightkg": 30.0
     },
     "wochien": {
         "num": 1001,
@@ -60725,7 +59743,7 @@ exports.BattlePokedex = {
         "heightm": 0.4,
         "weightkg": 4.9
     },
-    "roaringmoon": {
+    "roarngmoon": {
         "num": 1005,
         "baseStats": {
             "hp": 105,
@@ -60753,11 +59771,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Blue",
-        "name": "Roaring Moon",
+        "name": "RoarngMoon",
         "heightm": 2.0,
         "weightkg": 380.0
     },
-    "ironvaliant": {
+    "ironvliant": {
         "num": 1006,
         "baseStats": {
             "hp": 74,
@@ -60785,7 +59803,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "White",
-        "name": "Iron Valiant",
+        "name": "IronVliant",
         "heightm": 1.4,
         "weightkg": 35.0
     },
@@ -60853,7 +59871,7 @@ exports.BattlePokedex = {
         "heightm": 3.5,
         "weightkg": 240.0
     },
-    "walkingwake": {
+    "walkngwake": {
         "num": 1009,
         "baseStats": {
             "hp": 99,
@@ -60881,7 +59899,7 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Blue",
-        "name": "Walking Wake",
+        "name": "WalkngWake",
         "heightm": 3.5,
         "weightkg": 280.0
     },
@@ -60913,11 +59931,11 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Green",
-        "name": "Iron Leaves",
+        "name": "IronLeaves",
         "heightm": 1.5,
         "weightkg": 125.0
     },
-    "poltchageist": {
+    "ptchageist": {
         "num": 1012,
         "baseStats": {
             "hp": 40,
@@ -60947,7 +59965,7 @@ exports.BattlePokedex = {
             "H": "Heatproof"
         },
         "color": "Green",
-        "name": "Poltchageist",
+        "name": "Ptchageist",
         "heightm": 0.1,
         "weightkg": 1.1,
         "evos": [
@@ -60987,10 +60005,8 @@ exports.BattlePokedex = {
         "name": "Sinistcha",
         "heightm": 0.2,
         "weightkg": 2.2,
-        "prevo": "Poltchageist",
-        "evoItem": "Masterpiece Teacup",
-        "evoType": "useItem",
-        "evoCondition": ""
+        "prevo": "Ptchageist",
+        "evoItem": "MstrpceTeacup"
     },
     "okidogi": {
         "num": 1014,
@@ -61064,7 +60080,7 @@ exports.BattlePokedex = {
         "heightm": 1.0,
         "weightkg": 12.2
     },
-    "fezandipiti": {
+    "fezndipiti": {
         "num": 1016,
         "baseStats": {
             "hp": 88,
@@ -61096,7 +60112,7 @@ exports.BattlePokedex = {
             "H": "Technician"
         },
         "color": "Black",
-        "name": "Fezandipiti",
+        "name": "Fezndipiti",
         "heightm": 1.4,
         "weightkg": 30.1
     },
@@ -61412,7 +60428,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Ogerpon",
         "forme": "Cornerstone-Mask-Tera"
     },
-    "gougingfire": {
+    "gouginfire": {
         "num": 1020,
         "baseStats": {
             "hp": 105,
@@ -61440,7 +60456,7 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Brown",
-        "name": "Gouging Fire",
+        "name": "GouginFire",
         "heightm": 3.5,
         "weightkg": 590.0
     },
@@ -61472,11 +60488,11 @@ exports.BattlePokedex = {
             "0": "Protosynthesis"
         },
         "color": "Yellow",
-        "name": "Raging Bolt",
+        "name": "RagingBolt",
         "heightm": 5.2,
         "weightkg": 480.0
     },
-    "ironboulder": {
+    "ironbouldr": {
         "num": 1022,
         "baseStats": {
             "hp": 90,
@@ -61504,7 +60520,7 @@ exports.BattlePokedex = {
             "0": "Quark Drive"
         },
         "color": "Gray",
-        "name": "Iron Boulder",
+        "name": "IronBouldr",
         "heightm": 1.5,
         "weightkg": 162.5
     },

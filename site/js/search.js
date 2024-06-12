@@ -199,7 +199,7 @@
 		case 'pokemon':
 			var pokemon = this.engine.dex.species.get(id);
 			return this.renderPokemonRow(pokemon, matchStart, matchLength, errorMessage, attrs);
-        case 'locations':
+        case 'location':
 			var location = BattleLocationdex[id];
 			return this.renderLocationRow(location, matchStart, matchLength, errorMessage, attrs);
 		case 'move':

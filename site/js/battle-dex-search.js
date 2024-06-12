@@ -77,7 +77,7 @@ var DexSearch = /** @class */ (function () {
             case 'ability': return new BattleAbilitySearch('ability', format, speciesOrSet);
             case 'type': return new BattleTypeSearch('type', format, speciesOrSet);
             case 'category': return new BattleCategorySearch('category', format, speciesOrSet);
-            case 'encounters': return new BattleLocationSearch('encounters', format, speciesOrSet);
+            case 'location': return new BattleLocationSearch('location', format, speciesOrSet);
         }
         return null;
     };
@@ -1423,7 +1423,7 @@ var BattleLocationSearch = /** @class */ (function (_super) {
     };
     BattleLocationSearch.prototype.getDefaultResults = function () {
         var results = [];
-        results.push(['header', "Encounters"]);
+        results.push(['header', "Location"]);
         for (var id in BattleLocationdex) {
             results.push(['location', id]);
         }
@@ -1447,51 +1447,10 @@ var BattleLocationSearch = /** @class */ (function (_super) {
         return true;
     };
     BattleLocationSearch.prototype.sort = function (results, sortCol, reverseSort) {
-        var _this = this;
         var sortOrder = reverseSort ? -1 : 1;
         switch (sortCol) {
-            case 'power':
-                var powerTable_1 = {
-                    return: 102, frustration: 102, spitup: 300, trumpcard: 200, naturalgift: 80, grassknot: 120,
-                    lowkick: 120, gyroball: 150, electroball: 150, flail: 200, reversal: 200, present: 120,
-                    wringout: 120, crushgrip: 120, heatcrash: 120, heavyslam: 120, fling: 130, magnitude: 150,
-                    beatup: 24, punishment: 1020, psywave: 1250, nightshade: 1200, seismictoss: 1200,
-                    dragonrage: 1140, sonicboom: 1120, superfang: 1350, endeavor: 1399, sheercold: 1501,
-                    fissure: 1500, horndrill: 1500, guillotine: 1500,
-                };
-                return results.sort(function (_a, _b) {
-                    var rowType1 = _a[0], id1 = _a[1];
-                    var rowType2 = _b[0], id2 = _b[1];
-                    var move1 = _this.dex.moves.get(id1);
-                    var move2 = _this.dex.moves.get(id2);
-                    var pow1 = move1.basePower || powerTable_1[id1] || (move1.category === 'Status' ? -1 : 1400);
-                    var pow2 = move2.basePower || powerTable_1[id2] || (move2.category === 'Status' ? -1 : 1400);
-                    return (pow2 - pow1) * sortOrder;
-                });
-            case 'accuracy':
-                return results.sort(function (_a, _b) {
-                    var rowType1 = _a[0], id1 = _a[1];
-                    var rowType2 = _b[0], id2 = _b[1];
-                    var accuracy1 = _this.dex.moves.get(id1).accuracy || 0;
-                    var accuracy2 = _this.dex.moves.get(id2).accuracy || 0;
-                    if (accuracy1 === true)
-                        accuracy1 = 101;
-                    if (accuracy2 === true)
-                        accuracy2 = 101;
-                    return (accuracy2 - accuracy1) * sortOrder;
-                });
-            case 'pp':
-                return results.sort(function (_a, _b) {
-                    var rowType1 = _a[0], id1 = _a[1];
-                    var rowType2 = _b[0], id2 = _b[1];
-                    var pp1 = _this.dex.moves.get(id1).pp || 0;
-                    var pp2 = _this.dex.moves.get(id2).pp || 0;
-                    return (pp2 - pp1) * sortOrder;
-                });
             case 'name':
                 return results.sort(function (_a, _b) {
-                    var rowType1 = _a[0], id1 = _a[1];
-                    var rowType2 = _b[0], id2 = _b[1];
                     var name1 = id1;
                     var name2 = id2;
                     return (name1 < name2 ? -1 : name1 > name2 ? 1 : 0) * sortOrder;

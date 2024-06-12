@@ -137,14 +137,14 @@ EVO_METHOD: list[EvoMethod] = [
     EvoMethod('trade', ''),
     EvoMethod('tradeItem', 'while holding'),
     EvoMethod('useItem', ''),
-    EvoMethod('level', 'with attack > defense'),
-    EvoMethod('level', 'with attack = defense'),
-    EvoMethod('level', 'with attack < defense'),
+    EvoMethod('level', 'with more Attack than Defense'),
+    EvoMethod('level', 'with equal Attack and Defense'),
+    EvoMethod('level', 'with more Defense than Attack'),
     EvoMethod('level', 'based on personality'), # Silcoon
     EvoMethod('level', 'based on personality'), # Cascoon
     EvoMethod('level', ''), # Ninjask
-    EvoMethod('level', 'with empty party slot + extra Poke Ball'),
-    EvoMethod('level', 'with maximum Beauty'),
+    EvoMethod('level', 'with empty party slot and an extra Poké Ball'),
+    EvoMethod('levelExtra', 'with maximum Beauty'),
     EvoMethod('level', 'if Female gender'),
     EvoMethod('level', 'if Male gender'),
     EvoMethod('level', 'at night'),
@@ -153,19 +153,19 @@ EVO_METHOD: list[EvoMethod] = [
     EvoMethod('levelHold', 'during the day'),
     EvoMethod('levelHold', 'at night'),
     EvoMethod('levelMove', ''),
-    EvoMethod('levelMove', 'and two levels of Affection'), # Sylveon (param is "a Fairy-type move")
-    EvoMethod('levelMap', 'in'), # Magnezone, etc. (param is the name of the zone)
+    EvoMethod('levelMove', 'and with high Friendship'), # Sylveon (param is "a Fairy-type move")
+    EvoMethod('levelMap', ''), # Magnezone, etc. (param is the name of the zone)
     EvoMethod('useItem', 'if Male gender'),
     EvoMethod('useItem', 'if Female gender'),
     EvoMethod('level', 'in rainy weather'),
-    EvoMethod('levelMove', 'in the party'), # Mantine (param is Remoraid)
-    EvoMethod('levelMove', 'in the party'), # Pangoro (param is "a Dark-type mon")
+    EvoMethod('levelParty', ''), # Mantine (param is Remoraid)
+    EvoMethod('level', 'while a Dark-type Pokémon is in the party'), # Pangoro (param is "a Dark-type mon")
     EvoMethod('tradeSpecies', 'with a'), # Accelgor, Escavalier (param is Karrablast, Shelmet, respectively)
     EvoMethod('level', 'in'), # special one used for Leafeon and Glaceon, for some reason
     EvoMethod('level', 'if Amped Nature'),
     EvoMethod('level', 'if Low-Key Nature'),
     EvoMethod('other', 'land 3 critical hits in 1 battle'),
-    EvoMethod('other', 'have 49+ HP lost and walk under stone sculpture in Dusty Bowl'), # Runerigus-G
+    EvoMethod('other', 'take 49 or more damage and walk under stone sculpture in Dusty Bowl'), # Runerigus-G
     EvoMethod('other', 'interact with the Scroll of Darkness'),
     EvoMethod('other', 'interact with the Scroll of Waters'),
     EvoMethod('useItem', 'at night'),
@@ -179,6 +179,6 @@ EVO_METHOD: list[EvoMethod] = [
     EvoMethod('useMove', '20 times'), # Wyrdeer, Annihilape
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-M
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-F
-    EvoMethod('level', 'with 999 coins in the bag'), # Gholdengo
+    EvoMethod('levelExtra', 'with 999 coins in the bag'), # Gholdengo
 ]
 

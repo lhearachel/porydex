@@ -111,12 +111,12 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '<table class="evos"><tr><td>';
 			var evos = [template];
 			while (evos) {
-				if (evos[0] === 'dustox') evos = ['beautifly','dustox'];
+				if (evos[0] === 'Dustox') evos = ['Beautifly','Dustox'];
 				for (var i=0; i<evos.length; i++) {
 					template = Dex.species.get(evos[i]);
 					if (i <= 0) {
 						if (!evos[0].exists) {
-							if (evos[1] === 'dustox') {
+							if (evos[1] === 'Dustox') {
 								buf += '</td><td class="arrow"><span>&rarr;<br />&rarr;</span></td><td>';
 							} else if (template.prevo) {
 								buf += '</td><td class="arrow"><span><abbr title="' + this.getEvoMethod(template) + '">&rarr;</abbr></span></td><td>';
@@ -277,17 +277,27 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		case 'levelFriendship':
 			return 'level-up with high Friendship' + condition;
 		case 'levelHold':
-			return 'level-up holding ' + evo.evoItem + condition;
+			return 'level-up while holding ' + evo.evoItem + condition;
 		case 'useItem':
-			return evo.evoItem;
+			return 'use ' + evo.evoItem + condition;
+        case 'useMove':
+            return 'use ' + evo.evoMove + condition;
 		case 'levelMove':
-			return 'level-up with ' + evo.evoMove + condition;
+			return 'level-up while knowing ' + evo.evoMove + condition;
+        case 'levelMap':
+            return 'level-up while located in ' + evo.evoMap;
+        case 'levelParty':
+            return 'level-up while ' + evo.evoSpecies + ' is in the party';
 		case 'trade':
 			return 'trade';
+        case 'tradeSpecies':
+            return 'trade for a ' + evo.evoSpecies;
+        case 'tradeItem':
+            return 'trade ' + condition + ' ' + evo.evoItem
 		case 'other':
 			return evo.evoCondition;
 		default:
-			return 'level ' + evo.evoLevel;
+			return 'level ' + evo.evoLevel + condition;
 		}
 	},
 	selectTab: function(e) {
@@ -425,7 +435,11 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				switch (last) {
 				case 'a': // level-up move
 					if (lastChanged) buf += '<li class="resultheader"><h3>Level-up</h3></li>';
-					desc = moves[i].substr(1,3) === '001' || moves[i].substr(1,3) === '000' ? '&ndash;' : '<small>L</small>'+(Number(moves[i].substr(1,3))||'?');
+					desc = moves[i].substr(1,3) === '001'
+                         ? '&ndash;'
+                         : moves[i].substr(1,3) === '000'
+                         ? 'Evo.'
+                         : '<small>L</small>'+(Number(moves[i].substr(1,3))||'?');
 					break;
 				case 'b': // prevo1 level-up move
 					if (lastChanged) buf += '<li class="resultheader"><h3>Level-up from '+BattlePokedex[prevo1].name+'</h3></li>';

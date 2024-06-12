@@ -23,7 +23,7 @@ class OutputFormat(enum.Enum):
 compiler: pathlib.Path = pathlib.Path('gcc')
 expansion: pathlib.Path = pathlib.Path('../pokeemerald-expansion').resolve()
 output: pathlib.Path = pathlib.Path('./site/data').resolve()
-format: OutputFormat = OutputFormat.jsobj
+format: OutputFormat = OutputFormat.showdown
 
 _CONFIG_FILE: pathlib.Path = pathlib.Path('porydex.ini')
 
