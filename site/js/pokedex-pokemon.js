@@ -5,10 +5,11 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		this.id = id;
 		this.shortTitle = pokemon.baseSpecies;
 
+        let obtainable = pokemon.tier === "obtainable";
 		var buf = '<div class="pfx-body dexentry">';
 
 		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
-		buf += '<a href="/tiers/'+toID(pokemon.tier)+'" data-target="push" class="tier">'+pokemon.tier+'</a>';
+
 		buf += '<h1>';
 		if (pokemon.forme) {
 			buf += '<a href="/pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.baseSpecies+'<small>-'+pokemon.forme+'</small></a>';
@@ -18,22 +19,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		if (pokemon.num > 0) buf += ' <code>#'+pokemon.num+'</code>';
 		buf += '</h1>';
 
-		if (pokemon.isNonstandard) {
-			if (id === 'missingno') {
-				buf += '<div class="warning"><strong>Note:</strong> This is a glitch Pok&eacute;mon from Red/Blue/Yellow.</div>';
-			} else if (id.substr(0, 8) === 'pokestar') {
-				buf += '<div class="warning"><strong>Note:</strong> This is a Pok&eacute;mon from <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9star_Studios" target="_blank">Pok&eacute;star Studios in Black 2 and White 2</a>.</div>';
-			} else if (pokemon.isNonstandard === 'Past') {
-				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is only usable in past generations and National Dex formats.</div>';
-			} else if (pokemon.isNonstandard === 'LGPE') {
-				buf += '<div class="warning"><strong>Note:</strong> Pok&eacute;mon Let\'s Go, Pikachu! and Let\'s Go, Eevee! only.</div>';
-			} else if (pokemon.isNonstandard === 'Gigantamax') {
-				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is not obtainable in the games, even via hacking.</div>';
-			} else if (pokemon.num > 0) {
-				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is unreleased.</div>';
-			} else {
-				buf += '<div class="warning"><strong>Note:</strong> This is a made-up Pok&eacute;mon by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
-			}
+        if (pokemon.tier === "unobtainable") {
+            buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon cannot be obtained.</div>';
 		}
 
 		buf += '<img src="'+Dex.resourcePrefix+'sprites/gen5/' + pokemon.spriteid + '.png'+'" alt="" width="96" height="96" class="sprite" />';

@@ -299,10 +299,12 @@
 		if (Search.urlRoot) attrs += ' href="' + Search.urlRoot + 'pokemon/' + id + '" data-target="push"';
 		var buf = '<li class="result"><a' + attrs + ' data-entry="pokemon|' + BattleLog.escapeHTML(pokemon.name) + '">';
 
-		// number
-		var tier = this.engine ? this.engine.getTier(pokemon) : pokemon.num;
-		// buf += '<span class="col numcol">' + (pokemon.num >= 0 ? pokemon.num : 'CAP') + '</span> ';
-		buf += '<span class="col numcol">' + tier + '</span> ';
+		var tier = pokemon.tier
+        if (tier === "obtainable") {
+            buf += '<span class="col numcol">' + '✅' + '</span> ';
+        } else {
+            buf += '<span class="col numcol">' + '❌' + '</span> ';
+        }
 
 		// icon
 		buf += '<span class="col iconcol">';

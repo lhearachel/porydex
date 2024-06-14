@@ -411,7 +411,8 @@ def parse_species_data(species_data: ExprList,
                        map_sections: list[str],
                        level_up_learnsets: dict[str, dict[str, list[int]]],
                        teachable_learnsets: dict[str, dict[str, list[str]]],
-                       national_dex: dict[str, int]) -> tuple[dict, dict]:
+                       national_dex: dict[str, int],
+                       included_mons: list[str]) -> tuple[dict, dict]:
     # first pass: raw AST parse, build evolutions table
     all_species_data = {}
     all_learnsets = {}
@@ -467,10 +468,15 @@ def parse_species_data(species_data: ExprList,
     zip_evos(all_species_data, items, moves, map_sections)
 
     # re-zip the whole dictionary keyed according to showdown's key format
+    # and flag mons which are not available
     final_species = {}
     for mon, _ in all_species_data.values():
         if 'name' not in mon or not mon['name']: # egg has no name; don't try
             continue
+
+        if included_mons:
+            mon['tier'] = 'obtainable' if mon['name'] in included_mons else 'unobtainable'
+
         final_species[name_key(mon['name'])] = mon
 
     return final_species, all_learnsets
@@ -483,7 +489,8 @@ def parse_species(fname: pathlib.Path,
                   map_sections: list[str],
                   level_up_learnsets: dict[str, dict[str, list[int]]],
                   teachable_learnsets: dict[str, dict[str, list[str]]],
-                  national_dex: dict[str, int]) -> tuple[dict, dict]:
+                  national_dex: dict[str, int],
+                  included_mons: list[str]) -> tuple[dict, dict]:
     species_data: ExprList
     with yaspin(text=f'Loading species data: {fname}', color='cyan') as spinner:
         species_data = load_truncated(fname, extra_includes=[
@@ -501,5 +508,6 @@ def parse_species(fname: pathlib.Path,
         level_up_learnsets,
         teachable_learnsets,
         national_dex,
+        included_mons,
     )
 

@@ -24,6 +24,7 @@ compiler: pathlib.Path = pathlib.Path('gcc')
 expansion: pathlib.Path = pathlib.Path('../pokeemerald-expansion').resolve()
 output: pathlib.Path = pathlib.Path('./site/data').resolve()
 format: OutputFormat = OutputFormat.showdown
+included_mons_file: pathlib.Path | None = None
 
 _CONFIG_FILE: pathlib.Path = pathlib.Path('porydex.ini')
 
@@ -35,6 +36,10 @@ def save():
         'output': str(output),
         'format': str(format),
     }
+
+    if included_mons_file:
+        config['pokedex']['included_mons_file'] = str(included_mons_file.resolve())
+
     with open(_CONFIG_FILE, 'w', encoding='utf-8') as cfgfile:
         config.write(cfgfile)
 
@@ -43,6 +48,7 @@ def load():
     global expansion
     global output
     global format
+    global included_mons_file
 
     # if no config exists, ensure it exists with defaults for the next load
     if not _CONFIG_FILE.exists():
@@ -56,6 +62,9 @@ def load():
         expansion = pathlib.Path(config['default']['expansion'])
         output = pathlib.Path(config['default']['output'])
         format = OutputFormat[config['default']['format']]
+
+        if 'pokedex' in config and 'included_mons_file' in config['pokedex']:
+            included_mons_file = pathlib.Path(config['pokedex']['included_mons_file'])
 
 def clear():
     os.remove(_CONFIG_FILE)

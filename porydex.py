@@ -28,11 +28,14 @@ def config_show(_):
     print(f'path to expansion: {str(porydex.config.expansion)}')
     print(f'output directory:  {str(porydex.config.output)}')
     print(f'output format:     {str(porydex.config.format)}')
+    print(f'include mons file: {str(porydex.config.included_mons_file)}')
 
 def config_set(args):
     if args.expansion:
         assert args.expansion.resolve().exists(), f'specified expansion directory {args.expansion} does not exist'
         porydex.config.expansion = args.expansion.resolve()
+
+    porydex.config.load()
 
     if args.compiler:
         porydex.config.compiler = args.compiler
@@ -42,6 +45,9 @@ def config_set(args):
 
     if args.format:
         porydex.config.format = args.format
+
+    if args.included_species_file:
+        porydex.config.included_mons_file = args.included_species_file
 
     porydex.config.save()
 
@@ -70,6 +76,11 @@ def extract(args):
     teach_learnsets = parse_teachable_learnsets(expansion_data / 'pokemon' / 'teachable_learnsets.h', move_names)
     national_dex = parse_national_dex_enum(porydex.config.expansion / 'include' / 'constants' / 'pokedex.h')
 
+    included_mons = []
+    if porydex.config.included_mons_file:
+        with open(porydex.config.included_mons_file, 'r', encoding='utf-8') as included:
+            included_mons = list(filter(lambda s: len(s) > 0, map(lambda s: s.strip(), included.readlines())))
+
     species, learnsets = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
         abilities,
@@ -80,6 +91,7 @@ def extract(args):
         lvlup_learnsets,
         teach_learnsets,
         national_dex,
+        included_mons,
     )
     species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
@@ -129,6 +141,9 @@ def main():
                               help='format for output files',
                               type=porydex.config.OutputFormat.argparse,
                               choices=list(porydex.config.OutputFormat))
+    config_set_p.add_argument('-i', '--included-species-file',
+                              help='text file describing species to be included in the pokedex',
+                              type=pathlib.Path)
     config_set_p.set_defaults(func=config_set)
 
     config_clear_p = config_subp.add_parser('clear', help='clear configured options')
