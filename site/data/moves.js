@@ -5,7 +5,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "-",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 0,
@@ -20,7 +20,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Pound",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 35,
@@ -36,7 +36,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Karate Chop",
-        "power": 50,
+        "basePower": 50,
         "type": "Fighting",
         "accuracy": 100,
         "critRatio": 2,
@@ -53,7 +53,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Double Slap",
-        "power": 15,
+        "basePower": 15,
         "type": "Normal",
         "accuracy": 85,
         "pp": 10,
@@ -70,7 +70,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Comet Punch",
-        "power": 18,
+        "basePower": 18,
         "type": "Normal",
         "accuracy": 85,
         "pp": 15,
@@ -87,7 +87,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Mega Punch",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -102,7 +102,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Pay Day",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -119,7 +119,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Fire Punch",
-        "power": 75,
+        "basePower": 75,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -136,7 +136,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Ice Punch",
-        "power": 75,
+        "basePower": 75,
         "type": "Ice",
         "accuracy": 100,
         "pp": 15,
@@ -153,7 +153,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Thunder Punch",
-        "power": 75,
+        "basePower": 75,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -169,7 +169,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Scratch",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 35,
@@ -185,7 +185,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Vise Grip",
-        "power": 55,
+        "basePower": 55,
         "type": "Normal",
         "accuracy": 100,
         "pp": 30,
@@ -201,7 +201,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Guillotine",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 30,
         "pp": 5,
@@ -217,7 +217,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Razor Wind",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 100,
         "critRatio": 2,
@@ -234,7 +234,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Swords Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -251,7 +251,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Cut",
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "accuracy": 95,
         "pp": 30,
@@ -267,7 +267,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Gust",
-        "power": 40,
+        "basePower": 40,
         "type": "Flying",
         "accuracy": 100,
         "pp": 35,
@@ -283,7 +283,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wing Attack",
-        "power": 60,
+        "basePower": 60,
         "type": "Flying",
         "accuracy": 100,
         "pp": 35,
@@ -300,7 +300,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Whirlwind",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -316,7 +316,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Fly",
-        "power": 90,
+        "basePower": 90,
         "type": "Flying",
         "accuracy": 95,
         "pp": 15,
@@ -332,7 +332,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bind",
-        "power": 15,
+        "basePower": 15,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -348,7 +348,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Slam",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 75,
         "pp": 20,
@@ -365,7 +365,7 @@ exports.BattleMovedex = {
         },
         "name": "Vine Whip",
         "pp": 25,
-        "power": 45,
+        "basePower": 45,
         "type": "Grass",
         "accuracy": 100,
         "priority": 0,
@@ -380,7 +380,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Stomp",
-        "power": 65,
+        "basePower": 65,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -396,7 +396,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Double Kick",
-        "power": 30,
+        "basePower": 30,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 30,
@@ -412,7 +412,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Mega Kick",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 75,
         "pp": 5,
@@ -428,7 +428,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Jump Kick",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 95,
         "pp": 10,
@@ -444,7 +444,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rolling Kick",
-        "power": 60,
+        "basePower": 60,
         "type": "Fighting",
         "accuracy": 85,
         "pp": 15,
@@ -460,7 +460,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Sand Attack",
-        "power": 0,
+        "basePower": 0,
         "type": "Ground",
         "accuracy": 100,
         "pp": 15,
@@ -476,7 +476,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Headbutt",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -492,7 +492,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Horn Attack",
-        "power": 65,
+        "basePower": 65,
         "type": "Normal",
         "accuracy": 100,
         "pp": 25,
@@ -508,7 +508,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Fury Attack",
-        "power": 15,
+        "basePower": 15,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -524,7 +524,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Horn Drill",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 30,
         "pp": 5,
@@ -540,7 +540,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Tackle",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 35,
@@ -556,7 +556,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Body Slam",
-        "power": 85,
+        "basePower": 85,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -572,7 +572,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wrap",
-        "power": 15,
+        "basePower": 15,
         "type": "Normal",
         "accuracy": 90,
         "pp": 20,
@@ -588,7 +588,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Take Down",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -604,7 +604,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Thrash",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -620,7 +620,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Double-Edge",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -636,7 +636,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Tail Whip",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 30,
@@ -651,7 +651,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Poison Sting",
-        "power": 15,
+        "basePower": 15,
         "type": "Poison",
         "accuracy": 100,
         "pp": 35,
@@ -666,7 +666,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Twineedle",
-        "power": 25,
+        "basePower": 25,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -681,7 +681,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Pin Missile",
-        "power": 25,
+        "basePower": 25,
         "type": "Bug",
         "accuracy": 95,
         "pp": 20,
@@ -697,7 +697,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Leer",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 30,
@@ -714,7 +714,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Bite",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": 100,
         "pp": 25,
@@ -731,7 +731,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Growl",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 40,
@@ -747,7 +747,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Roar",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -764,7 +764,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Sing",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 55,
         "pp": 15,
@@ -781,7 +781,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Supersonic",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 55,
         "pp": 20,
@@ -796,7 +796,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sonic Boom",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 90,
         "pp": 20,
@@ -814,7 +814,7 @@ exports.BattleMovedex = {
         },
         "name": "Disable",
         "accuracy": 100,
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "pp": 20,
         "priority": 0,
@@ -828,7 +828,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Acid",
-        "power": 40,
+        "basePower": 40,
         "type": "Poison",
         "accuracy": 100,
         "pp": 30,
@@ -843,7 +843,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ember",
-        "power": 40,
+        "basePower": 40,
         "type": "Fire",
         "accuracy": 100,
         "pp": 25,
@@ -858,7 +858,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Flamethrower",
-        "power": 90,
+        "basePower": 90,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -872,7 +872,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Mist",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 30,
@@ -887,7 +887,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Water Gun",
-        "power": 40,
+        "basePower": 40,
         "type": "Water",
         "accuracy": 100,
         "pp": 25,
@@ -902,7 +902,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hydro Pump",
-        "power": 110,
+        "basePower": 110,
         "type": "Water",
         "accuracy": 80,
         "pp": 5,
@@ -917,7 +917,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Surf",
-        "power": 90,
+        "basePower": 90,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -932,7 +932,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ice Beam",
-        "power": 90,
+        "basePower": 90,
         "type": "Ice",
         "accuracy": 100,
         "pp": 10,
@@ -948,7 +948,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Blizzard",
-        "power": 110,
+        "basePower": 110,
         "type": "Ice",
         "accuracy": 70,
         "pp": 5,
@@ -963,7 +963,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psybeam",
-        "power": 65,
+        "basePower": 65,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 20,
@@ -978,7 +978,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bubble Beam",
-        "power": 65,
+        "basePower": 65,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -993,7 +993,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Aurora Beam",
-        "power": 65,
+        "basePower": 65,
         "type": "Ice",
         "accuracy": 100,
         "pp": 20,
@@ -1008,7 +1008,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hyper Beam",
-        "power": 150,
+        "basePower": 150,
         "type": "Normal",
         "accuracy": 90,
         "pp": 5,
@@ -1024,7 +1024,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Peck",
-        "power": 35,
+        "basePower": 35,
         "type": "Flying",
         "accuracy": 100,
         "pp": 35,
@@ -1040,7 +1040,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Drill Peck",
-        "power": 80,
+        "basePower": 80,
         "type": "Flying",
         "accuracy": 100,
         "pp": 20,
@@ -1056,7 +1056,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Submission",
-        "power": 80,
+        "basePower": 80,
         "type": "Fighting",
         "accuracy": 80,
         "pp": 20,
@@ -1072,7 +1072,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Low Kick",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -1088,7 +1088,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Counter",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -1104,7 +1104,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Seismic Toss",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -1120,7 +1120,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Strength",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -1135,7 +1135,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Absorb",
-        "power": 20,
+        "basePower": 20,
         "type": "Grass",
         "accuracy": 100,
         "pp": 25,
@@ -1150,7 +1150,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mega Drain",
-        "power": 40,
+        "basePower": 40,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -1166,7 +1166,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Leech Seed",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 90,
         "pp": 10,
@@ -1180,7 +1180,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Growth",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -1196,7 +1196,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Razor Leaf",
-        "power": 55,
+        "basePower": 55,
         "type": "Grass",
         "accuracy": 95,
         "critRatio": 2,
@@ -1212,7 +1212,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Solar Beam",
-        "power": 120,
+        "basePower": 120,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -1229,7 +1229,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Poison Powder",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 75,
         "pp": 35,
@@ -1246,7 +1246,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Stun Spore",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 75,
         "pp": 30,
@@ -1263,7 +1263,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Sleep Powder",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 75,
         "pp": 15,
@@ -1279,7 +1279,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Petal Dance",
-        "power": 120,
+        "basePower": 120,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -1295,7 +1295,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "String Shot",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": 95,
         "pp": 40,
@@ -1310,7 +1310,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dragon Rage",
-        "power": 1,
+        "basePower": 1,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -1325,7 +1325,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fire Spin",
-        "power": 35,
+        "basePower": 35,
         "type": "Fire",
         "accuracy": 85,
         "pp": 15,
@@ -1340,7 +1340,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thunder Shock",
-        "power": 40,
+        "basePower": 40,
         "type": "Electric",
         "accuracy": 100,
         "pp": 30,
@@ -1355,7 +1355,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thunderbolt",
-        "power": 90,
+        "basePower": 90,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -1371,7 +1371,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Thunder Wave",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": 90,
         "pp": 20,
@@ -1386,7 +1386,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thunder",
-        "power": 110,
+        "basePower": 110,
         "type": "Electric",
         "accuracy": 70,
         "pp": 10,
@@ -1401,7 +1401,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Rock Throw",
-        "power": 50,
+        "basePower": 50,
         "type": "Rock",
         "accuracy": 90,
         "pp": 15,
@@ -1416,7 +1416,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Earthquake",
-        "power": 100,
+        "basePower": 100,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -1431,7 +1431,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fissure",
-        "power": 1,
+        "basePower": 1,
         "type": "Ground",
         "accuracy": 30,
         "pp": 5,
@@ -1447,7 +1447,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dig",
-        "power": 80,
+        "basePower": 80,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -1463,7 +1463,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Toxic",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 90,
         "pp": 10,
@@ -1478,7 +1478,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Confusion",
-        "power": 50,
+        "basePower": 50,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 25,
@@ -1493,7 +1493,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psychic",
-        "power": 90,
+        "basePower": 90,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -1509,7 +1509,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Hypnosis",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 60,
         "pp": 20,
@@ -1523,7 +1523,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Meditate",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 40,
@@ -1537,7 +1537,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Agility",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 30,
@@ -1553,7 +1553,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Quick Attack",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 30,
@@ -1569,7 +1569,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rage",
-        "power": 20,
+        "basePower": 20,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -1581,7 +1581,7 @@ exports.BattleMovedex = {
         "num": 100,
         "flags": {},
         "name": "Teleport",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -1596,7 +1596,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Night Shade",
-        "power": 1,
+        "basePower": 1,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -1612,7 +1612,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Mimic",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -1629,7 +1629,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Screech",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 85,
         "pp": 40,
@@ -1643,7 +1643,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Double Team",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -1658,7 +1658,7 @@ exports.BattleMovedex = {
         },
         "name": "Recover",
         "pp": 5,
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "priority": 0,
@@ -1671,7 +1671,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Harden",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -1685,7 +1685,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Minimize",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -1701,7 +1701,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Smokescreen",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -1717,7 +1717,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Confuse Ray",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -1731,7 +1731,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Withdraw",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": true,
         "pp": 40,
@@ -1745,7 +1745,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Defense Curl",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -1759,7 +1759,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Barrier",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -1773,7 +1773,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Light Screen",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 30,
@@ -1787,7 +1787,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Haze",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 30,
@@ -1801,7 +1801,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Reflect",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -1815,7 +1815,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Focus Energy",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -1830,7 +1830,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bide",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -1842,7 +1842,7 @@ exports.BattleMovedex = {
         "num": 118,
         "flags": {},
         "name": "Metronome",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -1857,7 +1857,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mirror Move",
-        "power": 0,
+        "basePower": 0,
         "type": "Flying",
         "accuracy": true,
         "pp": 20,
@@ -1872,7 +1872,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Self-Destruct",
-        "power": 200,
+        "basePower": 200,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -1888,7 +1888,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Egg Bomb",
-        "power": 100,
+        "basePower": 100,
         "type": "Normal",
         "accuracy": 75,
         "pp": 10,
@@ -1904,7 +1904,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Lick",
-        "power": 30,
+        "basePower": 30,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 30,
@@ -1919,7 +1919,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Smog",
-        "power": 30,
+        "basePower": 30,
         "type": "Poison",
         "accuracy": 70,
         "pp": 20,
@@ -1934,7 +1934,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sludge",
-        "power": 65,
+        "basePower": 65,
         "type": "Poison",
         "accuracy": 100,
         "pp": 20,
@@ -1949,7 +1949,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bone Club",
-        "power": 65,
+        "basePower": 65,
         "type": "Ground",
         "accuracy": 85,
         "pp": 20,
@@ -1964,7 +1964,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fire Blast",
-        "power": 110,
+        "basePower": 110,
         "type": "Fire",
         "accuracy": 85,
         "pp": 5,
@@ -1980,7 +1980,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Waterfall",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -1996,7 +1996,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Clamp",
-        "power": 35,
+        "basePower": 35,
         "type": "Water",
         "accuracy": 85,
         "pp": 15,
@@ -2011,7 +2011,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Swift",
-        "power": 60,
+        "basePower": 60,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -2027,7 +2027,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Skull Bash",
-        "power": 130,
+        "basePower": 130,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -2042,7 +2042,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Spike Cannon",
-        "power": 20,
+        "basePower": 20,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -2058,7 +2058,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Constrict",
-        "power": 10,
+        "basePower": 10,
         "type": "Normal",
         "accuracy": 100,
         "pp": 35,
@@ -2072,7 +2072,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Amnesia",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -2088,7 +2088,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Kinesis",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 80,
         "pp": 15,
@@ -2102,7 +2102,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Soft-Boiled",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -2118,7 +2118,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "High Jump Kick",
-        "power": 130,
+        "basePower": 130,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 10,
@@ -2135,7 +2135,7 @@ exports.BattleMovedex = {
         },
         "name": "Glare",
         "accuracy": 100,
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "pp": 30,
         "priority": 0,
@@ -2149,7 +2149,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dream Eater",
-        "power": 100,
+        "basePower": 100,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -2166,7 +2166,7 @@ exports.BattleMovedex = {
         },
         "name": "Poison Gas",
         "accuracy": 90,
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "pp": 40,
         "priority": 0,
@@ -2181,7 +2181,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Barrage",
-        "power": 15,
+        "basePower": 15,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -2197,7 +2197,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Leech Life",
-        "power": 80,
+        "basePower": 80,
         "type": "Bug",
         "accuracy": 100,
         "pp": 10,
@@ -2213,7 +2213,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Lovely Kiss",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 75,
         "pp": 10,
@@ -2228,7 +2228,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sky Attack",
-        "power": 140,
+        "basePower": 140,
         "type": "Flying",
         "accuracy": 90,
         "pp": 5,
@@ -2241,7 +2241,7 @@ exports.BattleMovedex = {
         "num": 144,
         "flags": {},
         "name": "Transform",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -2256,7 +2256,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bubble",
-        "power": 40,
+        "basePower": 40,
         "type": "Water",
         "accuracy": 100,
         "pp": 30,
@@ -2273,7 +2273,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Dizzy Punch",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -2290,7 +2290,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Spore",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -2306,7 +2306,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Flash",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -2321,7 +2321,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psywave",
-        "power": 1,
+        "basePower": 1,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -2333,7 +2333,7 @@ exports.BattleMovedex = {
         "num": 150,
         "flags": {},
         "name": "Splash",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -2347,7 +2347,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Acid Armor",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": true,
         "pp": 20,
@@ -2363,7 +2363,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Crabhammer",
-        "power": 100,
+        "basePower": 100,
         "type": "Water",
         "accuracy": 90,
         "critRatio": 2,
@@ -2379,7 +2379,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Explosion",
-        "power": 250,
+        "basePower": 250,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -2395,7 +2395,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Fury Swipes",
-        "power": 18,
+        "basePower": 18,
         "type": "Normal",
         "accuracy": 80,
         "pp": 15,
@@ -2410,7 +2410,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bonemerang",
-        "power": 50,
+        "basePower": 50,
         "type": "Ground",
         "accuracy": 90,
         "pp": 10,
@@ -2424,7 +2424,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Rest",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 5,
@@ -2439,7 +2439,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Rock Slide",
-        "power": 75,
+        "basePower": 75,
         "type": "Rock",
         "accuracy": 90,
         "pp": 10,
@@ -2456,7 +2456,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Hyper Fang",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 90,
         "pp": 15,
@@ -2470,7 +2470,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Sharpen",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -2484,7 +2484,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Conversion",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -2499,7 +2499,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Tri Attack",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -2515,7 +2515,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Super Fang",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 90,
         "pp": 10,
@@ -2532,7 +2532,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Slash",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "critRatio": 2,
@@ -2547,7 +2547,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Substitute",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -2563,7 +2563,7 @@ exports.BattleMovedex = {
         },
         "name": "Struggle",
         "accuracy": true,
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "pp": 1,
         "priority": 0,
@@ -2575,7 +2575,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Sketch",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 1,
@@ -2591,7 +2591,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Triple Kick",
-        "power": 10,
+        "basePower": 10,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 10,
@@ -2607,7 +2607,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Thief",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": 100,
         "pp": 25,
@@ -2622,7 +2622,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Spider Web",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -2637,7 +2637,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mind Reader",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -2651,7 +2651,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Nightmare",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -2668,7 +2668,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Flame Wheel",
-        "power": 60,
+        "basePower": 60,
         "type": "Fire",
         "accuracy": 100,
         "pp": 25,
@@ -2684,7 +2684,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Snore",
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -2698,7 +2698,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Curse",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": true,
         "pp": 10,
@@ -2714,7 +2714,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Flail",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -2728,7 +2728,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Conversion 2",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -2744,7 +2744,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Aeroblast",
-        "power": 100,
+        "basePower": 100,
         "type": "Flying",
         "accuracy": 95,
         "critRatio": 2,
@@ -2762,7 +2762,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Cotton Spore",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 40,
@@ -2778,7 +2778,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Reversal",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -2795,7 +2795,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Spite",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -2810,7 +2810,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Powder Snow",
-        "power": 40,
+        "basePower": 40,
         "type": "Ice",
         "accuracy": 100,
         "pp": 25,
@@ -2825,7 +2825,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Protect",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -2842,7 +2842,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Mach Punch",
-        "power": 40,
+        "basePower": 40,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 30,
@@ -2858,7 +2858,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Scary Face",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -2874,7 +2874,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Feint Attack",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": true,
         "pp": 20,
@@ -2890,7 +2890,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Sweet Kiss",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": 75,
         "pp": 10,
@@ -2904,7 +2904,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Belly Drum",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -2920,7 +2920,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Sludge Bomb",
-        "power": 90,
+        "basePower": 90,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -2935,7 +2935,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mud-Slap",
-        "power": 20,
+        "basePower": 20,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -2951,7 +2951,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Octazooka",
-        "power": 65,
+        "basePower": 65,
         "type": "Water",
         "accuracy": 85,
         "pp": 10,
@@ -2965,7 +2965,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Spikes",
-        "power": 0,
+        "basePower": 0,
         "type": "Ground",
         "accuracy": true,
         "pp": 20,
@@ -2981,7 +2981,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Zap Cannon",
-        "power": 120,
+        "basePower": 120,
         "type": "Electric",
         "accuracy": 50,
         "pp": 5,
@@ -2998,7 +2998,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Foresight",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -3012,7 +3012,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Destiny Bond",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": true,
         "pp": 5,
@@ -3026,7 +3026,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Perish Song",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3042,7 +3042,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Icy Wind",
-        "power": 55,
+        "basePower": 55,
         "type": "Ice",
         "accuracy": 95,
         "pp": 15,
@@ -3054,7 +3054,7 @@ exports.BattleMovedex = {
         "num": 197,
         "flags": {},
         "name": "Detect",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 5,
@@ -3069,7 +3069,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bone Rush",
-        "power": 25,
+        "basePower": 25,
         "type": "Ground",
         "accuracy": 90,
         "pp": 10,
@@ -3084,7 +3084,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Lock-On",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3100,7 +3100,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Outrage",
-        "power": 120,
+        "basePower": 120,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -3114,7 +3114,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Sandstorm",
-        "power": 0,
+        "basePower": 0,
         "type": "Rock",
         "accuracy": true,
         "pp": 10,
@@ -3129,7 +3129,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Giga Drain",
-        "power": 75,
+        "basePower": 75,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -3141,7 +3141,7 @@ exports.BattleMovedex = {
         "num": 203,
         "flags": {},
         "name": "Endure",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -3157,7 +3157,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Charm",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 20,
@@ -3173,7 +3173,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rollout",
-        "power": 30,
+        "basePower": 30,
         "type": "Rock",
         "accuracy": 90,
         "pp": 20,
@@ -3189,7 +3189,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "False Swipe",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 40,
@@ -3205,7 +3205,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Swagger",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 85,
         "pp": 15,
@@ -3219,7 +3219,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Milk Drink",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3235,7 +3235,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Spark",
-        "power": 65,
+        "basePower": 65,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -3252,7 +3252,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Fury Cutter",
-        "power": 40,
+        "basePower": 40,
         "type": "Bug",
         "accuracy": 95,
         "pp": 20,
@@ -3268,7 +3268,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Steel Wing",
-        "power": 70,
+        "basePower": 70,
         "type": "Steel",
         "accuracy": 90,
         "pp": 25,
@@ -3283,7 +3283,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Mean Look",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3300,7 +3300,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Attract",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -3312,7 +3312,7 @@ exports.BattleMovedex = {
         "num": 214,
         "flags": {},
         "name": "Sleep Talk",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -3327,7 +3327,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Heal Bell",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3343,7 +3343,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Return",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -3358,7 +3358,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Present",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 90,
         "pp": 15,
@@ -3374,7 +3374,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Frustration",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -3388,7 +3388,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Safeguard",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 25,
@@ -3403,7 +3403,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Pain Split",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -3419,7 +3419,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Sacred Fire",
-        "power": 100,
+        "basePower": 100,
         "type": "Fire",
         "accuracy": 95,
         "pp": 5,
@@ -3434,7 +3434,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Magnitude",
-        "power": 1,
+        "basePower": 1,
         "type": "Ground",
         "accuracy": 100,
         "pp": 30,
@@ -3451,7 +3451,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Dynamic Punch",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 50,
         "pp": 5,
@@ -3467,7 +3467,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Megahorn",
-        "power": 120,
+        "basePower": 120,
         "type": "Bug",
         "accuracy": 85,
         "pp": 10,
@@ -3482,7 +3482,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dragon Breath",
-        "power": 60,
+        "basePower": 60,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 20,
@@ -3494,7 +3494,7 @@ exports.BattleMovedex = {
         "num": 226,
         "flags": {},
         "name": "Baton Pass",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -3511,7 +3511,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Encore",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -3527,7 +3527,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Pursuit",
-        "power": 40,
+        "basePower": 40,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -3543,7 +3543,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rapid Spin",
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "accuracy": 100,
         "pp": 40,
@@ -3559,7 +3559,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Sweet Scent",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -3575,7 +3575,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Iron Tail",
-        "power": 100,
+        "basePower": 100,
         "type": "Steel",
         "accuracy": 75,
         "pp": 15,
@@ -3591,7 +3591,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Metal Claw",
-        "power": 50,
+        "basePower": 50,
         "type": "Steel",
         "accuracy": 95,
         "pp": 35,
@@ -3607,7 +3607,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Vital Throw",
-        "power": 70,
+        "basePower": 70,
         "type": "Fighting",
         "accuracy": true,
         "pp": 10,
@@ -3621,7 +3621,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Morning Sun",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -3635,7 +3635,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Synthesis",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 5,
@@ -3649,7 +3649,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Moonlight",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 5,
@@ -3664,7 +3664,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hidden Power",
-        "power": 60,
+        "basePower": 60,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -3680,7 +3680,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Cross Chop",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 80,
         "critRatio": 2,
@@ -3697,7 +3697,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Twister",
-        "power": 40,
+        "basePower": 40,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 20,
@@ -3709,7 +3709,7 @@ exports.BattleMovedex = {
         "num": 240,
         "flags": {},
         "name": "Rain Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": true,
         "pp": 5,
@@ -3721,7 +3721,7 @@ exports.BattleMovedex = {
         "num": 241,
         "flags": {},
         "name": "Sunny Day",
-        "power": 0,
+        "basePower": 0,
         "type": "Fire",
         "accuracy": true,
         "pp": 5,
@@ -3738,7 +3738,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Crunch",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -3752,7 +3752,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Mirror Coat",
-        "power": 1,
+        "basePower": 1,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 20,
@@ -3767,7 +3767,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Psych Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -3783,7 +3783,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Extreme Speed",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -3799,7 +3799,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Ancient Power",
-        "power": 60,
+        "basePower": 60,
         "type": "Rock",
         "accuracy": 100,
         "pp": 5,
@@ -3815,7 +3815,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Shadow Ball",
-        "power": 80,
+        "basePower": 80,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -3827,7 +3827,7 @@ exports.BattleMovedex = {
         "num": 248,
         "flags": {},
         "name": "Future Sight",
-        "power": 120,
+        "basePower": 120,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -3843,7 +3843,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rock Smash",
-        "power": 40,
+        "basePower": 40,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -3858,7 +3858,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Whirlpool",
-        "power": 35,
+        "basePower": 35,
         "type": "Water",
         "accuracy": 85,
         "pp": 15,
@@ -3873,7 +3873,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Beat Up",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -3890,7 +3890,7 @@ exports.BattleMovedex = {
         },
         "name": "Fake Out",
         "priority": 3,
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -3905,7 +3905,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Uproar",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -3919,7 +3919,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Stockpile",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -3933,7 +3933,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Spit Up",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -3947,7 +3947,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Swallow",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -3963,7 +3963,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Heat Wave",
-        "power": 95,
+        "basePower": 95,
         "type": "Fire",
         "accuracy": 90,
         "pp": 10,
@@ -3975,7 +3975,7 @@ exports.BattleMovedex = {
         "num": 258,
         "flags": {},
         "name": "Hail",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 10,
@@ -3991,7 +3991,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Torment",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -4007,7 +4007,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Flatter",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -4023,7 +4023,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Will-O-Wisp",
-        "power": 0,
+        "basePower": 0,
         "type": "Fire",
         "accuracy": 85,
         "pp": 15,
@@ -4038,7 +4038,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Memento",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -4054,7 +4054,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Facade",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4070,7 +4070,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Focus Punch",
-        "power": 150,
+        "basePower": 150,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -4086,7 +4086,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Smelling Salts",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -4098,7 +4098,7 @@ exports.BattleMovedex = {
         "num": 266,
         "flags": {},
         "name": "Follow Me",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4113,7 +4113,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Nature Power",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -4127,7 +4127,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Charge",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -4144,7 +4144,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Taunt",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -4158,7 +4158,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Helping Hand",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4173,7 +4173,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Trick",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -4187,7 +4187,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Role Play",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -4201,7 +4201,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Wish",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -4213,7 +4213,7 @@ exports.BattleMovedex = {
         "num": 274,
         "flags": {},
         "name": "Assist",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4227,7 +4227,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Ingrain",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 20,
@@ -4243,7 +4243,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Superpower",
-        "power": 120,
+        "basePower": 120,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 5,
@@ -4255,7 +4255,7 @@ exports.BattleMovedex = {
         "num": 277,
         "flags": {},
         "name": "Magic Coat",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -4269,7 +4269,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Recycle",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -4285,7 +4285,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Revenge",
-        "power": 60,
+        "basePower": 60,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -4301,7 +4301,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Brick Break",
-        "power": 75,
+        "basePower": 75,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -4317,7 +4317,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Yawn",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -4333,7 +4333,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Knock Off",
-        "power": 65,
+        "basePower": 65,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -4349,7 +4349,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Endeavor",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -4364,7 +4364,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Eruption",
-        "power": 150,
+        "basePower": 150,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -4380,7 +4380,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Skill Swap",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -4395,7 +4395,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Imprison",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -4409,7 +4409,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Refresh",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4423,7 +4423,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Grudge",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 5,
@@ -4439,7 +4439,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Snatch",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -4454,7 +4454,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Secret Power",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4470,7 +4470,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dive",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -4486,7 +4486,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Arm Thrust",
-        "power": 15,
+        "basePower": 15,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -4500,7 +4500,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Camouflage",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4514,7 +4514,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Tail Glow",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 20,
@@ -4529,7 +4529,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Luster Purge",
-        "power": 95,
+        "basePower": 95,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 5,
@@ -4545,7 +4545,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Mist Ball",
-        "power": 95,
+        "basePower": 95,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 5,
@@ -4561,7 +4561,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Feather Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Flying",
         "accuracy": 100,
         "pp": 15,
@@ -4575,7 +4575,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Teeter Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4591,7 +4591,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Blaze Kick",
-        "power": 85,
+        "basePower": 85,
         "type": "Fire",
         "accuracy": 90,
         "critRatio": 2,
@@ -4604,7 +4604,7 @@ exports.BattleMovedex = {
         "num": 300,
         "flags": {},
         "name": "Mud Sport",
-        "power": 0,
+        "basePower": 0,
         "type": "Ground",
         "accuracy": 100,
         "pp": 15,
@@ -4621,7 +4621,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Ice Ball",
-        "power": 30,
+        "basePower": 30,
         "type": "Ice",
         "accuracy": 90,
         "pp": 20,
@@ -4637,7 +4637,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Needle Arm",
-        "power": 60,
+        "basePower": 60,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -4651,7 +4651,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Slack Off",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -4667,7 +4667,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Hyper Voice",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -4684,7 +4684,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Poison Fang",
-        "power": 50,
+        "basePower": 50,
         "type": "Poison",
         "accuracy": 100,
         "pp": 15,
@@ -4700,7 +4700,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Crush Claw",
-        "power": 75,
+        "basePower": 75,
         "type": "Normal",
         "accuracy": 95,
         "pp": 10,
@@ -4715,7 +4715,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Blast Burn",
-        "power": 150,
+        "basePower": 150,
         "type": "Fire",
         "accuracy": 90,
         "pp": 5,
@@ -4730,7 +4730,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hydro Cannon",
-        "power": 150,
+        "basePower": 150,
         "type": "Water",
         "accuracy": 90,
         "pp": 5,
@@ -4747,7 +4747,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Meteor Mash",
-        "power": 90,
+        "basePower": 90,
         "type": "Steel",
         "accuracy": 90,
         "pp": 10,
@@ -4763,7 +4763,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Astonish",
-        "power": 30,
+        "basePower": 30,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -4779,7 +4779,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Weather Ball",
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -4793,7 +4793,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Aromatherapy",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 5,
@@ -4809,7 +4809,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Fake Tears",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -4826,7 +4826,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Air Cutter",
-        "power": 60,
+        "basePower": 60,
         "type": "Flying",
         "accuracy": 95,
         "critRatio": 2,
@@ -4843,7 +4843,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Overheat",
-        "power": 130,
+        "basePower": 130,
         "type": "Fire",
         "accuracy": 90,
         "pp": 5,
@@ -4860,7 +4860,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Odor Sleuth",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -4875,7 +4875,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Rock Tomb",
-        "power": 60,
+        "basePower": 60,
         "type": "Rock",
         "accuracy": 95,
         "pp": 15,
@@ -4891,7 +4891,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Silver Wind",
-        "power": 60,
+        "basePower": 60,
         "type": "Bug",
         "accuracy": 100,
         "pp": 5,
@@ -4908,7 +4908,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Metal Sound",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": 85,
         "pp": 40,
@@ -4925,7 +4925,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Grass Whistle",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 55,
         "pp": 15,
@@ -4941,7 +4941,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Tickle",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -4955,7 +4955,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Cosmic Power",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -4970,7 +4970,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Water Spout",
-        "power": 150,
+        "basePower": 150,
         "type": "Water",
         "accuracy": 100,
         "pp": 5,
@@ -4985,7 +4985,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Signal Beam",
-        "power": 75,
+        "basePower": 75,
         "type": "Bug",
         "accuracy": 100,
         "pp": 15,
@@ -5002,7 +5002,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Shadow Punch",
-        "power": 60,
+        "basePower": 60,
         "type": "Ghost",
         "accuracy": true,
         "pp": 20,
@@ -5017,7 +5017,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Extrasensory",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 20,
@@ -5034,7 +5034,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Sky Uppercut",
-        "power": 85,
+        "basePower": 85,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 15,
@@ -5049,7 +5049,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sand Tomb",
-        "power": 35,
+        "basePower": 35,
         "type": "Ground",
         "accuracy": 85,
         "pp": 15,
@@ -5064,7 +5064,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sheer Cold",
-        "power": 1,
+        "basePower": 1,
         "type": "Ice",
         "accuracy": 30,
         "pp": 5,
@@ -5079,7 +5079,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Muddy Water",
-        "power": 90,
+        "basePower": 90,
         "type": "Water",
         "accuracy": 85,
         "pp": 10,
@@ -5095,7 +5095,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Bullet Seed",
-        "power": 25,
+        "basePower": 25,
         "type": "Grass",
         "accuracy": 100,
         "pp": 30,
@@ -5112,7 +5112,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Aerial Ace",
-        "power": 60,
+        "basePower": 60,
         "type": "Flying",
         "accuracy": true,
         "pp": 20,
@@ -5127,7 +5127,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Icicle Spear",
-        "power": 25,
+        "basePower": 25,
         "type": "Ice",
         "accuracy": 100,
         "pp": 30,
@@ -5141,7 +5141,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Iron Defense",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 15,
@@ -5156,7 +5156,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Block",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -5171,7 +5171,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Howl",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -5187,7 +5187,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dragon Claw",
-        "power": 80,
+        "basePower": 80,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 15,
@@ -5202,7 +5202,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Frenzy Plant",
-        "power": 150,
+        "basePower": 150,
         "type": "Grass",
         "accuracy": 90,
         "pp": 5,
@@ -5216,7 +5216,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Bulk Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 20,
@@ -5232,7 +5232,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bounce",
-        "power": 85,
+        "basePower": 85,
         "type": "Flying",
         "accuracy": 85,
         "pp": 5,
@@ -5247,7 +5247,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mud Shot",
-        "power": 55,
+        "basePower": 55,
         "type": "Ground",
         "accuracy": 95,
         "pp": 15,
@@ -5263,7 +5263,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Poison Tail",
-        "power": 50,
+        "basePower": 50,
         "type": "Poison",
         "accuracy": 100,
         "critRatio": 2,
@@ -5280,7 +5280,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Covet",
-        "power": 60,
+        "basePower": 60,
         "type": "Normal",
         "accuracy": 100,
         "pp": 25,
@@ -5296,7 +5296,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Volt Tackle",
-        "power": 120,
+        "basePower": 120,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -5311,7 +5311,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Magical Leaf",
-        "power": 60,
+        "basePower": 60,
         "type": "Grass",
         "accuracy": true,
         "pp": 20,
@@ -5323,7 +5323,7 @@ exports.BattleMovedex = {
         "num": 346,
         "flags": {},
         "name": "Water Sport",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -5337,7 +5337,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Calm Mind",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 20,
@@ -5354,7 +5354,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Leaf Blade",
-        "power": 90,
+        "basePower": 90,
         "type": "Grass",
         "accuracy": 100,
         "critRatio": 2,
@@ -5369,7 +5369,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Dragon Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Dragon",
         "accuracy": true,
         "pp": 20,
@@ -5385,7 +5385,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Rock Blast",
-        "power": 25,
+        "basePower": 25,
         "type": "Rock",
         "accuracy": 90,
         "pp": 10,
@@ -5400,7 +5400,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Shock Wave",
-        "power": 60,
+        "basePower": 60,
         "type": "Electric",
         "accuracy": true,
         "pp": 20,
@@ -5416,7 +5416,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Water Pulse",
-        "power": 60,
+        "basePower": 60,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -5428,7 +5428,7 @@ exports.BattleMovedex = {
         "num": 353,
         "flags": {},
         "name": "Doom Desire",
-        "power": 140,
+        "basePower": 140,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -5443,7 +5443,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psycho Boost",
-        "power": 140,
+        "basePower": 140,
         "type": "Psychic",
         "accuracy": 90,
         "pp": 5,
@@ -5457,7 +5457,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Roost",
-        "power": 0,
+        "basePower": 0,
         "type": "Flying",
         "accuracy": true,
         "pp": 5,
@@ -5469,7 +5469,7 @@ exports.BattleMovedex = {
         "num": 356,
         "flags": {},
         "name": "Gravity",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 5,
@@ -5486,7 +5486,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Miracle Eye",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 40,
@@ -5502,7 +5502,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wake-Up Slap",
-        "power": 70,
+        "basePower": 70,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -5519,7 +5519,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Hammer Arm",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 10,
@@ -5536,7 +5536,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Gyro Ball",
-        "power": 1,
+        "basePower": 1,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -5550,7 +5550,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Healing Wish",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -5565,7 +5565,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Brine",
-        "power": 65,
+        "basePower": 65,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -5580,7 +5580,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Natural Gift",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -5592,7 +5592,7 @@ exports.BattleMovedex = {
         "num": 364,
         "flags": {},
         "name": "Feint",
-        "power": 30,
+        "basePower": 30,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -5608,7 +5608,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Pluck",
-        "power": 60,
+        "basePower": 60,
         "type": "Flying",
         "accuracy": 100,
         "pp": 20,
@@ -5623,7 +5623,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Tailwind",
-        "power": 0,
+        "basePower": 0,
         "type": "Flying",
         "accuracy": true,
         "pp": 15,
@@ -5637,7 +5637,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Acupressure",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -5652,7 +5652,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Metal Burst",
-        "power": 1,
+        "basePower": 1,
         "type": "Steel",
         "accuracy": 100,
         "pp": 10,
@@ -5668,7 +5668,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "U-turn",
-        "power": 70,
+        "basePower": 70,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -5684,7 +5684,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Close Combat",
-        "power": 120,
+        "basePower": 120,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 5,
@@ -5700,7 +5700,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Payback",
-        "power": 50,
+        "basePower": 50,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -5716,7 +5716,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Assurance",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -5732,7 +5732,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Embargo",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -5747,7 +5747,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fling",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -5762,7 +5762,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psycho Shift",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -5778,7 +5778,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Trump Card",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 5,
@@ -5794,7 +5794,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Heal Block",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -5810,7 +5810,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wring Out",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -5824,7 +5824,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Power Trick",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -5840,7 +5840,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Gastro Acid",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -5854,7 +5854,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Lucky Chant",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -5869,7 +5869,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Me First",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -5881,7 +5881,7 @@ exports.BattleMovedex = {
         "num": 383,
         "flags": {},
         "name": "Copycat",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -5897,7 +5897,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Power Swap",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -5913,7 +5913,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Guard Swap",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -5929,7 +5929,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Punishment",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": 100,
         "pp": 5,
@@ -5945,7 +5945,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Last Resort",
-        "power": 140,
+        "basePower": 140,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -5961,7 +5961,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Worry Seed",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -5977,7 +5977,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Sucker Punch",
-        "power": 70,
+        "basePower": 70,
         "type": "Dark",
         "accuracy": 100,
         "pp": 5,
@@ -5991,7 +5991,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Toxic Spikes",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": true,
         "pp": 20,
@@ -6007,7 +6007,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Heart Swap",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -6021,7 +6021,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Aqua Ring",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": true,
         "pp": 20,
@@ -6035,7 +6035,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Magnet Rise",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": true,
         "pp": 10,
@@ -6052,7 +6052,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Flare Blitz",
-        "power": 120,
+        "basePower": 120,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -6068,7 +6068,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Force Palm",
-        "power": 60,
+        "basePower": 60,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -6085,7 +6085,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Aura Sphere",
-        "power": 80,
+        "basePower": 80,
         "type": "Fighting",
         "accuracy": true,
         "pp": 20,
@@ -6099,7 +6099,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Rock Polish",
-        "power": 0,
+        "basePower": 0,
         "type": "Rock",
         "accuracy": true,
         "pp": 20,
@@ -6115,7 +6115,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Poison Jab",
-        "power": 80,
+        "basePower": 80,
         "type": "Poison",
         "accuracy": 100,
         "pp": 20,
@@ -6131,7 +6131,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Dark Pulse",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -6148,7 +6148,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Night Slash",
-        "power": 70,
+        "basePower": 70,
         "type": "Dark",
         "accuracy": 100,
         "critRatio": 2,
@@ -6165,7 +6165,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Aqua Tail",
-        "power": 90,
+        "basePower": 90,
         "type": "Water",
         "accuracy": 90,
         "pp": 10,
@@ -6181,7 +6181,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Seed Bomb",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -6197,7 +6197,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Air Slash",
-        "power": 75,
+        "basePower": 75,
         "type": "Flying",
         "accuracy": 95,
         "pp": 15,
@@ -6214,7 +6214,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "X-Scissor",
-        "power": 80,
+        "basePower": 80,
         "type": "Bug",
         "accuracy": 100,
         "pp": 15,
@@ -6230,7 +6230,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Bug Buzz",
-        "power": 90,
+        "basePower": 90,
         "type": "Bug",
         "accuracy": 100,
         "pp": 10,
@@ -6246,7 +6246,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Dragon Pulse",
-        "power": 85,
+        "basePower": 85,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -6262,7 +6262,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dragon Rush",
-        "power": 100,
+        "basePower": 100,
         "type": "Dragon",
         "accuracy": 75,
         "pp": 10,
@@ -6277,7 +6277,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Power Gem",
-        "power": 80,
+        "basePower": 80,
         "type": "Rock",
         "accuracy": 100,
         "pp": 20,
@@ -6294,7 +6294,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Drain Punch",
-        "power": 75,
+        "basePower": 75,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -6309,7 +6309,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Vacuum Wave",
-        "power": 40,
+        "basePower": 40,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 30,
@@ -6325,7 +6325,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Focus Blast",
-        "power": 120,
+        "basePower": 120,
         "type": "Fighting",
         "accuracy": 70,
         "pp": 5,
@@ -6341,7 +6341,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Energy Ball",
-        "power": 90,
+        "basePower": 90,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -6357,7 +6357,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Brave Bird",
-        "power": 120,
+        "basePower": 120,
         "type": "Flying",
         "accuracy": 100,
         "pp": 15,
@@ -6372,7 +6372,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Earth Power",
-        "power": 90,
+        "basePower": 90,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -6387,7 +6387,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Switcheroo",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -6403,7 +6403,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Giga Impact",
-        "power": 150,
+        "basePower": 150,
         "type": "Normal",
         "accuracy": 90,
         "pp": 5,
@@ -6417,7 +6417,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Nasty Plot",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": true,
         "pp": 20,
@@ -6434,7 +6434,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Bullet Punch",
-        "power": 40,
+        "basePower": 40,
         "type": "Steel",
         "accuracy": 100,
         "pp": 30,
@@ -6450,7 +6450,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Avalanche",
-        "power": 60,
+        "basePower": 60,
         "type": "Ice",
         "accuracy": 100,
         "pp": 10,
@@ -6465,7 +6465,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ice Shard",
-        "power": 40,
+        "basePower": 40,
         "type": "Ice",
         "accuracy": 100,
         "pp": 30,
@@ -6481,7 +6481,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Shadow Claw",
-        "power": 70,
+        "basePower": 70,
         "type": "Ghost",
         "accuracy": 100,
         "critRatio": 2,
@@ -6499,7 +6499,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Thunder Fang",
-        "power": 65,
+        "basePower": 65,
         "type": "Electric",
         "accuracy": 95,
         "pp": 15,
@@ -6516,7 +6516,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Ice Fang",
-        "power": 65,
+        "basePower": 65,
         "type": "Ice",
         "accuracy": 95,
         "pp": 15,
@@ -6533,7 +6533,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Fire Fang",
-        "power": 65,
+        "basePower": 65,
         "type": "Fire",
         "accuracy": 95,
         "pp": 15,
@@ -6549,7 +6549,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Shadow Sneak",
-        "power": 40,
+        "basePower": 40,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 30,
@@ -6565,7 +6565,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Mud Bomb",
-        "power": 65,
+        "basePower": 65,
         "type": "Ground",
         "accuracy": 85,
         "pp": 10,
@@ -6581,7 +6581,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Psycho Cut",
-        "power": 70,
+        "basePower": 70,
         "type": "Psychic",
         "accuracy": 100,
         "critRatio": 2,
@@ -6598,7 +6598,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Zen Headbutt",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 90,
         "pp": 15,
@@ -6613,7 +6613,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mirror Shot",
-        "power": 65,
+        "basePower": 65,
         "type": "Steel",
         "accuracy": 85,
         "pp": 10,
@@ -6628,7 +6628,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Flash Cannon",
-        "power": 80,
+        "basePower": 80,
         "type": "Steel",
         "accuracy": 100,
         "pp": 10,
@@ -6644,7 +6644,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Rock Climb",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 85,
         "pp": 20,
@@ -6660,7 +6660,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Defog",
-        "power": 0,
+        "basePower": 0,
         "type": "Flying",
         "accuracy": true,
         "pp": 15,
@@ -6674,7 +6674,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Trick Room",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 5,
@@ -6689,7 +6689,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Draco Meteor",
-        "power": 130,
+        "basePower": 130,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 5,
@@ -6704,7 +6704,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Discharge",
-        "power": 80,
+        "basePower": 80,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -6719,7 +6719,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Lava Plume",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -6734,7 +6734,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Leaf Storm",
-        "power": 130,
+        "basePower": 130,
         "type": "Grass",
         "accuracy": 90,
         "pp": 5,
@@ -6750,7 +6750,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Power Whip",
-        "power": 120,
+        "basePower": 120,
         "type": "Grass",
         "accuracy": 85,
         "pp": 10,
@@ -6766,7 +6766,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Rock Wrecker",
-        "power": 150,
+        "basePower": 150,
         "type": "Rock",
         "accuracy": 90,
         "pp": 5,
@@ -6783,7 +6783,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Cross Poison",
-        "power": 70,
+        "basePower": 70,
         "type": "Poison",
         "accuracy": 100,
         "critRatio": 2,
@@ -6799,7 +6799,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Gunk Shot",
-        "power": 120,
+        "basePower": 120,
         "type": "Poison",
         "accuracy": 80,
         "pp": 5,
@@ -6815,7 +6815,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Iron Head",
-        "power": 80,
+        "basePower": 80,
         "type": "Steel",
         "accuracy": 100,
         "pp": 15,
@@ -6831,7 +6831,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Magnet Bomb",
-        "power": 60,
+        "basePower": 60,
         "type": "Steel",
         "accuracy": true,
         "pp": 20,
@@ -6846,7 +6846,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Stone Edge",
-        "power": 100,
+        "basePower": 100,
         "type": "Rock",
         "accuracy": 80,
         "critRatio": 2,
@@ -6863,7 +6863,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Captivate",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -6877,7 +6877,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Stealth Rock",
-        "power": 0,
+        "basePower": 0,
         "type": "Rock",
         "accuracy": true,
         "pp": 20,
@@ -6893,7 +6893,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Grass Knot",
-        "power": 1,
+        "basePower": 1,
         "type": "Grass",
         "accuracy": 100,
         "pp": 20,
@@ -6908,7 +6908,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Chatter",
-        "power": 65,
+        "basePower": 65,
         "type": "Flying",
         "accuracy": 100,
         "pp": 20,
@@ -6923,7 +6923,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Judgment",
-        "power": 100,
+        "basePower": 100,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -6939,7 +6939,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bug Bite",
-        "power": 60,
+        "basePower": 60,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -6954,7 +6954,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Charge Beam",
-        "power": 50,
+        "basePower": 50,
         "type": "Electric",
         "accuracy": 90,
         "pp": 10,
@@ -6970,7 +6970,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wood Hammer",
-        "power": 120,
+        "basePower": 120,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -6986,7 +6986,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Aqua Jet",
-        "power": 40,
+        "basePower": 40,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -7001,7 +7001,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Attack Order",
-        "power": 90,
+        "basePower": 90,
         "type": "Bug",
         "accuracy": 100,
         "critRatio": 2,
@@ -7016,7 +7016,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Defend Order",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -7030,7 +7030,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Heal Order",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -7046,7 +7046,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Head Smash",
-        "power": 150,
+        "basePower": 150,
         "type": "Rock",
         "accuracy": 80,
         "pp": 5,
@@ -7062,7 +7062,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Double Hit",
-        "power": 35,
+        "basePower": 35,
         "type": "Normal",
         "accuracy": 90,
         "pp": 10,
@@ -7077,7 +7077,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Roar of Time",
-        "power": 150,
+        "basePower": 150,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 5,
@@ -7092,7 +7092,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Spacial Rend",
-        "power": 100,
+        "basePower": 100,
         "type": "Dragon",
         "accuracy": 95,
         "critRatio": 2,
@@ -7107,7 +7107,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Lunar Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7123,7 +7123,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Crush Grip",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -7138,7 +7138,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Magma Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Fire",
         "accuracy": 75,
         "pp": 5,
@@ -7154,7 +7154,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Dark Void",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 50,
         "pp": 10,
@@ -7169,7 +7169,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Seed Flare",
-        "power": 120,
+        "basePower": 120,
         "type": "Grass",
         "accuracy": 85,
         "pp": 5,
@@ -7185,7 +7185,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Ominous Wind",
-        "power": 60,
+        "basePower": 60,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 5,
@@ -7200,7 +7200,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Shadow Force",
-        "power": 120,
+        "basePower": 120,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 5,
@@ -7214,7 +7214,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Hone Claws",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": true,
         "pp": 15,
@@ -7228,7 +7228,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Wide Guard",
-        "power": 0,
+        "basePower": 0,
         "type": "Rock",
         "accuracy": true,
         "pp": 10,
@@ -7242,7 +7242,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Guard Split",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7256,7 +7256,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Power Split",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7270,7 +7270,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Wonder Room",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7285,7 +7285,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psyshock",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -7300,7 +7300,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Venoshock",
-        "power": 65,
+        "basePower": 65,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -7314,7 +7314,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Autotomize",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 15,
@@ -7328,7 +7328,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Rage Powder",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 20,
@@ -7344,7 +7344,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Telekinesis",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 15,
@@ -7358,7 +7358,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Magic Room",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7373,7 +7373,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Smack Down",
-        "power": 50,
+        "basePower": 50,
         "type": "Rock",
         "accuracy": 100,
         "pp": 15,
@@ -7389,7 +7389,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Storm Throw",
-        "power": 60,
+        "basePower": 60,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -7404,7 +7404,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Flame Burst",
-        "power": 70,
+        "basePower": 70,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -7419,7 +7419,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sludge Wave",
-        "power": 95,
+        "basePower": 95,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -7433,7 +7433,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Quiver Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 20,
@@ -7449,7 +7449,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Heavy Slam",
-        "power": 1,
+        "basePower": 1,
         "type": "Steel",
         "accuracy": 100,
         "pp": 10,
@@ -7464,7 +7464,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Synchronoise",
-        "power": 120,
+        "basePower": 120,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -7480,7 +7480,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Electro Ball",
-        "power": 1,
+        "basePower": 1,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -7496,7 +7496,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Soak",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -7512,7 +7512,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Flame Charge",
-        "power": 50,
+        "basePower": 50,
         "type": "Fire",
         "accuracy": 100,
         "pp": 20,
@@ -7526,7 +7526,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Coil",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": true,
         "pp": 20,
@@ -7542,7 +7542,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Low Sweep",
-        "power": 65,
+        "basePower": 65,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -7558,7 +7558,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Acid Spray",
-        "power": 40,
+        "basePower": 40,
         "type": "Poison",
         "accuracy": 100,
         "pp": 20,
@@ -7574,7 +7574,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Foul Play",
-        "power": 95,
+        "basePower": 95,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -7590,7 +7590,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Simple Beam",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -7606,7 +7606,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Entrainment",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -7620,7 +7620,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "After You",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -7636,7 +7636,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Round",
-        "power": 60,
+        "basePower": 60,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -7652,7 +7652,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Echoed Voice",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -7668,7 +7668,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Chip Away",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 20,
@@ -7683,7 +7683,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Clear Smog",
-        "power": 50,
+        "basePower": 50,
         "type": "Poison",
         "accuracy": true,
         "pp": 15,
@@ -7698,7 +7698,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Stored Power",
-        "power": 20,
+        "basePower": 20,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -7712,7 +7712,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Quick Guard",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 15,
@@ -7724,7 +7724,7 @@ exports.BattleMovedex = {
         "num": 502,
         "flags": {},
         "name": "Ally Switch",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 15,
@@ -7740,7 +7740,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Scald",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -7754,7 +7754,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Shell Smash",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -7770,7 +7770,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Heal Pulse",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -7785,7 +7785,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hex",
-        "power": 65,
+        "basePower": 65,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -7801,7 +7801,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Sky Drop",
-        "power": 60,
+        "basePower": 60,
         "type": "Flying",
         "accuracy": 100,
         "pp": 10,
@@ -7815,7 +7815,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Shift Gear",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -7831,7 +7831,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Circle Throw",
-        "power": 60,
+        "basePower": 60,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 10,
@@ -7846,7 +7846,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Incinerate",
-        "power": 60,
+        "basePower": 60,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -7861,7 +7861,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Quash",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -7877,7 +7877,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Acrobatics",
-        "power": 55,
+        "basePower": 55,
         "type": "Flying",
         "accuracy": 100,
         "pp": 15,
@@ -7892,7 +7892,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Reflect Type",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -7908,7 +7908,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Retaliate",
-        "power": 70,
+        "basePower": 70,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -7922,7 +7922,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Final Gambit",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 5,
@@ -7937,7 +7937,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Bestow",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -7952,7 +7952,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Inferno",
-        "power": 100,
+        "basePower": 100,
         "type": "Fire",
         "accuracy": 50,
         "pp": 5,
@@ -7967,7 +7967,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Water Pledge",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -7982,7 +7982,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fire Pledge",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -7997,7 +7997,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Grass Pledge",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -8012,7 +8012,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Volt Switch",
-        "power": 70,
+        "basePower": 70,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -8027,7 +8027,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Struggle Bug",
-        "power": 50,
+        "basePower": 50,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -8042,7 +8042,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bulldoze",
-        "power": 60,
+        "basePower": 60,
         "type": "Ground",
         "accuracy": 100,
         "pp": 20,
@@ -8057,7 +8057,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Frost Breath",
-        "power": 60,
+        "basePower": 60,
         "type": "Ice",
         "accuracy": 90,
         "pp": 10,
@@ -8073,7 +8073,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dragon Tail",
-        "power": 60,
+        "basePower": 60,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 10,
@@ -8087,7 +8087,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Work Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -8102,7 +8102,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Electroweb",
-        "power": 55,
+        "basePower": 55,
         "type": "Electric",
         "accuracy": 95,
         "pp": 15,
@@ -8118,7 +8118,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wild Charge",
-        "power": 90,
+        "basePower": 90,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -8134,7 +8134,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Drill Run",
-        "power": 80,
+        "basePower": 80,
         "type": "Ground",
         "accuracy": 95,
         "critRatio": 2,
@@ -8151,7 +8151,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dual Chop",
-        "power": 40,
+        "basePower": 40,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 15,
@@ -8167,7 +8167,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Heart Stamp",
-        "power": 60,
+        "basePower": 60,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 25,
@@ -8183,7 +8183,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Horn Leech",
-        "power": 75,
+        "basePower": 75,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -8200,7 +8200,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Sacred Sword",
-        "power": 90,
+        "basePower": 90,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -8217,7 +8217,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Razor Shell",
-        "power": 75,
+        "basePower": 75,
         "type": "Water",
         "accuracy": 95,
         "pp": 10,
@@ -8233,7 +8233,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Heat Crash",
-        "power": 1,
+        "basePower": 1,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -8248,7 +8248,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Leaf Tornado",
-        "power": 65,
+        "basePower": 65,
         "type": "Grass",
         "accuracy": 90,
         "pp": 10,
@@ -8264,7 +8264,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Steamroller",
-        "power": 65,
+        "basePower": 65,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -8278,7 +8278,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Cotton Guard",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -8293,7 +8293,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Night Daze",
-        "power": 85,
+        "basePower": 85,
         "type": "Dark",
         "accuracy": 95,
         "pp": 10,
@@ -8308,7 +8308,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Psystrike",
-        "power": 100,
+        "basePower": 100,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -8324,7 +8324,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Tail Slap",
-        "power": 25,
+        "basePower": 25,
         "type": "Normal",
         "accuracy": 85,
         "pp": 10,
@@ -8340,7 +8340,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Hurricane",
-        "power": 110,
+        "basePower": 110,
         "type": "Flying",
         "accuracy": 70,
         "pp": 10,
@@ -8356,7 +8356,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Head Charge",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -8372,7 +8372,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Gear Grind",
-        "power": 50,
+        "basePower": 50,
         "type": "Steel",
         "accuracy": 85,
         "pp": 15,
@@ -8388,7 +8388,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Searing Shot",
-        "power": 100,
+        "basePower": 100,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -8403,7 +8403,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Techno Blast",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -8419,7 +8419,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Relic Song",
-        "power": 75,
+        "basePower": 75,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -8435,7 +8435,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Secret Sword",
-        "power": 85,
+        "basePower": 85,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -8450,7 +8450,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Glaciate",
-        "power": 65,
+        "basePower": 65,
         "type": "Ice",
         "accuracy": 95,
         "pp": 10,
@@ -8466,7 +8466,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bolt Strike",
-        "power": 130,
+        "basePower": 130,
         "type": "Electric",
         "accuracy": 85,
         "pp": 5,
@@ -8481,7 +8481,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Blue Flare",
-        "power": 130,
+        "basePower": 130,
         "type": "Fire",
         "accuracy": 85,
         "pp": 5,
@@ -8496,7 +8496,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fiery Dance",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -8511,7 +8511,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Freeze Shock",
-        "power": 140,
+        "basePower": 140,
         "type": "Ice",
         "accuracy": 90,
         "pp": 5,
@@ -8526,7 +8526,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ice Burn",
-        "power": 140,
+        "basePower": 140,
         "type": "Ice",
         "accuracy": 90,
         "pp": 5,
@@ -8542,7 +8542,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Snarl",
-        "power": 55,
+        "basePower": 55,
         "type": "Dark",
         "accuracy": 95,
         "pp": 15,
@@ -8557,7 +8557,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Icicle Crash",
-        "power": 85,
+        "basePower": 85,
         "type": "Ice",
         "accuracy": 90,
         "pp": 10,
@@ -8573,7 +8573,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "V-create",
-        "power": 180,
+        "basePower": 180,
         "type": "Fire",
         "accuracy": 95,
         "pp": 5,
@@ -8589,7 +8589,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Fusion Flare",
-        "power": 100,
+        "basePower": 100,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -8604,7 +8604,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fusion Bolt",
-        "power": 100,
+        "basePower": 100,
         "type": "Electric",
         "accuracy": 100,
         "pp": 5,
@@ -8620,7 +8620,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Flying Press",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 95,
         "pp": 10,
@@ -8634,7 +8634,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Mat Block",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 15,
@@ -8648,7 +8648,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Belch",
-        "power": 120,
+        "basePower": 120,
         "type": "Poison",
         "accuracy": 90,
         "pp": 10,
@@ -8660,7 +8660,7 @@ exports.BattleMovedex = {
         "num": 563,
         "flags": {},
         "name": "Rototiller",
-        "power": 0,
+        "basePower": 0,
         "type": "Ground",
         "accuracy": true,
         "pp": 10,
@@ -8674,7 +8674,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Sticky Web",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 20,
@@ -8690,7 +8690,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Fell Stinger",
-        "power": 50,
+        "basePower": 50,
         "type": "Bug",
         "accuracy": 100,
         "pp": 25,
@@ -8705,7 +8705,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Phantom Force",
-        "power": 90,
+        "basePower": 90,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -8721,7 +8721,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Trick-or-Treat",
-        "power": 0,
+        "basePower": 0,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 20,
@@ -8738,7 +8738,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Noble Roar",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 30,
@@ -8750,7 +8750,7 @@ exports.BattleMovedex = {
         "num": 569,
         "flags": {},
         "name": "Ion Deluge",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": true,
         "pp": 25,
@@ -8765,7 +8765,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Parabolic Charge",
-        "power": 65,
+        "basePower": 65,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -8781,7 +8781,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Forest's Curse",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 20,
@@ -8797,7 +8797,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Petal Blizzard",
-        "power": 90,
+        "basePower": 90,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -8812,7 +8812,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Freeze-Dry",
-        "power": 70,
+        "basePower": 70,
         "type": "Ice",
         "accuracy": 100,
         "pp": 20,
@@ -8828,7 +8828,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Disarming Voice",
-        "power": 40,
+        "basePower": 40,
         "type": "Fairy",
         "accuracy": true,
         "pp": 15,
@@ -8845,7 +8845,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Parting Shot",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -8861,7 +8861,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Topsy-Turvy",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": true,
         "pp": 20,
@@ -8877,7 +8877,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Draining Kiss",
-        "power": 50,
+        "basePower": 50,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 10,
@@ -8889,7 +8889,7 @@ exports.BattleMovedex = {
         "num": 578,
         "flags": {},
         "name": "Crafty Shield",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -8901,7 +8901,7 @@ exports.BattleMovedex = {
         "num": 579,
         "flags": {},
         "name": "Flower Shield",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -8913,7 +8913,7 @@ exports.BattleMovedex = {
         "num": 580,
         "flags": {},
         "name": "Grassy Terrain",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -8925,7 +8925,7 @@ exports.BattleMovedex = {
         "num": 581,
         "flags": {},
         "name": "Misty Terrain",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -8940,7 +8940,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Electrify",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": true,
         "pp": 20,
@@ -8956,7 +8956,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Play Rough",
-        "power": 90,
+        "basePower": 90,
         "type": "Fairy",
         "accuracy": 90,
         "pp": 10,
@@ -8972,7 +8972,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Fairy Wind",
-        "power": 40,
+        "basePower": 40,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 30,
@@ -8987,7 +8987,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Moonblast",
-        "power": 95,
+        "basePower": 95,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 15,
@@ -9003,7 +9003,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Boomburst",
-        "power": 140,
+        "basePower": 140,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -9018,7 +9018,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Fairy Lock",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -9030,7 +9030,7 @@ exports.BattleMovedex = {
         "num": 588,
         "flags": {},
         "name": "King's Shield",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -9046,7 +9046,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Play Nice",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -9062,7 +9062,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Confide",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -9077,7 +9077,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Diamond Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Rock",
         "accuracy": 95,
         "pp": 5,
@@ -9093,7 +9093,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Steam Eruption",
-        "power": 110,
+        "basePower": 110,
         "type": "Water",
         "accuracy": 95,
         "pp": 5,
@@ -9108,7 +9108,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Hyperspace Hole",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": true,
         "pp": 5,
@@ -9123,7 +9123,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Water Shuriken",
-        "power": 15,
+        "basePower": 15,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -9138,7 +9138,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mystical Fire",
-        "power": 75,
+        "basePower": 75,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -9150,7 +9150,7 @@ exports.BattleMovedex = {
         "num": 596,
         "flags": {},
         "name": "Spiky Shield",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -9164,7 +9164,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Aromatic Mist",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 20,
@@ -9180,7 +9180,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Eerie Impulse",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -9196,7 +9196,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Venom Drench",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 100,
         "pp": 20,
@@ -9213,7 +9213,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Powder",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -9228,7 +9228,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Geomancy",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -9243,7 +9243,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Magnetic Flux",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": true,
         "pp": 20,
@@ -9255,7 +9255,7 @@ exports.BattleMovedex = {
         "num": 603,
         "flags": {},
         "name": "Happy Hour",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -9267,7 +9267,7 @@ exports.BattleMovedex = {
         "num": 604,
         "flags": {},
         "name": "Electric Terrain",
-        "power": 0,
+        "basePower": 0,
         "type": "Electric",
         "accuracy": true,
         "pp": 10,
@@ -9282,7 +9282,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dazzling Gleam",
-        "power": 80,
+        "basePower": 80,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 10,
@@ -9294,7 +9294,7 @@ exports.BattleMovedex = {
         "num": 606,
         "flags": {},
         "name": "Celebrate",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -9309,7 +9309,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Hold Hands",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 40,
@@ -9325,7 +9325,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Baby-Doll Eyes",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 30,
@@ -9341,7 +9341,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Nuzzle",
-        "power": 20,
+        "basePower": 20,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -9357,7 +9357,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Hold Back",
-        "power": 40,
+        "basePower": 40,
         "type": "Normal",
         "accuracy": 100,
         "pp": 40,
@@ -9373,7 +9373,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Infestation",
-        "power": 20,
+        "basePower": 20,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -9390,7 +9390,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Power-Up Punch",
-        "power": 40,
+        "basePower": 40,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 20,
@@ -9405,7 +9405,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Oblivion Wing",
-        "power": 80,
+        "basePower": 80,
         "type": "Flying",
         "accuracy": 100,
         "pp": 10,
@@ -9420,7 +9420,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thousand Arrows",
-        "power": 90,
+        "basePower": 90,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -9435,7 +9435,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thousand Waves",
-        "power": 90,
+        "basePower": 90,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -9450,7 +9450,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Land's Wrath",
-        "power": 90,
+        "basePower": 90,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -9465,7 +9465,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Light Of Ruin",
-        "power": 140,
+        "basePower": 140,
         "type": "Fairy",
         "accuracy": 90,
         "pp": 5,
@@ -9480,7 +9480,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Origin Pulse",
-        "power": 110,
+        "basePower": 110,
         "type": "Water",
         "accuracy": 85,
         "pp": 10,
@@ -9495,7 +9495,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Precipice Blades",
-        "power": 120,
+        "basePower": 120,
         "type": "Ground",
         "accuracy": 85,
         "pp": 10,
@@ -9511,7 +9511,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dragon Ascent",
-        "power": 120,
+        "basePower": 120,
         "type": "Flying",
         "accuracy": 100,
         "pp": 5,
@@ -9526,7 +9526,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Hyperspace Fury",
-        "power": 100,
+        "basePower": 100,
         "type": "Dark",
         "accuracy": true,
         "pp": 5,
@@ -9540,7 +9540,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Shore Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Ground",
         "accuracy": true,
         "pp": 5,
@@ -9556,7 +9556,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "First Impression",
-        "power": 90,
+        "basePower": 90,
         "type": "Bug",
         "accuracy": 100,
         "pp": 10,
@@ -9568,7 +9568,7 @@ exports.BattleMovedex = {
         "num": 624,
         "flags": {},
         "name": "Baneful Bunker",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": true,
         "pp": 10,
@@ -9583,7 +9583,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Spirit Shackle",
-        "power": 80,
+        "basePower": 80,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -9599,7 +9599,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Darkest Lariat",
-        "power": 85,
+        "basePower": 85,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -9615,7 +9615,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Sparkling Aria",
-        "power": 90,
+        "basePower": 90,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -9632,7 +9632,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Ice Hammer",
-        "power": 100,
+        "basePower": 100,
         "type": "Ice",
         "accuracy": 90,
         "pp": 10,
@@ -9647,7 +9647,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Floral Healng",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -9663,7 +9663,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "High Horsepower",
-        "power": 95,
+        "basePower": 95,
         "type": "Ground",
         "accuracy": 95,
         "pp": 10,
@@ -9679,7 +9679,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Strength Sap",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -9696,7 +9696,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Solar Blade",
-        "power": 125,
+        "basePower": 125,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -9711,7 +9711,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Leafage",
-        "power": 40,
+        "basePower": 40,
         "type": "Grass",
         "accuracy": 100,
         "pp": 40,
@@ -9726,7 +9726,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Spotlight",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 15,
@@ -9742,7 +9742,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Toxic Thread",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 100,
         "pp": 20,
@@ -9756,7 +9756,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Laser Focus",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 30,
@@ -9771,7 +9771,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Gear Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 20,
@@ -9787,7 +9787,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Throat Chop",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 100,
         "pp": 15,
@@ -9803,7 +9803,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Pollen Puff",
-        "power": 90,
+        "basePower": 90,
         "type": "Bug",
         "accuracy": 100,
         "pp": 15,
@@ -9819,7 +9819,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Anchor Shot",
-        "power": 80,
+        "basePower": 80,
         "type": "Steel",
         "accuracy": 100,
         "pp": 20,
@@ -9831,7 +9831,7 @@ exports.BattleMovedex = {
         "num": 641,
         "flags": {},
         "name": "Psychic Terrain",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -9847,7 +9847,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Lunge",
-        "power": 80,
+        "basePower": 80,
         "type": "Bug",
         "accuracy": 100,
         "pp": 15,
@@ -9863,7 +9863,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Fire Lash",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 15,
@@ -9879,7 +9879,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Power Trip",
-        "power": 20,
+        "basePower": 20,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -9895,7 +9895,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Burn Up",
-        "power": 130,
+        "basePower": 130,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -9911,7 +9911,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Speed Swap",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -9927,7 +9927,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Smart Strike",
-        "power": 70,
+        "basePower": 70,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -9942,7 +9942,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Purify",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": true,
         "pp": 20,
@@ -9957,7 +9957,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Revelation Dance",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 100,
         "pp": 15,
@@ -9972,7 +9972,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Core Enforcer",
-        "power": 100,
+        "basePower": 100,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -9988,7 +9988,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Trop Kick",
-        "power": 70,
+        "basePower": 70,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -10003,7 +10003,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Instruct",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 15,
@@ -10018,7 +10018,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Beak Blast",
-        "power": 100,
+        "basePower": 100,
         "type": "Flying",
         "accuracy": 100,
         "pp": 15,
@@ -10034,7 +10034,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Clanging Scales",
-        "power": 110,
+        "basePower": 110,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -10050,7 +10050,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dragon Hammer",
-        "power": 90,
+        "basePower": 90,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 15,
@@ -10066,7 +10066,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Brutal Swing",
-        "power": 60,
+        "basePower": 60,
         "type": "Dark",
         "accuracy": 100,
         "pp": 20,
@@ -10080,7 +10080,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Aurora Veil",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 20,
@@ -10094,7 +10094,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Shell Trap",
-        "power": 150,
+        "basePower": 150,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -10109,7 +10109,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fleur Cannon",
-        "power": 130,
+        "basePower": 130,
         "type": "Fairy",
         "accuracy": 90,
         "pp": 5,
@@ -10126,7 +10126,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Psychic Fangs",
-        "power": 85,
+        "basePower": 85,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -10142,7 +10142,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Stomping Tantrum",
-        "power": 75,
+        "basePower": 75,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -10157,7 +10157,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Shadow Bone",
-        "power": 85,
+        "basePower": 85,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -10173,7 +10173,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Accelerock",
-        "power": 40,
+        "basePower": 40,
         "type": "Rock",
         "accuracy": 100,
         "pp": 20,
@@ -10189,7 +10189,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Liquidation",
-        "power": 85,
+        "basePower": 85,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -10204,7 +10204,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Prismatic Laser",
-        "power": 160,
+        "basePower": 160,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -10221,7 +10221,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Spectral Thief",
-        "power": 90,
+        "basePower": 90,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -10237,7 +10237,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Sunsteel Strike",
-        "power": 100,
+        "basePower": 100,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -10252,7 +10252,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Moongeist Beam",
-        "power": 100,
+        "basePower": 100,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 5,
@@ -10267,7 +10267,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Tearful Look",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -10283,7 +10283,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Zing Zap",
-        "power": 80,
+        "basePower": 80,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -10298,7 +10298,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Nature's Madness",
-        "power": 1,
+        "basePower": 1,
         "type": "Fairy",
         "accuracy": 90,
         "pp": 10,
@@ -10314,7 +10314,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Multi-Attack",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -10329,7 +10329,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mind Blown",
-        "power": 150,
+        "basePower": 150,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -10346,7 +10346,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Plasma Fists",
-        "power": 100,
+        "basePower": 100,
         "type": "Electric",
         "accuracy": 100,
         "pp": 15,
@@ -10361,7 +10361,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Photon Geyser",
-        "power": 100,
+        "basePower": 100,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 5,
@@ -10376,7 +10376,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Zippy Zap",
-        "power": 80,
+        "basePower": 80,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -10389,7 +10389,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Splishy Splash",
-        "power": 90,
+        "basePower": 90,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -10403,7 +10403,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Floaty Fall",
-        "power": 90,
+        "basePower": 90,
         "type": "Flying",
         "accuracy": 95,
         "pp": 15,
@@ -10416,7 +10416,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Pika Papow",
-        "power": 1,
+        "basePower": 1,
         "type": "Electric",
         "accuracy": true,
         "pp": 20,
@@ -10429,7 +10429,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Bouncy Bubble",
-        "power": 60,
+        "basePower": 60,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -10442,7 +10442,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Buzzy Buzz",
-        "power": 60,
+        "basePower": 60,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -10457,7 +10457,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Sizzly Slide",
-        "power": 60,
+        "basePower": 60,
         "type": "Fire",
         "accuracy": 100,
         "pp": 20,
@@ -10470,7 +10470,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Glitzy Glow",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 95,
         "pp": 15,
@@ -10483,7 +10483,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Baddy Bad",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 95,
         "pp": 15,
@@ -10497,7 +10497,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Sappy Seed",
-        "power": 100,
+        "basePower": 100,
         "type": "Grass",
         "accuracy": 90,
         "pp": 10,
@@ -10510,7 +10510,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Freezy Frost",
-        "power": 100,
+        "basePower": 100,
         "type": "Ice",
         "accuracy": 90,
         "pp": 10,
@@ -10523,7 +10523,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Sparkly Swirl",
-        "power": 120,
+        "basePower": 120,
         "type": "Fairy",
         "accuracy": 85,
         "pp": 5,
@@ -10537,7 +10537,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Veevee Volley",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 20,
@@ -10553,7 +10553,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Double Iron Bash",
-        "power": 60,
+        "basePower": 60,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -10567,7 +10567,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Dynamax Cannon",
-        "power": 100,
+        "basePower": 100,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -10582,7 +10582,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Snipe Shot",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "critRatio": 2,
@@ -10600,7 +10600,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Jaw Lock",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -10614,7 +10614,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Stuff Cheeks",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -10628,7 +10628,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "No Retreat",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 5,
@@ -10644,7 +10644,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Tar Shot",
-        "power": 0,
+        "basePower": 0,
         "type": "Rock",
         "accuracy": 100,
         "pp": 15,
@@ -10661,7 +10661,7 @@ exports.BattleMovedex = {
             "powder": 1
         },
         "name": "Magic Powder",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 20,
@@ -10676,7 +10676,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dragon Darts",
-        "power": 50,
+        "basePower": 50,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -10690,7 +10690,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Teatime",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -10705,7 +10705,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Octolock",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -10721,7 +10721,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Bolt Beak",
-        "power": 85,
+        "basePower": 85,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -10738,7 +10738,7 @@ exports.BattleMovedex = {
             "bite": 1
         },
         "name": "Fishious Rend",
-        "power": 85,
+        "basePower": 85,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -10752,7 +10752,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Court Change",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -10767,7 +10767,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Clangorous Soul",
-        "power": 0,
+        "basePower": 0,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -10783,7 +10783,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Body Press",
-        "power": 80,
+        "basePower": 80,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -10795,7 +10795,7 @@ exports.BattleMovedex = {
         "num": 705,
         "flags": {},
         "name": "Decorate",
-        "power": 0,
+        "basePower": 0,
         "type": "Fairy",
         "accuracy": true,
         "pp": 15,
@@ -10810,7 +10810,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Drum Beating",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -10826,7 +10826,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Snap Trap",
-        "power": 35,
+        "basePower": 35,
         "type": "Grass",
         "accuracy": 100,
         "pp": 15,
@@ -10843,7 +10843,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Pyro Ball",
-        "power": 120,
+        "basePower": 120,
         "type": "Fire",
         "accuracy": 90,
         "pp": 5,
@@ -10860,7 +10860,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Behemoth Blade",
-        "power": 100,
+        "basePower": 100,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -10876,7 +10876,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Behemoth Bash",
-        "power": 100,
+        "basePower": 100,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -10891,7 +10891,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Aura Wheel",
-        "power": 110,
+        "basePower": 110,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -10907,7 +10907,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Breaking Swipe",
-        "power": 60,
+        "basePower": 60,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 15,
@@ -10923,7 +10923,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Branch Poke",
-        "power": 40,
+        "basePower": 40,
         "type": "Grass",
         "accuracy": 100,
         "pp": 40,
@@ -10939,7 +10939,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Overdrive",
-        "power": 80,
+        "basePower": 80,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -10954,7 +10954,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Apple Acid",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -10969,7 +10969,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Grav Apple",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -10985,7 +10985,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Spirit Break",
-        "power": 75,
+        "basePower": 75,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 15,
@@ -11000,7 +11000,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Strange Steam",
-        "power": 90,
+        "basePower": 90,
         "type": "Fairy",
         "accuracy": 95,
         "pp": 10,
@@ -11015,7 +11015,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Life Dew",
-        "power": 0,
+        "basePower": 0,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -11027,7 +11027,7 @@ exports.BattleMovedex = {
         "num": 720,
         "flags": {},
         "name": "Obstruct",
-        "power": 0,
+        "basePower": 0,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -11043,7 +11043,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "False Surrender",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": true,
         "pp": 10,
@@ -11058,7 +11058,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Meteor Assault",
-        "power": 150,
+        "basePower": 150,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 5,
@@ -11073,7 +11073,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Eternabeam",
-        "power": 160,
+        "basePower": 160,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 5,
@@ -11088,7 +11088,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Steel Beam",
-        "power": 140,
+        "basePower": 140,
         "type": "Steel",
         "accuracy": 95,
         "pp": 5,
@@ -11103,7 +11103,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Expanding Force",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -11119,7 +11119,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Steel Roller",
-        "power": 130,
+        "basePower": 130,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -11134,7 +11134,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Scale Shot",
-        "power": 25,
+        "basePower": 25,
         "type": "Dragon",
         "accuracy": 90,
         "pp": 20,
@@ -11149,7 +11149,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Meteor Beam",
-        "power": 120,
+        "basePower": 120,
         "type": "Rock",
         "accuracy": 90,
         "pp": 10,
@@ -11164,7 +11164,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Shell Side Arm",
-        "power": 90,
+        "basePower": 90,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -11179,7 +11179,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Misty Explosion",
-        "power": 100,
+        "basePower": 100,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 5,
@@ -11195,7 +11195,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Grassy Glide",
-        "power": 55,
+        "basePower": 55,
         "type": "Grass",
         "accuracy": 100,
         "pp": 20,
@@ -11210,7 +11210,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Rising Voltage",
-        "power": 70,
+        "basePower": 70,
         "type": "Electric",
         "accuracy": 100,
         "pp": 20,
@@ -11226,7 +11226,7 @@ exports.BattleMovedex = {
             "pulse": 1
         },
         "name": "Terrain Pulse",
-        "power": 50,
+        "basePower": 50,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -11242,7 +11242,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Skitter Smack",
-        "power": 70,
+        "basePower": 70,
         "type": "Bug",
         "accuracy": 90,
         "pp": 10,
@@ -11257,7 +11257,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Burning Jealousy",
-        "power": 70,
+        "basePower": 70,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -11273,7 +11273,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Lash Out",
-        "power": 75,
+        "basePower": 75,
         "type": "Dark",
         "accuracy": 100,
         "pp": 5,
@@ -11288,7 +11288,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Poltergeist",
-        "power": 110,
+        "basePower": 110,
         "type": "Ghost",
         "accuracy": 90,
         "pp": 5,
@@ -11304,7 +11304,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Corrosive Gas",
-        "power": 0,
+        "basePower": 0,
         "type": "Poison",
         "accuracy": 100,
         "pp": 40,
@@ -11318,7 +11318,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Coaching",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 10,
@@ -11334,7 +11334,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Flip Turn",
-        "power": 60,
+        "basePower": 60,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -11350,7 +11350,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Triple Axel",
-        "power": 20,
+        "basePower": 20,
         "type": "Ice",
         "accuracy": 90,
         "pp": 10,
@@ -11366,7 +11366,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dual Wingbeat",
-        "power": 40,
+        "basePower": 40,
         "type": "Flying",
         "accuracy": 90,
         "pp": 10,
@@ -11382,7 +11382,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Scorching Sands",
-        "power": 70,
+        "basePower": 70,
         "type": "Ground",
         "accuracy": 100,
         "pp": 10,
@@ -11396,7 +11396,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Jungle Healng",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -11413,7 +11413,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Wicked Blow",
-        "power": 75,
+        "basePower": 75,
         "type": "Dark",
         "accuracy": 100,
         "pp": 5,
@@ -11430,7 +11430,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Surging Strikes",
-        "power": 25,
+        "basePower": 25,
         "type": "Water",
         "accuracy": 100,
         "pp": 5,
@@ -11445,7 +11445,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thunder Cage",
-        "power": 80,
+        "basePower": 80,
         "type": "Electric",
         "accuracy": 90,
         "pp": 15,
@@ -11460,7 +11460,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Dragon Energy",
-        "power": 150,
+        "basePower": 150,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -11475,7 +11475,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Freezing Glare",
-        "power": 90,
+        "basePower": 90,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -11490,7 +11490,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fiery Wrath",
-        "power": 90,
+        "basePower": 90,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -11506,7 +11506,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Thunderous Kick",
-        "power": 90,
+        "basePower": 90,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -11521,7 +11521,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Glacial Lance",
-        "power": 120,
+        "basePower": 120,
         "type": "Ice",
         "accuracy": 100,
         "pp": 5,
@@ -11536,7 +11536,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Astral Barrage",
-        "power": 120,
+        "basePower": 120,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 5,
@@ -11552,7 +11552,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Eerie Spell",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 5,
@@ -11568,7 +11568,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Dire Claw",
-        "power": 80,
+        "basePower": 80,
         "type": "Poison",
         "accuracy": 100,
         "pp": 15,
@@ -11583,7 +11583,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Psyshield Bash",
-        "power": 70,
+        "basePower": 70,
         "type": "Psychic",
         "accuracy": 90,
         "pp": 10,
@@ -11596,7 +11596,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Power Shift",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -11612,7 +11612,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Stone Axe",
-        "power": 65,
+        "basePower": 65,
         "type": "Rock",
         "accuracy": 90,
         "pp": 15,
@@ -11627,7 +11627,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Springtide Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Fairy",
         "accuracy": 80,
         "pp": 5,
@@ -11641,7 +11641,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mystical Power",
-        "power": 70,
+        "basePower": 70,
         "type": "Psychic",
         "accuracy": 90,
         "pp": 10,
@@ -11655,7 +11655,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Raging Fury",
-        "power": 120,
+        "basePower": 120,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -11670,7 +11670,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Wave Crash",
-        "power": 120,
+        "basePower": 120,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -11684,7 +11684,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Chloroblast",
-        "power": 150,
+        "basePower": 150,
         "type": "Grass",
         "accuracy": 95,
         "pp": 5,
@@ -11698,7 +11698,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Mountain Gale",
-        "power": 100,
+        "basePower": 100,
         "type": "Ice",
         "accuracy": 85,
         "pp": 5,
@@ -11711,7 +11711,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Victory Dance",
-        "power": 0,
+        "basePower": 0,
         "type": "Fighting",
         "accuracy": true,
         "pp": 20,
@@ -11727,7 +11727,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Headlong Rush",
-        "power": 120,
+        "basePower": 120,
         "type": "Ground",
         "accuracy": 100,
         "pp": 5,
@@ -11741,7 +11741,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Barb Barrage",
-        "power": 60,
+        "basePower": 60,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -11755,7 +11755,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Esper Wing",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "critRatio": 2,
@@ -11770,7 +11770,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bitter Malice",
-        "power": 75,
+        "basePower": 75,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -11783,7 +11783,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Shelter",
-        "power": 0,
+        "basePower": 0,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -11797,7 +11797,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Triple Arrows",
-        "power": 90,
+        "basePower": 90,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -11812,7 +11812,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Infernal Parade",
-        "power": 60,
+        "basePower": 60,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 15,
@@ -11828,7 +11828,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Ceaseless Edge",
-        "power": 65,
+        "basePower": 65,
         "type": "Dark",
         "accuracy": 90,
         "pp": 15,
@@ -11843,7 +11843,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Bleakwind Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Flying",
         "accuracy": 80,
         "pp": 10,
@@ -11858,7 +11858,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Wildbolt Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Electric",
         "accuracy": 80,
         "pp": 10,
@@ -11873,7 +11873,7 @@ exports.BattleMovedex = {
             "wind": 1
         },
         "name": "Sandsear Storm",
-        "power": 100,
+        "basePower": 100,
         "type": "Ground",
         "accuracy": 80,
         "pp": 10,
@@ -11886,7 +11886,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Lunar Blessing",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -11899,7 +11899,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Take Heart",
-        "power": 0,
+        "basePower": 0,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -11913,7 +11913,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Tera Blast",
-        "power": 80,
+        "basePower": 80,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -11924,7 +11924,7 @@ exports.BattleMovedex = {
         "num": 780,
         "flags": {},
         "name": "Silk Trap",
-        "power": 0,
+        "basePower": 0,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -11939,7 +11939,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Axe Kick",
-        "power": 120,
+        "basePower": 120,
         "type": "Fighting",
         "accuracy": 90,
         "pp": 10,
@@ -11953,7 +11953,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Last Respects",
-        "power": 50,
+        "basePower": 50,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -11967,7 +11967,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Lumina Crash",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -11980,7 +11980,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Order Up",
-        "power": 80,
+        "basePower": 80,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 10,
@@ -11996,7 +11996,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Jet Punch",
-        "power": 60,
+        "basePower": 60,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -12011,7 +12011,7 @@ exports.BattleMovedex = {
             "reflectable": 1
         },
         "name": "Spicy Extract",
-        "power": 0,
+        "basePower": 0,
         "type": "Grass",
         "accuracy": true,
         "pp": 15,
@@ -12026,7 +12026,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Spin Out",
-        "power": 100,
+        "basePower": 100,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -12042,7 +12042,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Population Bomb",
-        "power": 20,
+        "basePower": 20,
         "type": "Normal",
         "accuracy": 90,
         "pp": 10,
@@ -12057,7 +12057,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Ice Spinner",
-        "power": 80,
+        "basePower": 80,
         "type": "Ice",
         "accuracy": 100,
         "pp": 15,
@@ -12072,7 +12072,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Glaive Rush",
-        "power": 120,
+        "basePower": 120,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -12083,7 +12083,7 @@ exports.BattleMovedex = {
         "num": 791,
         "flags": {},
         "name": "Revival Blessing",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 1,
@@ -12097,7 +12097,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Salt Cure",
-        "power": 40,
+        "basePower": 40,
         "type": "Rock",
         "accuracy": 100,
         "pp": 15,
@@ -12112,7 +12112,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Triple Dive",
-        "power": 30,
+        "basePower": 30,
         "type": "Water",
         "accuracy": 95,
         "pp": 10,
@@ -12127,7 +12127,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Mortal Spin",
-        "power": 30,
+        "basePower": 30,
         "type": "Poison",
         "accuracy": 100,
         "pp": 15,
@@ -12138,7 +12138,7 @@ exports.BattleMovedex = {
         "num": 795,
         "flags": {},
         "name": "Doodle",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -12151,7 +12151,7 @@ exports.BattleMovedex = {
             "snatch": 1
         },
         "name": "Fillet Away",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -12167,7 +12167,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Kowtow Cleave",
-        "power": 85,
+        "basePower": 85,
         "type": "Dark",
         "accuracy": true,
         "pp": 10,
@@ -12181,7 +12181,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Flower Trick",
-        "power": 70,
+        "basePower": 70,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -12196,7 +12196,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Torch Song",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -12211,7 +12211,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Aqua Step",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 10,
@@ -12226,7 +12226,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Raging Bull",
-        "power": 90,
+        "basePower": 90,
         "type": "Normal",
         "accuracy": 100,
         "pp": 10,
@@ -12240,7 +12240,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Make It Rain",
-        "power": 120,
+        "basePower": 120,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -12254,7 +12254,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ruination",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": 90,
         "pp": 10,
@@ -12269,7 +12269,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Collision Course",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 5,
@@ -12284,7 +12284,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Electro Drift",
-        "power": 100,
+        "basePower": 100,
         "type": "Electric",
         "accuracy": 100,
         "pp": 5,
@@ -12295,7 +12295,7 @@ exports.BattleMovedex = {
         "num": 806,
         "flags": {},
         "name": "Shed Tail",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -12306,7 +12306,7 @@ exports.BattleMovedex = {
         "num": 807,
         "flags": {},
         "name": "Chilly Reception",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 10,
@@ -12317,7 +12317,7 @@ exports.BattleMovedex = {
         "num": 808,
         "flags": {},
         "name": "Tidy Up",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -12328,7 +12328,7 @@ exports.BattleMovedex = {
         "num": 809,
         "flags": {},
         "name": "Snowscape",
-        "power": 0,
+        "basePower": 0,
         "type": "Ice",
         "accuracy": true,
         "pp": 10,
@@ -12343,7 +12343,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Pounce",
-        "power": 50,
+        "basePower": 50,
         "type": "Bug",
         "accuracy": 100,
         "pp": 20,
@@ -12358,7 +12358,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Trailblaze",
-        "power": 50,
+        "basePower": 50,
         "type": "Grass",
         "accuracy": 100,
         "pp": 20,
@@ -12372,7 +12372,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Chilling Water",
-        "power": 50,
+        "basePower": 50,
         "type": "Water",
         "accuracy": 100,
         "pp": 20,
@@ -12386,7 +12386,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Hyper Drill",
-        "power": 100,
+        "basePower": 100,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -12400,7 +12400,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Twin Beam",
-        "power": 40,
+        "basePower": 40,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -12416,7 +12416,7 @@ exports.BattleMovedex = {
             "punch": 1
         },
         "name": "Rage Fist",
-        "power": 50,
+        "basePower": 50,
         "type": "Ghost",
         "accuracy": 100,
         "pp": 10,
@@ -12430,7 +12430,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Armor Cannon",
-        "power": 120,
+        "basePower": 120,
         "type": "Fire",
         "accuracy": 100,
         "pp": 5,
@@ -12446,7 +12446,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Bitter Blade",
-        "power": 90,
+        "basePower": 90,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -12461,7 +12461,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Double Shock",
-        "power": 120,
+        "basePower": 120,
         "type": "Electric",
         "accuracy": 100,
         "pp": 5,
@@ -12476,7 +12476,7 @@ exports.BattleMovedex = {
             "cantusetwice": 1
         },
         "name": "Gigaton Hammer",
-        "power": 160,
+        "basePower": 160,
         "type": "Steel",
         "accuracy": 100,
         "pp": 5,
@@ -12491,7 +12491,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Comeuppance",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -12506,7 +12506,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Aqua Cutter",
-        "power": 70,
+        "basePower": 70,
         "type": "Water",
         "accuracy": 100,
         "critRatio": 2,
@@ -12520,7 +12520,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Blazing Torque",
-        "power": 80,
+        "basePower": 80,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -12533,7 +12533,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Wicked Torque",
-        "power": 80,
+        "basePower": 80,
         "type": "Dark",
         "accuracy": 100,
         "pp": 10,
@@ -12546,7 +12546,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Noxious Torque",
-        "power": 100,
+        "basePower": 100,
         "type": "Poison",
         "accuracy": 100,
         "pp": 10,
@@ -12559,7 +12559,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Combat Torque",
-        "power": 100,
+        "basePower": 100,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 10,
@@ -12572,7 +12572,7 @@ exports.BattleMovedex = {
             "protect": 1
         },
         "name": "Magical Torque",
-        "power": 100,
+        "basePower": 100,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 10,
@@ -12588,7 +12588,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Psyblade",
-        "power": 80,
+        "basePower": 80,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 15,
@@ -12603,7 +12603,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Hydro Steam",
-        "power": 80,
+        "basePower": 80,
         "type": "Water",
         "accuracy": 100,
         "pp": 15,
@@ -12618,7 +12618,7 @@ exports.BattleMovedex = {
             "cantusetwice": 1
         },
         "name": "Blood Moon",
-        "power": 140,
+        "basePower": 140,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -12633,7 +12633,7 @@ exports.BattleMovedex = {
             "defrost": 1
         },
         "name": "Matcha Gotcha",
-        "power": 80,
+        "basePower": 80,
         "type": "Grass",
         "accuracy": 90,
         "pp": 15,
@@ -12648,7 +12648,7 @@ exports.BattleMovedex = {
             "bullet": 1
         },
         "name": "Syrup Bomb",
-        "power": 60,
+        "basePower": 60,
         "type": "Grass",
         "accuracy": 85,
         "pp": 10,
@@ -12662,7 +12662,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Ivy Cudgel",
-        "power": 100,
+        "basePower": 100,
         "type": "Grass",
         "accuracy": 100,
         "pp": 10,
@@ -12677,7 +12677,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Electro Shot",
-        "power": 130,
+        "basePower": 130,
         "type": "Electric",
         "accuracy": 100,
         "pp": 10,
@@ -12691,7 +12691,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Tera Starstorm",
-        "power": 120,
+        "basePower": 120,
         "type": "Normal",
         "accuracy": 100,
         "pp": 5,
@@ -12705,7 +12705,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Fickle Beam",
-        "power": 80,
+        "basePower": 80,
         "type": "Dragon",
         "accuracy": 100,
         "pp": 5,
@@ -12716,7 +12716,7 @@ exports.BattleMovedex = {
         "num": 836,
         "flags": {},
         "name": "Burning Bulwark",
-        "power": 0,
+        "basePower": 0,
         "type": "Fire",
         "accuracy": true,
         "pp": 10,
@@ -12730,7 +12730,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Thunderclap",
-        "power": 70,
+        "basePower": 70,
         "type": "Electric",
         "accuracy": 100,
         "pp": 5,
@@ -12745,7 +12745,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Mighty Cleave",
-        "power": 95,
+        "basePower": 95,
         "type": "Rock",
         "accuracy": 100,
         "pp": 5,
@@ -12760,7 +12760,7 @@ exports.BattleMovedex = {
             "slicing": 1
         },
         "name": "Tachyon Cutter",
-        "power": 50,
+        "basePower": 50,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -12775,7 +12775,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Hard Press",
-        "power": 1,
+        "basePower": 1,
         "type": "Steel",
         "accuracy": 100,
         "pp": 10,
@@ -12790,7 +12790,7 @@ exports.BattleMovedex = {
             "bypasssub": 1
         },
         "name": "Dragon Cheer",
-        "power": 0,
+        "basePower": 0,
         "type": "Dragon",
         "accuracy": true,
         "pp": 15,
@@ -12805,7 +12805,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Alluring Voice",
-        "power": 80,
+        "basePower": 80,
         "type": "Fairy",
         "accuracy": 100,
         "pp": 10,
@@ -12820,7 +12820,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Temper Flare",
-        "power": 75,
+        "basePower": 75,
         "type": "Fire",
         "accuracy": 100,
         "pp": 10,
@@ -12835,7 +12835,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Supercell Slam",
-        "power": 100,
+        "basePower": 100,
         "type": "Electric",
         "accuracy": 95,
         "pp": 15,
@@ -12850,7 +12850,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Psychic Noise",
-        "power": 75,
+        "basePower": 75,
         "type": "Psychic",
         "accuracy": 100,
         "pp": 10,
@@ -12865,7 +12865,7 @@ exports.BattleMovedex = {
             "contact": 1
         },
         "name": "Upper Hand",
-        "power": 65,
+        "basePower": 65,
         "type": "Fighting",
         "accuracy": 100,
         "pp": 15,
@@ -12879,7 +12879,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Malignant Chain",
-        "power": 100,
+        "basePower": 100,
         "type": "Poison",
         "accuracy": 100,
         "pp": 5,
@@ -12893,7 +12893,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Breakneck Blitz",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 1,
@@ -12907,7 +12907,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "All Out Pummeling",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": true,
         "pp": 1,
@@ -12921,7 +12921,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Supersonic Skystrike",
-        "power": 1,
+        "basePower": 1,
         "type": "Flying",
         "accuracy": true,
         "pp": 1,
@@ -12935,7 +12935,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Acid Downpour",
-        "power": 1,
+        "basePower": 1,
         "type": "Poison",
         "accuracy": true,
         "pp": 1,
@@ -12949,7 +12949,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Tectonic Rage",
-        "power": 1,
+        "basePower": 1,
         "type": "Ground",
         "accuracy": true,
         "pp": 1,
@@ -12963,7 +12963,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Continental Crush",
-        "power": 1,
+        "basePower": 1,
         "type": "Rock",
         "accuracy": true,
         "pp": 1,
@@ -12977,7 +12977,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Savage Spin Out",
-        "power": 1,
+        "basePower": 1,
         "type": "Bug",
         "accuracy": true,
         "pp": 1,
@@ -12991,7 +12991,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Never Ending Nightmare",
-        "power": 1,
+        "basePower": 1,
         "type": "Ghost",
         "accuracy": true,
         "pp": 1,
@@ -13005,7 +13005,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Corkscrew Crash",
-        "power": 1,
+        "basePower": 1,
         "type": "Steel",
         "accuracy": true,
         "pp": 1,
@@ -13019,7 +13019,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Inferno Overdrive",
-        "power": 1,
+        "basePower": 1,
         "type": "Fire",
         "accuracy": true,
         "pp": 1,
@@ -13033,7 +13033,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Hydro Vortex",
-        "power": 1,
+        "basePower": 1,
         "type": "Water",
         "accuracy": true,
         "pp": 1,
@@ -13047,7 +13047,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Bloom Doom",
-        "power": 1,
+        "basePower": 1,
         "type": "Grass",
         "accuracy": true,
         "pp": 1,
@@ -13061,7 +13061,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Gigavolt Havoc",
-        "power": 1,
+        "basePower": 1,
         "type": "Electric",
         "accuracy": true,
         "pp": 1,
@@ -13075,7 +13075,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Shattered Psyche",
-        "power": 1,
+        "basePower": 1,
         "type": "Psychic",
         "accuracy": true,
         "pp": 1,
@@ -13089,7 +13089,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Subzero Slammer",
-        "power": 1,
+        "basePower": 1,
         "type": "Ice",
         "accuracy": true,
         "pp": 1,
@@ -13103,7 +13103,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Devastating Drake",
-        "power": 1,
+        "basePower": 1,
         "type": "Dragon",
         "accuracy": true,
         "pp": 1,
@@ -13117,7 +13117,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Black Hole Eclipse",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": true,
         "pp": 1,
@@ -13131,7 +13131,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Twinkle Tackle",
-        "power": 1,
+        "basePower": 1,
         "type": "Fairy",
         "accuracy": true,
         "pp": 1,
@@ -13145,7 +13145,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Catastropika",
-        "power": 210,
+        "basePower": 210,
         "type": "Electric",
         "accuracy": true,
         "pp": 1,
@@ -13159,7 +13159,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "10000000 Volt Thunderbolt",
-        "power": 195,
+        "basePower": 195,
         "type": "Electric",
         "accuracy": true,
         "critRatio": 3,
@@ -13174,7 +13174,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Stoked Sparksurfer",
-        "power": 175,
+        "basePower": 175,
         "type": "Electric",
         "accuracy": true,
         "pp": 1,
@@ -13188,7 +13188,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Extreme Evoboost",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 1,
@@ -13202,7 +13202,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Pulverizing Pancake",
-        "power": 210,
+        "basePower": 210,
         "type": "Normal",
         "accuracy": true,
         "pp": 1,
@@ -13216,7 +13216,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Genesis Supernova",
-        "power": 185,
+        "basePower": 185,
         "type": "Psychic",
         "accuracy": true,
         "pp": 1,
@@ -13230,7 +13230,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Sinister Arrow Raid",
-        "power": 180,
+        "basePower": 180,
         "type": "Ghost",
         "accuracy": true,
         "pp": 1,
@@ -13244,7 +13244,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Malicious Moonsault",
-        "power": 180,
+        "basePower": 180,
         "type": "Dark",
         "accuracy": true,
         "pp": 1,
@@ -13258,7 +13258,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Oceaning Operetta",
-        "power": 195,
+        "basePower": 195,
         "type": "Water",
         "accuracy": true,
         "pp": 1,
@@ -13272,7 +13272,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Splintered Stormshards",
-        "power": 190,
+        "basePower": 190,
         "type": "Rock",
         "accuracy": true,
         "pp": 1,
@@ -13286,7 +13286,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Let's Snuggle Forever",
-        "power": 190,
+        "basePower": 190,
         "type": "Fairy",
         "accuracy": true,
         "pp": 1,
@@ -13301,7 +13301,7 @@ exports.BattleMovedex = {
             "sound": 1
         },
         "name": "Clangorous Soulblaze",
-        "power": 185,
+        "basePower": 185,
         "type": "Dragon",
         "accuracy": true,
         "pp": 1,
@@ -13315,7 +13315,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Guardian Of Alola",
-        "power": 1,
+        "basePower": 1,
         "type": "Fairy",
         "accuracy": true,
         "pp": 1,
@@ -13329,7 +13329,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Searing Sunraze Smash",
-        "power": 200,
+        "basePower": 200,
         "type": "Steel",
         "accuracy": true,
         "pp": 1,
@@ -13343,7 +13343,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Menacing Moonraze Maelstrom",
-        "power": 200,
+        "basePower": 200,
         "type": "Ghost",
         "accuracy": true,
         "pp": 1,
@@ -13357,7 +13357,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Light That Burns The Sky",
-        "power": 200,
+        "basePower": 200,
         "type": "Psychic",
         "accuracy": true,
         "pp": 1,
@@ -13371,7 +13371,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Soul Stealing 7 Star Strike",
-        "power": 195,
+        "basePower": 195,
         "type": "Ghost",
         "accuracy": true,
         "pp": 1,
@@ -13385,7 +13385,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Guard",
-        "power": 0,
+        "basePower": 0,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -13399,7 +13399,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Flare",
-        "power": 1,
+        "basePower": 1,
         "type": "Fire",
         "accuracy": true,
         "pp": 10,
@@ -13413,7 +13413,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Flutterby",
-        "power": 1,
+        "basePower": 1,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -13427,7 +13427,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Lightning",
-        "power": 1,
+        "basePower": 1,
         "type": "Electric",
         "accuracy": true,
         "pp": 10,
@@ -13441,7 +13441,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Strike",
-        "power": 1,
+        "basePower": 1,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -13455,7 +13455,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Knuckle",
-        "power": 1,
+        "basePower": 1,
         "type": "Fighting",
         "accuracy": true,
         "pp": 10,
@@ -13469,7 +13469,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Phantasm",
-        "power": 1,
+        "basePower": 1,
         "type": "Ghost",
         "accuracy": true,
         "pp": 10,
@@ -13483,7 +13483,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Hailstorm",
-        "power": 1,
+        "basePower": 1,
         "type": "Ice",
         "accuracy": true,
         "pp": 10,
@@ -13497,7 +13497,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Ooze",
-        "power": 1,
+        "basePower": 1,
         "type": "Poison",
         "accuracy": true,
         "pp": 10,
@@ -13511,7 +13511,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Geyser",
-        "power": 1,
+        "basePower": 1,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -13525,7 +13525,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Airstream",
-        "power": 1,
+        "basePower": 1,
         "type": "Flying",
         "accuracy": true,
         "pp": 10,
@@ -13539,7 +13539,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Starfall",
-        "power": 1,
+        "basePower": 1,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -13553,7 +13553,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Wyrmwind",
-        "power": 1,
+        "basePower": 1,
         "type": "Dragon",
         "accuracy": true,
         "pp": 10,
@@ -13567,7 +13567,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Mindstorm",
-        "power": 1,
+        "basePower": 1,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -13581,7 +13581,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Rockfall",
-        "power": 1,
+        "basePower": 1,
         "type": "Rock",
         "accuracy": true,
         "pp": 10,
@@ -13595,7 +13595,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Quake",
-        "power": 1,
+        "basePower": 1,
         "type": "Ground",
         "accuracy": true,
         "pp": 10,
@@ -13609,7 +13609,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Darkness",
-        "power": 1,
+        "basePower": 1,
         "type": "Dark",
         "accuracy": true,
         "pp": 10,
@@ -13623,7 +13623,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Overgrowth",
-        "power": 10,
+        "basePower": 10,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -13637,7 +13637,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "Max Steelspike",
-        "power": 10,
+        "basePower": 10,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -13651,7 +13651,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Vine Lash",
-        "power": 10,
+        "basePower": 10,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -13665,7 +13665,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Wildfire",
-        "power": 10,
+        "basePower": 10,
         "type": "Fire",
         "accuracy": true,
         "pp": 10,
@@ -13679,7 +13679,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Canonade",
-        "power": 10,
+        "basePower": 10,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -13693,7 +13693,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Befuddle",
-        "power": 10,
+        "basePower": 10,
         "type": "Bug",
         "accuracy": true,
         "pp": 10,
@@ -13707,7 +13707,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Volt Crash",
-        "power": 10,
+        "basePower": 10,
         "type": "Electric",
         "accuracy": true,
         "pp": 10,
@@ -13721,7 +13721,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Gold Rush",
-        "power": 10,
+        "basePower": 10,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -13735,7 +13735,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Chi Strike",
-        "power": 10,
+        "basePower": 10,
         "type": "Fighting",
         "accuracy": true,
         "pp": 10,
@@ -13749,7 +13749,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Terror",
-        "power": 10,
+        "basePower": 10,
         "type": "Ghost",
         "accuracy": true,
         "pp": 10,
@@ -13763,7 +13763,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Foam Burst",
-        "power": 10,
+        "basePower": 10,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -13777,7 +13777,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Resonance",
-        "power": 10,
+        "basePower": 10,
         "type": "Ice",
         "accuracy": true,
         "pp": 10,
@@ -13791,7 +13791,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Cuddle",
-        "power": 10,
+        "basePower": 10,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -13805,7 +13805,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Replenish",
-        "power": 10,
+        "basePower": 10,
         "type": "Normal",
         "accuracy": true,
         "pp": 10,
@@ -13819,7 +13819,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Malodor",
-        "power": 10,
+        "basePower": 10,
         "type": "Poison",
         "accuracy": true,
         "pp": 10,
@@ -13833,7 +13833,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Meltdown",
-        "power": 10,
+        "basePower": 10,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -13847,7 +13847,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Drum Solo",
-        "power": 10,
+        "basePower": 10,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -13861,7 +13861,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Fireball",
-        "power": 10,
+        "basePower": 10,
         "type": "Fire",
         "accuracy": true,
         "pp": 10,
@@ -13875,7 +13875,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Hydrosnipe",
-        "power": 10,
+        "basePower": 10,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -13889,7 +13889,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Wind Rage",
-        "power": 10,
+        "basePower": 10,
         "type": "Flying",
         "accuracy": true,
         "pp": 10,
@@ -13903,7 +13903,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Gravitas",
-        "power": 10,
+        "basePower": 10,
         "type": "Psychic",
         "accuracy": true,
         "pp": 10,
@@ -13917,7 +13917,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Stonesurge",
-        "power": 10,
+        "basePower": 10,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
@@ -13931,7 +13931,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Volcalith",
-        "power": 10,
+        "basePower": 10,
         "type": "Rock",
         "accuracy": true,
         "pp": 10,
@@ -13945,7 +13945,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Tartness",
-        "power": 10,
+        "basePower": 10,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -13959,7 +13959,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Sweetness",
-        "power": 10,
+        "basePower": 10,
         "type": "Grass",
         "accuracy": true,
         "pp": 10,
@@ -13973,7 +13973,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Sandblast",
-        "power": 10,
+        "basePower": 10,
         "type": "Ground",
         "accuracy": true,
         "pp": 10,
@@ -13987,7 +13987,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Stun Shock",
-        "power": 10,
+        "basePower": 10,
         "type": "Electric",
         "accuracy": true,
         "pp": 10,
@@ -14001,7 +14001,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Centiferno",
-        "power": 10,
+        "basePower": 10,
         "type": "Fire",
         "accuracy": true,
         "pp": 10,
@@ -14015,7 +14015,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Smite",
-        "power": 10,
+        "basePower": 10,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -14029,7 +14029,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Snooze",
-        "power": 10,
+        "basePower": 10,
         "type": "Dark",
         "accuracy": true,
         "pp": 10,
@@ -14043,7 +14043,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Finale",
-        "power": 10,
+        "basePower": 10,
         "type": "Fairy",
         "accuracy": true,
         "pp": 10,
@@ -14057,7 +14057,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Steelsurge",
-        "power": 10,
+        "basePower": 10,
         "type": "Steel",
         "accuracy": true,
         "pp": 10,
@@ -14071,7 +14071,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Depletion",
-        "power": 10,
+        "basePower": 10,
         "type": "Dragon",
         "accuracy": true,
         "pp": 10,
@@ -14085,7 +14085,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max One Blow",
-        "power": 10,
+        "basePower": 10,
         "type": "Dark",
         "accuracy": true,
         "pp": 10,
@@ -14099,7 +14099,7 @@ exports.BattleMovedex = {
             "mirror": 1
         },
         "name": "G-Max Rapid Flow",
-        "power": 10,
+        "basePower": 10,
         "type": "Water",
         "accuracy": true,
         "pp": 10,
