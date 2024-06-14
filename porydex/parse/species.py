@@ -1,5 +1,8 @@
 from collections import defaultdict
+from dataclasses import dataclass
+
 import pathlib
+import re
 
 from pycparser.c_ast import Constant, ExprList, NamedInitializer
 from yaspin import yaspin
@@ -11,6 +14,42 @@ from porydex.parse import load_truncated, extract_id, extract_int, extract_u8_st
 EXPANSION_GEN9_START = 1289
 VANILLA_GEN9_START = 906
 EXPANSION_GEN9_OFFSET = EXPANSION_GEN9_START - VANILLA_GEN9_START
+
+@dataclass
+class CosmeticFormes:
+    base: str
+    alts: list[str] | None
+    exclude_pattern: str | None
+
+COSMETIC_FORME_SPECIES: dict[str, CosmeticFormes] = {
+    'Unown': CosmeticFormes('A', [], None),
+    'Vivillon': CosmeticFormes('Meadow', [], None), # Technically, Fancy and Poke Ball are alt forms and not cosmetic, but eff that
+    'Furfrou': CosmeticFormes('Natural', [], None),
+    'Spewpa': CosmeticFormes('Icy-Snow', None, None),
+    'Scatterbug': CosmeticFormes('Icy-Snow', None, None),
+    'Burmy': CosmeticFormes('Plant', [], None),
+    'Mothim': CosmeticFormes('Plant', None, None),
+    'Shellos': CosmeticFormes('West', [], None),
+    'Gastrodon': CosmeticFormes('West', [], None),
+    'Deerling': CosmeticFormes('Spring', [], None),
+    'Sawsbuck': CosmeticFormes('Spring', [], None),
+    'Flabébé': CosmeticFormes('Red', [], None),
+    'Floette': CosmeticFormes('Red', ['Eternal'], None),
+    'Florges': CosmeticFormes('Red', [], None),
+    'Tatsugiri': CosmeticFormes('Curly', [], None),
+    'Minior': CosmeticFormes('Red', ['Meteor'], r'Meteor-*'),
+    'Alcremie': CosmeticFormes('Vanilla-Cream', ['Gmax'], None),
+}
+
+@dataclass
+class SpecialAbilities:
+    form: str
+    ability: str
+
+SPECIAL_ABILITIES: dict[str, SpecialAbilities] = {
+    'Greninja': SpecialAbilities('Bond', 'Battle Bond'),
+    'Zygarde': SpecialAbilities('Power-Construct', 'Power Construct'),
+}
 
 def parse_mon(struct_init: NamedInitializer,
               ability_names: list[str],
@@ -148,23 +187,73 @@ def parse_mon(struct_init: NamedInitializer,
                     # Ugly Urshifu hack
                     if mon['name'] == 'Urshifu':
                         mon['formeOrder'] = [mon['name'] + (f'-{table_vals[i].replace("-Style", "")}' if i > 0 else '') for i in range(len(table.keys()))]
+                    # Ugly Xerneas hack
+                    elif mon['name'] == 'Xerneas':
+                        mon['formeOrder'] = ['Xerneas', 'Xerneas-Neutral']
+                        mon['baseForme'] = 'Active'
+                    # Ugly Vivillon hack
+                    elif mon['name'] == 'Vivillon':
+                        # expansion stores vivillon icy snow as the default form; showdown expects meadow to be the default
+                        mon['formeOrder'] = [f'{mon["name"]}', f'{mon["name"]}-Icy-Snow']
+                        mon['formeOrder'].extend([
+                            f'{mon["name"]}-{table_vals[i]}'
+                            for i in range(len(table.keys()))
+                            if table_vals[i] not in ('Base', COSMETIC_FORME_SPECIES[mon['name']].base)
+                        ])
+                    # Ugly Minior hack
+                    elif mon['name'] == 'Minior':
+                        # expansion stores minior-meteor-red as the default form; showdown indexes core-red as the default
+                        mon['formeOrder'] = [f'{mon["name"]}', f'{mon["name"]}-Meteor']
+                        mon['formeOrder'].extend([
+                            f'{mon["name"]}-{table_vals[i]}'
+                            for i in range(len(table.keys()))
+                            if table_vals[i] not in ('Base', COSMETIC_FORME_SPECIES[mon['name']].base) and 'Meteor' not in table_vals[i]
+                        ])
+                    # Ugly Zygarde hack
+                    elif mon['name'] == 'Zygarde':
+                        mon['formeOrder'] = ['Zygarde', 'Zygarde-10%', 'Zygarde-Complete']
+                        mon['baseForme'] = '50%'
+                    # Ugly Greninja hack
+                    elif mon['name'] == 'Greninja':
+                        mon['formeOrder'] = ['Greninja', 'Greninja-Ash']
+                        mon['baseForme'] = 'Base'
                     else:
                         mon['formeOrder'] = [
                             mon['name'] + (f'-{table_vals[i]}' if i > 0 else '')
                             for i in range(len(table.keys()))
                         ]
 
-                    # ugly ogerpon tera forms hack
-                    if mon['name'] == 'Ogerpon':
-                        mon['formeOrder'].append(f'{mon["name"]}-{table_vals[0]}-Tera')
-                        for i in range(len(table_vals[1:])):
-                            mon['formeOrder'].append(f'{mon["formeOrder"][i + 1]}-Tera')
+                        # ugly ogerpon tera forms hack
+                        if mon['name'] == 'Ogerpon':
+                            mon['formeOrder'].append(f'{mon["name"]}-{table_vals[0]}-Tera')
+                            for i in range(len(table_vals[1:])):
+                                mon['formeOrder'].append(f'{mon["formeOrder"][i + 1]}-Tera')
 
-                    mon['otherFormes'] = mon['formeOrder'][1:]
+                    # Cosmetic Formes
+                    cosmetics = COSMETIC_FORME_SPECIES.get(mon['name'], None)
+                    if cosmetics:
+                        if cosmetics.alts is not None:
+                            mon['cosmeticFormes'] = [
+                                f'{mon["name"]}-{table_vals[i]}'
+                                for i in range(len(table.keys()))
+                                if table_vals[i] not in ('Base', '', cosmetics.base) \
+                                    and table_vals[i] not in cosmetics.alts \
+                                    and cosmetics.exclude_pattern \
+                                    and not re.match(cosmetics.exclude_pattern, table_vals[i])
+                            ]
+                            mon['baseForme'] = cosmetics.base
+
+                            if cosmetics.alts:
+                                mon['otherFormes'] = list(map(lambda alt: f'{mon["name"]}-{alt}', cosmetics.alts))
+                    else:
+                        mon['otherFormes'] = mon['formeOrder'][1:]
                 else:
                     # ugly ogerpon tera forms hack
                     if mon['name'] == 'Ogerpon' and mon['num'] not in table:
                         form_name = f'{table[mon["num"] - 4]}-Tera'
+                    # ugly xerneas neutral-active swap
+                    elif mon['name'] == 'Xerneas':
+                        form_name = 'Neutral'
                     # ugly urshifu forms hack
                     elif mon['name'] == 'Urshifu':
                         form_name = table[mon['num']].replace('-Style', '')
@@ -204,9 +293,15 @@ def zip_evos(all_data: dict,
             continue
 
         mon['evos'] = []
-        for evo in evos:
+        for i, evo in enumerate(evos):
             parent_dex_id = evo[2]
-            parent_mon = all_data[parent_dex_id][0]
+            parent_mon = all_data.get(parent_dex_id, (None,))[0]
+            if not parent_mon:
+                continue
+
+            # Clean up Milcery's evos to Alcremie
+            if mon['name'] == 'Milcery' and parent_mon['name'].startswith('Alcremie') and i > 0:
+                continue
 
             # if the mon is already listed as evolving into this parent, continue
             # we only want to register a single evolution method per child-parent pair
@@ -229,7 +324,9 @@ def zip_evos(all_data: dict,
                     | ExpansionEvoMethod.DARK_SCROLL \
                     | ExpansionEvoMethod.WATER_SCROLL \
                     | ExpansionEvoMethod.RECOIL_DAMAGE_MALE \
-                    | ExpansionEvoMethod.RECOIL_DAMAGE_FEMALE:
+                    | ExpansionEvoMethod.RECOIL_DAMAGE_FEMALE \
+                    | ExpansionEvoMethod.DEFEAT_WITH_ITEM \
+                    | ExpansionEvoMethod.OVERWORLD_STEPS:
                     pass
 
                 # These evo methods interpret the parameter as a minimum level
@@ -324,8 +421,37 @@ def parse_species_data(species_data: ExprList,
             mon, evos, lvlup_learnset, teach_learnset = parse_mon(species_init, abilities, items, forms, level_up_learnsets, teachable_learnsets, national_dex)
             all_species_data[mon['num']] = (mon, evos)
 
-            if 'name' not in mon or not mon['name']: # egg has no name nor learnset; don't try
+            if 'name' not in mon or not mon['name']:
                 continue
+
+            if mon['name'].rfind('-') != -1:
+                base_name = mon['name'].split('-')[0]
+                cosmetics = COSMETIC_FORME_SPECIES.get(base_name, None)
+                if cosmetics and any(map(lambda s: s[0]['name'] == base_name, all_species_data.values())):
+                    if cosmetics.alts is None or mon['name'] not in map(lambda alt: f'{base_name}-{alt}', cosmetics.alts):
+                        del all_species_data[mon['num']]
+                        continue
+
+                special = SPECIAL_ABILITIES.get(base_name, None)
+                if special:
+                    form_name = mon['name'].replace(base_name, '')[1:]
+                    if '-' in form_name:
+                        sub_form = f'-{form_name.split("-")[0]}'
+                        special_form = '-'.join(form_name.split('-')[1:])
+                    else:
+                        sub_form = ''
+                        special_form = form_name
+
+                    if special.form == special_form:
+                        target = f'{base_name}{sub_form}'
+                        parent_mon = next(
+                            s for s in all_species_data.values()
+                            if s[0]['name'] == target or ('baseForme' in s[0] and f'{s[0]["name"]}-{s[0]["baseForme"]}' == target)
+                        )[0]
+                        parent_mon['abilities']['S'] = special.ability
+                        del all_species_data[mon['num']]
+                        continue
+
             key = name_key(mon['name'])
             all_learnsets[key] = {}
             all_learnsets[key]['learnset'] = {}

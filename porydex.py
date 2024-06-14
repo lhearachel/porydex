@@ -4,6 +4,7 @@ import pathlib
 import os
 
 import porydex.config
+import porydex.showdown
 
 from porydex.common import PICKLE_PATH
 from porydex.parse.abilities import parse_abilities
@@ -46,23 +47,6 @@ def config_set(args):
 
 def config_clear(_):
     porydex.config.clear()
-
-def generate_showdown_files(moves: dict, species: dict, learnsets: dict, encounters: dict):
-    with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
-        outf.write('exports.BattleMovedex = ')
-        json.dump(moves, outf, indent=4)
-
-    with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
-        outf.write('exports.BattlePokedex = ')
-        json.dump(species, outf, indent=4)
-
-    with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
-        outf.write('exports.BattleLearnsets = ')
-        json.dump(learnsets, outf, indent=4)
-
-    with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
-        outf.write('exports.BattleLocationdex = ')
-        json.dump(encounters, outf, indent=4)
 
 def extract(args):
     if args.reload:
@@ -107,18 +91,18 @@ def extract(args):
 
     if porydex.config.format == porydex.config.OutputFormat.json:
         with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
-            json.dump(moves, outf, indent=4)
+            json.dump(moves, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
-            json.dump(species, outf, indent=4)
+            json.dump(species, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'learnsets.json', 'w', encoding='utf-8') as outf:
-            json.dump(learnsets, outf, indent=4)
+            json.dump(learnsets, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
-            json.dump(encounters, outf, indent=4)
+            json.dump(encounters, outf, indent=4, ensure_ascii=False)
     else: # showdown
-        generate_showdown_files(moves, species, learnsets, encounters)
+        porydex.showdown.index(moves, species, learnsets, encounters)
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',

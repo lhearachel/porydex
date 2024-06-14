@@ -293,7 +293,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
         case 'tradeSpecies':
             return 'trade for a ' + evo.evoSpecies;
         case 'tradeItem':
-            return 'trade ' + condition + ' ' + evo.evoItem
+            return 'trade' + condition + ' ' + evo.evoItem
 		case 'other':
 			return evo.evoCondition;
 		default:

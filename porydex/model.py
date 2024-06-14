@@ -2,6 +2,7 @@ import dataclasses
 import enum
 
 DAMAGE_TYPE: list[str] = [
+    'None',
     'Normal',
     'Fighting',
     'Flying',
@@ -121,6 +122,8 @@ class ExpansionEvoMethod(enum.Enum):
     RECOIL_DAMAGE_MALE = enum.auto()
     RECOIL_DAMAGE_FEMALE = enum.auto()
     ITEM_COUNT_999 = enum.auto()
+    DEFEAT_WITH_ITEM = enum.auto()
+    OVERWORLD_STEPS = enum.auto()
 
 @dataclasses.dataclass
 class EvoMethod():
@@ -172,13 +175,15 @@ EVO_METHOD: list[EvoMethod] = [
     EvoMethod('useItem', 'during the day'),
     EvoMethod('levelHold', ''),
     EvoMethod('level', 'in foggy weather'),
-    EvoMethod('levelMove', 'and two segments'),
-    EvoMethod('levelMove', 'and three segments'),
+    EvoMethod('levelMove', 'if two-segmented'),
+    EvoMethod('levelMove', 'if three-segmented'),
     EvoMethod('level', 'based on personality'), # Maushold, family of 3
     EvoMethod('level', 'based on personality'), # Maushold, family of 4
     EvoMethod('useMove', '20 times'), # Wyrdeer, Annihilape
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-M
     EvoMethod('other', 'receive 294+ recoil damage without fainting'), # Basculegion-F
     EvoMethod('levelExtra', 'with 999 coins in the bag'), # Gholdengo
+    EvoMethod('levelExtra', 'after defeating 3 Pokémon which are holding a Leader\'s Crest'), # Kingambit
+    EvoMethod('levelExtra', 'after walking 1000 steps'), # Pawmot, Brambleghast, Rabsca
 ]
 

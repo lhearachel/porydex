@@ -3053,12 +3053,39 @@
     "desc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
     "shortDesc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form."
   },
-  "mysticcharm": {
+  "mountaineer": {
+    "isNonstandard": "CAP",
+    "flags": {
+      "breakable": 1
+    },
+    "name": "Mountaineer",
+    "rating": 3,
+    "num": -2,
+    "desc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
+    "shortDesc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock."
+  },
+  "rebound": {
+    "isNonstandard": "CAP",
+    "onTryHitPriority": 1,
+    "condition": {
+      "duration": 1
+    },
+    "flags": {
+      "breakable": 1
+    },
+    "name": "Rebound",
+    "rating": 3,
+    "num": -3,
+    "desc": "On switch-in, this Pokemon blocks certain status moves and instead uses the move against the original user.",
+    "shortDesc": "On switch-in, blocks certain status moves and bounces them back to the user."
+  },
+  "persistent": {
+    "isNonstandard": "CAP",
     "flags": {},
-    "rating": 0,
-    "num": 311,
-    "name": "Mystic Charm",
-    "desc": "Special moves used by this Pokemon reduce their target's Speed by 1 stage.",
-    "shortDesc": "Special moves used by this Pokemon reduce their targets' Speed by 1 stage."
+    "name": "Persistent",
+    "rating": 3,
+    "num": -4,
+    "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.",
+    "shortDesc": "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns."
   }
 }

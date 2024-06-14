@@ -39,7 +39,7 @@ text=text.id;
 text=text.userid;
 }
 if(typeof text!=='string'&&typeof text!=='number')return'';
-return(''+text).toLowerCase().replace(/[^a-z0-9]+/g,'');
+return(''+text).toLowerCase().replace(/é/g, 'e').replace(/[^a-z0-9]+/g,'');
 }
 
 function toUserid(text){

@@ -1706,14 +1706,14 @@ exports.BattlePokedex = {
             "Pikachu-Pop-Star",
             "Pikachu-Ph-D",
             "Pikachu-Libre",
-            "Pikachu-Original-Cap",
-            "Pikachu-Hoenn-Cap",
-            "Pikachu-Sinnoh-Cap",
-            "Pikachu-Unova-Cap",
-            "Pikachu-Kalos-Cap",
-            "Pikachu-Alola-Cap",
-            "Pikachu-Partner-Cap",
-            "Pikachu-World-Cap",
+            "Pikachu-Original",
+            "Pikachu-Hoenn",
+            "Pikachu-Sinnoh",
+            "Pikachu-Unova",
+            "Pikachu-Kalos",
+            "Pikachu-Alola",
+            "Pikachu-Partner",
+            "Pikachu-World",
             "Pikachu-Gmax",
             "Pikachu-Partner"
         ],
@@ -1724,14 +1724,14 @@ exports.BattlePokedex = {
             "Pikachu-Pop-Star",
             "Pikachu-Ph-D",
             "Pikachu-Libre",
-            "Pikachu-Original-Cap",
-            "Pikachu-Hoenn-Cap",
-            "Pikachu-Sinnoh-Cap",
-            "Pikachu-Unova-Cap",
-            "Pikachu-Kalos-Cap",
-            "Pikachu-Alola-Cap",
-            "Pikachu-Partner-Cap",
-            "Pikachu-World-Cap",
+            "Pikachu-Original",
+            "Pikachu-Hoenn",
+            "Pikachu-Sinnoh",
+            "Pikachu-Unova",
+            "Pikachu-Kalos",
+            "Pikachu-Alola",
+            "Pikachu-Partner",
+            "Pikachu-World",
             "Pikachu-Gmax",
             "Pikachu-Partner"
         ],
@@ -1976,7 +1976,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Pikachu",
         "forme": "Libre"
     },
-    "pikachuoriginalcap": {
+    "pikachuoriginal": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2009,13 +2009,13 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Original-Cap",
+        "name": "Pikachu-Original",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Original-Cap"
+        "forme": "Original"
     },
-    "pikachuhoenncap": {
+    "pikachuhoenn": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2048,13 +2048,13 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Hoenn-Cap",
+        "name": "Pikachu-Hoenn",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Hoenn-Cap"
+        "forme": "Hoenn"
     },
-    "pikachusinnohcap": {
+    "pikachusinnoh": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2087,13 +2087,13 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Sinnoh-Cap",
+        "name": "Pikachu-Sinnoh",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Sinnoh-Cap"
+        "forme": "Sinnoh"
     },
-    "pikachuunovacap": {
+    "pikachuunova": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2126,13 +2126,13 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Unova-Cap",
+        "name": "Pikachu-Unova",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Unova-Cap"
+        "forme": "Unova"
     },
-    "pikachukaloscap": {
+    "pikachukalos": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2165,13 +2165,13 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Kalos-Cap",
+        "name": "Pikachu-Kalos",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Kalos-Cap"
+        "forme": "Kalos"
     },
-    "pikachualolacap": {
+    "pikachualola": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2204,21 +2204,21 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Alola-Cap",
+        "name": "Pikachu-Alola",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Alola-Cap"
+        "forme": "Alola"
     },
-    "pikachupartnercap": {
+    "pikachupartner": {
         "num": 25,
         "baseStats": {
-            "hp": 35,
-            "atk": 55,
-            "def": 40,
-            "spe": 90,
-            "spa": 50,
-            "spd": 50
+            "hp": 45,
+            "atk": 80,
+            "def": 50,
+            "spe": 120,
+            "spa": 75,
+            "spd": 60
         },
         "types": [
             "Electric"
@@ -2235,21 +2235,21 @@ exports.BattlePokedex = {
         "catchRate": 190,
         "expYield": 112,
         "genderRatio": {
-            "M": 1.0,
-            "F": 0.0
+            "M": 0.5,
+            "F": 0.5
         },
         "abilities": {
             "0": "Static",
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-Partner-Cap",
+        "name": "Pikachu-Partner",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "Partner-Cap"
+        "forme": "Partner"
     },
-    "pikachuworldcap": {
+    "pikachuworld": {
         "num": 25,
         "baseStats": {
             "hp": 35,
@@ -2282,11 +2282,11 @@ exports.BattlePokedex = {
             "H": "Lightning Rod"
         },
         "color": "Yellow",
-        "name": "Pikachu-World-Cap",
+        "name": "Pikachu-World",
         "heightm": 0.4,
         "weightkg": 6.0,
         "baseSpecies": "Pikachu",
-        "forme": "World-Cap"
+        "forme": "World"
     },
     "pikachugmax": {
         "num": 25,
@@ -2327,45 +2327,6 @@ exports.BattlePokedex = {
         "weightkg": 0.0,
         "baseSpecies": "Pikachu",
         "forme": "Gmax"
-    },
-    "pikachupartner": {
-        "num": 25,
-        "baseStats": {
-            "hp": 45,
-            "atk": 80,
-            "def": 50,
-            "spe": 120,
-            "spa": 75,
-            "spd": 60
-        },
-        "types": [
-            "Electric"
-        ],
-        "evYields": {
-            "spe": 2
-        },
-        "items": {
-            "R": "Light Ball"
-        },
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 190,
-        "expYield": 112,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Static",
-            "H": "Lightning Rod"
-        },
-        "color": "Yellow",
-        "name": "Pikachu-Partner",
-        "heightm": 0.4,
-        "weightkg": 6.0,
-        "baseSpecies": "Pikachu",
-        "forme": "Partner"
     },
     "raichu": {
         "num": 26,
@@ -13686,956 +13647,11 @@ exports.BattlePokedex = {
             "Unown-X",
             "Unown-Y",
             "Unown-Z",
-            "Unown-Emark",
-            "Unown-Qmark"
+            "Unown-Exclamation",
+            "Unown-Question"
         ],
-        "otherFormes": [
-            "Unown-B",
-            "Unown-C",
-            "Unown-D",
-            "Unown-E",
-            "Unown-F",
-            "Unown-G",
-            "Unown-H",
-            "Unown-I",
-            "Unown-J",
-            "Unown-K",
-            "Unown-L",
-            "Unown-M",
-            "Unown-N",
-            "Unown-O",
-            "Unown-P",
-            "Unown-Q",
-            "Unown-R",
-            "Unown-S",
-            "Unown-T",
-            "Unown-U",
-            "Unown-V",
-            "Unown-W",
-            "Unown-X",
-            "Unown-Y",
-            "Unown-Z",
-            "Unown-Emark",
-            "Unown-Qmark"
-        ]
-    },
-    "unownb": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-B",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "B"
-    },
-    "unownc": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-C",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "C"
-    },
-    "unownd": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-D",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "D"
-    },
-    "unowne": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-E",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "E"
-    },
-    "unownf": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-F",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "F"
-    },
-    "unowng": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-G",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "G"
-    },
-    "unownh": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-H",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "H"
-    },
-    "unowni": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-I",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "I"
-    },
-    "unownj": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-J",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "J"
-    },
-    "unownk": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-K",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "K"
-    },
-    "unownl": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-L",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "L"
-    },
-    "unownm": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-M",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "M"
-    },
-    "unownn": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-N",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "N"
-    },
-    "unowno": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-O",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "O"
-    },
-    "unownp": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-P",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "P"
-    },
-    "unownq": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-Q",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "Q"
-    },
-    "unownr": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-R",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "R"
-    },
-    "unowns": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-S",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "S"
-    },
-    "unownt": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-T",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "T"
-    },
-    "unownu": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-U",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "U"
-    },
-    "unownv": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-V",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "V"
-    },
-    "unownw": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-W",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "W"
-    },
-    "unownx": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-X",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "X"
-    },
-    "unowny": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-Y",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "Y"
-    },
-    "unownz": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-Z",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "Z"
-    },
-    "unownemark": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-Emark",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "Emark"
-    },
-    "unownqmark": {
-        "num": 201,
-        "baseStats": {
-            "hp": 48,
-            "atk": 72,
-            "def": 48,
-            "spe": 48,
-            "spa": 72,
-            "spd": 48
-        },
-        "types": [
-            "Psychic"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 225,
-        "expYield": 118,
-        "gender": "N",
-        "abilities": {
-            "0": "Levitate"
-        },
-        "color": "Black",
-        "name": "Unown-Qmark",
-        "heightm": 0.5,
-        "weightkg": 5.0,
-        "baseSpecies": "Unown",
-        "forme": "Qmark"
+        "cosmeticFormes": [],
+        "baseForme": "A"
     },
     "wynaut": {
         "num": 360,
@@ -14959,7 +13975,7 @@ exports.BattlePokedex = {
         "prevo": "Dunsparce",
         "evoMove": "Hyper Drill",
         "evoType": "levelMove",
-        "evoCondition": "and two segments"
+        "evoCondition": "if two-segmented"
     },
     "dudunsparcethreesegment": {
         "num": 982,
@@ -15001,7 +14017,7 @@ exports.BattlePokedex = {
         "prevo": "Dunsparce",
         "evoMove": "Hyper Drill",
         "evoType": "levelMove",
-        "evoCondition": "and three segments"
+        "evoCondition": "if three-segmented"
     },
     "gligar": {
         "num": 207,
@@ -19166,7 +18182,7 @@ exports.BattlePokedex = {
         "prevo": "Nincada",
         "evoLevel": 20,
         "evoType": "level",
-        "evoCondition": "with empty party slot and an extra Pok\u00e9 Ball"
+        "evoCondition": "with empty party slot and an extra Poké Ball"
     },
     "whismur": {
         "num": 293,
@@ -25068,95 +24084,10 @@ exports.BattlePokedex = {
             "Burmy-Sandy",
             "Burmy-Trash"
         ],
-        "otherFormes": [
-            "Burmy-Sandy",
-            "Burmy-Trash"
-        ],
+        "cosmeticFormes": [],
         "evos": [
             "Wormadam",
             "Mothim"
-        ]
-    },
-    "burmysandy": {
-        "num": 412,
-        "baseStats": {
-            "hp": 40,
-            "atk": 29,
-            "def": 45,
-            "spe": 36,
-            "spa": 29,
-            "spd": 45
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 45,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Overcoat"
-        },
-        "color": "Brown",
-        "name": "Burmy-Sandy",
-        "heightm": 0.2,
-        "weightkg": 3.4,
-        "baseSpecies": "Burmy",
-        "forme": "Sandy",
-        "evos": [
-            "Wormadam-Sandy",
-            "Mothim-Sandy"
-        ]
-    },
-    "burmytrash": {
-        "num": 412,
-        "baseStats": {
-            "hp": 40,
-            "atk": 29,
-            "def": 45,
-            "spe": 36,
-            "spa": 29,
-            "spd": 45
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 45,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Overcoat"
-        },
-        "color": "Red",
-        "name": "Burmy-Trash",
-        "heightm": 0.2,
-        "weightkg": 3.4,
-        "baseSpecies": "Burmy",
-        "forme": "Trash",
-        "evos": [
-            "Wormadam-Trash",
-            "Mothim-Trash"
         ]
     },
     "wormadam": {
@@ -25249,11 +24180,7 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 6.5,
         "baseSpecies": "Wormadam",
-        "forme": "Sandy",
-        "prevo": "Burmy-Sandy",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "if Female gender"
+        "forme": "Sandy"
     },
     "wormadamtrash": {
         "num": 413,
@@ -25294,11 +24221,7 @@ exports.BattlePokedex = {
         "heightm": 0.5,
         "weightkg": 6.5,
         "baseSpecies": "Wormadam",
-        "forme": "Trash",
-        "prevo": "Burmy-Trash",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "if Female gender"
+        "forme": "Trash"
     },
     "mothim": {
         "num": 414,
@@ -25344,101 +24267,7 @@ exports.BattlePokedex = {
             "Mothim-Sandy",
             "Mothim-Trash"
         ],
-        "otherFormes": [
-            "Mothim-Sandy",
-            "Mothim-Trash"
-        ],
         "prevo": "Burmy",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "if Male gender"
-    },
-    "mothimsandy": {
-        "num": 414,
-        "baseStats": {
-            "hp": 70,
-            "atk": 94,
-            "def": 50,
-            "spe": 66,
-            "spa": 94,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {
-            "R": "Silver Powder"
-        },
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 148,
-        "genderRatio": {
-            "M": 1.0,
-            "F": 0.0
-        },
-        "abilities": {
-            "0": "Swarm",
-            "H": "Tinted Lens"
-        },
-        "color": "Yellow",
-        "name": "Mothim-Sandy",
-        "heightm": 0.9,
-        "weightkg": 23.3,
-        "baseSpecies": "Mothim",
-        "forme": "Sandy",
-        "prevo": "Burmy-Sandy",
-        "evoLevel": 20,
-        "evoType": "level",
-        "evoCondition": "if Male gender"
-    },
-    "mothimtrash": {
-        "num": 414,
-        "baseStats": {
-            "hp": 70,
-            "atk": 94,
-            "def": 50,
-            "spe": 66,
-            "spa": 94,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "atk": 1,
-            "spa": 1
-        },
-        "items": {
-            "R": "Silver Powder"
-        },
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 148,
-        "genderRatio": {
-            "M": 1.0,
-            "F": 0.0
-        },
-        "abilities": {
-            "0": "Swarm",
-            "H": "Tinted Lens"
-        },
-        "color": "Yellow",
-        "name": "Mothim-Trash",
-        "heightm": 0.9,
-        "weightkg": 23.3,
-        "baseSpecies": "Mothim",
-        "forme": "Trash",
-        "prevo": "Burmy-Trash",
         "evoLevel": 20,
         "evoType": "level",
         "evoCondition": "if Male gender"
@@ -25807,58 +24636,14 @@ exports.BattlePokedex = {
         "name": "Shellos",
         "heightm": 0.3,
         "weightkg": 6.3,
-        "baseForme": "West-Sea",
+        "baseForme": "West",
         "formeOrder": [
             "Shellos",
-            "Shellos-East-Sea"
+            "Shellos-East"
         ],
-        "otherFormes": [
-            "Shellos-East-Sea"
-        ],
+        "cosmeticFormes": [],
         "evos": [
             "Gastrodon"
-        ]
-    },
-    "shelloseastsea": {
-        "num": 422,
-        "baseStats": {
-            "hp": 76,
-            "atk": 48,
-            "def": 48,
-            "spe": 34,
-            "spa": 57,
-            "spd": 62
-        },
-        "types": [
-            "Water"
-        ],
-        "evYields": {
-            "hp": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Water 1",
-            "Amorphous"
-        ],
-        "catchRate": 190,
-        "expYield": 65,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Sticky Hold",
-            "1": "Storm Drain",
-            "H": "Sand Force"
-        },
-        "color": "Blue",
-        "name": "Shellos-East-Sea",
-        "heightm": 0.3,
-        "weightkg": 6.3,
-        "baseSpecies": "Shellos",
-        "forme": "East-Sea",
-        "evos": [
-            "Gastrodon-East-Sea"
         ]
     },
     "gastrodon": {
@@ -25898,59 +24683,13 @@ exports.BattlePokedex = {
         "name": "Gastrodon",
         "heightm": 0.9,
         "weightkg": 29.9,
-        "baseForme": "West-Sea",
+        "baseForme": "West",
         "formeOrder": [
             "Gastrodon",
-            "Gastrodon-East-Sea"
+            "Gastrodon-East"
         ],
-        "otherFormes": [
-            "Gastrodon-East-Sea"
-        ],
+        "cosmeticFormes": [],
         "prevo": "Shellos",
-        "evoLevel": 30,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "gastrodoneastsea": {
-        "num": 423,
-        "baseStats": {
-            "hp": 111,
-            "atk": 83,
-            "def": 68,
-            "spe": 39,
-            "spa": 92,
-            "spd": 82
-        },
-        "types": [
-            "Water",
-            "Ground"
-        ],
-        "evYields": {
-            "hp": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Water 1",
-            "Amorphous"
-        ],
-        "catchRate": 75,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Sticky Hold",
-            "1": "Storm Drain",
-            "H": "Sand Force"
-        },
-        "color": "Blue",
-        "name": "Gastrodon-East-Sea",
-        "heightm": 0.9,
-        "weightkg": 29.9,
-        "baseSpecies": "Gastrodon",
-        "forme": "East-Sea",
-        "prevo": "Shellos-East-Sea",
         "evoLevel": 30,
         "evoType": "level",
         "evoCondition": ""
@@ -31258,7 +29997,7 @@ exports.BattlePokedex = {
         "forme": "White-Striped",
         "evos": [
             "Basculegion",
-            "Basculegion-Female"
+            "Basculegion-F"
         ]
     },
     "basculegion": {
@@ -31297,19 +30036,19 @@ exports.BattlePokedex = {
         "name": "Basculegion",
         "heightm": 3.0,
         "weightkg": 110.0,
-        "baseForme": "Male",
+        "baseForme": "M",
         "formeOrder": [
             "Basculegion",
-            "Basculegion-Female"
+            "Basculegion-F"
         ],
         "otherFormes": [
-            "Basculegion-Female"
+            "Basculegion-F"
         ],
         "prevo": "Basculin-White-Striped",
         "evoType": "other",
         "evoCondition": "receive 294+ recoil damage without fainting"
     },
-    "basculegionfemale": {
+    "basculegionf": {
         "num": 902,
         "baseStats": {
             "hp": 120,
@@ -31342,11 +30081,11 @@ exports.BattlePokedex = {
             "H": "Mold Breaker"
         },
         "color": "Green",
-        "name": "Basculegion-Female",
+        "name": "Basculegion-F",
         "heightm": 3.0,
         "weightkg": 110.0,
         "baseSpecies": "Basculegion",
-        "forme": "Female",
+        "forme": "F",
         "prevo": "Basculin-White-Striped",
         "evoType": "other",
         "evoCondition": "receive 294+ recoil damage without fainting"
@@ -31559,24 +30298,24 @@ exports.BattlePokedex = {
         "name": "Darmanitan",
         "heightm": 1.3,
         "weightkg": 92.9,
-        "baseForme": "Standard-Mode",
+        "baseForme": "Standard",
         "formeOrder": [
             "Darmanitan",
-            "Darmanitan-Zen-Mode",
-            "Darmanitan-Galar-Standard-Mode",
-            "Darmanitan-Galar-Zen-Mode"
+            "Darmanitan-Zen",
+            "Darmanitan-Galar",
+            "Darmanitan-Galar-Zen"
         ],
         "otherFormes": [
-            "Darmanitan-Zen-Mode",
-            "Darmanitan-Galar-Standard-Mode",
-            "Darmanitan-Galar-Zen-Mode"
+            "Darmanitan-Zen",
+            "Darmanitan-Galar",
+            "Darmanitan-Galar-Zen"
         ],
         "prevo": "Darumaka",
         "evoLevel": 35,
         "evoType": "level",
         "evoCondition": ""
     },
-    "darmanitanzenmode": {
+    "darmanitanzen": {
         "num": 555,
         "baseStats": {
             "hp": 105,
@@ -31608,11 +30347,11 @@ exports.BattlePokedex = {
             "H": "Zen Mode"
         },
         "color": "Blue",
-        "name": "Darmanitan-Zen-Mode",
+        "name": "Darmanitan-Zen",
         "heightm": 1.3,
         "weightkg": 92.9,
         "baseSpecies": "Darmanitan",
-        "forme": "Zen-Mode"
+        "forme": "Zen"
     },
     "darumakagalar": {
         "num": 554,
@@ -31651,10 +30390,10 @@ exports.BattlePokedex = {
         "baseSpecies": "Darumaka",
         "forme": "Galar",
         "evos": [
-            "Darmanitan-Galar-Standard-Mode"
+            "Darmanitan-Galar"
         ]
     },
-    "darmanitangalarstandardmode": {
+    "darmanitangalar": {
         "num": 555,
         "baseStats": {
             "hp": 105,
@@ -31685,17 +30424,17 @@ exports.BattlePokedex = {
             "H": "Zen Mode"
         },
         "color": "White",
-        "name": "Darmanitan-Galar-Standard-Mode",
+        "name": "Darmanitan-Galar",
         "heightm": 1.7,
         "weightkg": 120.0,
         "baseSpecies": "Darmanitan",
-        "forme": "Galar-Standard-Mode",
+        "forme": "Galar",
         "prevo": "Darumaka-Galar",
         "evoItem": "Ice Stone",
         "evoType": "useItem",
         "evoCondition": ""
     },
-    "darmanitangalarzenmode": {
+    "darmanitangalarzen": {
         "num": 555,
         "baseStats": {
             "hp": 105,
@@ -31727,11 +30466,11 @@ exports.BattlePokedex = {
             "H": "Zen Mode"
         },
         "color": "White",
-        "name": "Darmanitan-Galar-Zen-Mode",
+        "name": "Darmanitan-Galar-Zen",
         "heightm": 1.7,
         "weightkg": 120.0,
         "baseSpecies": "Darmanitan",
-        "forme": "Galar-Zen-Mode"
+        "forme": "Galar-Zen"
     },
     "maractus": {
         "num": 556,
@@ -33188,139 +31927,9 @@ exports.BattlePokedex = {
             "Deerling-Autumn",
             "Deerling-Winter"
         ],
-        "otherFormes": [
-            "Deerling-Summer",
-            "Deerling-Autumn",
-            "Deerling-Winter"
-        ],
+        "cosmeticFormes": [],
         "evos": [
             "Sawsbuck"
-        ]
-    },
-    "deerlingsummer": {
-        "num": 585,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 50,
-            "spe": 75,
-            "spa": 40,
-            "spd": 50
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 190,
-        "expYield": 67,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Green",
-        "name": "Deerling-Summer",
-        "heightm": 0.6,
-        "weightkg": 19.5,
-        "baseSpecies": "Deerling",
-        "forme": "Summer",
-        "evos": [
-            "Sawsbuck-Summer"
-        ]
-    },
-    "deerlingautumn": {
-        "num": 585,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 50,
-            "spe": 75,
-            "spa": 40,
-            "spd": 50
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 190,
-        "expYield": 67,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Red",
-        "name": "Deerling-Autumn",
-        "heightm": 0.6,
-        "weightkg": 19.5,
-        "baseSpecies": "Deerling",
-        "forme": "Autumn",
-        "evos": [
-            "Sawsbuck-Autumn"
-        ]
-    },
-    "deerlingwinter": {
-        "num": 585,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 50,
-            "spe": 75,
-            "spa": 40,
-            "spd": 50
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 190,
-        "expYield": 67,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Brown",
-        "name": "Deerling-Winter",
-        "heightm": 0.6,
-        "weightkg": 19.5,
-        "baseSpecies": "Deerling",
-        "forme": "Winter",
-        "evos": [
-            "Sawsbuck-Winter"
         ]
     },
     "sawsbuck": {
@@ -33366,141 +31975,8 @@ exports.BattlePokedex = {
             "Sawsbuck-Autumn",
             "Sawsbuck-Winter"
         ],
-        "otherFormes": [
-            "Sawsbuck-Summer",
-            "Sawsbuck-Autumn",
-            "Sawsbuck-Winter"
-        ],
+        "cosmeticFormes": [],
         "prevo": "Deerling",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "sawsbucksummer": {
-        "num": 586,
-        "baseStats": {
-            "hp": 80,
-            "atk": 100,
-            "def": 70,
-            "spe": 95,
-            "spa": 60,
-            "spd": 70
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "atk": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 75,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Brown",
-        "name": "Sawsbuck-Summer",
-        "heightm": 1.9,
-        "weightkg": 92.5,
-        "baseSpecies": "Sawsbuck",
-        "forme": "Summer",
-        "prevo": "Deerling-Summer",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "sawsbuckautumn": {
-        "num": 586,
-        "baseStats": {
-            "hp": 80,
-            "atk": 100,
-            "def": 70,
-            "spe": 95,
-            "spa": 60,
-            "spd": 70
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "atk": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 75,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Brown",
-        "name": "Sawsbuck-Autumn",
-        "heightm": 1.9,
-        "weightkg": 92.5,
-        "baseSpecies": "Sawsbuck",
-        "forme": "Autumn",
-        "prevo": "Deerling-Autumn",
-        "evoLevel": 34,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "sawsbuckwinter": {
-        "num": 586,
-        "baseStats": {
-            "hp": 80,
-            "atk": 100,
-            "def": 70,
-            "spe": 95,
-            "spa": 60,
-            "spd": 70
-        },
-        "types": [
-            "Normal",
-            "Grass"
-        ],
-        "evYields": {
-            "atk": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 75,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Chlorophyll",
-            "1": "Sap Sipper",
-            "H": "Serene Grace"
-        },
-        "color": "Brown",
-        "name": "Sawsbuck-Winter",
-        "heightm": 1.9,
-        "weightkg": 92.5,
-        "baseSpecies": "Sawsbuck",
-        "forme": "Winter",
-        "prevo": "Deerling-Winter",
         "evoLevel": 34,
         "evoType": "level",
         "evoCondition": ""
@@ -35099,7 +33575,10 @@ exports.BattlePokedex = {
         "prevo": "Pawniard",
         "evoLevel": 52,
         "evoType": "level",
-        "evoCondition": ""
+        "evoCondition": "",
+        "evos": [
+            "Kingambit"
+        ]
     },
     "kingambit": {
         "num": 983,
@@ -35136,7 +33615,10 @@ exports.BattlePokedex = {
         "color": "Black",
         "name": "Kingambit",
         "heightm": 2.0,
-        "weightkg": 120.0
+        "weightkg": 120.0,
+        "prevo": "Bisharp",
+        "evoType": "levelExtra",
+        "evoCondition": "after defeating 3 Pokémon which are holding a Leader's Crest"
     },
     "bouffalant": {
         "num": 626,
@@ -36358,19 +34840,19 @@ exports.BattlePokedex = {
         "weightkg": 82.5,
         "formeOrder": [
             "Genesect",
-            "Genesect-Douse-Drive",
-            "Genesect-Shock-Drive",
-            "Genesect-Burn-Drive",
-            "Genesect-Chill-Drive"
+            "Genesect-Douse",
+            "Genesect-Shock",
+            "Genesect-Burn",
+            "Genesect-Chill"
         ],
         "otherFormes": [
-            "Genesect-Douse-Drive",
-            "Genesect-Shock-Drive",
-            "Genesect-Burn-Drive",
-            "Genesect-Chill-Drive"
+            "Genesect-Douse",
+            "Genesect-Shock",
+            "Genesect-Burn",
+            "Genesect-Chill"
         ]
     },
-    "genesectdousedrive": {
+    "genesectdouse": {
         "num": 649,
         "baseStats": {
             "hp": 71,
@@ -36400,13 +34882,13 @@ exports.BattlePokedex = {
             "0": "Download"
         },
         "color": "Purple",
-        "name": "Genesect-Douse-Drive",
+        "name": "Genesect-Douse",
         "heightm": 1.5,
         "weightkg": 82.5,
         "baseSpecies": "Genesect",
-        "forme": "Douse-Drive"
+        "forme": "Douse"
     },
-    "genesectshockdrive": {
+    "genesectshock": {
         "num": 649,
         "baseStats": {
             "hp": 71,
@@ -36436,13 +34918,13 @@ exports.BattlePokedex = {
             "0": "Download"
         },
         "color": "Purple",
-        "name": "Genesect-Shock-Drive",
+        "name": "Genesect-Shock",
         "heightm": 1.5,
         "weightkg": 82.5,
         "baseSpecies": "Genesect",
-        "forme": "Shock-Drive"
+        "forme": "Shock"
     },
-    "genesectburndrive": {
+    "genesectburn": {
         "num": 649,
         "baseStats": {
             "hp": 71,
@@ -36472,13 +34954,13 @@ exports.BattlePokedex = {
             "0": "Download"
         },
         "color": "Purple",
-        "name": "Genesect-Burn-Drive",
+        "name": "Genesect-Burn",
         "heightm": 1.5,
         "weightkg": 82.5,
         "baseSpecies": "Genesect",
-        "forme": "Burn-Drive"
+        "forme": "Burn"
     },
-    "genesectchilldrive": {
+    "genesectchill": {
         "num": 649,
         "baseStats": {
             "hp": 71,
@@ -36508,11 +34990,11 @@ exports.BattlePokedex = {
             "0": "Download"
         },
         "color": "Purple",
-        "name": "Genesect-Chill-Drive",
+        "name": "Genesect-Chill",
         "heightm": 1.5,
         "weightkg": 82.5,
         "baseSpecies": "Genesect",
-        "forme": "Chill-Drive"
+        "forme": "Chill"
     },
     "chespin": {
         "num": 650,
@@ -36863,7 +35345,8 @@ exports.BattlePokedex = {
         },
         "abilities": {
             "0": "Torrent",
-            "H": "Protean"
+            "H": "Protean",
+            "S": "Battle Bond"
         },
         "color": "Blue",
         "name": "Greninja",
@@ -36871,54 +35354,16 @@ exports.BattlePokedex = {
         "weightkg": 40.0,
         "formeOrder": [
             "Greninja",
-            "Greninja-Battle-Bond",
             "Greninja-Ash"
         ],
+        "baseForme": "Base",
         "otherFormes": [
-            "Greninja-Battle-Bond",
             "Greninja-Ash"
         ],
         "prevo": "Frogadier",
         "evoLevel": 36,
         "evoType": "level",
         "evoCondition": ""
-    },
-    "greninjabattlebond": {
-        "num": 658,
-        "baseStats": {
-            "hp": 72,
-            "atk": 95,
-            "def": 67,
-            "spe": 122,
-            "spa": 103,
-            "spd": 71
-        },
-        "types": [
-            "Water",
-            "Dark"
-        ],
-        "evYields": {
-            "spe": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 45,
-        "expYield": 265,
-        "genderRatio": {
-            "M": 1.0,
-            "F": 0.0
-        },
-        "abilities": {
-            "0": "Battle Bond"
-        },
-        "color": "Blue",
-        "name": "Greninja-Battle-Bond",
-        "heightm": 1.5,
-        "weightkg": 40.0,
-        "baseSpecies": "Greninja",
-        "forme": "Battle-Bond"
     },
     "greninjaash": {
         "num": 658,
@@ -37217,808 +35662,8 @@ exports.BattlePokedex = {
             "Scatterbug-Fancy",
             "Scatterbug-Poke-Ball"
         ],
-        "otherFormes": [
-            "Scatterbug-Polar",
-            "Scatterbug-Tundra",
-            "Scatterbug-Continental",
-            "Scatterbug-Garden",
-            "Scatterbug-Elegant",
-            "Scatterbug-Meadow",
-            "Scatterbug-Modern",
-            "Scatterbug-Marine",
-            "Scatterbug-Archipelago",
-            "Scatterbug-High-Plains",
-            "Scatterbug-Sandstorm",
-            "Scatterbug-River",
-            "Scatterbug-Monsoon",
-            "Scatterbug-Savanna",
-            "Scatterbug-Sun",
-            "Scatterbug-Ocean",
-            "Scatterbug-Jungle",
-            "Scatterbug-Fancy",
-            "Scatterbug-Poke-Ball"
-        ],
         "evos": [
             "Spewpa"
-        ]
-    },
-    "scatterbugpolar": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Polar",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Polar",
-        "evos": [
-            "Spewpa-Polar"
-        ]
-    },
-    "scatterbugtundra": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Tundra",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Tundra",
-        "evos": [
-            "Spewpa-Tundra"
-        ]
-    },
-    "scatterbugcontinental": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Continental",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Continental",
-        "evos": [
-            "Spewpa-Continental"
-        ]
-    },
-    "scatterbuggarden": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Garden",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Garden",
-        "evos": [
-            "Spewpa-Garden"
-        ]
-    },
-    "scatterbugelegant": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Elegant",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Elegant",
-        "evos": [
-            "Spewpa-Elegant"
-        ]
-    },
-    "scatterbugmeadow": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Meadow",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Meadow",
-        "evos": [
-            "Spewpa-Meadow"
-        ]
-    },
-    "scatterbugmodern": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Modern",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Modern",
-        "evos": [
-            "Spewpa-Modern"
-        ]
-    },
-    "scatterbugmarine": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Marine",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Marine",
-        "evos": [
-            "Spewpa-Marine"
-        ]
-    },
-    "scatterbugarchipelago": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Archipelago",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Archipelago",
-        "evos": [
-            "Spewpa-Archipelago"
-        ]
-    },
-    "scatterbughighplains": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-High-Plains",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "High-Plains",
-        "evos": [
-            "Spewpa-High-Plains"
-        ]
-    },
-    "scatterbugsandstorm": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Sandstorm",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Sandstorm",
-        "evos": [
-            "Spewpa-Sandstorm"
-        ]
-    },
-    "scatterbugriver": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-River",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "River",
-        "evos": [
-            "Spewpa-River"
-        ]
-    },
-    "scatterbugmonsoon": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Monsoon",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Monsoon",
-        "evos": [
-            "Spewpa-Monsoon"
-        ]
-    },
-    "scatterbugsavanna": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Savanna",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Savanna",
-        "evos": [
-            "Spewpa-Savanna"
-        ]
-    },
-    "scatterbugsun": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Sun",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Sun",
-        "evos": [
-            "Spewpa-Sun"
-        ]
-    },
-    "scatterbugocean": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Ocean",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Ocean",
-        "evos": [
-            "Spewpa-Ocean"
-        ]
-    },
-    "scatterbugjungle": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Jungle",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Jungle",
-        "evos": [
-            "Spewpa-Jungle"
-        ]
-    },
-    "scatterbugfancy": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Fancy",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Fancy",
-        "evos": [
-            "Spewpa-Fancy"
-        ]
-    },
-    "scatterbugpokeball": {
-        "num": 664,
-        "baseStats": {
-            "hp": 38,
-            "atk": 35,
-            "def": 40,
-            "spe": 35,
-            "spa": 27,
-            "spd": 25
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 255,
-        "expYield": 40,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Scatterbug-Poke-Ball",
-        "heightm": 0.3,
-        "weightkg": 2.5,
-        "baseSpecies": "Scatterbug",
-        "forme": "Poke-Ball",
-        "evos": [
-            "Spewpa-Poke-Ball"
         ]
     },
     "spewpa": {
@@ -38078,869 +35723,12 @@ exports.BattlePokedex = {
             "Spewpa-Fancy",
             "Spewpa-Poke-Ball"
         ],
-        "otherFormes": [
-            "Spewpa-Polar",
-            "Spewpa-Tundra",
-            "Spewpa-Continental",
-            "Spewpa-Garden",
-            "Spewpa-Elegant",
-            "Spewpa-Meadow",
-            "Spewpa-Modern",
-            "Spewpa-Marine",
-            "Spewpa-Archipelago",
-            "Spewpa-High-Plains",
-            "Spewpa-Sandstorm",
-            "Spewpa-River",
-            "Spewpa-Monsoon",
-            "Spewpa-Savanna",
-            "Spewpa-Sun",
-            "Spewpa-Ocean",
-            "Spewpa-Jungle",
-            "Spewpa-Fancy",
-            "Spewpa-Poke-Ball"
-        ],
         "prevo": "Scatterbug",
         "evoLevel": 9,
         "evoType": "level",
         "evoCondition": "",
         "evos": [
             "Vivillon"
-        ]
-    },
-    "spewpapolar": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Polar",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Polar",
-        "prevo": "Scatterbug-Polar",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Polar"
-        ]
-    },
-    "spewpatundra": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Tundra",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Tundra",
-        "prevo": "Scatterbug-Tundra",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Tundra"
-        ]
-    },
-    "spewpacontinental": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Continental",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Continental",
-        "prevo": "Scatterbug-Continental",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Continental"
-        ]
-    },
-    "spewpagarden": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Garden",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Garden",
-        "prevo": "Scatterbug-Garden",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Garden"
-        ]
-    },
-    "spewpaelegant": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Elegant",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Elegant",
-        "prevo": "Scatterbug-Elegant",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Elegant"
-        ]
-    },
-    "spewpameadow": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Meadow",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Meadow",
-        "prevo": "Scatterbug-Meadow",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Meadow"
-        ]
-    },
-    "spewpamodern": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Modern",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Modern",
-        "prevo": "Scatterbug-Modern",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Modern"
-        ]
-    },
-    "spewpamarine": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Marine",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Marine",
-        "prevo": "Scatterbug-Marine",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Marine"
-        ]
-    },
-    "spewpaarchipelago": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Archipelago",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Archipelago",
-        "prevo": "Scatterbug-Archipelago",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Archipelago"
-        ]
-    },
-    "spewpahighplains": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-High-Plains",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "High-Plains",
-        "prevo": "Scatterbug-High-Plains",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-High-Plains"
-        ]
-    },
-    "spewpasandstorm": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Sandstorm",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Sandstorm",
-        "prevo": "Scatterbug-Sandstorm",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Sandstorm"
-        ]
-    },
-    "spewpariver": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-River",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "River",
-        "prevo": "Scatterbug-River",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-River"
-        ]
-    },
-    "spewpamonsoon": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Monsoon",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Monsoon",
-        "prevo": "Scatterbug-Monsoon",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Monsoon"
-        ]
-    },
-    "spewpasavanna": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Savanna",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Savanna",
-        "prevo": "Scatterbug-Savanna",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Savanna"
-        ]
-    },
-    "spewpasun": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Sun",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Sun",
-        "prevo": "Scatterbug-Sun",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Sun"
-        ]
-    },
-    "spewpaocean": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Ocean",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Ocean",
-        "prevo": "Scatterbug-Ocean",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Ocean"
-        ]
-    },
-    "spewpajungle": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Jungle",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Jungle",
-        "prevo": "Scatterbug-Jungle",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Jungle"
-        ]
-    },
-    "spewpafancy": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Fancy",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Fancy",
-        "prevo": "Scatterbug-Fancy",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Fancy"
-        ]
-    },
-    "spewpapokeball": {
-        "num": 665,
-        "baseStats": {
-            "hp": 45,
-            "atk": 22,
-            "def": 60,
-            "spe": 29,
-            "spa": 27,
-            "spd": 30
-        },
-        "types": [
-            "Bug"
-        ],
-        "evYields": {
-            "def": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 120,
-        "expYield": 75,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shed Skin",
-            "H": "Friend Guard"
-        },
-        "color": "Black",
-        "name": "Spewpa-Poke-Ball",
-        "heightm": 0.3,
-        "weightkg": 8.4,
-        "baseSpecies": "Spewpa",
-        "forme": "Poke-Ball",
-        "prevo": "Scatterbug-Poke-Ball",
-        "evoLevel": 9,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Vivillon-Poke-Ball"
         ]
     },
     "vivillon": {
@@ -38981,15 +35769,16 @@ exports.BattlePokedex = {
         "name": "Vivillon",
         "heightm": 1.2,
         "weightkg": 17.0,
-        "baseForme": "Icy-Snow",
+        "baseForme": "Meadow",
         "formeOrder": [
             "Vivillon",
+            "Vivillon-Icy-Snow",
+            "Vivillon-Icy-Snow",
             "Vivillon-Polar",
             "Vivillon-Tundra",
             "Vivillon-Continental",
             "Vivillon-Garden",
             "Vivillon-Elegant",
-            "Vivillon-Meadow",
             "Vivillon-Modern",
             "Vivillon-Marine",
             "Vivillon-Archipelago",
@@ -39004,883 +35793,8 @@ exports.BattlePokedex = {
             "Vivillon-Fancy",
             "Vivillon-Poke-Ball"
         ],
-        "otherFormes": [
-            "Vivillon-Polar",
-            "Vivillon-Tundra",
-            "Vivillon-Continental",
-            "Vivillon-Garden",
-            "Vivillon-Elegant",
-            "Vivillon-Meadow",
-            "Vivillon-Modern",
-            "Vivillon-Marine",
-            "Vivillon-Archipelago",
-            "Vivillon-High-Plains",
-            "Vivillon-Sandstorm",
-            "Vivillon-River",
-            "Vivillon-Monsoon",
-            "Vivillon-Savanna",
-            "Vivillon-Sun",
-            "Vivillon-Ocean",
-            "Vivillon-Jungle",
-            "Vivillon-Fancy",
-            "Vivillon-Poke-Ball"
-        ],
+        "cosmeticFormes": [],
         "prevo": "Spewpa",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonpolar": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Blue",
-        "name": "Vivillon-Polar",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Polar",
-        "prevo": "Spewpa-Polar",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillontundra": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Blue",
-        "name": "Vivillon-Tundra",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Tundra",
-        "prevo": "Spewpa-Tundra",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivilloncontinental": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Yellow",
-        "name": "Vivillon-Continental",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Continental",
-        "prevo": "Spewpa-Continental",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillongarden": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Green",
-        "name": "Vivillon-Garden",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Garden",
-        "prevo": "Spewpa-Garden",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonelegant": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Purple",
-        "name": "Vivillon-Elegant",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Elegant",
-        "prevo": "Spewpa-Elegant",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonmeadow": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Pink",
-        "name": "Vivillon-Meadow",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Meadow",
-        "prevo": "Spewpa-Meadow",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonmodern": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Red",
-        "name": "Vivillon-Modern",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Modern",
-        "prevo": "Spewpa-Modern",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonmarine": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Blue",
-        "name": "Vivillon-Marine",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Marine",
-        "prevo": "Spewpa-Marine",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonarchipelago": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Brown",
-        "name": "Vivillon-Archipelago",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Archipelago",
-        "prevo": "Spewpa-Archipelago",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonhighplains": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Brown",
-        "name": "Vivillon-High-Plains",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "High-Plains",
-        "prevo": "Spewpa-High-Plains",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonsandstorm": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Brown",
-        "name": "Vivillon-Sandstorm",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Sandstorm",
-        "prevo": "Spewpa-Sandstorm",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonriver": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Brown",
-        "name": "Vivillon-River",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "River",
-        "prevo": "Spewpa-River",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonmonsoon": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Gray",
-        "name": "Vivillon-Monsoon",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Monsoon",
-        "prevo": "Spewpa-Monsoon",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonsavanna": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Green",
-        "name": "Vivillon-Savanna",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Savanna",
-        "prevo": "Spewpa-Savanna",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonsun": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Red",
-        "name": "Vivillon-Sun",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Sun",
-        "prevo": "Spewpa-Sun",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonocean": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Red",
-        "name": "Vivillon-Ocean",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Ocean",
-        "prevo": "Spewpa-Ocean",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonjungle": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Green",
-        "name": "Vivillon-Jungle",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Jungle",
-        "prevo": "Spewpa-Jungle",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonfancy": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Pink",
-        "name": "Vivillon-Fancy",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Fancy",
-        "prevo": "Spewpa-Fancy",
-        "evoLevel": 12,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "vivillonpokeball": {
-        "num": 666,
-        "baseStats": {
-            "hp": 80,
-            "atk": 52,
-            "def": 50,
-            "spe": 89,
-            "spa": 90,
-            "spd": 50
-        },
-        "types": [
-            "Bug",
-            "Flying"
-        ],
-        "evYields": {
-            "hp": 1,
-            "spe": 1,
-            "spa": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Bug"
-        ],
-        "catchRate": 45,
-        "expYield": 206,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Shield Dust",
-            "1": "Compound Eyes",
-            "H": "Friend Guard"
-        },
-        "color": "Red",
-        "name": "Vivillon-Poke-Ball",
-        "heightm": 1.2,
-        "weightkg": 17.0,
-        "baseSpecies": "Vivillon",
-        "forme": "Poke-Ball",
-        "prevo": "Spewpa-Poke-Ball",
         "evoLevel": 12,
         "evoType": "level",
         "evoCondition": ""
@@ -39966,7 +35880,7 @@ exports.BattlePokedex = {
         "evoType": "level",
         "evoCondition": ""
     },
-    "flab\u00e9b\u00e9": {
+    "flabebe": {
         "num": 669,
         "baseStats": {
             "hp": 44,
@@ -39997,185 +35911,20 @@ exports.BattlePokedex = {
             "H": "Symbiosis"
         },
         "color": "White",
-        "name": "Flab\u00e9b\u00e9",
+        "name": "Flabébé",
         "heightm": 0.1,
         "weightkg": 0.1,
-        "baseForme": "Red-Flower",
+        "baseForme": "Red",
         "formeOrder": [
-            "Flab\u00e9b\u00e9",
-            "Flab\u00e9b\u00e9-Yellow-Flower",
-            "Flab\u00e9b\u00e9-Orange-Flower",
-            "Flab\u00e9b\u00e9-Blue-Flower",
-            "Flab\u00e9b\u00e9-White-Flower"
+            "Flabébé",
+            "Flabébé-Yellow",
+            "Flabébé-Orange",
+            "Flabébé-Blue",
+            "Flabébé-White"
         ],
-        "otherFormes": [
-            "Flab\u00e9b\u00e9-Yellow-Flower",
-            "Flab\u00e9b\u00e9-Orange-Flower",
-            "Flab\u00e9b\u00e9-Blue-Flower",
-            "Flab\u00e9b\u00e9-White-Flower"
-        ],
+        "cosmeticFormes": [],
         "evos": [
             "Floette"
-        ]
-    },
-    "flab\u00e9b\u00e9yellowflower": {
-        "num": 669,
-        "baseStats": {
-            "hp": 44,
-            "atk": 38,
-            "def": 39,
-            "spe": 42,
-            "spa": 61,
-            "spd": 79
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 225,
-        "expYield": 61,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Flab\u00e9b\u00e9-Yellow-Flower",
-        "heightm": 0.1,
-        "weightkg": 0.1,
-        "baseSpecies": "Flab\u00e9b\u00e9",
-        "forme": "Yellow-Flower",
-        "evos": [
-            "Floette-Yellow-Flower"
-        ]
-    },
-    "flab\u00e9b\u00e9orangeflower": {
-        "num": 669,
-        "baseStats": {
-            "hp": 44,
-            "atk": 38,
-            "def": 39,
-            "spe": 42,
-            "spa": 61,
-            "spd": 79
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 225,
-        "expYield": 61,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Flab\u00e9b\u00e9-Orange-Flower",
-        "heightm": 0.1,
-        "weightkg": 0.1,
-        "baseSpecies": "Flab\u00e9b\u00e9",
-        "forme": "Orange-Flower",
-        "evos": [
-            "Floette-Orange-Flower"
-        ]
-    },
-    "flab\u00e9b\u00e9blueflower": {
-        "num": 669,
-        "baseStats": {
-            "hp": 44,
-            "atk": 38,
-            "def": 39,
-            "spe": 42,
-            "spa": 61,
-            "spd": 79
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 225,
-        "expYield": 61,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Flab\u00e9b\u00e9-Blue-Flower",
-        "heightm": 0.1,
-        "weightkg": 0.1,
-        "baseSpecies": "Flab\u00e9b\u00e9",
-        "forme": "Blue-Flower",
-        "evos": [
-            "Floette-Blue-Flower"
-        ]
-    },
-    "flab\u00e9b\u00e9whiteflower": {
-        "num": 669,
-        "baseStats": {
-            "hp": 44,
-            "atk": 38,
-            "def": 39,
-            "spe": 42,
-            "spa": 61,
-            "spd": 79
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 225,
-        "expYield": 61,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Flab\u00e9b\u00e9-White-Flower",
-        "heightm": 0.1,
-        "weightkg": 0.1,
-        "baseSpecies": "Flab\u00e9b\u00e9",
-        "forme": "White-Flower",
-        "evos": [
-            "Floette-White-Flower"
         ]
     },
     "floette": {
@@ -40212,23 +35961,20 @@ exports.BattlePokedex = {
         "name": "Floette",
         "heightm": 0.2,
         "weightkg": 0.9,
-        "baseForme": "Red-Flower",
+        "baseForme": "Red",
         "formeOrder": [
             "Floette",
-            "Floette-Yellow-Flower",
-            "Floette-Orange-Flower",
-            "Floette-Blue-Flower",
-            "Floette-White-Flower",
-            "Floette-Eternal-Flower"
+            "Floette-Yellow",
+            "Floette-Orange",
+            "Floette-Blue",
+            "Floette-White",
+            "Floette-Eternal"
         ],
+        "cosmeticFormes": [],
         "otherFormes": [
-            "Floette-Yellow-Flower",
-            "Floette-Orange-Flower",
-            "Floette-Blue-Flower",
-            "Floette-White-Flower",
-            "Floette-Eternal-Flower"
+            "Floette-Eternal"
         ],
-        "prevo": "Flab\u00e9b\u00e9",
+        "prevo": "Flabébé",
         "evoLevel": 19,
         "evoType": "level",
         "evoCondition": "",
@@ -40236,183 +35982,7 @@ exports.BattlePokedex = {
             "Florges"
         ]
     },
-    "floetteyellowflower": {
-        "num": 670,
-        "baseStats": {
-            "hp": 54,
-            "atk": 45,
-            "def": 47,
-            "spe": 52,
-            "spa": 75,
-            "spd": 98
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "expYield": 130,
-        "catchRate": 120,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Floette-Yellow-Flower",
-        "heightm": 0.2,
-        "weightkg": 0.9,
-        "baseSpecies": "Floette",
-        "forme": "Yellow-Flower",
-        "prevo": "Flab\u00e9b\u00e9-Yellow-Flower",
-        "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Florges-Yellow-Flower"
-        ]
-    },
-    "floetteorangeflower": {
-        "num": 670,
-        "baseStats": {
-            "hp": 54,
-            "atk": 45,
-            "def": 47,
-            "spe": 52,
-            "spa": 75,
-            "spd": 98
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "expYield": 130,
-        "catchRate": 120,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Floette-Orange-Flower",
-        "heightm": 0.2,
-        "weightkg": 0.9,
-        "baseSpecies": "Floette",
-        "forme": "Orange-Flower",
-        "prevo": "Flab\u00e9b\u00e9-Orange-Flower",
-        "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Florges-Orange-Flower"
-        ]
-    },
-    "floetteblueflower": {
-        "num": 670,
-        "baseStats": {
-            "hp": 54,
-            "atk": 45,
-            "def": 47,
-            "spe": 52,
-            "spa": 75,
-            "spd": 98
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "expYield": 130,
-        "catchRate": 120,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Floette-Blue-Flower",
-        "heightm": 0.2,
-        "weightkg": 0.9,
-        "baseSpecies": "Floette",
-        "forme": "Blue-Flower",
-        "prevo": "Flab\u00e9b\u00e9-Blue-Flower",
-        "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Florges-Blue-Flower"
-        ]
-    },
-    "floettewhiteflower": {
-        "num": 670,
-        "baseStats": {
-            "hp": 54,
-            "atk": 45,
-            "def": 47,
-            "spe": 52,
-            "spa": 75,
-            "spd": 98
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "expYield": 130,
-        "catchRate": 120,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Floette-White-Flower",
-        "heightm": 0.2,
-        "weightkg": 0.9,
-        "baseSpecies": "Floette",
-        "forme": "White-Flower",
-        "prevo": "Flab\u00e9b\u00e9-White-Flower",
-        "evoLevel": 19,
-        "evoType": "level",
-        "evoCondition": "",
-        "evos": [
-            "Florges-White-Flower"
-        ]
-    },
-    "floetteeternalflower": {
+    "floetteeternal": {
         "num": 670,
         "baseStats": {
             "hp": 74,
@@ -40442,11 +36012,11 @@ exports.BattlePokedex = {
             "H": "Symbiosis"
         },
         "color": "White",
-        "name": "Floette-Eternal-Flower",
+        "name": "Floette-Eternal",
         "heightm": 0.2,
         "weightkg": 0.9,
         "baseSpecies": "Floette",
-        "forme": "Eternal-Flower",
+        "forme": "Eternal",
         "expYield": 243
     },
     "florges": {
@@ -40483,185 +36053,16 @@ exports.BattlePokedex = {
         "name": "Florges",
         "heightm": 1.1,
         "weightkg": 10.0,
-        "baseForme": "Red-Flower",
+        "baseForme": "Red",
         "formeOrder": [
             "Florges",
-            "Florges-Yellow-Flower",
-            "Florges-Orange-Flower",
-            "Florges-Blue-Flower",
-            "Florges-White-Flower"
+            "Florges-Yellow",
+            "Florges-Orange",
+            "Florges-Blue",
+            "Florges-White"
         ],
-        "otherFormes": [
-            "Florges-Yellow-Flower",
-            "Florges-Orange-Flower",
-            "Florges-Blue-Flower",
-            "Florges-White-Flower"
-        ],
+        "cosmeticFormes": [],
         "prevo": "Floette",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
-    },
-    "florgesyellowflower": {
-        "num": 671,
-        "baseStats": {
-            "hp": 78,
-            "atk": 65,
-            "def": 68,
-            "spe": 75,
-            "spa": 112,
-            "spd": 154
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 45,
-        "expYield": 276,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Florges-Yellow-Flower",
-        "heightm": 1.1,
-        "weightkg": 10.0,
-        "baseSpecies": "Florges",
-        "forme": "Yellow-Flower",
-        "prevo": "Floette-Yellow-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
-    },
-    "florgesorangeflower": {
-        "num": 671,
-        "baseStats": {
-            "hp": 78,
-            "atk": 65,
-            "def": 68,
-            "spe": 75,
-            "spa": 112,
-            "spd": 154
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 45,
-        "expYield": 276,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Florges-Orange-Flower",
-        "heightm": 1.1,
-        "weightkg": 10.0,
-        "baseSpecies": "Florges",
-        "forme": "Orange-Flower",
-        "prevo": "Floette-Orange-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
-    },
-    "florgesblueflower": {
-        "num": 671,
-        "baseStats": {
-            "hp": 78,
-            "atk": 65,
-            "def": 68,
-            "spe": 75,
-            "spa": 112,
-            "spd": 154
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 45,
-        "expYield": 276,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Florges-Blue-Flower",
-        "heightm": 1.1,
-        "weightkg": 10.0,
-        "baseSpecies": "Florges",
-        "forme": "Blue-Flower",
-        "prevo": "Floette-Blue-Flower",
-        "evoItem": "Shiny Stone",
-        "evoType": "useItem",
-        "evoCondition": ""
-    },
-    "florgeswhiteflower": {
-        "num": 671,
-        "baseStats": {
-            "hp": 78,
-            "atk": 65,
-            "def": 68,
-            "spe": 75,
-            "spa": 112,
-            "spd": 154
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy"
-        ],
-        "catchRate": 45,
-        "expYield": 276,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Flower Veil",
-            "H": "Symbiosis"
-        },
-        "color": "White",
-        "name": "Florges-White-Flower",
-        "heightm": 1.1,
-        "weightkg": 10.0,
-        "baseSpecies": "Florges",
-        "forme": "White-Flower",
-        "prevo": "Floette-White-Flower",
         "evoItem": "Shiny Stone",
         "evoType": "useItem",
         "evoCondition": ""
@@ -40827,7 +36228,7 @@ exports.BattlePokedex = {
         "prevo": "Pancham",
         "evoLevel": 32,
         "evoType": "level",
-        "evoCondition": "while a Dark-type Pok\u00e9mon is in the party"
+        "evoCondition": "while a Dark-type Pokémon is in the party"
     },
     "furfrou": {
         "num": 676,
@@ -40865,351 +36266,17 @@ exports.BattlePokedex = {
         "baseForme": "Natural",
         "formeOrder": [
             "Furfrou",
-            "Furfrou-Heart-Trim",
-            "Furfrou-Star-Trim",
-            "Furfrou-Diamond-Trim",
-            "Furfrou-Debutante-Trim",
-            "Furfrou-Matron-Trim",
-            "Furfrou-Dandy-Trim",
-            "Furfrou-La-Reine-Trim",
-            "Furfrou-Kabuki-Trim",
-            "Furfrou-Pharaoh-Trim"
+            "Furfrou-Heart",
+            "Furfrou-Star",
+            "Furfrou-Diamond",
+            "Furfrou-Debutante",
+            "Furfrou-Matron",
+            "Furfrou-Dandy",
+            "Furfrou-La-Reine",
+            "Furfrou-Kabuki",
+            "Furfrou-Pharaoh"
         ],
-        "otherFormes": [
-            "Furfrou-Heart-Trim",
-            "Furfrou-Star-Trim",
-            "Furfrou-Diamond-Trim",
-            "Furfrou-Debutante-Trim",
-            "Furfrou-Matron-Trim",
-            "Furfrou-Dandy-Trim",
-            "Furfrou-La-Reine-Trim",
-            "Furfrou-Kabuki-Trim",
-            "Furfrou-Pharaoh-Trim"
-        ]
-    },
-    "furfrouhearttrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Heart-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Heart-Trim"
-    },
-    "furfroustartrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Star-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Star-Trim"
-    },
-    "furfroudiamondtrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Diamond-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Diamond-Trim"
-    },
-    "furfroudebutantetrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Debutante-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Debutante-Trim"
-    },
-    "furfroumatrontrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Matron-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Matron-Trim"
-    },
-    "furfroudandytrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Dandy-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Dandy-Trim"
-    },
-    "furfroulareinetrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-La-Reine-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "La-Reine-Trim"
-    },
-    "furfroukabukitrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Kabuki-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Kabuki-Trim"
-    },
-    "furfroupharaohtrim": {
-        "num": 676,
-        "baseStats": {
-            "hp": 75,
-            "atk": 80,
-            "def": 60,
-            "spe": 102,
-            "spa": 65,
-            "spd": 90
-        },
-        "types": [
-            "Normal"
-        ],
-        "evYields": {
-            "spe": 1
-        },
-        "items": {},
-        "eggGroups": [
-            "Field"
-        ],
-        "catchRate": 160,
-        "expYield": 165,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Fur Coat"
-        },
-        "color": "White",
-        "name": "Furfrou-Pharaoh-Trim",
-        "heightm": 1.2,
-        "weightkg": 28.0,
-        "baseSpecies": "Furfrou",
-        "forme": "Pharaoh-Trim"
+        "cosmeticFormes": []
     },
     "espurr": {
         "num": 677,
@@ -41248,7 +36315,7 @@ exports.BattlePokedex = {
         "weightkg": 3.5,
         "evos": [
             "Meowstic",
-            "Meowstic-Female"
+            "Meowstic-F"
         ]
     },
     "meowstic": {
@@ -41286,20 +36353,20 @@ exports.BattlePokedex = {
         "name": "Meowstic",
         "heightm": 0.6,
         "weightkg": 8.5,
-        "baseForme": "Male",
+        "baseForme": "M",
         "formeOrder": [
             "Meowstic",
-            "Meowstic-Female"
+            "Meowstic-F"
         ],
         "otherFormes": [
-            "Meowstic-Female"
+            "Meowstic-F"
         ],
         "prevo": "Espurr",
         "evoLevel": 25,
         "evoType": "level",
         "evoCondition": "if Male gender"
     },
-    "meowsticfemale": {
+    "meowsticf": {
         "num": 678,
         "baseStats": {
             "hp": 74,
@@ -41331,11 +36398,11 @@ exports.BattlePokedex = {
             "H": "Competitive"
         },
         "color": "White",
-        "name": "Meowstic-Female",
+        "name": "Meowstic-F",
         "heightm": 0.6,
         "weightkg": 8.5,
         "baseSpecies": "Meowstic",
-        "forme": "Female",
+        "forme": "F",
         "prevo": "Espurr",
         "evoLevel": 25,
         "evoType": "level",
@@ -43288,16 +38355,16 @@ exports.BattlePokedex = {
         "name": "Xerneas",
         "heightm": 3.0,
         "weightkg": 215.0,
-        "baseForme": "Neutral",
+        "baseForme": "Active",
         "formeOrder": [
             "Xerneas",
-            "Xerneas-Active"
+            "Xerneas-Neutral"
         ],
         "otherFormes": [
-            "Xerneas-Active"
+            "Xerneas-Neutral"
         ]
     },
-    "xerneasactive": {
+    "xerneasneutral": {
         "num": 716,
         "baseStats": {
             "hp": 126,
@@ -43324,11 +38391,11 @@ exports.BattlePokedex = {
             "0": "Fairy Aura"
         },
         "color": "Blue",
-        "name": "Xerneas-Active",
+        "name": "Xerneas-Neutral",
         "heightm": 3.0,
         "weightkg": 215.0,
         "baseSpecies": "Xerneas",
-        "forme": "Active"
+        "forme": "Neutral"
     },
     "yveltal": {
         "num": 717,
@@ -43387,62 +38454,25 @@ exports.BattlePokedex = {
         "expYield": 300,
         "gender": "N",
         "abilities": {
-            "0": "Aura Break"
+            "0": "Aura Break",
+            "S": "Power Construct"
         },
         "color": "Green",
         "name": "Zygarde",
         "heightm": 5.0,
         "weightkg": 305.0,
-        "baseForme": "50-Aura-Break",
+        "baseForme": "50%",
         "formeOrder": [
             "Zygarde",
-            "Zygarde-10-Aura-Break",
-            "Zygarde-10-Power-Construct",
-            "Zygarde-50-Power-Construct",
+            "Zygarde-10%",
             "Zygarde-Complete"
         ],
         "otherFormes": [
-            "Zygarde-10-Aura-Break",
-            "Zygarde-10-Power-Construct",
-            "Zygarde-50-Power-Construct",
+            "Zygarde-10%",
             "Zygarde-Complete"
         ]
     },
-    "zygarde50powerconstruct": {
-        "num": 718,
-        "baseStats": {
-            "hp": 108,
-            "atk": 100,
-            "def": 121,
-            "spe": 95,
-            "spa": 81,
-            "spd": 95
-        },
-        "types": [
-            "Dragon",
-            "Ground"
-        ],
-        "evYields": {
-            "hp": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 3,
-        "expYield": 300,
-        "gender": "N",
-        "abilities": {
-            "0": "Power Construct"
-        },
-        "color": "Green",
-        "name": "Zygarde-50-Power-Construct",
-        "heightm": 5.0,
-        "weightkg": 305.0,
-        "baseSpecies": "Zygarde",
-        "forme": "50-Power-Construct"
-    },
-    "zygarde10aurabreak": {
+    "zygarde10": {
         "num": 718,
         "baseStats": {
             "hp": 54,
@@ -43467,48 +38497,15 @@ exports.BattlePokedex = {
         "expYield": 243,
         "gender": "N",
         "abilities": {
-            "0": "Aura Break"
+            "0": "Aura Break",
+            "S": "Power Construct"
         },
         "color": "Black",
-        "name": "Zygarde-10-Aura-Break",
+        "name": "Zygarde-10%",
         "heightm": 1.2,
         "weightkg": 33.5,
         "baseSpecies": "Zygarde",
-        "forme": "10-Aura-Break"
-    },
-    "zygarde10powerconstruct": {
-        "num": 718,
-        "baseStats": {
-            "hp": 54,
-            "atk": 100,
-            "def": 71,
-            "spe": 115,
-            "spa": 61,
-            "spd": 85
-        },
-        "types": [
-            "Dragon",
-            "Ground"
-        ],
-        "evYields": {
-            "hp": 3
-        },
-        "items": {},
-        "eggGroups": [
-            "Undiscovered"
-        ],
-        "catchRate": 3,
-        "expYield": 243,
-        "gender": "N",
-        "abilities": {
-            "0": "Power Construct"
-        },
-        "color": "Black",
-        "name": "Zygarde-10-Power-Construct",
-        "heightm": 1.2,
-        "weightkg": 33.5,
-        "baseSpecies": "Zygarde",
-        "forme": "10-Power-Construct"
+        "forme": "10%"
     },
     "zygardecomplete": {
         "num": 718,
@@ -47098,519 +42095,28 @@ exports.BattlePokedex = {
         "color": "Brown",
         "name": "Minior",
         "heightm": 0.3,
-        "baseForme": "Meteor-Red",
+        "baseForme": "Red",
         "formeOrder": [
             "Minior",
-            "Minior-Meteor-Orange",
-            "Minior-Meteor-Yellow",
-            "Minior-Meteor-Green",
-            "Minior-Meteor-Blue",
-            "Minior-Meteor-Indigo",
-            "Minior-Meteor-Violet",
-            "Minior-Core-Red",
-            "Minior-Core-Orange",
-            "Minior-Core-Yellow",
-            "Minior-Core-Green",
-            "Minior-Core-Blue",
-            "Minior-Core-Indigo",
-            "Minior-Core-Violet"
+            "Minior-Meteor",
+            "Minior-Orange",
+            "Minior-Yellow",
+            "Minior-Green",
+            "Minior-Blue",
+            "Minior-Indigo",
+            "Minior-Violet"
+        ],
+        "cosmeticFormes": [
+            "Minior-Orange",
+            "Minior-Yellow",
+            "Minior-Green",
+            "Minior-Blue",
+            "Minior-Indigo",
+            "Minior-Violet"
         ],
         "otherFormes": [
-            "Minior-Meteor-Orange",
-            "Minior-Meteor-Yellow",
-            "Minior-Meteor-Green",
-            "Minior-Meteor-Blue",
-            "Minior-Meteor-Indigo",
-            "Minior-Meteor-Violet",
-            "Minior-Core-Red",
-            "Minior-Core-Orange",
-            "Minior-Core-Yellow",
-            "Minior-Core-Green",
-            "Minior-Core-Blue",
-            "Minior-Core-Indigo",
-            "Minior-Core-Violet"
+            "Minior-Meteor"
         ]
-    },
-    "miniormeteororange": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Orange",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Orange"
-    },
-    "miniormeteoryellow": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Yellow",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Yellow"
-    },
-    "miniormeteorgreen": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Green",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Green"
-    },
-    "miniormeteorblue": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Blue",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Blue"
-    },
-    "miniormeteorindigo": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Indigo",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Indigo"
-    },
-    "miniormeteorviolet": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 60,
-            "def": 100,
-            "spe": 60,
-            "spa": 60,
-            "spd": 100
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 40.0,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Brown",
-        "name": "Minior-Meteor-Violet",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Meteor-Violet"
-    },
-    "miniorcorered": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Red",
-        "name": "Minior-Core-Red",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Red"
-    },
-    "miniorcoreorange": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Red",
-        "name": "Minior-Core-Orange",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Orange"
-    },
-    "miniorcoreyellow": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Yellow",
-        "name": "Minior-Core-Yellow",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Yellow"
-    },
-    "miniorcoregreen": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Green",
-        "name": "Minior-Core-Green",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Green"
-    },
-    "miniorcoreblue": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Blue",
-        "name": "Minior-Core-Blue",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Blue"
-    },
-    "miniorcoreindigo": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Blue",
-        "name": "Minior-Core-Indigo",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Indigo"
-    },
-    "miniorcoreviolet": {
-        "num": 774,
-        "baseStats": {
-            "hp": 60,
-            "atk": 100,
-            "def": 60,
-            "spe": 120,
-            "spa": 100,
-            "spd": 60
-        },
-        "types": [
-            "Rock",
-            "Flying"
-        ],
-        "evYields": {
-            "def": 1,
-            "spd": 1
-        },
-        "items": {
-            "R": "Star Piece"
-        },
-        "eggGroups": [
-            "Mineral"
-        ],
-        "weightkg": 0.3,
-        "catchRate": 30,
-        "expYield": 154,
-        "gender": "N",
-        "abilities": {
-            "0": "Shields Down"
-        },
-        "color": "Purple",
-        "name": "Minior-Core-Violet",
-        "heightm": 0.3,
-        "baseSpecies": "Minior",
-        "forme": "Core-Violet"
     },
     "komala": {
         "num": 775,
@@ -47811,13 +42317,13 @@ exports.BattlePokedex = {
         "formeOrder": [
             "Mimikyu",
             "Mimikyu-Busted",
-            "Mimikyu-Totem-Disguised",
-            "Mimikyu-Totem-Busted"
+            "Mimikyu-Totem",
+            "Mimikyu-Busted-Totem"
         ],
         "otherFormes": [
             "Mimikyu-Busted",
-            "Mimikyu-Totem-Disguised",
-            "Mimikyu-Totem-Busted"
+            "Mimikyu-Totem",
+            "Mimikyu-Busted-Totem"
         ]
     },
     "mimikyubusted": {
@@ -47859,7 +42365,7 @@ exports.BattlePokedex = {
         "baseSpecies": "Mimikyu",
         "forme": "Busted"
     },
-    "mimikyutotemdisguised": {
+    "mimikyutotem": {
         "num": 778,
         "baseStats": {
             "hp": 55,
@@ -47892,13 +42398,13 @@ exports.BattlePokedex = {
             "0": "Disguise"
         },
         "color": "Yellow",
-        "name": "Mimikyu-Totem-Disguised",
+        "name": "Mimikyu-Totem",
         "heightm": 2.4,
         "weightkg": 2.8,
         "baseSpecies": "Mimikyu",
-        "forme": "Totem-Disguised"
+        "forme": "Totem"
     },
-    "mimikyutotembusted": {
+    "mimikyubustedtotem": {
         "num": 778,
         "baseStats": {
             "hp": 55,
@@ -47931,11 +42437,11 @@ exports.BattlePokedex = {
             "0": "Disguise"
         },
         "color": "Yellow",
-        "name": "Mimikyu-Totem-Busted",
+        "name": "Mimikyu-Busted-Totem",
         "heightm": 2.4,
         "weightkg": 2.8,
         "baseSpecies": "Mimikyu",
-        "forme": "Totem-Busted"
+        "forme": "Busted-Totem"
     },
     "bruxish": {
         "num": 779,
@@ -48904,13 +43410,13 @@ exports.BattlePokedex = {
         "weightkg": 80.5,
         "formeOrder": [
             "Magearna",
-            "Magearna-Original-Color"
+            "Magearna-Original"
         ],
         "otherFormes": [
-            "Magearna-Original-Color"
+            "Magearna-Original"
         ]
     },
-    "magearnaoriginalcolor": {
+    "magearnaoriginal": {
         "num": 801,
         "baseStats": {
             "hp": 80,
@@ -48938,11 +43444,11 @@ exports.BattlePokedex = {
             "0": "Soul-Heart"
         },
         "color": "Red",
-        "name": "Magearna-Original-Color",
+        "name": "Magearna-Original",
         "heightm": 1.0,
         "weightkg": 80.5,
         "baseSpecies": "Magearna",
-        "forme": "Original-Color"
+        "forme": "Original"
     },
     "marshadow": {
         "num": 802,
@@ -51499,12 +46005,12 @@ exports.BattlePokedex = {
         "formeOrder": [
             "Toxtricity",
             "Toxtricity-Low-Key",
-            "Toxtricity-Amped-Gmax",
+            "Toxtricity-Gmax",
             "Toxtricity-Low-Key-Gmax"
         ],
         "otherFormes": [
             "Toxtricity-Low-Key",
-            "Toxtricity-Amped-Gmax",
+            "Toxtricity-Gmax",
             "Toxtricity-Low-Key-Gmax"
         ],
         "prevo": "Toxel",
@@ -51512,7 +46018,7 @@ exports.BattlePokedex = {
         "evoType": "level",
         "evoCondition": "if Amped Nature"
     },
-    "toxtricityampedgmax": {
+    "toxtricitygmax": {
         "num": 849,
         "baseStats": {
             "hp": 75,
@@ -51545,11 +46051,11 @@ exports.BattlePokedex = {
             "H": "Technician"
         },
         "color": "Purple",
-        "name": "Toxtricity-Amped-Gmax",
+        "name": "Toxtricity-Gmax",
         "heightm": 24.0,
         "weightkg": 0.0,
         "baseSpecies": "Toxtricity",
-        "forme": "Amped-Gmax"
+        "forme": "Gmax"
     },
     "toxtricitylowkey": {
         "num": 849,
@@ -52385,15 +46891,7 @@ exports.BattlePokedex = {
         "heightm": 0.2,
         "weightkg": 0.3,
         "evos": [
-            "Alcremie",
-            "Alcremie-Strawberry-Ruby-Cream",
-            "Alcremie-Strawberry-Matcha-Cream",
-            "Alcremie-Strawberry-Mint-Cream",
-            "Alcremie-Strawberry-Lemon-Cream",
-            "Alcremie-Strawberry-Salted-Cream",
-            "Alcremie-Strawberry-Ruby-Swirl",
-            "Alcremie-Strawberry-Caramel-Swirl",
-            "Alcremie-Strawberry-Rainbow-Swirl"
+            "Alcremie"
         ]
     },
     "alcremie": {
@@ -52431,7 +46929,7 @@ exports.BattlePokedex = {
         "name": "Alcremie",
         "heightm": 0.3,
         "weightkg": 0.5,
-        "baseForme": "Strawberry-Vanilla-Cream",
+        "baseForme": "Vanilla-Cream",
         "formeOrder": [
             "Alcremie",
             "Alcremie-Strawberry-Ruby-Cream",
@@ -52498,2463 +46996,14 @@ exports.BattlePokedex = {
             "Alcremie-Ribbon-Rainbow-Swirl",
             "Alcremie-Gmax"
         ],
+        "cosmeticFormes": [],
         "otherFormes": [
-            "Alcremie-Strawberry-Ruby-Cream",
-            "Alcremie-Strawberry-Matcha-Cream",
-            "Alcremie-Strawberry-Mint-Cream",
-            "Alcremie-Strawberry-Lemon-Cream",
-            "Alcremie-Strawberry-Salted-Cream",
-            "Alcremie-Strawberry-Ruby-Swirl",
-            "Alcremie-Strawberry-Caramel-Swirl",
-            "Alcremie-Strawberry-Rainbow-Swirl",
-            "Alcremie-Berry-Vanilla-Cream",
-            "Alcremie-Berry-Ruby-Cream",
-            "Alcremie-Berry-Matcha-Cream",
-            "Alcremie-Berry-Mint-Cream",
-            "Alcremie-Berry-Lemon-Cream",
-            "Alcremie-Berry-Salted-Cream",
-            "Alcremie-Berry-Ruby-Swirl",
-            "Alcremie-Berry-Caramel-Swirl",
-            "Alcremie-Berry-Rainbow-Swirl",
-            "Alcremie-Love-Vanilla-Cream",
-            "Alcremie-Love-Ruby-Cream",
-            "Alcremie-Love-Matcha-Cream",
-            "Alcremie-Love-Mint-Cream",
-            "Alcremie-Love-Lemon-Cream",
-            "Alcremie-Love-Salted-Cream",
-            "Alcremie-Love-Ruby-Swirl",
-            "Alcremie-Love-Caramel-Swirl",
-            "Alcremie-Love-Rainbow-Swirl",
-            "Alcremie-Star-Vanilla-Cream",
-            "Alcremie-Star-Ruby-Cream",
-            "Alcremie-Star-Matcha-Cream",
-            "Alcremie-Star-Mint-Cream",
-            "Alcremie-Star-Lemon-Cream",
-            "Alcremie-Star-Salted-Cream",
-            "Alcremie-Star-Ruby-Swirl",
-            "Alcremie-Star-Caramel-Swirl",
-            "Alcremie-Star-Rainbow-Swirl",
-            "Alcremie-Clover-Vanilla-Cream",
-            "Alcremie-Clover-Ruby-Cream",
-            "Alcremie-Clover-Matcha-Cream",
-            "Alcremie-Clover-Mint-Cream",
-            "Alcremie-Clover-Lemon-Cream",
-            "Alcremie-Clover-Salted-Cream",
-            "Alcremie-Clover-Ruby-Swirl",
-            "Alcremie-Clover-Caramel-Swirl",
-            "Alcremie-Clover-Rainbow-Swirl",
-            "Alcremie-Flower-Vanilla-Cream",
-            "Alcremie-Flower-Ruby-Cream",
-            "Alcremie-Flower-Matcha-Cream",
-            "Alcremie-Flower-Mint-Cream",
-            "Alcremie-Flower-Lemon-Cream",
-            "Alcremie-Flower-Salted-Cream",
-            "Alcremie-Flower-Ruby-Swirl",
-            "Alcremie-Flower-Caramel-Swirl",
-            "Alcremie-Flower-Rainbow-Swirl",
-            "Alcremie-Ribbon-Vanilla-Cream",
-            "Alcremie-Ribbon-Ruby-Cream",
-            "Alcremie-Ribbon-Matcha-Cream",
-            "Alcremie-Ribbon-Mint-Cream",
-            "Alcremie-Ribbon-Lemon-Cream",
-            "Alcremie-Ribbon-Salted-Cream",
-            "Alcremie-Ribbon-Ruby-Swirl",
-            "Alcremie-Ribbon-Caramel-Swirl",
-            "Alcremie-Ribbon-Rainbow-Swirl",
             "Alcremie-Gmax"
         ],
         "prevo": "Milcery",
         "evoLevel": 0,
         "evoType": "level",
         "evoCondition": ""
-    },
-    "alcremiestrawberryrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Strawberry-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Ruby-Cream",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberrymatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Strawberry-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Matcha-Cream",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberrymintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Strawberry-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Mint-Cream",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberrylemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Strawberry-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Lemon-Cream",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberrysaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Strawberry-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Salted-Cream",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberryrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Strawberry-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Ruby-Swirl",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberrycaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Strawberry-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Caramel-Swirl",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremiestrawberryrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Strawberry-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Strawberry-Rainbow-Swirl",
-        "prevo": "Milcery",
-        "evoLevel": 0,
-        "evoType": "level",
-        "evoCondition": ""
-    },
-    "alcremieberryvanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Berry-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Vanilla-Cream"
-    },
-    "alcremieberryrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Berry-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Ruby-Cream"
-    },
-    "alcremieberrymatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Berry-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Matcha-Cream"
-    },
-    "alcremieberrymintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Berry-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Mint-Cream"
-    },
-    "alcremieberrylemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Berry-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Lemon-Cream"
-    },
-    "alcremieberrysaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Berry-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Salted-Cream"
-    },
-    "alcremieberryrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Berry-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Ruby-Swirl"
-    },
-    "alcremieberrycaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Berry-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Caramel-Swirl"
-    },
-    "alcremieberryrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Berry-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Berry-Rainbow-Swirl"
-    },
-    "alcremielovevanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Love-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Vanilla-Cream"
-    },
-    "alcremieloverubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Love-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Ruby-Cream"
-    },
-    "alcremielovematchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Love-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Matcha-Cream"
-    },
-    "alcremielovemintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Love-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Mint-Cream"
-    },
-    "alcremielovelemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Love-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Lemon-Cream"
-    },
-    "alcremielovesaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Love-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Salted-Cream"
-    },
-    "alcremieloverubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Love-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Ruby-Swirl"
-    },
-    "alcremielovecaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Love-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Caramel-Swirl"
-    },
-    "alcremieloverainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Love-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Love-Rainbow-Swirl"
-    },
-    "alcremiestarvanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Star-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Vanilla-Cream"
-    },
-    "alcremiestarrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Star-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Ruby-Cream"
-    },
-    "alcremiestarmatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Star-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Matcha-Cream"
-    },
-    "alcremiestarmintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Star-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Mint-Cream"
-    },
-    "alcremiestarlemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Star-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Lemon-Cream"
-    },
-    "alcremiestarsaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Star-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Salted-Cream"
-    },
-    "alcremiestarrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Star-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Ruby-Swirl"
-    },
-    "alcremiestarcaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Star-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Caramel-Swirl"
-    },
-    "alcremiestarrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Star-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Star-Rainbow-Swirl"
-    },
-    "alcremieclovervanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Clover-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Vanilla-Cream"
-    },
-    "alcremiecloverrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Clover-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Ruby-Cream"
-    },
-    "alcremieclovermatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Clover-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Matcha-Cream"
-    },
-    "alcremieclovermintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Clover-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Mint-Cream"
-    },
-    "alcremiecloverlemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Clover-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Lemon-Cream"
-    },
-    "alcremiecloversaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Clover-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Salted-Cream"
-    },
-    "alcremiecloverrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Clover-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Ruby-Swirl"
-    },
-    "alcremieclovercaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Clover-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Caramel-Swirl"
-    },
-    "alcremiecloverrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Clover-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Clover-Rainbow-Swirl"
-    },
-    "alcremieflowervanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Flower-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Vanilla-Cream"
-    },
-    "alcremieflowerrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Flower-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Ruby-Cream"
-    },
-    "alcremieflowermatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Flower-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Matcha-Cream"
-    },
-    "alcremieflowermintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Flower-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Mint-Cream"
-    },
-    "alcremieflowerlemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Flower-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Lemon-Cream"
-    },
-    "alcremieflowersaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Flower-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Salted-Cream"
-    },
-    "alcremieflowerrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Flower-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Ruby-Swirl"
-    },
-    "alcremieflowercaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Flower-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Caramel-Swirl"
-    },
-    "alcremieflowerrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Flower-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Flower-Rainbow-Swirl"
-    },
-    "alcremieribbonvanillacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Ribbon-Vanilla-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Vanilla-Cream"
-    },
-    "alcremieribbonrubycream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Pink",
-        "name": "Alcremie-Ribbon-Ruby-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Ruby-Cream"
-    },
-    "alcremieribbonmatchacream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Green",
-        "name": "Alcremie-Ribbon-Matcha-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Matcha-Cream"
-    },
-    "alcremieribbonmintcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Blue",
-        "name": "Alcremie-Ribbon-Mint-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Mint-Cream"
-    },
-    "alcremieribbonlemoncream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Ribbon-Lemon-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Lemon-Cream"
-    },
-    "alcremieribbonsaltedcream": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "White",
-        "name": "Alcremie-Ribbon-Salted-Cream",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Salted-Cream"
-    },
-    "alcremieribbonrubyswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Ribbon-Ruby-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Ruby-Swirl"
-    },
-    "alcremieribboncaramelswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Brown",
-        "name": "Alcremie-Ribbon-Caramel-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Caramel-Swirl"
-    },
-    "alcremieribbonrainbowswirl": {
-        "num": 869,
-        "baseStats": {
-            "hp": 65,
-            "atk": 60,
-            "def": 75,
-            "spe": 64,
-            "spa": 110,
-            "spd": 121
-        },
-        "types": [
-            "Fairy"
-        ],
-        "evYields": {
-            "spd": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Fairy",
-            "Amorphous"
-        ],
-        "catchRate": 100,
-        "expYield": 173,
-        "genderRatio": {
-            "M": 0.0,
-            "F": 1.0
-        },
-        "abilities": {
-            "0": "Sweet Veil",
-            "H": "Aroma Veil"
-        },
-        "color": "Yellow",
-        "name": "Alcremie-Ribbon-Rainbow-Swirl",
-        "heightm": 0.3,
-        "weightkg": 0.5,
-        "baseSpecies": "Alcremie",
-        "forme": "Ribbon-Rainbow-Swirl"
     },
     "alcremiegmax": {
         "num": 869,
@@ -55215,13 +47264,13 @@ exports.BattlePokedex = {
         "baseForme": "Ice-Face",
         "formeOrder": [
             "Eiscue",
-            "Eiscue-Noice-Face"
+            "Eiscue-Noice"
         ],
         "otherFormes": [
-            "Eiscue-Noice-Face"
+            "Eiscue-Noice"
         ]
     },
-    "eiscuenoiceface": {
+    "eiscuenoice": {
         "num": 875,
         "baseStats": {
             "hp": 75,
@@ -55252,11 +47301,11 @@ exports.BattlePokedex = {
             "0": "Ice Face"
         },
         "color": "Blue",
-        "name": "Eiscue-Noice-Face",
+        "name": "Eiscue-Noice",
         "heightm": 1.4,
         "weightkg": 89.0,
         "baseSpecies": "Eiscue",
-        "forme": "Noice-Face"
+        "forme": "Noice"
     },
     "indeedee": {
         "num": 876,
@@ -55294,16 +47343,16 @@ exports.BattlePokedex = {
         "name": "Indeedee",
         "heightm": 0.9,
         "weightkg": 28.0,
-        "baseForme": "Male",
+        "baseForme": "M",
         "formeOrder": [
             "Indeedee",
-            "Indeedee-Female"
+            "Indeedee-F"
         ],
         "otherFormes": [
-            "Indeedee-Female"
+            "Indeedee-F"
         ]
     },
-    "indeedeefemale": {
+    "indeedeef": {
         "num": 876,
         "baseStats": {
             "hp": 70,
@@ -55336,11 +47385,11 @@ exports.BattlePokedex = {
             "H": "Psychic Surge"
         },
         "color": "Purple",
-        "name": "Indeedee-Female",
+        "name": "Indeedee-F",
         "heightm": 0.9,
         "weightkg": 28.0,
         "baseSpecies": "Indeedee",
-        "forme": "Female"
+        "forme": "F"
     },
     "morpeko": {
         "num": 877,
@@ -55978,16 +48027,16 @@ exports.BattlePokedex = {
         "name": "Zacian",
         "heightm": 2.8,
         "weightkg": 110.0,
-        "baseForme": "Hero-Of-Many-Battles",
+        "baseForme": "Hero",
         "formeOrder": [
             "Zacian",
-            "Zacian-Crowned-Sword"
+            "Zacian-Crowned"
         ],
         "otherFormes": [
-            "Zacian-Crowned-Sword"
+            "Zacian-Crowned"
         ]
     },
-    "zaciancrownedsword": {
+    "zaciancrowned": {
         "num": 888,
         "baseStats": {
             "hp": 92,
@@ -56015,11 +48064,11 @@ exports.BattlePokedex = {
             "0": "Intrepid Sword"
         },
         "color": "Blue",
-        "name": "Zacian-Crowned-Sword",
+        "name": "Zacian-Crowned",
         "heightm": 2.8,
         "weightkg": 355.0,
         "baseSpecies": "Zacian",
-        "forme": "Crowned-Sword"
+        "forme": "Crowned"
     },
     "zamazenta": {
         "num": 889,
@@ -56051,16 +48100,16 @@ exports.BattlePokedex = {
         "name": "Zamazenta",
         "heightm": 2.9,
         "weightkg": 210.0,
-        "baseForme": "Hero-Of-Many-Battles",
+        "baseForme": "Hero",
         "formeOrder": [
             "Zamazenta",
-            "Zamazenta-Crowned-Shield"
+            "Zamazenta-Crowned"
         ],
         "otherFormes": [
-            "Zamazenta-Crowned-Shield"
+            "Zamazenta-Crowned"
         ]
     },
-    "zamazentacrownedshield": {
+    "zamazentacrowned": {
         "num": 889,
         "baseStats": {
             "hp": 92,
@@ -56088,11 +48137,11 @@ exports.BattlePokedex = {
             "0": "Dauntless Shield"
         },
         "color": "Red",
-        "name": "Zamazenta-Crowned-Shield",
+        "name": "Zamazenta-Crowned",
         "heightm": 2.9,
         "weightkg": 785.0,
         "baseSpecies": "Zamazenta",
-        "forme": "Crowned-Shield"
+        "forme": "Crowned"
     },
     "eternatus": {
         "num": 890,
@@ -56599,15 +48648,15 @@ exports.BattlePokedex = {
         "weightkg": 7.7,
         "formeOrder": [
             "Calyrex",
-            "Calyrex-Ice-Rider",
-            "Calyrex-Shadow-Rider"
+            "Calyrex-Ice",
+            "Calyrex-Shadow"
         ],
         "otherFormes": [
-            "Calyrex-Ice-Rider",
-            "Calyrex-Shadow-Rider"
+            "Calyrex-Ice",
+            "Calyrex-Shadow"
         ]
     },
-    "calyrexicerider": {
+    "calyrexice": {
         "num": 898,
         "baseStats": {
             "hp": 100,
@@ -56635,13 +48684,13 @@ exports.BattlePokedex = {
             "0": "As One"
         },
         "color": "White",
-        "name": "Calyrex-Ice-Rider",
+        "name": "Calyrex-Ice",
         "heightm": 2.4,
         "weightkg": 809.1,
         "baseSpecies": "Calyrex",
-        "forme": "Ice-Rider"
+        "forme": "Ice"
     },
-    "calyrexshadowrider": {
+    "calyrexshadow": {
         "num": 898,
         "baseStats": {
             "hp": 100,
@@ -56669,11 +48718,11 @@ exports.BattlePokedex = {
             "0": "As One"
         },
         "color": "Black",
-        "name": "Calyrex-Shadow-Rider",
+        "name": "Calyrex-Shadow",
         "heightm": 2.4,
         "weightkg": 53.6,
         "baseSpecies": "Calyrex",
-        "forme": "Shadow-Rider"
+        "forme": "Shadow"
     },
     "enamorus": {
         "num": 905,
@@ -57159,7 +49208,7 @@ exports.BattlePokedex = {
         "weightkg": 10.2,
         "evos": [
             "Oinkologne",
-            "Oinkologne-Female"
+            "Oinkologne-F"
         ]
     },
     "oinkologne": {
@@ -57197,20 +49246,20 @@ exports.BattlePokedex = {
         "name": "Oinkologne",
         "heightm": 1.0,
         "weightkg": 120.0,
-        "baseForme": "Male",
+        "baseForme": "M",
         "formeOrder": [
             "Oinkologne",
-            "Oinkologne-Female"
+            "Oinkologne-F"
         ],
         "otherFormes": [
-            "Oinkologne-Female"
+            "Oinkologne-F"
         ],
         "prevo": "Lechonk",
         "evoLevel": 18,
         "evoType": "level",
         "evoCondition": "if Male gender"
     },
-    "oinkolognefemale": {
+    "oinkolognef": {
         "num": 916,
         "baseStats": {
             "hp": 115,
@@ -57242,11 +49291,11 @@ exports.BattlePokedex = {
             "H": "Thick Fat"
         },
         "color": "Gray",
-        "name": "Oinkologne-Female",
+        "name": "Oinkologne-F",
         "heightm": 1.0,
         "weightkg": 120.0,
         "baseSpecies": "Oinkologne",
-        "forme": "Female",
+        "forme": "F",
         "prevo": "Lechonk",
         "evoLevel": 18,
         "evoType": "level",
@@ -57485,7 +49534,10 @@ exports.BattlePokedex = {
         "prevo": "Pawmi",
         "evoLevel": 18,
         "evoType": "level",
-        "evoCondition": ""
+        "evoCondition": "",
+        "evos": [
+            "Pawmot"
+        ]
     },
     "pawmot": {
         "num": 923,
@@ -57522,7 +49574,10 @@ exports.BattlePokedex = {
         "color": "Yellow",
         "name": "Pawmot",
         "heightm": 0.9,
-        "weightkg": 41.0
+        "weightkg": 41.0,
+        "prevo": "Pawmo",
+        "evoType": "levelExtra",
+        "evoCondition": "after walking 1000 steps"
     },
     "tandemaus": {
         "num": 924,
@@ -57559,7 +49614,7 @@ exports.BattlePokedex = {
         "weightkg": 1.8,
         "evos": [
             "Maushold",
-            "Maushold-Family-Of-Four"
+            "Maushold-Four"
         ]
     },
     "maushold": {
@@ -57595,20 +49650,20 @@ exports.BattlePokedex = {
         "name": "Maushold",
         "heightm": 0.3,
         "weightkg": 2.3,
-        "baseForme": "Family-Of-Three",
+        "baseForme": "Three",
         "formeOrder": [
             "Maushold",
-            "Maushold-Family-Of-Four"
+            "Maushold-Four"
         ],
         "otherFormes": [
-            "Maushold-Family-Of-Four"
+            "Maushold-Four"
         ],
         "prevo": "Tandemaus",
         "evoLevel": 25,
         "evoType": "level",
         "evoCondition": "based on personality"
     },
-    "mausholdfamilyoffour": {
+    "mausholdfour": {
         "num": 925,
         "baseStats": {
             "hp": 74,
@@ -57638,11 +49693,11 @@ exports.BattlePokedex = {
             "H": "Technician"
         },
         "color": "White",
-        "name": "Maushold-Family-Of-Four",
+        "name": "Maushold-Four",
         "heightm": 0.3,
         "weightkg": 2.8,
         "baseSpecies": "Maushold",
-        "forme": "Family-Of-Four",
+        "forme": "Four",
         "prevo": "Tandemaus",
         "evoLevel": 25,
         "evoType": "level",
@@ -57885,20 +49940,20 @@ exports.BattlePokedex = {
         "name": "Squawkabilly",
         "heightm": 0.6,
         "weightkg": 2.4,
-        "baseForme": "Green-Plumage",
+        "baseForme": "Green",
         "formeOrder": [
             "Squawkabilly",
-            "Squawkabilly-Blue-Plumage",
-            "Squawkabilly-Yellow-Plumage",
-            "Squawkabilly-White-Plumage"
+            "Squawkabilly-Blue",
+            "Squawkabilly-Yellow",
+            "Squawkabilly-White"
         ],
         "otherFormes": [
-            "Squawkabilly-Blue-Plumage",
-            "Squawkabilly-Yellow-Plumage",
-            "Squawkabilly-White-Plumage"
+            "Squawkabilly-Blue",
+            "Squawkabilly-Yellow",
+            "Squawkabilly-White"
         ]
     },
-    "squawkabillyblueplumage": {
+    "squawkabillyblue": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -57931,13 +49986,13 @@ exports.BattlePokedex = {
             "H": "Guts"
         },
         "color": "Blue",
-        "name": "Squawkabilly-Blue-Plumage",
+        "name": "Squawkabilly-Blue",
         "heightm": 0.6,
         "weightkg": 2.4,
         "baseSpecies": "Squawkabilly",
-        "forme": "Blue-Plumage"
+        "forme": "Blue"
     },
-    "squawkabillyyellowplumage": {
+    "squawkabillyyellow": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -57970,13 +50025,13 @@ exports.BattlePokedex = {
             "H": "Sheer Force"
         },
         "color": "Yellow",
-        "name": "Squawkabilly-Yellow-Plumage",
+        "name": "Squawkabilly-Yellow",
         "heightm": 0.6,
         "weightkg": 2.4,
         "baseSpecies": "Squawkabilly",
-        "forme": "Yellow-Plumage"
+        "forme": "Yellow"
     },
-    "squawkabillywhiteplumage": {
+    "squawkabillywhite": {
         "num": 931,
         "baseStats": {
             "hp": 82,
@@ -58009,11 +50064,11 @@ exports.BattlePokedex = {
             "H": "Sheer Force"
         },
         "color": "White",
-        "name": "Squawkabilly-White-Plumage",
+        "name": "Squawkabilly-White",
         "heightm": 0.6,
         "weightkg": 2.4,
         "baseSpecies": "Squawkabilly",
-        "forme": "White-Plumage"
+        "forme": "White"
     },
     "nacli": {
         "num": 932,
@@ -58612,7 +50667,10 @@ exports.BattlePokedex = {
         "color": "Brown",
         "name": "Bramblin",
         "heightm": 0.6,
-        "weightkg": 0.6
+        "weightkg": 0.6,
+        "evos": [
+            "Brambleghast"
+        ]
     },
     "brambleghast": {
         "num": 947,
@@ -58648,7 +50706,10 @@ exports.BattlePokedex = {
         "color": "Brown",
         "name": "Brambleghast",
         "heightm": 1.2,
-        "weightkg": 6.0
+        "weightkg": 6.0,
+        "prevo": "Bramblin",
+        "evoType": "levelExtra",
+        "evoCondition": "after walking 1000 steps"
     },
     "toedscool": {
         "num": 948,
@@ -58876,7 +50937,10 @@ exports.BattlePokedex = {
         "color": "Brown",
         "name": "Rellor",
         "heightm": 0.2,
-        "weightkg": 1.0
+        "weightkg": 1.0,
+        "evos": [
+            "Rabsca"
+        ]
     },
     "rabsca": {
         "num": 954,
@@ -58912,7 +50976,10 @@ exports.BattlePokedex = {
         "color": "Green",
         "name": "Rabsca",
         "heightm": 0.3,
-        "weightkg": 3.5
+        "weightkg": 3.5,
+        "prevo": "Rellor",
+        "evoType": "levelExtra",
+        "evoCondition": "after walking 1000 steps"
     },
     "flittle": {
         "num": 955,
@@ -59891,86 +51958,7 @@ exports.BattlePokedex = {
             "Tatsugiri-Droopy",
             "Tatsugiri-Stretchy"
         ],
-        "otherFormes": [
-            "Tatsugiri-Droopy",
-            "Tatsugiri-Stretchy"
-        ]
-    },
-    "tatsugiridroopy": {
-        "num": 978,
-        "baseStats": {
-            "hp": 68,
-            "atk": 50,
-            "def": 60,
-            "spe": 82,
-            "spa": 120,
-            "spd": 95
-        },
-        "types": [
-            "Dragon",
-            "Water"
-        ],
-        "evYields": {
-            "spa": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Water 2"
-        ],
-        "catchRate": 100,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Commander",
-            "H": "Storm Drain"
-        },
-        "color": "Pink",
-        "name": "Tatsugiri-Droopy",
-        "heightm": 0.3,
-        "weightkg": 8.0,
-        "baseSpecies": "Tatsugiri",
-        "forme": "Droopy"
-    },
-    "tatsugiristretchy": {
-        "num": 978,
-        "baseStats": {
-            "hp": 68,
-            "atk": 50,
-            "def": 60,
-            "spe": 82,
-            "spa": 120,
-            "spd": 95
-        },
-        "types": [
-            "Dragon",
-            "Water"
-        ],
-        "evYields": {
-            "spa": 2
-        },
-        "items": {},
-        "eggGroups": [
-            "Water 2"
-        ],
-        "catchRate": 100,
-        "expYield": 166,
-        "genderRatio": {
-            "M": 0.5,
-            "F": 0.5
-        },
-        "abilities": {
-            "0": "Commander",
-            "H": "Storm Drain"
-        },
-        "color": "Yellow",
-        "name": "Tatsugiri-Stretchy",
-        "heightm": 0.3,
-        "weightkg": 8.0,
-        "baseSpecies": "Tatsugiri",
-        "forme": "Stretchy"
+        "cosmeticFormes": []
     },
     "greattusk": {
         "num": 984,
@@ -61133,28 +53121,44 @@ exports.BattlePokedex = {
         "name": "Ogerpon",
         "heightm": 1.2,
         "weightkg": 39.8,
-        "baseForme": "Teal-Mask",
+        "baseForme": "Teal",
         "formeOrder": [
             "Ogerpon",
-            "Ogerpon-Wellspring-Mask",
-            "Ogerpon-Hearthflame-Mask",
-            "Ogerpon-Cornerstone-Mask",
-            "Ogerpon-Teal-Mask-Tera",
-            "Ogerpon-Wellspring-Mask-Tera",
-            "Ogerpon-Hearthflame-Mask-Tera",
-            "Ogerpon-Cornerstone-Mask-Tera"
+            "Ogerpon-Wellspring",
+            "Ogerpon-Hearthflame",
+            "Ogerpon-Cornerstone",
+            "Ogerpon-Teal-Tera",
+            "Ogerpon-Wellspring-Tera",
+            "Ogerpon-Hearthflame-Tera",
+            "Ogerpon-Cornerstone-Tera",
+            "Ogerpon-Teal-Tera",
+            "Ogerpon-Wellspring-Tera",
+            "Ogerpon-Hearthflame-Tera",
+            "Ogerpon-Cornerstone-Tera",
+            "Ogerpon-Teal-Tera-Tera",
+            "Ogerpon-Wellspring-Tera-Tera",
+            "Ogerpon-Hearthflame-Tera-Tera",
+            "Ogerpon-Cornerstone-Tera-Tera"
         ],
         "otherFormes": [
-            "Ogerpon-Wellspring-Mask",
-            "Ogerpon-Hearthflame-Mask",
-            "Ogerpon-Cornerstone-Mask",
-            "Ogerpon-Teal-Mask-Tera",
-            "Ogerpon-Wellspring-Mask-Tera",
-            "Ogerpon-Hearthflame-Mask-Tera",
-            "Ogerpon-Cornerstone-Mask-Tera"
+            "Ogerpon-Wellspring",
+            "Ogerpon-Hearthflame",
+            "Ogerpon-Cornerstone",
+            "Ogerpon-Teal-Tera",
+            "Ogerpon-Wellspring-Tera",
+            "Ogerpon-Hearthflame-Tera",
+            "Ogerpon-Cornerstone-Tera",
+            "Ogerpon-Teal-Tera",
+            "Ogerpon-Wellspring-Tera",
+            "Ogerpon-Hearthflame-Tera",
+            "Ogerpon-Cornerstone-Tera",
+            "Ogerpon-Teal-Tera-Tera",
+            "Ogerpon-Wellspring-Tera-Tera",
+            "Ogerpon-Hearthflame-Tera-Tera",
+            "Ogerpon-Cornerstone-Tera-Tera"
         ]
     },
-    "ogerponwellspringmask": {
+    "ogerponwellspring": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61185,13 +53189,13 @@ exports.BattlePokedex = {
             "0": "Water Absorb"
         },
         "color": "Blue",
-        "name": "Ogerpon-Wellspring-Mask",
+        "name": "Ogerpon-Wellspring",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Wellspring-Mask"
+        "forme": "Wellspring"
     },
-    "ogerponhearthflamemask": {
+    "ogerponhearthflame": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61222,13 +53226,13 @@ exports.BattlePokedex = {
             "0": "Mold Breaker"
         },
         "color": "Red",
-        "name": "Ogerpon-Hearthflame-Mask",
+        "name": "Ogerpon-Hearthflame",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Hearthflame-Mask"
+        "forme": "Hearthflame"
     },
-    "ogerponcornerstonemask": {
+    "ogerponcornerstone": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61259,13 +53263,13 @@ exports.BattlePokedex = {
             "0": "Sturdy"
         },
         "color": "Gray",
-        "name": "Ogerpon-Cornerstone-Mask",
+        "name": "Ogerpon-Cornerstone",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Cornerstone-Mask"
+        "forme": "Cornerstone"
     },
-    "ogerpontealmasktera": {
+    "ogerpontealtera": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61295,13 +53299,13 @@ exports.BattlePokedex = {
             "0": "Embody Aspect"
         },
         "color": "Green",
-        "name": "Ogerpon-Teal-Mask-Tera",
+        "name": "Ogerpon-Teal-Tera",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Teal-Mask-Tera"
+        "forme": "Teal-Tera"
     },
-    "ogerponwellspringmasktera": {
+    "ogerponwellspringtera": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61332,13 +53336,13 @@ exports.BattlePokedex = {
             "0": "Embody Aspect"
         },
         "color": "Blue",
-        "name": "Ogerpon-Wellspring-Mask-Tera",
+        "name": "Ogerpon-Wellspring-Tera",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Wellspring-Mask-Tera"
+        "forme": "Wellspring-Tera"
     },
-    "ogerponhearthflamemasktera": {
+    "ogerponhearthflametera": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61369,13 +53373,13 @@ exports.BattlePokedex = {
             "0": "Embody Aspect"
         },
         "color": "Red",
-        "name": "Ogerpon-Hearthflame-Mask-Tera",
+        "name": "Ogerpon-Hearthflame-Tera",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Hearthflame-Mask-Tera"
+        "forme": "Hearthflame-Tera"
     },
-    "ogerponcornerstonemasktera": {
+    "ogerponcornerstonetera": {
         "num": 1017,
         "baseStats": {
             "hp": 80,
@@ -61406,11 +53410,11 @@ exports.BattlePokedex = {
             "0": "Embody Aspect"
         },
         "color": "Gray",
-        "name": "Ogerpon-Cornerstone-Mask-Tera",
+        "name": "Ogerpon-Cornerstone-Tera",
         "heightm": 1.2,
         "weightkg": 39.8,
         "baseSpecies": "Ogerpon",
-        "forme": "Cornerstone-Mask-Tera"
+        "forme": "Cornerstone-Tera"
     },
     "gougingfire": {
         "num": 1020,
