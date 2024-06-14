@@ -1,7 +1,5 @@
 import json
-from json.encoder import encode_basestring_ascii
 import pathlib
-import shutil
 
 import porydex.config
 
@@ -12,6 +10,19 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     abilities = json.load(open(vanilla_data_dir / 'abilities.json', 'r', encoding='utf-8'))
     items = json.load(open(vanilla_data_dir / 'items.json', 'r', encoding='utf-8'))
     typechart = json.load(open(vanilla_data_dir / 'typechart.json', 'r', encoding='utf-8'))
+
+    custom_abilities = json.load(open(porydex.config.custom_ability_defs, 'r', encoding='utf-8'))
+    if custom_abilities:
+        num = max(map(lambda abil: abil.get('num', 0), abilities.values())) + 1
+        for name, descs in custom_abilities.items():
+            abilities[name_key(name)] = {
+                'flags': {},
+                'name': name,
+                'rating': 1,
+                'num': num,
+                'desc': descs.get('desc', ''),
+                'shortDesc': descs.get('short', descs.get('desc', '')),
+            }
 
     index = []
     index.extend(list(map(lambda s: s + ' pokemon', species.keys())))

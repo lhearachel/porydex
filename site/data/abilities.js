@@ -3087,5 +3087,61 @@ exports.BattleAbilities = {
         "num": -4,
         "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.",
         "shortDesc": "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns."
+    },
+    "mysticcharm": {
+        "flags": {},
+        "name": "Mystic Charm",
+        "rating": 1,
+        "num": 311,
+        "desc": "Special Attacks used by this Pokemon reduce their targets' Speed by 1 stage.",
+        "shortDesc": "Special Attacks used by this Pokemon reduce their targets' Speed by 1 stage."
+    },
+    "leafrush": {
+        "flags": {},
+        "name": "Leaf Rush",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's Grass-type moves have their priority increased by 1.",
+        "shortDesc": "This Pokemon's Grass-type moves have their priority increased by 1."
+    },
+    "fierycharge": {
+        "flags": {},
+        "name": "Fiery Charge",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
+        "shortDesc": "This Pokemon's attacks with recoil or crash damage have 1.2x power; not Struggle."
+    },
+    "etherealecho": {
+        "flags": {},
+        "name": "Ethereal Echo",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's sound-based attacks have their power multiplied by 1.3.",
+        "shortDesc": "This Pokemon's sound-based attacks have 1.3x power."
+    },
+    "striker": {
+        "flags": {},
+        "name": "Striker",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's kick-based attacks have their power multiplied by 1.3.",
+        "shortDesc": "This Pokemon's kick-based attacks have 1.3x power."
+    },
+    "acidcoat": {
+        "flags": {},
+        "name": "Acid Coat",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's Normal-type moves become Poison-type moves and have their power multiplied by 1.2.",
+        "shortDesc": "This Pokemon's Normal-type moves become Poison type and have 1.2x power"
+    },
+    "eclipsate": {
+        "flags": {},
+        "name": "Eclipsate",
+        "rating": 1,
+        "num": 311,
+        "desc": "This Pokemon's Normal-type moves become Dark-type moves and have their power multiplied by 1.2.",
+        "shortDesc": "This Pokemon's Normal-type moves become Dark type and have 1.2x power"
     }
 }

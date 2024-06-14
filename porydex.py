@@ -29,6 +29,7 @@ def config_show(_):
     print(f'output directory:  {str(porydex.config.output)}')
     print(f'output format:     {str(porydex.config.format)}')
     print(f'include mons file: {str(porydex.config.included_mons_file)}')
+    print(f'custom abilities:  {str(porydex.config.custom_ability_defs)}')
 
 def config_set(args):
     if args.expansion:
@@ -48,6 +49,9 @@ def config_set(args):
 
     if args.included_species_file:
         porydex.config.included_mons_file = args.included_species_file
+
+    if args.custom_ability_defs:
+        porydex.config.custom_ability_defs = args.custom_ability_defs
 
     porydex.config.save()
 
@@ -143,6 +147,9 @@ def main():
                               choices=list(porydex.config.OutputFormat))
     config_set_p.add_argument('-i', '--included-species-file',
                               help='text file describing species to be included in the pokedex',
+                              type=pathlib.Path)
+    config_set_p.add_argument('-a', '--custom-ability-defs',
+                              help='JSON file describing custom ability definitions and descriptions for a Showdown Dex',
                               type=pathlib.Path)
     config_set_p.set_defaults(func=config_set)
 

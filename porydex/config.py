@@ -25,6 +25,7 @@ expansion: pathlib.Path = pathlib.Path('../pokeemerald-expansion').resolve()
 output: pathlib.Path = pathlib.Path('./site/data').resolve()
 format: OutputFormat = OutputFormat.showdown
 included_mons_file: pathlib.Path | None = None
+custom_ability_defs: pathlib.Path | None = None
 
 _CONFIG_FILE: pathlib.Path = pathlib.Path('porydex.ini')
 
@@ -40,6 +41,9 @@ def save():
     if included_mons_file:
         config['pokedex']['included_mons_file'] = str(included_mons_file.resolve())
 
+    if custom_ability_defs:
+        config['abilities']['custom_ability_defs'] = str(custom_ability_defs.resolve())
+
     with open(_CONFIG_FILE, 'w', encoding='utf-8') as cfgfile:
         config.write(cfgfile)
 
@@ -49,6 +53,7 @@ def load():
     global output
     global format
     global included_mons_file
+    global custom_ability_defs
 
     # if no config exists, ensure it exists with defaults for the next load
     if not _CONFIG_FILE.exists():
@@ -65,6 +70,9 @@ def load():
 
         if 'pokedex' in config and 'included_mons_file' in config['pokedex']:
             included_mons_file = pathlib.Path(config['pokedex']['included_mons_file'])
+
+        if 'abilities' in config and 'custom_ability_defs' in config['abilities']:
+            custom_ability_defs = pathlib.Path(config['abilities']['custom_ability_defs'])
 
 def clear():
     os.remove(_CONFIG_FILE)
