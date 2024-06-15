@@ -1,7 +1,11 @@
 # `porydex`
 
 `porydex` is a simple utility for exporting data from `pokeemerald-expansion`
-for use in a custom Pokémon Showdown Pokédex for your fan-game.
+for use in a custom Pokémon Showdown Pokédex for your fan-game. Additionally,
+it provides a modified version of the official Pokémon Showdown Pokédex as
+a base for extracted data.
+
+Thanks to [the original Pokémon Showdown Pokédex](https://dex.pokemonshowdown.com) for the base implementation.
 
 ## Requirements
 
@@ -49,24 +53,74 @@ If any of these are not true, use the `config set` command to update them to
 the proper values:
 
 ```text
-usage: porydex config set [-h] [-e EXPANSION] [-c COMPILER]
+usage: porydex config set [-h] [-e EXPANSION] [-c COMPILER] [-o OUTPUT] [-f {json,showdown}] [-i INCLUDED_SPECIES_FILE] [-a CUSTOM_ABILITY_DEFS]
 
 options:
   -h, --help            show this help message and exit
   -e EXPANSION, --expansion EXPANSION
-                        path to the root of your pokeemerald-expansion
-                        repository; default: ../pokeemerald-expansion
+                        path to the root of your pokeemerald-expansion repository; default: ../pokeemerald-expansion
   -c COMPILER, --compiler COMPILER
-                        command for or path to the compiler to be used for
-                        pre-processing; default: gcc
+                        command for or path to the compiler to be used for pre-processing; default: gcc
   -o OUTPUT, --output OUTPUT
-                        path to output directory for extracted data files;
-                        default: ./out
+                        path to output directory for extracted data files; default: ./out
+  -f {json,showdown}, --format {json,showdown}
+                        format for output files
+  -i INCLUDED_SPECIES_FILE, --included-species-file INCLUDED_SPECIES_FILE
+                        text file describing species to be included in the pokedex
+  -a CUSTOM_ABILITY_DEFS, --custom-ability-defs CUSTOM_ABILITY_DEFS
+                        JSON file describing custom ability definitions and descriptions for a Showdown Dex
 ```
 
 Configuration is persisted in `porydex.ini`; to view configured options, either
 view `porydex.ini` via your favorite text editor, or use the `config show`
 command.
+
+#### Specifying Obtainable Pokemon
+
+Your game may not give a player access to all species of Pokémon. In such cases,
+you can specify a text-file of obtainable species using `config set --included-species-file`.
+This file is expected to be a text-based list with one entry per line and each
+entry being the name of an available Pokémon using Showdown-recognized names, e.g.,
+
+```text
+Bulbasaur
+Ivysaur
+Venusaur
+Venusaur-Mega
+Venusaur-Gmax
+...
+```
+
+#### Specifying Descriptions for Custom Abilities
+
+`vanilla/abilities.json` specifies the latest version of the data file used by
+the official Showdown Pokédex for ability descriptions. For abilities which
+already exist in a vanilla Expansion repository, this file can be edited to
+modify those descriptions. If there are custom abilities in your game, then
+you will need to specify a file with those ability names and descriptions
+using `config set --custom-ability-defs`. The provided file should be in JSON
+format and adhere to the following schema:
+
+```json
+{
+    "<NAME OF ABILITY>": {
+        "desc": "<LONG-FORM DESCRIPTION>",
+        "short": "<SHORT-FORM DESCRIPTION>"
+    }
+}
+```
+
+If `short` is not provided, then the value for `desc` will be used instead. To
+illustrate with an ability in the vanilla Expansion:
+
+```json
+{
+    "Aerilate": {
+        "desc": "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+        "short": "This Pokemon's Normal-type moves become Flying type and have 1.2x power."
+    }
+}
+```
 
 ### `extract`
 
@@ -96,13 +150,10 @@ porydex extract --reload
 * Species data (including forms, evolutions, and learnable movessets)
 * Encounter data
 * Configurable expansion target and compiler support
-
-**In Progress:**
-
 * Custom Pokédex web-app (based on Showdown fork)
+* Descriptions for custom Abilities
 
 **Backlog:**
 
 * Trainer data and teams (in Showdown damage calculator format)
-* Item data
-* Descriptions for Abilities and Items
+* Custom Item data and descriptions
