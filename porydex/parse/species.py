@@ -399,12 +399,13 @@ def zip_evos(all_data: dict,
             parent_mon['evoCondition'] = descriptor.condition
 
 def zip_learnsets(lvlup_learnset: dict[str, list[int]],
-                  teach_learnset: list[str]) -> dict:
+                  teach_learnset: dict[str, list[str]]) -> dict:
     full_learnset = defaultdict(list)
     for move, levels in lvlup_learnset.items():
         full_learnset[move] = [f'L{level}' for level in levels]
-    for move in teach_learnset:
-        full_learnset[move].append('M')
+    for method, moves in teach_learnset.items():
+        for move in moves:
+            full_learnset[move].append(method.upper())
 
     return full_learnset
 

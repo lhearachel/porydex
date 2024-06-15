@@ -25,15 +25,23 @@ def parse_level_up_learnset(decl: Decl,
     return learnset
 
 def parse_teachable_learnset(decl: Decl,
-                             move_names: list[str]) -> list[str]:
-    learnset = []
+                             move_names: list[str],
+                             tm_moves: list[str]) -> dict[str, list[str]]:
+    learnset = {
+        'm': [],
+        't': [],
+    }
     entry_inits = decl.init.exprs
     for entry in entry_inits:
         move = extract_int(entry)
         if move == 0xFFFF:
             break
 
-        learnset.append(name_key(move_names[move]))
+        move_name = move_names[move]
+        if move_name in tm_moves:
+            learnset['m'].append(name_key(move_name))
+        else:
+            learnset['t'].append(name_key(move_name))
 
     return learnset
 
@@ -45,9 +53,10 @@ def parse_level_up_learnsets_data(decls: list[Decl],
     }
 
 def parse_teachable_learnsets_data(decls: list[Decl],
-                                   move_names: list[str]) -> dict[str, list[str]]:
+                                   move_names: list[str],
+                                   tm_moves: list[str]) -> dict[str, dict[str, list[str]]]:
     return {
-        decl.name: parse_teachable_learnset(decl, move_names)
+        decl.name: parse_teachable_learnset(decl, move_names, tm_moves)
         for decl in decls
     }
 
@@ -87,5 +96,14 @@ def parse_teachable_learnsets(fname: pathlib.Path,
         )
         spinner.ok("✅")
 
-    return parse_teachable_learnsets_data(data[start:], move_names)
+    # Don't preprocess these files
+    tm_moves = []
+    tm_hm_list_file = porydex.config.expansion / 'include' / 'constants' / 'tms_hms.h'
+    with yaspin(text=f'Loading TM/HM list: {tm_hm_list_file}', color='cyan') as spinner, open(tm_hm_list_file, 'r') as tm_hm_file:
+        tm_moves = list({
+            move.replace('_', ' ').title() for move in re.findall(r'F\((.*)\)', tm_hm_file.read())
+        })
+        spinner.ok("✅")
+
+    return parse_teachable_learnsets_data(data[start:], move_names, tm_moves)
 
