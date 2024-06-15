@@ -19,6 +19,7 @@ PYCPARSER_FAKE_LIBC := $(PYCPARSER_UTILS)/$(FAKE_LIBC)
 PYINSTALLER := pyinstaller
 REQUIREMENTS := requirements.txt
 VENV := .venv
+VENVACTIVATE := $(VENV)/bin/activate
 VENV_PIP := $(VENV)/bin/pip
 
 setup:
@@ -47,7 +48,7 @@ fake_libc:
 	rm -rf "$(PYCPARSER)"
 
 install:
-	$(PYINSTALLER) porydex.py
+	source $(VENVACTIVATE) ; $(PYINSTALLER) porydex.py
 
 link:
 	ln -s $(shell $(REALPATH) dist/porydex/porydex) "$(VENV)/bin/porydex"
