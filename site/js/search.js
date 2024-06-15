@@ -471,6 +471,22 @@
 		return buf;
 	};
 
+    Search.prototype.renderTaggedEncounterRow = function (zone, tag) {
+        var attrs = ''
+		if (Search.urlRoot) attrs = ' href="' + Search.urlRoot + 'encounters/' + toID(zone.name) + '" data-target="push"';
+        var buf = '<li class="result"><a ' + attrs + ' data-entry="encounters|' + BattleLog.escapeHTML(zone.name) + '">';
+
+        // tag
+		buf += '<span class="col tagcol">' + tag + '</span> ';
+
+        // name
+		buf += '<span class="col shortmovenamecol">' + zone.name + '</span> ';
+
+		buf += '</a></li>';
+
+		return buf;
+    }
+
     Search.prototype.renderTaggedLocationRowInner = function (pokemon, tag, errorMessage) {
 		var attrs = '';
 		if (Search.urlRoot) attrs = ' href="' + Search.urlRoot + 'pokemon/' + toID(pokemon.name) + '" data-target="push"';
@@ -538,7 +554,7 @@
 		buf += '</a>';
 
 		return buf;
-	};``
+	};
 
 	Search.prototype.renderItemRow = function (item, matchStart, matchLength, errorMessage, attrs) {
 		if (!attrs) attrs = '';
@@ -724,6 +740,7 @@
 
 		return buf;
 	};
+
 	Search.prototype.renderTaggedMoveRow = function (move, tag, errorMessage) {
 		var attrs = '';
 		if (Search.urlRoot) attrs = ' href="' + Search.urlRoot + 'moves/' + toID(move.name) + '" data-target="push"';
@@ -895,6 +912,7 @@
 	Search.renderPokemonRow = Search.prototype.renderPokemonRow;
 	Search.renderTaggedPokemonRowInner = Search.prototype.renderTaggedPokemonRowInner;
 	Search.renderTaggedLocationRowInner = Search.prototype.renderTaggedLocationRowInner;
+    Search.renderTaggedEncounterRow = Search.prototype.renderTaggedEncounterRow;
 	Search.renderItemRow = Search.prototype.renderItemRow;
 	Search.renderAbilityRow = Search.prototype.renderAbilityRow;
 	Search.renderMoveRow = Search.prototype.renderMoveRow;

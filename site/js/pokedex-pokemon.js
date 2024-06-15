@@ -303,9 +303,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		case 'details':
 			this.renderDetails();
 			break;
-		case 'events':
-			this.renderEvents();
-			break;
+        case 'encounters':
+            this.renderEncounters();
+            break;
 		}
 	},
 	renderFullLearnset: function() {
@@ -556,58 +556,128 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		this.$('.utilichart').html(buf);
 	},
-	renderEvents: function() {
-		var pokemon = Dex.species.get(this.id);
-		var events = BattleLearnsets[this.id].eventData;
-		var buf = '';
+    getEncounterLocations: function(pokemon) {
+        if (this.results) return this.results;
 
-		buf += '<li class="resultheader"><h3>Events</h3></li>';
-		for (var i = 0; i < events.length; i++) {
-			var event = events[i];
-			buf += '<li><dl><dt>Gen ' + event.generation + ' event:</dt><dd><small>';
-			buf += pokemon.name;
-			if (event.gender) buf += ' (' + event.gender + ')';
-			buf += '<br />';
-			if (event.abilities) {
-				buf += 'Ability: ' + event.abilities.map(function (ability) {
-					return '<a href="/abilities/' + ability + '" class="subtle" data-target="push">' + Dex.abilities.get(ability).name + '</a>';
-				}).join(' or ') + '<br />';
-			} else if (event.isHidden && pokemon.abilities['H']) {
-				buf += 'Ability: <a href="/abilities/' + toID(pokemon.abilities['H']) + '" class="subtle" data-target="push">' + pokemon.abilities['H'] + '</a><br />';
-			}
-			if (event.level) buf += 'Level: ' + event.level + '<br />';
-			if (event.shiny === true) buf += 'Shiny: Yes<br />';
-			if (event.nature) buf += event.nature + ' Nature<br />';
-			if (event.ivs) {
-				buf += 'IVs: ';
-				var firstIV = true;
-				for (var iv in event.ivs) {
-					if (!firstIV) buf += ' / ';
-					buf += '' + event.ivs[iv] + ' ' + BattleStatNames[iv];
-					firstIV = false;
-				}
-				buf += '<br />';
-			}
-			if (event.moves) {
-				for (var j = 0; j < event.moves.length; j++) {
-					var move = Dex.moves.get(event.moves[j]);
-					buf += '- <a href="/moves/' + move.id + '" class="subtle" data-target="push">' + move.name + '</a><br />';
-				}
-			}
-			if (event.perfectIVs) {
-				buf += '(at least ' + event.perfectIVs + ' perfect IVs)<br />';
-			}
-			if (event.shiny === 1) {
-				buf += '(this event can be Shiny)<br />';
-			}
-			if (!event.shiny) {
-				buf += '(this event cannot be Shiny)<br />';
-			}
-			buf += '</small></dd></dl></li>';
-		}
+        var rates = BattleLocationdex['rates'];
+
+        let isInZone = function(location, enc_mode, pokemon) {
+            let for_mode = location[enc_mode]
+            if (!('encs' in for_mode)) {
+                return 0;
+            }
+
+            let sum_rate = 0;
+            for (let i = 0; i < for_mode['encs'].length; i++) {
+                let slot = for_mode['encs'][i];
+                let species = slot['species'];
+                if (species === pokemon) {
+                    sum_rate += rates[enc_mode][i];
+                }
+            }
+
+            return sum_rate;
+        }
+
+        var formatRate = function(i) {
+            return i.toString().padStart(3, 'z') + '% ';
+        }
+
+        var results = [];
+        for (let location in BattleLocationdex) {
+            if (location === 'rates') {
+                continue;
+            }
+
+            let encounters = BattleLocationdex[location];
+            let land_rate = isInZone(encounters, 'land', pokemon)
+            let surf_rate = isInZone(encounters, 'surf', pokemon)
+            let rock_rate = isInZone(encounters, 'rock', pokemon)
+            let fish_rate = isInZone(encounters, 'fish', pokemon)
+
+            if (land_rate > 0) {
+                if (!results.includes('A')) {
+                    results.push('A');
+                }
+
+                results.push('A ' + formatRate(land_rate) + location);
+            }
+            if (surf_rate > 0) {
+                if (!results.includes('B')) {
+                    results.push('B');
+                }
+
+                results.push('B ' + formatRate(surf_rate) + location);
+            }
+            if (rock_rate > 0) {
+                if (!results.includes('C')) {
+                    results.push('C');
+                }
+
+                results.push('C ' + formatRate(rock_rate) + location);
+            }
+            if (fish_rate > 0) {
+                if (!results.includes('D')) {
+                    results.push('D');
+                }
+
+                results.push('D ' + formatRate(fish_rate) + location);
+            }
+        }
+
+        results.sort();
+        return results;
+    },
+    renderEncounters: function() {
+        var locations = this.getEncounterLocations(this.id);
+        var buf = '';
+        for (let i = 0; i < locations.length; i++) {
+            let location = locations[i];
+            if (location.length == 1) {
+                if (buf.length != 0) {
+                    buf += '</ul>'
+                }
+                switch (location) {
+                case 'A': // land
+                    buf += '<li class="resultheader"><h3>Land</h3></li>';
+                    break;
+                case 'B': // surfing
+                    buf += '<li class="resultheader"><h3>Surfing</h3></li>';
+                    break;
+                case 'C': // rock smash
+                    buf += '<li class="resultheader"><h3>Rock Smash</h3></li>';
+                    break;
+                case 'D': // fishing
+                    buf += '<li class="resultheader"><h3>Fishing</h3></li>';
+                    break;
+                case 'O':
+                    buf += '<li class="resultheader"><h3>Old Rod</h3></li>';
+                    break;
+                case 'G':
+                    buf += '<li class="resultheader"><h3>Good Rod</h3></li>';
+                    break;
+                case 'S':
+                    buf += '<li class="resultheader"><h3>Super Rod</h3></li>';
+                    break;
+                default:
+                    buf += '<pre>error: "'+location+'"</pre>';
+                    break;
+                }
+                buf += '<ul>';
+            } else {
+                let rate = location.substr(2, 4).replace('z', '');
+                let zoneid = location.slice(7);
+                let zone = BattleLocationdex[zoneid];
+                buf += BattleSearch.renderTaggedEncounterRow(zone, rate);
+            }
+        }
+
+        if (buf.length != 0) {
+            buf += '</ul>';
+        }
 
 		this.$('.utilichart').html(buf);
-	},
+    },
 	getStat: function(baseStat, isHP, level, iv, ev, natureMult) {
 		if (isHP) {
 			if (baseStat === 1) return 1;

@@ -189,6 +189,9 @@ def parse_mon(struct_init: NamedInitializer,
                     if table_vals[0] != 'Base':
                         mon['baseForme'] = table_vals[0]
 
+                    if mon['name'] == 'Shellos':
+                        print(table_vals)
+
                     # Ugly Urshifu hack
                     if mon['name'] == 'Urshifu':
                         mon['formeOrder'] = [mon['name'] + (f'-{table_vals[i].replace("-Style", "")}' if i > 0 else '') for i in range(len(table.keys()))]
@@ -243,8 +246,7 @@ def parse_mon(struct_init: NamedInitializer,
                                 for i in range(len(table.keys()))
                                 if table_vals[i] not in ('Base', '', cosmetics.base) \
                                     and table_vals[i] not in cosmetics.alts \
-                                    and cosmetics.exclude_pattern \
-                                    and not re.match(cosmetics.exclude_pattern, table_vals[i])
+                                    and (cosmetics.exclude_pattern is None or not re.match(cosmetics.exclude_pattern, table_vals[i]))
                             ]
                             mon['baseForme'] = cosmetics.base
 
