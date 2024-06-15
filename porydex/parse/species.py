@@ -179,6 +179,11 @@ def parse_mon(struct_init: NamedInitializer,
                 # their respective base form, their own form name, and their full
                 # conjuncted name as species+form.
                 table = form_tables[extract_id(field_expr)]
+
+                # If there is only one entry in the table, don't bother
+                if len(table.keys()) == 1:
+                    continue
+
                 if list(table.keys())[0] == mon['num']:
                     table_vals = list(table.values())
                     if table_vals[0] != 'Base':

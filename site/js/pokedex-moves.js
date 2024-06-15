@@ -1,5 +1,5 @@
 function sourcePad(source) {
-	var level = source.slice(2);
+	var level = source.slice(1);
 	if (level.length < 3) level = '0' + level;
 	if (level.length < 3) level = '0' + level;
 	return level.length > 3 ? level : level+' ';
@@ -384,60 +384,6 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			if (atLeastOne) buf += '</ul>';
 		}
 
-		// past gens
-		var pastGenChanges = false;
-		for (var genNum = Dex.gen - 1; genNum >= move.gen; genNum--) {
-			var nextGenMove = Dex.forGen(genNum + 1).moves.get(id);
-			var curGenMove = Dex.forGen(genNum).moves.get(id);
-			var changes = '';
-
-			var nextGenType = nextGenMove.type;
-			var curGenType = curGenMove.type;
-			if (curGenType !== nextGenType) {
-				changes += 'Type: ' + curGenType + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenType + '<br />';
-			}
-
-			var nextGenBP = nextGenMove.basePower;
-			var curGenBP = curGenMove.basePower;
-			if (curGenBP !== nextGenBP) {
-				changes += 'Base power: ' + curGenBP + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenBP + '<br />';
-			}
-
-			var nextGenPP = nextGenMove.pp;
-			var curGenPP = curGenMove.pp;
-			if (curGenPP !== nextGenPP) {
-				changes += 'PP: ' + curGenPP + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenPP + '<br />';
-			}
-
-			var nextGenAcc = nextGenMove.accuracy;
-			var curGenAcc = curGenMove.accuracy;
-			if (curGenAcc !== nextGenAcc) {
-				var curGenAccText = (curGenAcc === true ? 'nevermiss' : curGenAcc + '%');
-				var nextGenAccText = (nextGenAcc === true ? 'nevermiss' : nextGenAcc + '%');
-				changes += 'Accuracy: ' + curGenAccText + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenAccText + '<br />';
-			}
-
-			var nextGenCat = nextGenMove.category;
-			var curGenCat = curGenMove.category;
-			if (curGenCat !== nextGenCat) {
-				changes += 'Category: ' + curGenCat + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenCat + '<br />';
-			}
-
-			var nextGenDesc = nextGenMove.shortDesc;
-			var curGenDesc = curGenMove.shortDesc;
-			if (curGenDesc !== nextGenDesc) {
-				changes += curGenDesc + ' <i class="fa fa-long-arrow-right"></i> ' + nextGenDesc + '<br />';
-			}
-
-			if (changes) {
-				if (!pastGenChanges) buf += '<h3>Past gens</h3><dl>';
-				buf += '<dt>Gen ' + genNum + ' <i class="fa fa-arrow-right"></i> ' + (genNum + 1) + ':</dt>';
-				buf += '<dd>' + changes + '</dd>';
-				pastGenChanges = true;
-			}
-		}
-		if (pastGenChanges) buf += '</dl>';
-
 		// distribution
 		buf += '<ul class="utilichart metricchart nokbd">';
 		buf += '</ul>';
@@ -459,29 +405,27 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			if (!sources) continue;
 			if (typeof sources === 'string') sources = [sources];
 			var atLeastOne = false;
-			for (var i=0, len=sources.length, gen=''+Dex.gen; i<len; i++) {
+			for (var i=0, len=sources.length; i<len; i++) {
 				var source = sources[i];
-				var sourceType = source.charAt(1);
-				if (source.charAt(0) === gen) {
-					switch (sourceType) {
-					case 'L':
-						results.push('a'+sourcePad(source)+pokemonid);
-						atLeastOne = true;
-						break;
-					case 'M':
-						results.push('b000 '+pokemonid);
-						atLeastOne = true;
-						break;
-					case 'T':
-						results.push('c000 '+pokemonid);
-						atLeastOne = true;
-						break;
-					case 'E':
-						results.push('d000 '+pokemonid);
-						atLeastOne = true;
-						break;
-					}
-				}
+				var sourceType = source.charAt(0);
+                switch (sourceType) {
+                case 'L':
+                    results.push('a'+sourcePad(source)+pokemonid);
+                    atLeastOne = true;
+                    break;
+                case 'M':
+                    results.push('b000 '+pokemonid);
+                    atLeastOne = true;
+                    break;
+                case 'T':
+                    results.push('c000 '+pokemonid);
+                    atLeastOne = true;
+                    break;
+                case 'E':
+                    results.push('d000 '+pokemonid);
+                    atLeastOne = true;
+                    break;
+                }
 				if (sourceType === 'S' && atLeastOne !== 'S') {
 					results.push('e000 '+pokemonid);
 					atLeastOne = 'S';
@@ -561,7 +505,11 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			var desc = '';
 			switch (results[i].charAt(0)) {
 			case 'a': // level-up move
-				desc = results[i].substr(1,3) === '001' || results[i].substr(1,3) === '000' ? '&ndash;' : '<small>L</small>'+(parseInt(results[i].substr(1,3), 10) || '?');
+				desc = results[i].substr(1,3) === '001'
+                    ? '&ndash;'
+                    : results[i].substr(1,3) === '000'
+                    ? 'Evo.'
+                    : '<small>L</small>'+(parseInt(results[i].substr(1,3), 10) || '?');
 				break;
 			case 'b': // tm/hm
 				desc = '<img src="//' + Config.routes.client + '/sprites/itemicons/tm-normal.png" style="margin-top:-3px;opacity:.7" width="24" height="24" alt="M" />';

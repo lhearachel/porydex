@@ -17,6 +17,8 @@ from porydex.parse.moves import parse_moves
 from porydex.parse.national_dex import parse_national_dex_enum
 from porydex.parse.species import parse_species
 
+MAX_SPECIES_EXPANSION = 1523 + 1
+
 def prepend_file(f, s: str):
     f_data = f.read()
     f.seek(0, 0)
@@ -97,7 +99,12 @@ def extract(args):
         national_dex,
         included_mons,
     )
-    species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
+
+    species_names = [
+        next((mon for mon in species.values() if mon['num'] == i), {}).get('name', '??????????')
+        for i in range(MAX_SPECIES_EXPANSION + 1)
+    ]
+    # species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
 
     # Re-index num to nationalDex on the species before finishing up

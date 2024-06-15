@@ -193,6 +193,12 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 
 		// learnset
+        if (pokemon.tier === 'obtainable') {
+			buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li><li><button class="button" value="encounters">Encounters</button></li></ul>';
+		} else {
+			buf += '<ul class="tabbar"><li><button class="button nav-first cur" value="move">Moves</button></li><li><button class="button" value="details">Flavor</button></li></ul>';
+        }
+
 		buf += '<ul class="utilichart nokbd">';
 		buf += '<li class="resultheader"><h3>Level-up</h3></li>';
 
@@ -208,7 +214,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			for (var i=0, len=sources.length; i<len; i++) {
 				var source = sources[i];
 				if (source.substr(0,1) === 'L') {
-					moves.push('a'+source.substr(1).padStart(2,'0')+' '+moveid);
+					moves.push('a'+source.substr(1).padStart(3,'0')+' '+moveid);
 				}
 			}
 		}
@@ -437,12 +443,12 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 					desc = moves[i].substr(1,3) === '001' || moves[i].substr(1,3) === '000' ? '&ndash;' : '<small>L</small>'+(Number(moves[i].substr(1,3))||'?');
 					break;
 				case 'd': // tm/hm
-					if (lastChanged) buf += '<li class="resultheader"><h3>Teachable</h3></li>';
-					desc = '<span class="itemicon" style="margin-top:-3px;'+Dex.getItemIcon({spritenum:508})+'"></span>';
+					if (lastChanged) buf += '<li class="resultheader"><h3>TM/HM</h3></li>';
+                    desc = '<img src="//' + Config.routes.client + '/sprites/itemicons/tm-normal.png" style="margin-top:-3px;opacity:.7" width="24" height="24" alt="M" />';
 					break;
 				case 'e': // tutor
 					if (lastChanged) buf += '<li class="resultheader"><h3>Tutor</h3></li>';
-					desc = '<img src="' + Dex.resourcePrefix + 'sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />';
+					desc = '<img src="//' + Config.routes.client + '/sprites/tutor.png" style="margin-top:-4px;opacity:.7" width="27" height="26" alt="T" />';
 					break;
 				case 'f': // egg move
 					if (lastChanged) buf += '<li class="resultheader"><h3>Egg</h3></li>';

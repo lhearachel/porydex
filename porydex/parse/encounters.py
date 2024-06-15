@@ -113,11 +113,17 @@ def parse_encounter_header(header: InitList,
     return encs
 
 def parse_encounter_def(entry: InitList, species_names: list[str]) -> Encounter:
-    return Encounter(
-        species=name_key(species_names[extract_int(entry.exprs[2])]),
-        min_lvl=extract_int(entry.exprs[0]),
-        max_lvl=extract_int(entry.exprs[1]),
-    )
+    try:
+        return Encounter(
+            species=name_key(species_names[extract_int(entry.exprs[2])]),
+            min_lvl=extract_int(entry.exprs[0]),
+            max_lvl=extract_int(entry.exprs[1]),
+        )
+    except Exception as e:
+        id = extract_int(entry.exprs[2])
+        print(f'{id=}')
+        print(f'{len(species_names)=}')
+        raise e
 
 def parse_encounters_data(exts, jd: dict, species_names: list[str]) -> dict[str, dict[str, EncounterRate] | dict[str, dict]]:
     headers = []
