@@ -39,23 +39,32 @@ def config_set(args):
         porydex.config.expansion = args.expansion.resolve()
 
     porydex.config.load()
+    update = False
 
     if args.compiler:
         porydex.config.compiler = args.compiler
+        update = True
 
     if args.output:
         porydex.config.output = args.output.resolve()
+        update = True
 
     if args.format:
         porydex.config.format = args.format
+        update = True
 
     if args.included_species_file:
         porydex.config.included_mons_file = args.included_species_file
+        update = True
 
     if args.custom_ability_defs:
         porydex.config.custom_ability_defs = args.custom_ability_defs
+        update = True
 
-    porydex.config.save()
+    if update:
+        porydex.config.save()
+    else:
+        print('No config options given; nothing to do')
 
 def config_clear(_):
     porydex.config.clear()

@@ -29,6 +29,8 @@ custom_ability_defs: pathlib.Path | None = None
 
 _CONFIG_FILE: pathlib.Path = pathlib.Path('porydex.ini')
 
+_SUB_KEYS = ['pokedex', 'abilities']
+
 def save():
     config = configparser.ConfigParser()
     config['default'] = {
@@ -37,6 +39,9 @@ def save():
         'output': str(output),
         'format': str(format),
     }
+
+    for subkey in _SUB_KEYS:
+        config[subkey] = {}
 
     if included_mons_file:
         config['pokedex']['included_mons_file'] = str(included_mons_file.resolve())

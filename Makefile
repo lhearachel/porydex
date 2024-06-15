@@ -48,7 +48,7 @@ fake_libc:
 	rm -rf "$(PYCPARSER)"
 
 install:
-	source $(VENVACTIVATE) ; $(PYINSTALLER) porydex.py
+	source $(VENVACTIVATE) ; $(PYINSTALLER) --noconfirm porydex.py
 
 link:
 	ln -s $(shell $(REALPATH) dist/porydex/porydex) "$(VENV)/bin/porydex"
