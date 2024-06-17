@@ -1,9 +1,12 @@
 import json
 import pathlib
+import re
 
 import porydex.config
 
 from porydex.common import name_key
+
+MARKDOWN_TITLE_LINE = re.compile(r'# (.*)')
 
 def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     vanilla_data_dir = pathlib.Path('vanilla')
@@ -32,6 +35,16 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     index.extend(list(map(lambda s: s + ' type', typechart.keys())))
     index.extend(list(map(lambda s: s + ' category', ['physical', 'special', 'status'])))
     index.extend(list(map(lambda s: s + ' egggroup', ['monster', 'water1', 'bug', 'flying', 'field', 'fairy', 'grass', 'humanlike', 'water3', 'mineral', 'amorphous', 'water2', 'ditto', 'dragon', 'undiscovered'])))
+
+    articles = {}
+    for path in pathlib.Path('articles').glob('*.md'):
+        fstem = path.stem
+        with open(path, 'r', encoding='utf-8') as article:
+            first_line = article.readline()
+            first_line = MARKDOWN_TITLE_LINE.match(first_line)
+            if first_line and first_line.group(1) != fstem.capitalize():
+                articles[fstem] = first_line.group(1)
+        index.append(f'{fstem} article')
 
     for key in encounters.keys():
         if key == 'rates':
