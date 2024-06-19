@@ -12,8 +12,10 @@ description = "Utilities for Data Extraction from pokeemerald-expansion"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "click==8.1.x",
-    "tqdm==4.66.x",
+    "click==8.1.*",
+    "toml==0.10.*",
+    "tqdm==4.66.*",
+    "xdg-base-dirs==6.0.*",
 ]
 
 [project.optional-dependencies]
