@@ -665,7 +665,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
                 }
                 buf += '<ul>';
             } else {
-                let rate = location.substr(2, 4).replace('z', '');
+                let rate = location.substr(2, 4).replace('z', '').replace('z', '');
                 let zoneid = location.slice(7);
                 let zone = BattleLocationdex[zoneid];
                 buf += BattleSearch.renderTaggedEncounterRow(zone, rate);
