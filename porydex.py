@@ -116,8 +116,8 @@ def extract(args):
         else:
             species_names[mon['num']] = mon['name']
 
-    # clenaup cosmetic forms from species
-    to_purge = []
+    # cleanup cosmetic forms and missingno from species
+    to_purge = ['missingno']
     for key, mon in species.items():
         if mon.get('cosmetic', False):
             to_purge.append(key)
