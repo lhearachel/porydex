@@ -189,9 +189,6 @@ def parse_mon(struct_init: NamedInitializer,
                     if table_vals[0] != 'Base':
                         mon['baseForme'] = table_vals[0]
 
-                    if mon['name'] == 'Shellos':
-                        print(table_vals)
-
                     # Ugly Urshifu hack
                     if mon['name'] == 'Urshifu':
                         mon['formeOrder'] = [mon['name'] + (f'-{table_vals[i].replace("-Style", "")}' if i > 0 else '') for i in range(len(table.keys()))]
@@ -438,7 +435,7 @@ def parse_species_data(species_data: ExprList,
                 cosmetics = COSMETIC_FORME_SPECIES.get(base_name, None)
                 if cosmetics and any(map(lambda s: s[0]['name'] == base_name, all_species_data.values())):
                     if cosmetics.alts is None or mon['name'] not in map(lambda alt: f'{base_name}-{alt}', cosmetics.alts):
-                        del all_species_data[mon['num']]
+                        mon['cosmetic'] = True # use this later during cleanup to map the name to its base form
                         continue
 
                 special = SPECIAL_ABILITIES.get(base_name, None)

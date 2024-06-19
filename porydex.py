@@ -6,7 +6,7 @@ import os
 import porydex.config
 import porydex.showdown
 
-from porydex.common import PICKLE_PATH
+from porydex.common import PICKLE_PATH, name_key
 from porydex.parse.abilities import parse_abilities
 from porydex.parse.encounters import parse_encounters
 from porydex.parse.form_tables import parse_form_tables
@@ -109,10 +109,21 @@ def extract(args):
         included_mons,
     )
 
-    species_names = [
-        next((mon for mon in species.values() if mon['num'] == i), {}).get('name', '??????????')
-        for i in range(MAX_SPECIES_EXPANSION + 1)
-    ]
+    species_names = ['????????????'] * (MAX_SPECIES_EXPANSION + 1)
+    for mon in species.values():
+        if mon.get('cosmetic', False):
+            species_names[mon['num']] = mon['name'].split('-')[0]
+        else:
+            species_names[mon['num']] = mon['name']
+
+    # clenaup cosmetic forms from species
+    to_purge = []
+    for key, mon in species.items():
+        if mon.get('cosmetic', False):
+            to_purge.append(key)
+    for key in to_purge:
+        del species[key]
+
     # species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
 
