@@ -228,12 +228,6 @@ def parse_mon(struct_init: NamedInitializer,
                             for i in range(len(table.keys()))
                         ]
 
-                        # ugly ogerpon tera forms hack
-                        if mon['name'] == 'Ogerpon':
-                            mon['formeOrder'].append(f'{mon["name"]}-{table_vals[0]}-Tera')
-                            for i in range(len(table_vals[1:])):
-                                mon['formeOrder'].append(f'{mon["formeOrder"][i + 1]}-Tera')
-
                     # Cosmetic Formes
                     cosmetics = COSMETIC_FORME_SPECIES.get(mon['name'], None)
                     if cosmetics:
