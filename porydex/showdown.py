@@ -10,6 +10,7 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     abilities = json.load(open(vanilla_data_dir / 'abilities.json', 'r', encoding='utf-8'))
     items = json.load(open(vanilla_data_dir / 'items.json', 'r', encoding='utf-8'))
     typechart = json.load(open(vanilla_data_dir / 'typechart.json', 'r', encoding='utf-8'))
+    vanilla_moves = json.load(open(vanilla_data_dir / 'moves.json', 'r', encoding='utf-8'))
 
     custom_abilities = json.load(open(porydex.config.custom_ability_defs, 'r', encoding='utf-8'))
     if custom_abilities:
@@ -23,6 +24,14 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
                 'desc': descs.get('desc', ''),
                 'shortDesc': descs.get('short', descs.get('desc', '')),
             }
+
+    for key, vanilla in vanilla_moves.items():
+        if key.startswith('gmax') or (key.startswith('hiddenpower') and len(key) > 11) or vanilla.get('isNonstandard', '') == 'CAP':
+            continue
+
+        assert key in moves, f'Failed to find move {key} in loaded moves data!'
+        moves[key]['desc'] = vanilla['desc']
+        moves[key]['shortDesc'] = vanilla['shortDesc']
 
     index = []
     index.extend(list(map(lambda s: s + ' pokemon', species.keys())))
