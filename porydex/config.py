@@ -3,9 +3,12 @@ pokeemerald-expansion configuration loader
 """
 
 import collections
+import dataclasses
 import pathlib
 import re
 import shelve
+
+import toml
 
 INCLUDE = pathlib.Path("include")
 CONFIG_H = INCLUDE / "config.h"
@@ -24,6 +27,53 @@ GLOBAL_MAPPINGS: dict[str, int | bool] = {
 }
 
 Primitive = int | str | bool
+
+
+@dataclasses.dataclass
+class ApplicationConfig:
+    """
+    Configuration for certain directories where application files are gathered
+    from or stored to.
+    """
+
+    repo_path: str | None
+    shelf_path: str | None
+
+
+@dataclasses.dataclass
+class PorydexConfig:
+    """
+    Top-level configuration instance.
+    """
+
+    application: ApplicationConfig
+
+    def save(self, config_path: pathlib.Path):
+        """
+        Save the configuration object.
+        """
+        with open(config_path, mode="w", encoding="utf-8") as porydex_toml:
+            toml.dump(dataclasses.asdict(self), porydex_toml)
+
+    @staticmethod
+    def init(config_path: pathlib.Path, repo_path: str, shelf_path: str) -> "PorydexConfig":
+        """
+        Initialize configuration to a filepath.
+        """
+        application_config = ApplicationConfig(repo_path, shelf_path)
+        porydex_config = PorydexConfig(application_config)
+        porydex_config.save(config_path)
+        return porydex_config
+
+    @staticmethod
+    def load(config_path: pathlib.Path) -> "PorydexConfig":
+        """
+        Load existing configuration from a filepath.
+        """
+        with open(config_path, mode="r", encoding="utf-8") as porydex_toml:
+            raw_config = toml.load(porydex_toml)
+            application_config = ApplicationConfig(**raw_config.get("application", {}))
+            return PorydexConfig(application_config)
 
 
 def coerce(val: str) -> Primitive:

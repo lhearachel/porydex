@@ -6,10 +6,9 @@ import pathlib
 import pprint
 
 import click
-import toml
 from xdg_base_dirs import xdg_config_home, xdg_state_home
 
-from porydex.config import ExpansionConfig
+from porydex.config import ExpansionConfig, PorydexConfig
 
 PORYDEX_CONFIG_PATH = (xdg_config_home() / "porydex.toml").resolve()
 PORYDEX_SHELF_DIR = (xdg_state_home() / "porydex" / ".shelf").resolve()
@@ -31,18 +30,18 @@ def config():
     """
 
 
-def load_porydex_config() -> dict:
+def load_porydex_config() -> PorydexConfig:
     """
     Load configuration from the expected porydex.toml file.
     If no such file exists, then it will be created and an empty
     dict will be returned.
     """
-    if not PORYDEX_CONFIG_PATH.exists():
+    if not PORYDEX_CONFIG_PATH.exists() or PORYDEX_CONFIG_PATH.stat().st_size == 0:
         PORYDEX_CONFIG_PATH.parent.mkdir(parents=True, exist_ok=True)
         PORYDEX_CONFIG_PATH.touch()
+        return PorydexConfig.init(PORYDEX_CONFIG_PATH, str(DEFAULT_EXPANSION_PATH.resolve()), str(PORYDEX_SHELF_DIR))
 
-    with open(PORYDEX_CONFIG_PATH, mode="r", encoding="utf-8") as porydex_toml:
-        return toml.load(porydex_toml)
+    return PorydexConfig.load(PORYDEX_CONFIG_PATH)
 
 
 @config.command("scan")
@@ -53,36 +52,32 @@ def config_scan(repo_path: click.Path) -> ExpansionConfig:
     The given expansion repository will also be recorded for future data extraction.
     """
     porydex_config = load_porydex_config()
-    if "porydex" not in porydex_config:
-        porydex_config["porydex"] = {}
 
     repo_path = pathlib.Path(repo_path).resolve()
-    shelf_path = pathlib.Path(porydex_config["porydex"].get("shelf_path", EXPANSION_CONFIG_SHELF_PATH))
+    shelf_path = pathlib.Path(porydex_config.application.shelf_path)
     shelf_path = shelf_path.resolve()
     shelf_path.parent.mkdir(parents=True, exist_ok=True)
 
     cfg = ExpansionConfig.load(shelf_path, repo_path)
     cfg.save(shelf_path)
 
-    porydex_config["porydex"]["repo_path"] = str(repo_path)
-    porydex_config["porydex"]["shelf_path"] = str(shelf_path)
-
-    with open(PORYDEX_CONFIG_PATH, mode="w", encoding="utf-8") as porydex_toml:
-        toml.dump(porydex_config, porydex_toml)
+    porydex_config.application.repo_path = str(repo_path)
+    porydex_config.application.shelf_path = str(shelf_path)
+    porydex_config.save(PORYDEX_CONFIG_PATH)
 
     return cfg
 
 
 @config.command("show")
 @click.option("-p", "--pretty", is_flag=True, help="Pretty-print output")
-def config_show(pretty=None):
+def config_show(pretty=False):
     """
-    Pretty-print the configuration state.
+    Show the configuration state.
     If configuration has yet to be scanned, then this command will also scan it.
     """
     porydex_config = load_porydex_config()
-    repo_path = pathlib.Path(porydex_config.get("porydex", {}).get("repo_path", DEFAULT_EXPANSION_PATH))
-    shelf_path = pathlib.Path(porydex_config.get("porydex", {}).get("shelf_path", EXPANSION_CONFIG_SHELF_PATH))
+    repo_path = pathlib.Path(porydex_config.application.repo_path)
+    shelf_path = pathlib.Path(porydex_config.application.shelf_path)
     shelf_path = shelf_path.resolve()
 
     cfg = ExpansionConfig.load(shelf_path, repo_path)
