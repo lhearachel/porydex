@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name            = "porydex"
+description     = "A utility for extracting data from pokeemerald-expansion projects"
+readme          = "README.md"
+license         = { file = "LICENSE" }
+version         = "0.1.0"
+requires-python = ">= 3.12"
+
+authors         = [
+    { name = "Rachel", email = "lhearachel@proton.me" },
+]
+
+dependencies    = [
+    "antlr4-tools >= 0.2",
+    "click >= 8.1",
+    "rich >= 13.7",
+    "toml >= 0.10",
+    "xdg-base-dirs >= 6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pylint >= 3.2",
+    "black >= 24.4",
+    "isort >= 5.13",
+]
+
+[project.scripts]
+porydex = "porydex:porydex.cli"
+
+[tool.pylint.messages_control]
+max-line-length = 140
+
+[tool.black]
+line-length = 140
+target-version = ['py312']
+
+[tool.isort]
+profile = 'black'
