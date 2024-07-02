@@ -15,9 +15,10 @@ authors         = [
 ]
 
 dependencies    = [
-    "antlr4-tools >= 0.2",
     "click >= 8.1",
     "rich >= 13.7",
+    "pycparser >= 2.22",
+    "pycparser-fake-libc >= 2.21",
     "toml >= 0.10",
     "xdg-base-dirs >= 6.0",
 ]
