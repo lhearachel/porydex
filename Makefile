@@ -13,12 +13,13 @@ MAKE := make
 PYTHON := python
 PIP := pip
 PYCPARSER := pycparser
-PYCPARSER_GIT := git@github.com:eliben/$(PYCPARSER).git
+PYCPARSER_GIT := https://github.com/eliben/$(PYCPARSER).git
 PYCPARSER_UTILS := $(PYCPARSER)/utils
 PYCPARSER_FAKE_LIBC := $(PYCPARSER_UTILS)/$(FAKE_LIBC)
 PYINSTALLER := pyinstaller
 REQUIREMENTS := requirements.txt
 VENV := .venv
+VENVACTIVATE := $(VENV)/bin/activate
 VENV_PIP := $(VENV)/bin/pip
 
 setup:
@@ -47,7 +48,7 @@ fake_libc:
 	rm -rf "$(PYCPARSER)"
 
 install:
-	$(PYINSTALLER) porydex.py
+	source $(VENVACTIVATE) ; $(PYINSTALLER) --noconfirm porydex.py
 
 link:
 	ln -s $(shell $(REALPATH) dist/porydex/porydex) "$(VENV)/bin/porydex"

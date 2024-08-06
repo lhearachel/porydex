@@ -4,8 +4,9 @@ import pathlib
 import os
 
 import porydex.config
+import porydex.showdown
 
-from porydex.common import PICKLE_PATH
+from porydex.common import PICKLE_PATH, name_key
 from porydex.parse.abilities import parse_abilities
 from porydex.parse.encounters import parse_encounters
 from porydex.parse.form_tables import parse_form_tables
@@ -15,6 +16,8 @@ from porydex.parse.maps import parse_maps
 from porydex.parse.moves import parse_moves
 from porydex.parse.national_dex import parse_national_dex_enum
 from porydex.parse.species import parse_species
+
+MAX_SPECIES_EXPANSION = 1523 + 1
 
 def prepend_file(f, s: str):
     f_data = f.read()
@@ -26,22 +29,42 @@ def config_show(_):
     print(f'compiler command:  {str(porydex.config.compiler)}')
     print(f'path to expansion: {str(porydex.config.expansion)}')
     print(f'output directory:  {str(porydex.config.output)}')
+    print(f'output format:     {str(porydex.config.format)}')
+    print(f'include mons file: {str(porydex.config.included_mons_file)}')
+    print(f'custom abilities:  {str(porydex.config.custom_ability_defs)}')
 
 def config_set(args):
     if args.expansion:
         assert args.expansion.resolve().exists(), f'specified expansion directory {args.expansion} does not exist'
         porydex.config.expansion = args.expansion.resolve()
 
+    porydex.config.load()
+    update = False
+
     if args.compiler:
         porydex.config.compiler = args.compiler
+        update = True
 
     if args.output:
         porydex.config.output = args.output.resolve()
+        update = True
 
     if args.format:
         porydex.config.format = args.format
+        update = True
 
-    porydex.config.save()
+    if args.included_species_file:
+        porydex.config.included_mons_file = args.included_species_file
+        update = True
+
+    if args.custom_ability_defs:
+        porydex.config.custom_ability_defs = args.custom_ability_defs
+        update = True
+
+    if update:
+        porydex.config.save()
+    else:
+        print('No config options given; nothing to do')
 
 def config_clear(_):
     porydex.config.clear()
@@ -68,6 +91,11 @@ def extract(args):
     teach_learnsets = parse_teachable_learnsets(expansion_data / 'pokemon' / 'teachable_learnsets.h', move_names)
     national_dex = parse_national_dex_enum(porydex.config.expansion / 'include' / 'constants' / 'pokedex.h')
 
+    included_mons = []
+    if porydex.config.included_mons_file:
+        with open(porydex.config.included_mons_file, 'r', encoding='utf-8') as included:
+            included_mons = list(filter(lambda s: len(s) > 0, map(lambda s: s.strip(), included.readlines())))
+
     species, learnsets = parse_species(
         expansion_data / 'pokemon' / 'species_info.h',
         abilities,
@@ -78,38 +106,46 @@ def extract(args):
         lvlup_learnsets,
         teach_learnsets,
         national_dex,
+        included_mons,
     )
-    species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
+
+    species_names = ['????????????'] * (MAX_SPECIES_EXPANSION + 1)
+    for mon in species.values():
+        if mon.get('cosmetic', False):
+            species_names[mon['num']] = mon['name'].split('-')[0]
+        else:
+            species_names[mon['num']] = mon['name']
+
+    # cleanup cosmetic forms and missingno from species
+    to_purge = ['missingno']
+    for key, mon in species.items():
+        if mon.get('cosmetic', False):
+            to_purge.append(key)
+    for key in to_purge:
+        del species[key]
+
+    # species_names = [mon['name'] for mon in sorted(species.values(), key=lambda m: m['num'])]
     encounters = parse_encounters(expansion_data / 'wild_encounters.h', species_names)
+
+    # Re-index num to nationalDex on the species before finishing up
+    for _, mon in species.items():
+        mon['num'] = mon['nationalDex']
+        del mon['nationalDex']
 
     if porydex.config.format == porydex.config.OutputFormat.json:
         with open(porydex.config.output / 'moves.json', 'w', encoding='utf-8') as outf:
-            json.dump(moves, outf, indent=4)
+            json.dump(moves, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'species.json', 'w', encoding='utf-8') as outf:
-            json.dump(species, outf, indent=4)
+            json.dump(species, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'learnsets.json', 'w', encoding='utf-8') as outf:
-            json.dump(learnsets, outf, indent=4)
+            json.dump(learnsets, outf, indent=4, ensure_ascii=False)
 
         with open(porydex.config.output / 'encounters.json', 'w', encoding='utf-8') as outf:
-            json.dump(encounters, outf, indent=4)
-    else: # jsobj
-        with open(porydex.config.output / 'moves.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattleMovedex = ')
-            json.dump(moves, outf, indent=4)
-
-        with open(porydex.config.output / 'species.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattlePokedex = ')
-            json.dump(species, outf, indent=4)
-
-        with open(porydex.config.output / 'learnsets.js', 'w+', encoding='utf-8') as outf:
-            outf.write('BattleLearnsets = ')
-            json.dump(learnsets, outf, indent=4)
-
-        with open(porydex.config.output / 'encounters.js', 'w+', encoding='utf-8') as outf:
-            outf.write('Encounters = ')
-            json.dump(encounters, outf, indent=4)
+            json.dump(encounters, outf, indent=4, ensure_ascii=False)
+    else: # showdown
+        porydex.showdown.index(moves, species, learnsets, encounters)
 
 def main():
     argp = argparse.ArgumentParser(prog='porydex',
@@ -136,6 +172,12 @@ def main():
                               help='format for output files',
                               type=porydex.config.OutputFormat.argparse,
                               choices=list(porydex.config.OutputFormat))
+    config_set_p.add_argument('-i', '--included-species-file',
+                              help='text file describing species to be included in the pokedex',
+                              type=pathlib.Path)
+    config_set_p.add_argument('-a', '--custom-ability-defs',
+                              help='JSON file describing custom ability definitions and descriptions for a Showdown Dex',
+                              type=pathlib.Path)
     config_set_p.set_defaults(func=config_set)
 
     config_clear_p = config_subp.add_parser('clear', help='clear configured options')

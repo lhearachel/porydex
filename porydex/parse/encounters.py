@@ -113,11 +113,17 @@ def parse_encounter_header(header: InitList,
     return encs
 
 def parse_encounter_def(entry: InitList, species_names: list[str]) -> Encounter:
-    return Encounter(
-        species=species_names[extract_int(entry.exprs[2])],
-        min_lvl=extract_int(entry.exprs[0]),
-        max_lvl=extract_int(entry.exprs[1]),
-    )
+    try:
+        return Encounter(
+            species=name_key(species_names[extract_int(entry.exprs[2])]),
+            min_lvl=extract_int(entry.exprs[0]),
+            max_lvl=extract_int(entry.exprs[1]),
+        )
+    except Exception as e:
+        id = extract_int(entry.exprs[2])
+        print(f'{id=}')
+        print(f'{len(species_names)=}')
+        raise e
 
 def parse_encounters_data(exts, jd: dict, species_names: list[str]) -> dict[str, dict[str, EncounterRate] | dict[str, dict]]:
     headers = []
@@ -170,11 +176,11 @@ def parse_encounters_data(exts, jd: dict, species_names: list[str]) -> dict[str,
                 all_encounters['rates']['rock'] = field['encounter_rates']
             case 'fishing_mons':
                 rates = field['encounter_rates']
-                for slot in field['groups']['old_rod']:
+                for slot in field['groups'].get('old_rod', []):
                     all_encounters['rates']['fish']['old'].append(rates[slot])
-                for slot in field['groups']['good_rod']:
+                for slot in field['groups'].get('good_rod', []):
                     all_encounters['rates']['fish']['good'].append(rates[slot])
-                for slot in field['groups']['super_rod']:
+                for slot in field['groups'].get('super_rod', []):
                     all_encounters['rates']['fish']['super'].append(rates[slot])
 
     for header in headers:

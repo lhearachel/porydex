@@ -15,6 +15,7 @@ fake_libc_include/
 # Output / testing directories
 tst/
 out/
+site/data/
 
 # pyinstaller
 build/

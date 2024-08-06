@@ -156,13 +156,13 @@ def extract_compound_str(expr) -> str:
 
     # arm-none-eabi-gcc expands the macro to Cast(FuncCall(ExprList([Constant])))
     if isinstance(expr, Cast):
-        return expr.expr.args.exprs[0].value.replace('\\n', ' ')[1:-1]
+        return expr.expr.args.exprs[-1].value.replace('\\n', ' ')[1:-1]
 
     # clang expands the macro to CompoundLiteral(InitList([Constant]))
     if isinstance(expr, CompoundLiteral):
-        return expr.init.exprs[0].value.replace('\\n', ' ')[1:-1]
+        return expr.init.exprs[-1].value.replace('\\n', ' ')[1:-1]
 
-    if isinstance(expr.exprs[0], FuncCall):
+    if isinstance(expr.exprs[-1], FuncCall):
         return extract_compound_str(expr.exprs[0].args)
     return expr.exprs[-1].value.replace('\\n', ' ')[1:-1]
 

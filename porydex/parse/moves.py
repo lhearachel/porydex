@@ -46,7 +46,7 @@ def parse_move(struct_init: NamedInitializer) -> dict:
             case 'name':
                 move['name'] = extract_compound_str(field_expr)
             case 'power':
-                move['power'] = extract_int(field_expr)
+                move['basePower'] = extract_int(field_expr)
             case 'type':
                 move['type'] = DAMAGE_TYPE[extract_int(field_expr)]
             case 'accuracy':

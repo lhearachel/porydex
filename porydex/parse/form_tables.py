@@ -44,12 +44,61 @@ def parse_table_decl(minimal: Decl, full: Decl) -> tuple[str, dict[int, str]]:
         if not form_name_match:
             result[val] = 'Base'
         else:
+            # holy overrides batman
             result[val] = snake_to_kebab(form_name_match.group(2)) \
                 .replace('Alolan', 'Alola') \
                 .replace('Galarian', 'Galar') \
                 .replace('Hisuian', 'Hisui') \
                 .replace('Paldean', 'Paldea') \
-                .replace('Gigantamax', 'Gmax')
+                .replace('Gigantamax', 'Gmax') \
+                .replace('-Cloak', '') \
+                .replace('Family-Of-Three', 'Three') \
+                .replace('Family-Of-Four', 'Four') \
+                .replace('-Partner', '-Starter') \
+                .replace('-Starter-Cap', '-Partner') \
+                .replace('-Cap', '') \
+                .replace('Emark', 'Exclamation') \
+                .replace('Qmark', 'Question') \
+                .replace('East-Sea', 'East') \
+                .replace('West-Sea', 'West') \
+                .replace('Male', 'M') \
+                .replace('Female', 'F') \
+                .replace('Standard-Mode', 'Standard') \
+                .replace('Galar-Standard', 'Galar') \
+                .replace('Zen-Mode', 'Zen') \
+                .replace('-Drive', '') \
+                .replace('Battle-Bond', 'Bond') \
+                .replace('-Flower', '') \
+                .replace('Totem-Disguised', 'Totem') \
+                .replace('Totem-Busted', 'Busted-Totem') \
+                .replace('Original-Color', 'Original') \
+                .replace('Amped-Gmax', 'Gmax') \
+                .replace('Noice-Face', 'Noice') \
+                .replace('Hero-Of-Many-Battles', 'Hero') \
+                .replace('Crowned-Sword', 'Crowned') \
+                .replace('Crowned-Shield', 'Crowned') \
+                .replace('Ice-Rider', 'Ice') \
+                .replace('Shadow-Rider', 'Shadow') \
+                .replace('Green-Plumage', 'Green') \
+                .replace('Blue-Plumage', 'Blue') \
+                .replace('Yellow-Plumage', 'Yellow') \
+                .replace('White-Plumage', 'White') \
+                .replace('Cornerstone-Mask', 'Cornerstone') \
+                .replace('Wellspring-Mask', 'Wellspring') \
+                .replace('Hearthflame-Mask', 'Hearthflame') \
+                .replace('Teal-Mask', 'Teal') \
+                .replace('-Trim', '') \
+                .replace('50-Aura-Break', '50%') \
+                .replace('50-Power-Construct', '50%-Power-Construct') \
+                .replace('10-Aura-Break', '10%') \
+                .replace('10-Power-Construct', '10%-Power-Construct') \
+                .replace('Core-Red', 'Red') \
+                .replace('Core-Orange', 'Orange') \
+                .replace('Core-Yellow', 'Yellow') \
+                .replace('Core-Green', 'Green') \
+                .replace('Core-Blue', 'Blue') \
+                .replace('Core-Indigo', 'Indigo') \
+                .replace('Core-Violet', 'Violet')
 
     return name, result
 

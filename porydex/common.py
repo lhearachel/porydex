@@ -64,5 +64,5 @@ BINARY_BOOL_OPS = {
 SPLIT_CHARS = re.compile(r"[\W_-]+")
 
 def name_key(name: str) -> str:
-    return ''.join(SPLIT_CHARS.split(name)).lower()
+    return ''.join(SPLIT_CHARS.split(name.replace('é', 'e'))).lower()
 
