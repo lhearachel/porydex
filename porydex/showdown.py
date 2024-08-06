@@ -12,7 +12,11 @@ def index(moves: dict, species: dict, learnsets: dict, encounters: dict):
     typechart = json.load(open(vanilla_data_dir / 'typechart.json', 'r', encoding='utf-8'))
     vanilla_moves = json.load(open(vanilla_data_dir / 'moves.json', 'r', encoding='utf-8'))
 
-    custom_abilities = json.load(open(porydex.config.custom_ability_defs, 'r', encoding='utf-8'))
+    if porydex.config.custom_ability_defs:
+        custom_abilities = json.load(open(porydex.config.custom_ability_defs, 'r', encoding='utf-8'))
+    else:
+        custom_abilities = {}
+
     if custom_abilities:
         num = max(map(lambda abil: abil.get('num', 0), abilities.values())) + 1
         for name, descs in custom_abilities.items():
